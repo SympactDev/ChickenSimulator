@@ -1,0 +1,5343 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+extern const RuntimeMethod* AchievementManager_FetchUserAchievementsCallbackImpl_m874E128FB096BC63CE1DE950EAAF8A9A97736DDE_RuntimeMethod_var;
+extern const RuntimeMethod* AchievementManager_OnUserAchievementUpdateImpl_m0DD9CA2C245D7F2685AE78723BE87998428E6F73_RuntimeMethod_var;
+extern const RuntimeMethod* AchievementManager_SetUserAchievementCallbackImpl_mA215295D45E8C3828A670A5EEF4EA14B227B4D48_RuntimeMethod_var;
+extern const RuntimeMethod* ActivityManager_AcceptInviteCallbackImpl_m0698FD39A5AF57FA9ADF67306472C48D50BD10B7_RuntimeMethod_var;
+extern const RuntimeMethod* ActivityManager_ClearActivityCallbackImpl_m812BC54DA3304551A134DB290E6941279A30B3A2_RuntimeMethod_var;
+extern const RuntimeMethod* ActivityManager_OnActivityInviteImpl_m77E77CA1A10E96587B28C06902E895D0BA07EC44_RuntimeMethod_var;
+extern const RuntimeMethod* ActivityManager_OnActivityJoinImpl_m013267BDA2F4B077B64BD2BB2F50152AEB3C329C_RuntimeMethod_var;
+extern const RuntimeMethod* ActivityManager_OnActivityJoinRequestImpl_mBFFEDA7C51FB53ACFD3C319C25948D6C2CE65684_RuntimeMethod_var;
+extern const RuntimeMethod* ActivityManager_OnActivitySpectateImpl_m2EBD0B1759E799443479A8751C8AE6946D84BF33_RuntimeMethod_var;
+extern const RuntimeMethod* ActivityManager_SendInviteCallbackImpl_mB99BA3C65FDF9EDDD464CFBE5D2FF074B361B22C_RuntimeMethod_var;
+extern const RuntimeMethod* ActivityManager_SendRequestReplyCallbackImpl_m7DBA16165BE25B83293A53B9E96D71A864998623_RuntimeMethod_var;
+extern const RuntimeMethod* ActivityManager_UpdateActivityCallbackImpl_m5B7EFCBA23BB8417B1F85CAA64BC6C82B488761E_RuntimeMethod_var;
+extern const RuntimeMethod* ApplicationManager_GetOAuth2TokenCallbackImpl_m00F3F694AD26A843089812754035D9E834A1FAB7_RuntimeMethod_var;
+extern const RuntimeMethod* ApplicationManager_GetTicketCallbackImpl_m5EAADE8988DE32AFB22D2B97326A340F1581BAC7_RuntimeMethod_var;
+extern const RuntimeMethod* ApplicationManager_ValidateOrExitCallbackImpl_mFFC043E1E96C34147A2BB4E2F2CD55328FB3AD14_RuntimeMethod_var;
+extern const RuntimeMethod* Discord_SetLogHookCallbackImpl_mCC52A5E4BA9BA1EF2401FD2D7507992418ED6BA3_RuntimeMethod_var;
+extern const RuntimeMethod* ImageManager_FetchCallbackImpl_m11A0579976A9FE8C9443E12870107DC546F94133_RuntimeMethod_var;
+extern const RuntimeMethod* LobbyManager_ConnectLobbyCallbackImpl_mC6F224135CB0F2DD39916FADA215914D813F76C3_RuntimeMethod_var;
+extern const RuntimeMethod* LobbyManager_ConnectLobbyWithActivitySecretCallbackImpl_mF0672B35B8B893A97CCDFA6BB76049782424D662_RuntimeMethod_var;
+extern const RuntimeMethod* LobbyManager_ConnectVoiceCallbackImpl_mD540710CDFBB59D63315731DCF839713FFA7CF61_RuntimeMethod_var;
+extern const RuntimeMethod* LobbyManager_CreateLobbyCallbackImpl_mAEC695E946BF3C40173C82788DBDA66CF33E0545_RuntimeMethod_var;
+extern const RuntimeMethod* LobbyManager_DeleteLobbyCallbackImpl_m1EF2A8CD6ECED00010924FCD79A5DDA74321CDA4_RuntimeMethod_var;
+extern const RuntimeMethod* LobbyManager_DisconnectLobbyCallbackImpl_m0C82CC19DC9831ABE6D399AFA8C27B3223AA07BC_RuntimeMethod_var;
+extern const RuntimeMethod* LobbyManager_DisconnectVoiceCallbackImpl_m2120A7C9C6B19BA9F8E647F6C0F3D09120E86BE6_RuntimeMethod_var;
+extern const RuntimeMethod* LobbyManager_OnLobbyDeleteImpl_m37D4C69CBA595571A546AA1B95531BE36CFACBD8_RuntimeMethod_var;
+extern const RuntimeMethod* LobbyManager_OnLobbyMessageImpl_m1DA5EC8E401742A7B240BE6167F23A8D414CFBC9_RuntimeMethod_var;
+extern const RuntimeMethod* LobbyManager_OnLobbyUpdateImpl_m44AD90AF0ED29FF182C4742C4929634D5317B731_RuntimeMethod_var;
+extern const RuntimeMethod* LobbyManager_OnMemberConnectImpl_m65F4BFCEDB9DE6B163B5307E44F38785B380846E_RuntimeMethod_var;
+extern const RuntimeMethod* LobbyManager_OnMemberDisconnectImpl_m9E9D0AB3B26776234EA3D57609CE627C14448B39_RuntimeMethod_var;
+extern const RuntimeMethod* LobbyManager_OnMemberUpdateImpl_mB4FF5EC811FED31616E2F0CFF40351CFFC2D64DD_RuntimeMethod_var;
+extern const RuntimeMethod* LobbyManager_OnNetworkMessageImpl_mF5ED77A9685583B4B4B2AD7D9AE87446E33D7B6F_RuntimeMethod_var;
+extern const RuntimeMethod* LobbyManager_OnSpeakingImpl_m9C171D737C50D9C79C84DE59B2C57CE37CE2D64F_RuntimeMethod_var;
+extern const RuntimeMethod* LobbyManager_SearchCallbackImpl_mED88264E1F99571C56A6BCE7033296640C4364AE_RuntimeMethod_var;
+extern const RuntimeMethod* LobbyManager_SendLobbyMessageCallbackImpl_m959A23A89207490DE4DFAF663F5FE28F9770AD60_RuntimeMethod_var;
+extern const RuntimeMethod* LobbyManager_UpdateLobbyCallbackImpl_m872BB837E05FB625708FD84A2FFF10203000FB48_RuntimeMethod_var;
+extern const RuntimeMethod* LobbyManager_UpdateMemberCallbackImpl_mD3A20BFB5B62AF19ED7B7602771F398581D57D5E_RuntimeMethod_var;
+extern const RuntimeMethod* NetworkManager_OnMessageImpl_m18583CA74C8A43C34C1981A77DD2960DCBE11225_RuntimeMethod_var;
+extern const RuntimeMethod* NetworkManager_OnRouteUpdateImpl_m7D7147123A6A374E1CAF05A420C59FBCCF96B450_RuntimeMethod_var;
+extern const RuntimeMethod* OverlayManager_OnToggleImpl_mE6E91D51D97432DC7914FAEAFB52A438B4E0FB95_RuntimeMethod_var;
+extern const RuntimeMethod* OverlayManager_OpenActivityInviteCallbackImpl_mA882AEFD6082EE89D518DB806EDC636DA4C94C96_RuntimeMethod_var;
+extern const RuntimeMethod* OverlayManager_OpenGuildInviteCallbackImpl_mB6F529BEA85A3E7AAF89770548AA2CDCBB68380A_RuntimeMethod_var;
+extern const RuntimeMethod* OverlayManager_OpenVoiceSettingsCallbackImpl_m6E3EA3CDF9900198E267646A9E8D73083794B6D9_RuntimeMethod_var;
+extern const RuntimeMethod* OverlayManager_SetLockedCallbackImpl_mA2DD371D00A962466969FCDC012BA993848D9502_RuntimeMethod_var;
+extern const RuntimeMethod* RelationshipManager_FilterCallbackImpl_m321EE31368ABF48E97B1712C13D76395766B0150_RuntimeMethod_var;
+extern const RuntimeMethod* RelationshipManager_OnRefreshImpl_mD28DECACA910F141BDEF373CC8BEC5782578B464_RuntimeMethod_var;
+extern const RuntimeMethod* RelationshipManager_OnRelationshipUpdateImpl_m5D0DD09B6723DAC9FDF96F5CECD8F571476A8C99_RuntimeMethod_var;
+extern const RuntimeMethod* StorageManager_ReadAsyncCallbackImpl_m379D8FE2836A4CEFEB640C4E2D2687566DC3607B_RuntimeMethod_var;
+extern const RuntimeMethod* StorageManager_ReadAsyncPartialCallbackImpl_mB5ECDC560EA4DF77FCB6F9723A011F28A9FDDF6B_RuntimeMethod_var;
+extern const RuntimeMethod* StorageManager_WriteAsyncCallbackImpl_m01D87702F478BF71E272AA0A2BC14A7D73976E9D_RuntimeMethod_var;
+extern const RuntimeMethod* StoreManager_FetchEntitlementsCallbackImpl_m9DD2D717D429B6F8F9C4CDFEFEBD9D3C054940F9_RuntimeMethod_var;
+extern const RuntimeMethod* StoreManager_FetchSkusCallbackImpl_m2116A7447264449345A320A94ABC482275F8EB3D_RuntimeMethod_var;
+extern const RuntimeMethod* StoreManager_OnEntitlementCreateImpl_m61F1778914C0C5793995510328C6351D450D1E57_RuntimeMethod_var;
+extern const RuntimeMethod* StoreManager_OnEntitlementDeleteImpl_m140EA562EC6DC924037B0F982C946D9702B34802_RuntimeMethod_var;
+extern const RuntimeMethod* StoreManager_StartPurchaseCallbackImpl_mD7AFAEB1DBCB4299B3B3B005A84273E7B4D986C1_RuntimeMethod_var;
+extern const RuntimeMethod* UserManager_GetUserCallbackImpl_m9D478A7D492D948CC8DCA8AF34E9E6C3E9EE3FB7_RuntimeMethod_var;
+extern const RuntimeMethod* UserManager_OnCurrentUserUpdateImpl_mFFDC0BF9F579135A09073EB28A536668BF332D04_RuntimeMethod_var;
+extern const RuntimeMethod* VoiceManager_OnSettingsUpdateImpl_m5E67420E73068E57125D8D1DB95776B37EFD5E1D_RuntimeMethod_var;
+extern const RuntimeMethod* VoiceManager_SetInputModeCallbackImpl_mAD12021EC7B3FF6B0E84186F81FC2FBFADFECF27_RuntimeMethod_var;
+
+
+
+// 0x00000001 System.Void Discord.ActivityManager::RegisterCommand()
+extern void ActivityManager_RegisterCommand_m3515E8D2A9B211FF36E8A5CC45BDD197FE3BFDC8 (void);
+// 0x00000002 Discord.ActivityManager/FFIMethods Discord.ActivityManager::get_Methods()
+extern void ActivityManager_get_Methods_mF3A1D2C664174FEDB9AF077F7E1CE27EE5D07411 (void);
+// 0x00000003 System.Void Discord.ActivityManager::add_OnActivityJoin(Discord.ActivityManager/ActivityJoinHandler)
+extern void ActivityManager_add_OnActivityJoin_m22A9F92FA65E00423FA0B5696BD2EC0EE81BC830 (void);
+// 0x00000004 System.Void Discord.ActivityManager::remove_OnActivityJoin(Discord.ActivityManager/ActivityJoinHandler)
+extern void ActivityManager_remove_OnActivityJoin_mC2560F78D20BCEFC5D3F537BDBFBC2CEF7495DC7 (void);
+// 0x00000005 System.Void Discord.ActivityManager::add_OnActivitySpectate(Discord.ActivityManager/ActivitySpectateHandler)
+extern void ActivityManager_add_OnActivitySpectate_m9DBBB19E3B97AEAB59CCD36CF50414E96F38512F (void);
+// 0x00000006 System.Void Discord.ActivityManager::remove_OnActivitySpectate(Discord.ActivityManager/ActivitySpectateHandler)
+extern void ActivityManager_remove_OnActivitySpectate_mF9BF0E7D6694D540C6050A66EDCDAE5DD4AE3435 (void);
+// 0x00000007 System.Void Discord.ActivityManager::add_OnActivityJoinRequest(Discord.ActivityManager/ActivityJoinRequestHandler)
+extern void ActivityManager_add_OnActivityJoinRequest_mBFFEC9BBF55D81A28E39BE506462252C642EAFB0 (void);
+// 0x00000008 System.Void Discord.ActivityManager::remove_OnActivityJoinRequest(Discord.ActivityManager/ActivityJoinRequestHandler)
+extern void ActivityManager_remove_OnActivityJoinRequest_mADB571F0C3374B79A45D46C3A67AD126934B3D23 (void);
+// 0x00000009 System.Void Discord.ActivityManager::add_OnActivityInvite(Discord.ActivityManager/ActivityInviteHandler)
+extern void ActivityManager_add_OnActivityInvite_mF9CC0835FC57758F3ACA099FFF1F5B544D847283 (void);
+// 0x0000000A System.Void Discord.ActivityManager::remove_OnActivityInvite(Discord.ActivityManager/ActivityInviteHandler)
+extern void ActivityManager_remove_OnActivityInvite_m7930BF56D959079D17D534370BDFA8A5DAD70D14 (void);
+// 0x0000000B System.Void Discord.ActivityManager::.ctor(System.IntPtr,System.IntPtr,Discord.ActivityManager/FFIEvents&)
+extern void ActivityManager__ctor_m3DDF38B8F6A4DF9675E621E44C902119DFC3A878 (void);
+// 0x0000000C System.Void Discord.ActivityManager::InitEvents(System.IntPtr,Discord.ActivityManager/FFIEvents&)
+extern void ActivityManager_InitEvents_m27E452C7DC69F71E82EAEA5FAC5A0415CD9DF503 (void);
+// 0x0000000D System.Void Discord.ActivityManager::RegisterCommand(System.String)
+extern void ActivityManager_RegisterCommand_m0381A33DE51B767AD518E1A3EDA26805AD87008C (void);
+// 0x0000000E System.Void Discord.ActivityManager::RegisterSteam(System.UInt32)
+extern void ActivityManager_RegisterSteam_mA83F09E4E1F85D42DFD89E1DF1BEAD4D271BD005 (void);
+// 0x0000000F System.Void Discord.ActivityManager::UpdateActivityCallbackImpl(System.IntPtr,Discord.Result)
+extern void ActivityManager_UpdateActivityCallbackImpl_m5B7EFCBA23BB8417B1F85CAA64BC6C82B488761E (void);
+// 0x00000010 System.Void Discord.ActivityManager::UpdateActivity(Discord.Activity,Discord.ActivityManager/UpdateActivityHandler)
+extern void ActivityManager_UpdateActivity_m898AF4AC22423258137DBAECBDA0A3F667D85152 (void);
+// 0x00000011 System.Void Discord.ActivityManager::ClearActivityCallbackImpl(System.IntPtr,Discord.Result)
+extern void ActivityManager_ClearActivityCallbackImpl_m812BC54DA3304551A134DB290E6941279A30B3A2 (void);
+// 0x00000012 System.Void Discord.ActivityManager::ClearActivity(Discord.ActivityManager/ClearActivityHandler)
+extern void ActivityManager_ClearActivity_mF4FAFDED4F9D8E79CC7112813ED0CA9BE5F7AAEA (void);
+// 0x00000013 System.Void Discord.ActivityManager::SendRequestReplyCallbackImpl(System.IntPtr,Discord.Result)
+extern void ActivityManager_SendRequestReplyCallbackImpl_m7DBA16165BE25B83293A53B9E96D71A864998623 (void);
+// 0x00000014 System.Void Discord.ActivityManager::SendRequestReply(System.Int64,Discord.ActivityJoinRequestReply,Discord.ActivityManager/SendRequestReplyHandler)
+extern void ActivityManager_SendRequestReply_m538BDE2A3812A6927ADFA8AC3A3EEE3AC3A6E723 (void);
+// 0x00000015 System.Void Discord.ActivityManager::SendInviteCallbackImpl(System.IntPtr,Discord.Result)
+extern void ActivityManager_SendInviteCallbackImpl_mB99BA3C65FDF9EDDD464CFBE5D2FF074B361B22C (void);
+// 0x00000016 System.Void Discord.ActivityManager::SendInvite(System.Int64,Discord.ActivityActionType,System.String,Discord.ActivityManager/SendInviteHandler)
+extern void ActivityManager_SendInvite_m3DF1CE101556387E936926F248648BC62F0D705B (void);
+// 0x00000017 System.Void Discord.ActivityManager::AcceptInviteCallbackImpl(System.IntPtr,Discord.Result)
+extern void ActivityManager_AcceptInviteCallbackImpl_m0698FD39A5AF57FA9ADF67306472C48D50BD10B7 (void);
+// 0x00000018 System.Void Discord.ActivityManager::AcceptInvite(System.Int64,Discord.ActivityManager/AcceptInviteHandler)
+extern void ActivityManager_AcceptInvite_mC0DC8267D9F275DBF7EB8E54D46E4386DAD1B418 (void);
+// 0x00000019 System.Void Discord.ActivityManager::OnActivityJoinImpl(System.IntPtr,System.String)
+extern void ActivityManager_OnActivityJoinImpl_m013267BDA2F4B077B64BD2BB2F50152AEB3C329C (void);
+// 0x0000001A System.Void Discord.ActivityManager::OnActivitySpectateImpl(System.IntPtr,System.String)
+extern void ActivityManager_OnActivitySpectateImpl_m2EBD0B1759E799443479A8751C8AE6946D84BF33 (void);
+// 0x0000001B System.Void Discord.ActivityManager::OnActivityJoinRequestImpl(System.IntPtr,Discord.User&)
+extern void ActivityManager_OnActivityJoinRequestImpl_mBFFEDA7C51FB53ACFD3C319C25948D6C2CE65684 (void);
+// 0x0000001C System.Void Discord.ActivityManager::OnActivityInviteImpl(System.IntPtr,Discord.ActivityActionType,Discord.User&,Discord.Activity&)
+extern void ActivityManager_OnActivityInviteImpl_m77E77CA1A10E96587B28C06902E895D0BA07EC44 (void);
+// 0x0000001D System.Void Discord.ActivityManager/FFIEvents/ActivityJoinHandler::.ctor(System.Object,System.IntPtr)
+extern void ActivityJoinHandler__ctor_m7348465ABE2BC128AF56E40265FF501BDEBF3780 (void);
+// 0x0000001E System.Void Discord.ActivityManager/FFIEvents/ActivityJoinHandler::Invoke(System.IntPtr,System.String)
+extern void ActivityJoinHandler_Invoke_mA265E7431D9057825FAE4F926F712F9EFBD6F697 (void);
+// 0x0000001F System.IAsyncResult Discord.ActivityManager/FFIEvents/ActivityJoinHandler::BeginInvoke(System.IntPtr,System.String,System.AsyncCallback,System.Object)
+extern void ActivityJoinHandler_BeginInvoke_mCF7D9C4D06EDB80DD58C195D174CDF445120DE83 (void);
+// 0x00000020 System.Void Discord.ActivityManager/FFIEvents/ActivityJoinHandler::EndInvoke(System.IAsyncResult)
+extern void ActivityJoinHandler_EndInvoke_m5F68316436A77DA8BBF215B513F4C511ABE7D321 (void);
+// 0x00000021 System.Void Discord.ActivityManager/FFIEvents/ActivitySpectateHandler::.ctor(System.Object,System.IntPtr)
+extern void ActivitySpectateHandler__ctor_m853324C24F7FD228B8FF0300000BCCB68B0386B3 (void);
+// 0x00000022 System.Void Discord.ActivityManager/FFIEvents/ActivitySpectateHandler::Invoke(System.IntPtr,System.String)
+extern void ActivitySpectateHandler_Invoke_m43A505ED0579B57D1A75454DDDD28DB2D7E1EF4C (void);
+// 0x00000023 System.IAsyncResult Discord.ActivityManager/FFIEvents/ActivitySpectateHandler::BeginInvoke(System.IntPtr,System.String,System.AsyncCallback,System.Object)
+extern void ActivitySpectateHandler_BeginInvoke_mACBF60714DA88FA873BC832C20200FC3DD732E9C (void);
+// 0x00000024 System.Void Discord.ActivityManager/FFIEvents/ActivitySpectateHandler::EndInvoke(System.IAsyncResult)
+extern void ActivitySpectateHandler_EndInvoke_m893D1DE5516882E80E876458D859934A1611A74A (void);
+// 0x00000025 System.Void Discord.ActivityManager/FFIEvents/ActivityJoinRequestHandler::.ctor(System.Object,System.IntPtr)
+extern void ActivityJoinRequestHandler__ctor_mB042780866F53383271D7B115E9D0CE59F8AC4FA (void);
+// 0x00000026 System.Void Discord.ActivityManager/FFIEvents/ActivityJoinRequestHandler::Invoke(System.IntPtr,Discord.User&)
+extern void ActivityJoinRequestHandler_Invoke_m073A1DBF00085C428E23C8F57839F4CCCB1CF110 (void);
+// 0x00000027 System.IAsyncResult Discord.ActivityManager/FFIEvents/ActivityJoinRequestHandler::BeginInvoke(System.IntPtr,Discord.User&,System.AsyncCallback,System.Object)
+extern void ActivityJoinRequestHandler_BeginInvoke_mB73EE21335207A200DBB269677E3F32137222B69 (void);
+// 0x00000028 System.Void Discord.ActivityManager/FFIEvents/ActivityJoinRequestHandler::EndInvoke(Discord.User&,System.IAsyncResult)
+extern void ActivityJoinRequestHandler_EndInvoke_m4899991E4144E88D3E2DE0E6FE138531A82D11D9 (void);
+// 0x00000029 System.Void Discord.ActivityManager/FFIEvents/ActivityInviteHandler::.ctor(System.Object,System.IntPtr)
+extern void ActivityInviteHandler__ctor_m578EDF64849C029B9241F0207D5549FCA7EDAEFD (void);
+// 0x0000002A System.Void Discord.ActivityManager/FFIEvents/ActivityInviteHandler::Invoke(System.IntPtr,Discord.ActivityActionType,Discord.User&,Discord.Activity&)
+extern void ActivityInviteHandler_Invoke_mB977D62D11A923CA68453AE744EED81DC9546BA5 (void);
+// 0x0000002B System.IAsyncResult Discord.ActivityManager/FFIEvents/ActivityInviteHandler::BeginInvoke(System.IntPtr,Discord.ActivityActionType,Discord.User&,Discord.Activity&,System.AsyncCallback,System.Object)
+extern void ActivityInviteHandler_BeginInvoke_m4A42EE67A4A2FFD755E51548CF3D98DB0E8F5976 (void);
+// 0x0000002C System.Void Discord.ActivityManager/FFIEvents/ActivityInviteHandler::EndInvoke(Discord.User&,Discord.Activity&,System.IAsyncResult)
+extern void ActivityInviteHandler_EndInvoke_mCC629842DB3D81605808DA9580CFA705A6771ABC (void);
+// 0x0000002D System.Void Discord.ActivityManager/FFIMethods/RegisterCommandMethod::.ctor(System.Object,System.IntPtr)
+extern void RegisterCommandMethod__ctor_mEB46458F76953300C1A4E891EA2B8500D052BF15 (void);
+// 0x0000002E Discord.Result Discord.ActivityManager/FFIMethods/RegisterCommandMethod::Invoke(System.IntPtr,System.String)
+extern void RegisterCommandMethod_Invoke_mE04D10D19E90C5574836E040B638555525ECBFD2 (void);
+// 0x0000002F System.IAsyncResult Discord.ActivityManager/FFIMethods/RegisterCommandMethod::BeginInvoke(System.IntPtr,System.String,System.AsyncCallback,System.Object)
+extern void RegisterCommandMethod_BeginInvoke_m2908E8256C9949D58FCD35A673F323A77DF5DE45 (void);
+// 0x00000030 Discord.Result Discord.ActivityManager/FFIMethods/RegisterCommandMethod::EndInvoke(System.IAsyncResult)
+extern void RegisterCommandMethod_EndInvoke_m825BDDC994D9A30E03B1ED1B888BB66D6D4201CE (void);
+// 0x00000031 System.Void Discord.ActivityManager/FFIMethods/RegisterSteamMethod::.ctor(System.Object,System.IntPtr)
+extern void RegisterSteamMethod__ctor_m6EB80A10C2FF81D21FF143AC9494DC162A0F12C2 (void);
+// 0x00000032 Discord.Result Discord.ActivityManager/FFIMethods/RegisterSteamMethod::Invoke(System.IntPtr,System.UInt32)
+extern void RegisterSteamMethod_Invoke_m48FCD6D03EF6CD3A1751D8CABDB1E2098B4C0C8D (void);
+// 0x00000033 System.IAsyncResult Discord.ActivityManager/FFIMethods/RegisterSteamMethod::BeginInvoke(System.IntPtr,System.UInt32,System.AsyncCallback,System.Object)
+extern void RegisterSteamMethod_BeginInvoke_m7C34C5EA3B0B333E807B81AF9D4D46FBFEAE438E (void);
+// 0x00000034 Discord.Result Discord.ActivityManager/FFIMethods/RegisterSteamMethod::EndInvoke(System.IAsyncResult)
+extern void RegisterSteamMethod_EndInvoke_mBB4D09B74BEF0E1C37739A5C5FC8B9DCE13D91F3 (void);
+// 0x00000035 System.Void Discord.ActivityManager/FFIMethods/UpdateActivityCallback::.ctor(System.Object,System.IntPtr)
+extern void UpdateActivityCallback__ctor_mFC35639DA01BFE25EBCC3B5EBD2A99DA95046544 (void);
+// 0x00000036 System.Void Discord.ActivityManager/FFIMethods/UpdateActivityCallback::Invoke(System.IntPtr,Discord.Result)
+extern void UpdateActivityCallback_Invoke_m929983880FFD21A989C88A7F05505CC8106EB650 (void);
+// 0x00000037 System.IAsyncResult Discord.ActivityManager/FFIMethods/UpdateActivityCallback::BeginInvoke(System.IntPtr,Discord.Result,System.AsyncCallback,System.Object)
+extern void UpdateActivityCallback_BeginInvoke_m167070E52BEDC17B03F0E497F41AC77BBA9595F1 (void);
+// 0x00000038 System.Void Discord.ActivityManager/FFIMethods/UpdateActivityCallback::EndInvoke(System.IAsyncResult)
+extern void UpdateActivityCallback_EndInvoke_m7337AE76AB7D0C85924A7BE65ABBB39023FB04D3 (void);
+// 0x00000039 System.Void Discord.ActivityManager/FFIMethods/UpdateActivityMethod::.ctor(System.Object,System.IntPtr)
+extern void UpdateActivityMethod__ctor_m44670BAAEABBF4D51AA849EA634BF4B958A1B17A (void);
+// 0x0000003A System.Void Discord.ActivityManager/FFIMethods/UpdateActivityMethod::Invoke(System.IntPtr,Discord.Activity&,System.IntPtr,Discord.ActivityManager/FFIMethods/UpdateActivityCallback)
+extern void UpdateActivityMethod_Invoke_m6ADFAD58A5B8C38843B37DF4CF3A50C83A9EC749 (void);
+// 0x0000003B System.IAsyncResult Discord.ActivityManager/FFIMethods/UpdateActivityMethod::BeginInvoke(System.IntPtr,Discord.Activity&,System.IntPtr,Discord.ActivityManager/FFIMethods/UpdateActivityCallback,System.AsyncCallback,System.Object)
+extern void UpdateActivityMethod_BeginInvoke_mE27F48D4B591E2A05699CB53750CC5D3907AC33F (void);
+// 0x0000003C System.Void Discord.ActivityManager/FFIMethods/UpdateActivityMethod::EndInvoke(Discord.Activity&,System.IAsyncResult)
+extern void UpdateActivityMethod_EndInvoke_m8CBA8EDA5A6FE114E1FF469468580F4E9AA23F0E (void);
+// 0x0000003D System.Void Discord.ActivityManager/FFIMethods/ClearActivityCallback::.ctor(System.Object,System.IntPtr)
+extern void ClearActivityCallback__ctor_mD8718E8FF9BC508763A960735A717D502B1D0D4F (void);
+// 0x0000003E System.Void Discord.ActivityManager/FFIMethods/ClearActivityCallback::Invoke(System.IntPtr,Discord.Result)
+extern void ClearActivityCallback_Invoke_mE5CE7233909469248CD808300F5FD8D6DFBBA069 (void);
+// 0x0000003F System.IAsyncResult Discord.ActivityManager/FFIMethods/ClearActivityCallback::BeginInvoke(System.IntPtr,Discord.Result,System.AsyncCallback,System.Object)
+extern void ClearActivityCallback_BeginInvoke_m882296CD576025CA5F1763F883DBFE4E70594547 (void);
+// 0x00000040 System.Void Discord.ActivityManager/FFIMethods/ClearActivityCallback::EndInvoke(System.IAsyncResult)
+extern void ClearActivityCallback_EndInvoke_mBAE940735D7E59BA2A953A4AC08BEB89B8AFE027 (void);
+// 0x00000041 System.Void Discord.ActivityManager/FFIMethods/ClearActivityMethod::.ctor(System.Object,System.IntPtr)
+extern void ClearActivityMethod__ctor_m8BBFDD0611ACE5244A673550869426D3CA0A57BC (void);
+// 0x00000042 System.Void Discord.ActivityManager/FFIMethods/ClearActivityMethod::Invoke(System.IntPtr,System.IntPtr,Discord.ActivityManager/FFIMethods/ClearActivityCallback)
+extern void ClearActivityMethod_Invoke_mDC1EFF08EC15EF4F3DF42DFC4EB3A1232E6E9C3C (void);
+// 0x00000043 System.IAsyncResult Discord.ActivityManager/FFIMethods/ClearActivityMethod::BeginInvoke(System.IntPtr,System.IntPtr,Discord.ActivityManager/FFIMethods/ClearActivityCallback,System.AsyncCallback,System.Object)
+extern void ClearActivityMethod_BeginInvoke_mA98C003A2B7331188E0138144040EB1F4B9F704B (void);
+// 0x00000044 System.Void Discord.ActivityManager/FFIMethods/ClearActivityMethod::EndInvoke(System.IAsyncResult)
+extern void ClearActivityMethod_EndInvoke_mDDF560ACFBA63B6DCD7229D14F469D28D8670F41 (void);
+// 0x00000045 System.Void Discord.ActivityManager/FFIMethods/SendRequestReplyCallback::.ctor(System.Object,System.IntPtr)
+extern void SendRequestReplyCallback__ctor_m3A026D250E6FEE8AA4EC780C6A9127C28A7A53B4 (void);
+// 0x00000046 System.Void Discord.ActivityManager/FFIMethods/SendRequestReplyCallback::Invoke(System.IntPtr,Discord.Result)
+extern void SendRequestReplyCallback_Invoke_m24EF9CC99FDF019DDD7CD73C44A52668D4BB6091 (void);
+// 0x00000047 System.IAsyncResult Discord.ActivityManager/FFIMethods/SendRequestReplyCallback::BeginInvoke(System.IntPtr,Discord.Result,System.AsyncCallback,System.Object)
+extern void SendRequestReplyCallback_BeginInvoke_mF69DD80781663A2D0635B3D06208FB80BC8DBEF6 (void);
+// 0x00000048 System.Void Discord.ActivityManager/FFIMethods/SendRequestReplyCallback::EndInvoke(System.IAsyncResult)
+extern void SendRequestReplyCallback_EndInvoke_mEE094FDC68D6BF31B417E10B513B5A3D9469F830 (void);
+// 0x00000049 System.Void Discord.ActivityManager/FFIMethods/SendRequestReplyMethod::.ctor(System.Object,System.IntPtr)
+extern void SendRequestReplyMethod__ctor_mD2AB31B037A33969312F61E16DB712F6B7930E2F (void);
+// 0x0000004A System.Void Discord.ActivityManager/FFIMethods/SendRequestReplyMethod::Invoke(System.IntPtr,System.Int64,Discord.ActivityJoinRequestReply,System.IntPtr,Discord.ActivityManager/FFIMethods/SendRequestReplyCallback)
+extern void SendRequestReplyMethod_Invoke_m8F452136B36D5618B4BF290581B73D6BBBD3BD16 (void);
+// 0x0000004B System.IAsyncResult Discord.ActivityManager/FFIMethods/SendRequestReplyMethod::BeginInvoke(System.IntPtr,System.Int64,Discord.ActivityJoinRequestReply,System.IntPtr,Discord.ActivityManager/FFIMethods/SendRequestReplyCallback,System.AsyncCallback,System.Object)
+extern void SendRequestReplyMethod_BeginInvoke_m8D974F01061FB79F9C87C6D86DCFC0162C67C5E4 (void);
+// 0x0000004C System.Void Discord.ActivityManager/FFIMethods/SendRequestReplyMethod::EndInvoke(System.IAsyncResult)
+extern void SendRequestReplyMethod_EndInvoke_m6E33BE95621DA1115D4A26E08C680762BBE90AB6 (void);
+// 0x0000004D System.Void Discord.ActivityManager/FFIMethods/SendInviteCallback::.ctor(System.Object,System.IntPtr)
+extern void SendInviteCallback__ctor_mA2D2B887A8DC2AA96B78A8ACC47A1C92268E050A (void);
+// 0x0000004E System.Void Discord.ActivityManager/FFIMethods/SendInviteCallback::Invoke(System.IntPtr,Discord.Result)
+extern void SendInviteCallback_Invoke_m0002AFA3A1C36E7B611447B4858B9350982C9F98 (void);
+// 0x0000004F System.IAsyncResult Discord.ActivityManager/FFIMethods/SendInviteCallback::BeginInvoke(System.IntPtr,Discord.Result,System.AsyncCallback,System.Object)
+extern void SendInviteCallback_BeginInvoke_m6C754CB03D5C1ABC6D5DEF6D149D7B9B69081E9C (void);
+// 0x00000050 System.Void Discord.ActivityManager/FFIMethods/SendInviteCallback::EndInvoke(System.IAsyncResult)
+extern void SendInviteCallback_EndInvoke_m7BBF401FDFDEC1E6ED87632EC41675DA3F3EDA41 (void);
+// 0x00000051 System.Void Discord.ActivityManager/FFIMethods/SendInviteMethod::.ctor(System.Object,System.IntPtr)
+extern void SendInviteMethod__ctor_mA0B72BEA9C040CBB0B7AEBCA67568183E0554F39 (void);
+// 0x00000052 System.Void Discord.ActivityManager/FFIMethods/SendInviteMethod::Invoke(System.IntPtr,System.Int64,Discord.ActivityActionType,System.String,System.IntPtr,Discord.ActivityManager/FFIMethods/SendInviteCallback)
+extern void SendInviteMethod_Invoke_mF885659297F915FC1B9B1D3E52D224150E63F6ED (void);
+// 0x00000053 System.IAsyncResult Discord.ActivityManager/FFIMethods/SendInviteMethod::BeginInvoke(System.IntPtr,System.Int64,Discord.ActivityActionType,System.String,System.IntPtr,Discord.ActivityManager/FFIMethods/SendInviteCallback,System.AsyncCallback,System.Object)
+extern void SendInviteMethod_BeginInvoke_m83AA2DD10871A68F30D406CFE8C90710D9726314 (void);
+// 0x00000054 System.Void Discord.ActivityManager/FFIMethods/SendInviteMethod::EndInvoke(System.IAsyncResult)
+extern void SendInviteMethod_EndInvoke_m4492B0002C87DF8E952EB9AEB1E0C63AEF44CC6B (void);
+// 0x00000055 System.Void Discord.ActivityManager/FFIMethods/AcceptInviteCallback::.ctor(System.Object,System.IntPtr)
+extern void AcceptInviteCallback__ctor_m99767E61CD12E2A54A777EB65802B4F2D8C40EC0 (void);
+// 0x00000056 System.Void Discord.ActivityManager/FFIMethods/AcceptInviteCallback::Invoke(System.IntPtr,Discord.Result)
+extern void AcceptInviteCallback_Invoke_mD610419D27A6B79F75CE157A385A03E566574F52 (void);
+// 0x00000057 System.IAsyncResult Discord.ActivityManager/FFIMethods/AcceptInviteCallback::BeginInvoke(System.IntPtr,Discord.Result,System.AsyncCallback,System.Object)
+extern void AcceptInviteCallback_BeginInvoke_mC57A7FCF25872BD2C6C198427296BF64971D212D (void);
+// 0x00000058 System.Void Discord.ActivityManager/FFIMethods/AcceptInviteCallback::EndInvoke(System.IAsyncResult)
+extern void AcceptInviteCallback_EndInvoke_m9A222BFCBF941D05F377AE426C8C965A184DBCBA (void);
+// 0x00000059 System.Void Discord.ActivityManager/FFIMethods/AcceptInviteMethod::.ctor(System.Object,System.IntPtr)
+extern void AcceptInviteMethod__ctor_m1A178CBC91903A57CF768119FB22EF6572B5C179 (void);
+// 0x0000005A System.Void Discord.ActivityManager/FFIMethods/AcceptInviteMethod::Invoke(System.IntPtr,System.Int64,System.IntPtr,Discord.ActivityManager/FFIMethods/AcceptInviteCallback)
+extern void AcceptInviteMethod_Invoke_mDFFAC9BB2EEC07FB71EE09BF499DC0FD4034E705 (void);
+// 0x0000005B System.IAsyncResult Discord.ActivityManager/FFIMethods/AcceptInviteMethod::BeginInvoke(System.IntPtr,System.Int64,System.IntPtr,Discord.ActivityManager/FFIMethods/AcceptInviteCallback,System.AsyncCallback,System.Object)
+extern void AcceptInviteMethod_BeginInvoke_mB01D98F5E7E38B96CBC5CD0973B0CABDFFDE1905 (void);
+// 0x0000005C System.Void Discord.ActivityManager/FFIMethods/AcceptInviteMethod::EndInvoke(System.IAsyncResult)
+extern void AcceptInviteMethod_EndInvoke_mD8D0C45454409411AFDDB61ED6DAC97CF2476DA0 (void);
+// 0x0000005D System.Void Discord.ActivityManager/UpdateActivityHandler::.ctor(System.Object,System.IntPtr)
+extern void UpdateActivityHandler__ctor_m6502F0B7E259454D7C7465826DD5EC5A2BC55334 (void);
+// 0x0000005E System.Void Discord.ActivityManager/UpdateActivityHandler::Invoke(Discord.Result)
+extern void UpdateActivityHandler_Invoke_m6D8EA27B04612C600B000EC59ACB5E8AF79AF1C4 (void);
+// 0x0000005F System.IAsyncResult Discord.ActivityManager/UpdateActivityHandler::BeginInvoke(Discord.Result,System.AsyncCallback,System.Object)
+extern void UpdateActivityHandler_BeginInvoke_m333BE34A55789F6FEAFF60C63E5B088092DA1DFF (void);
+// 0x00000060 System.Void Discord.ActivityManager/UpdateActivityHandler::EndInvoke(System.IAsyncResult)
+extern void UpdateActivityHandler_EndInvoke_m39570EDCE4E897DB2C74EFA77FC7216B1A072D4D (void);
+// 0x00000061 System.Void Discord.ActivityManager/ClearActivityHandler::.ctor(System.Object,System.IntPtr)
+extern void ClearActivityHandler__ctor_m962EDFE8FC3D942BDC498A8FBCBDB722537109A5 (void);
+// 0x00000062 System.Void Discord.ActivityManager/ClearActivityHandler::Invoke(Discord.Result)
+extern void ClearActivityHandler_Invoke_m14E45608C5337A610399C1B9584D6A6D2ACF960C (void);
+// 0x00000063 System.IAsyncResult Discord.ActivityManager/ClearActivityHandler::BeginInvoke(Discord.Result,System.AsyncCallback,System.Object)
+extern void ClearActivityHandler_BeginInvoke_m9F650902B1DB61D9D71DC12A45DC07E038214616 (void);
+// 0x00000064 System.Void Discord.ActivityManager/ClearActivityHandler::EndInvoke(System.IAsyncResult)
+extern void ClearActivityHandler_EndInvoke_mC319BAF102895FF235E7E3DCAFF30D0192C3D42F (void);
+// 0x00000065 System.Void Discord.ActivityManager/SendRequestReplyHandler::.ctor(System.Object,System.IntPtr)
+extern void SendRequestReplyHandler__ctor_m429123D9A3DDA554884594C9FA81CF4242600502 (void);
+// 0x00000066 System.Void Discord.ActivityManager/SendRequestReplyHandler::Invoke(Discord.Result)
+extern void SendRequestReplyHandler_Invoke_mE6F1430793C59FF0520F09D4D701F3F03529E44C (void);
+// 0x00000067 System.IAsyncResult Discord.ActivityManager/SendRequestReplyHandler::BeginInvoke(Discord.Result,System.AsyncCallback,System.Object)
+extern void SendRequestReplyHandler_BeginInvoke_m27251C072C85069DA9585710758AF2427C9553BF (void);
+// 0x00000068 System.Void Discord.ActivityManager/SendRequestReplyHandler::EndInvoke(System.IAsyncResult)
+extern void SendRequestReplyHandler_EndInvoke_mE4BDF5B59EFCC18B89D97C573A5F017D9064F3A3 (void);
+// 0x00000069 System.Void Discord.ActivityManager/SendInviteHandler::.ctor(System.Object,System.IntPtr)
+extern void SendInviteHandler__ctor_m8F11162F38312D3E41BC4E7C9504D6584856BE8F (void);
+// 0x0000006A System.Void Discord.ActivityManager/SendInviteHandler::Invoke(Discord.Result)
+extern void SendInviteHandler_Invoke_mF21A737D05C35B4BF4327329E34EB4A30575D259 (void);
+// 0x0000006B System.IAsyncResult Discord.ActivityManager/SendInviteHandler::BeginInvoke(Discord.Result,System.AsyncCallback,System.Object)
+extern void SendInviteHandler_BeginInvoke_mB045896AA651CF9D723E1C5617BF371502AA0ED0 (void);
+// 0x0000006C System.Void Discord.ActivityManager/SendInviteHandler::EndInvoke(System.IAsyncResult)
+extern void SendInviteHandler_EndInvoke_m70CB589BB6B6E60DF3875EBC8BD1239AE7DEA966 (void);
+// 0x0000006D System.Void Discord.ActivityManager/AcceptInviteHandler::.ctor(System.Object,System.IntPtr)
+extern void AcceptInviteHandler__ctor_m7E10CE8734DD4C1402C8C8923851AC34ACCEA7B1 (void);
+// 0x0000006E System.Void Discord.ActivityManager/AcceptInviteHandler::Invoke(Discord.Result)
+extern void AcceptInviteHandler_Invoke_m62BEB7714EF3E75FD620F57231578100F2695F1B (void);
+// 0x0000006F System.IAsyncResult Discord.ActivityManager/AcceptInviteHandler::BeginInvoke(Discord.Result,System.AsyncCallback,System.Object)
+extern void AcceptInviteHandler_BeginInvoke_m7F342E5546D0542317A5EB511DEEA8B5799CBBF9 (void);
+// 0x00000070 System.Void Discord.ActivityManager/AcceptInviteHandler::EndInvoke(System.IAsyncResult)
+extern void AcceptInviteHandler_EndInvoke_m7C3970462414FC6F6508F8119CB4A2D1F1542B6A (void);
+// 0x00000071 System.Void Discord.ActivityManager/ActivityJoinHandler::.ctor(System.Object,System.IntPtr)
+extern void ActivityJoinHandler__ctor_m1CD628D88B953C6343732396D984DE2E74384557 (void);
+// 0x00000072 System.Void Discord.ActivityManager/ActivityJoinHandler::Invoke(System.String)
+extern void ActivityJoinHandler_Invoke_mC06687530565D5CEAC4224F637FDE1F83D6F155B (void);
+// 0x00000073 System.IAsyncResult Discord.ActivityManager/ActivityJoinHandler::BeginInvoke(System.String,System.AsyncCallback,System.Object)
+extern void ActivityJoinHandler_BeginInvoke_m816F6B64EADA807552388DE762FCEFA238C5080B (void);
+// 0x00000074 System.Void Discord.ActivityManager/ActivityJoinHandler::EndInvoke(System.IAsyncResult)
+extern void ActivityJoinHandler_EndInvoke_m9988808D35ACCE2FFCF1D92F5255CB97B6B4638F (void);
+// 0x00000075 System.Void Discord.ActivityManager/ActivitySpectateHandler::.ctor(System.Object,System.IntPtr)
+extern void ActivitySpectateHandler__ctor_mD539F7ED54D5D584FADFE70C105DD52801E5C551 (void);
+// 0x00000076 System.Void Discord.ActivityManager/ActivitySpectateHandler::Invoke(System.String)
+extern void ActivitySpectateHandler_Invoke_mD98E56175B3F153A90C4A73C0F259EDC97F8CD1E (void);
+// 0x00000077 System.IAsyncResult Discord.ActivityManager/ActivitySpectateHandler::BeginInvoke(System.String,System.AsyncCallback,System.Object)
+extern void ActivitySpectateHandler_BeginInvoke_m24742D5D4F0154C69FEF87D6C2A1F50018F6C7D4 (void);
+// 0x00000078 System.Void Discord.ActivityManager/ActivitySpectateHandler::EndInvoke(System.IAsyncResult)
+extern void ActivitySpectateHandler_EndInvoke_m6FE4A91A9F6F29F8D0A8CB7017E6E28F2702019E (void);
+// 0x00000079 System.Void Discord.ActivityManager/ActivityJoinRequestHandler::.ctor(System.Object,System.IntPtr)
+extern void ActivityJoinRequestHandler__ctor_m3A09E3A8D81EA4176BCFE9E482904FD7D1493A83 (void);
+// 0x0000007A System.Void Discord.ActivityManager/ActivityJoinRequestHandler::Invoke(Discord.User&)
+extern void ActivityJoinRequestHandler_Invoke_m9F9B2CD211D61E8792FD7C70B797558F3D0AC423 (void);
+// 0x0000007B System.IAsyncResult Discord.ActivityManager/ActivityJoinRequestHandler::BeginInvoke(Discord.User&,System.AsyncCallback,System.Object)
+extern void ActivityJoinRequestHandler_BeginInvoke_m53479C9AD1D8FE0D37507D49546BC6AAF0942A29 (void);
+// 0x0000007C System.Void Discord.ActivityManager/ActivityJoinRequestHandler::EndInvoke(Discord.User&,System.IAsyncResult)
+extern void ActivityJoinRequestHandler_EndInvoke_mCB9E40A5337B96057F7DCE30A82EF009015F257C (void);
+// 0x0000007D System.Void Discord.ActivityManager/ActivityInviteHandler::.ctor(System.Object,System.IntPtr)
+extern void ActivityInviteHandler__ctor_m3DFF207B26438D4CAE2529959E7B518A6097C298 (void);
+// 0x0000007E System.Void Discord.ActivityManager/ActivityInviteHandler::Invoke(Discord.ActivityActionType,Discord.User&,Discord.Activity&)
+extern void ActivityInviteHandler_Invoke_mBE9CA245E2188B4C47AB86539D2253114C29B0BF (void);
+// 0x0000007F System.IAsyncResult Discord.ActivityManager/ActivityInviteHandler::BeginInvoke(Discord.ActivityActionType,Discord.User&,Discord.Activity&,System.AsyncCallback,System.Object)
+extern void ActivityInviteHandler_BeginInvoke_mAA3DBA1A6DEE3AAB9108E52EA46A6A6530DCE031 (void);
+// 0x00000080 System.Void Discord.ActivityManager/ActivityInviteHandler::EndInvoke(Discord.User&,Discord.Activity&,System.IAsyncResult)
+extern void ActivityInviteHandler_EndInvoke_m771CE7316DF83E996E0CDF676F3575441892B02D (void);
+// 0x00000081 Discord.ImageHandle Discord.ImageHandle::User(System.Int64)
+extern void ImageHandle_User_mF59A6CAEF009FACC9E38A6CAE260428B9BC701A5 (void);
+// 0x00000082 Discord.ImageHandle Discord.ImageHandle::User(System.Int64,System.UInt32)
+extern void ImageHandle_User_m159982A6E295678A6B6E92E10430EF9E3B9C6FE2 (void);
+// 0x00000083 Discord.LobbyTransaction/FFIMethods Discord.LobbyTransaction::get_Methods()
+extern void LobbyTransaction_get_Methods_m2F781F0CFAE74A7DAF3AE2B729F3D30279DF8EE9 (void);
+// 0x00000084 System.Void Discord.LobbyTransaction::SetType(Discord.LobbyType)
+extern void LobbyTransaction_SetType_m5D230700FFBF3AF54E92A7B47B43023D4A4719DA (void);
+// 0x00000085 System.Void Discord.LobbyTransaction::SetOwner(System.Int64)
+extern void LobbyTransaction_SetOwner_m8FFF44D0FFFB04266651FFECB3B8625D5CEABD50 (void);
+// 0x00000086 System.Void Discord.LobbyTransaction::SetCapacity(System.UInt32)
+extern void LobbyTransaction_SetCapacity_m6BE6875331BA369599C7FB7731C63E3D872A3BA8 (void);
+// 0x00000087 System.Void Discord.LobbyTransaction::SetMetadata(System.String,System.String)
+extern void LobbyTransaction_SetMetadata_mBAC7C7984CFB4E2337ED9DF1427C6D6112B0F7EA (void);
+// 0x00000088 System.Void Discord.LobbyTransaction::DeleteMetadata(System.String)
+extern void LobbyTransaction_DeleteMetadata_mE26075EAC91E4A3CD5577D2852AEC2EA5472772F (void);
+// 0x00000089 System.Void Discord.LobbyTransaction::SetLocked(System.Boolean)
+extern void LobbyTransaction_SetLocked_m790AFC92AD9FA4EF17B7C01298531ED259D84E69 (void);
+// 0x0000008A System.Void Discord.LobbyTransaction/FFIMethods/SetTypeMethod::.ctor(System.Object,System.IntPtr)
+extern void SetTypeMethod__ctor_mA1E19F230BCDCEE7999C1003157D3F6DA9DF558E (void);
+// 0x0000008B Discord.Result Discord.LobbyTransaction/FFIMethods/SetTypeMethod::Invoke(System.IntPtr,Discord.LobbyType)
+extern void SetTypeMethod_Invoke_m097A4CB413415C351132692B5027CAA36FAF0AD0 (void);
+// 0x0000008C System.IAsyncResult Discord.LobbyTransaction/FFIMethods/SetTypeMethod::BeginInvoke(System.IntPtr,Discord.LobbyType,System.AsyncCallback,System.Object)
+extern void SetTypeMethod_BeginInvoke_mA43592674C568A7BB99B0E7627E61F3EE77C963B (void);
+// 0x0000008D Discord.Result Discord.LobbyTransaction/FFIMethods/SetTypeMethod::EndInvoke(System.IAsyncResult)
+extern void SetTypeMethod_EndInvoke_mABC59B4D3060D0E128DC0C0F931E5A09D5EC16B0 (void);
+// 0x0000008E System.Void Discord.LobbyTransaction/FFIMethods/SetOwnerMethod::.ctor(System.Object,System.IntPtr)
+extern void SetOwnerMethod__ctor_m5C3BAACFE924C1E0B12F6025B55D88B1BB731884 (void);
+// 0x0000008F Discord.Result Discord.LobbyTransaction/FFIMethods/SetOwnerMethod::Invoke(System.IntPtr,System.Int64)
+extern void SetOwnerMethod_Invoke_m9C11C97D1DD03AD924A84ECE845EA1A1AE7D80F6 (void);
+// 0x00000090 System.IAsyncResult Discord.LobbyTransaction/FFIMethods/SetOwnerMethod::BeginInvoke(System.IntPtr,System.Int64,System.AsyncCallback,System.Object)
+extern void SetOwnerMethod_BeginInvoke_m7090BBBC57C2DB87634E2DD2C545D63B51A98621 (void);
+// 0x00000091 Discord.Result Discord.LobbyTransaction/FFIMethods/SetOwnerMethod::EndInvoke(System.IAsyncResult)
+extern void SetOwnerMethod_EndInvoke_m6FBD4E214F0EB0244EFE7083E4D7E4738B565122 (void);
+// 0x00000092 System.Void Discord.LobbyTransaction/FFIMethods/SetCapacityMethod::.ctor(System.Object,System.IntPtr)
+extern void SetCapacityMethod__ctor_mFB6519CA2013CD63B4A43A059E57E51BD7867D58 (void);
+// 0x00000093 Discord.Result Discord.LobbyTransaction/FFIMethods/SetCapacityMethod::Invoke(System.IntPtr,System.UInt32)
+extern void SetCapacityMethod_Invoke_m4EA27B8AFAC845C3CDB5E44A2A3AAE0A9AFDB299 (void);
+// 0x00000094 System.IAsyncResult Discord.LobbyTransaction/FFIMethods/SetCapacityMethod::BeginInvoke(System.IntPtr,System.UInt32,System.AsyncCallback,System.Object)
+extern void SetCapacityMethod_BeginInvoke_m70A6302168B836B6A04EC9875E87701A35DCEE76 (void);
+// 0x00000095 Discord.Result Discord.LobbyTransaction/FFIMethods/SetCapacityMethod::EndInvoke(System.IAsyncResult)
+extern void SetCapacityMethod_EndInvoke_m82D6ED48625897919EA98791379DE127519BAB5F (void);
+// 0x00000096 System.Void Discord.LobbyTransaction/FFIMethods/SetMetadataMethod::.ctor(System.Object,System.IntPtr)
+extern void SetMetadataMethod__ctor_m031AE0D900E074E1BFA7FDAFDBD0102606DA267D (void);
+// 0x00000097 Discord.Result Discord.LobbyTransaction/FFIMethods/SetMetadataMethod::Invoke(System.IntPtr,System.String,System.String)
+extern void SetMetadataMethod_Invoke_mB2074518D054718B21017A5CBBADF9094144CBF7 (void);
+// 0x00000098 System.IAsyncResult Discord.LobbyTransaction/FFIMethods/SetMetadataMethod::BeginInvoke(System.IntPtr,System.String,System.String,System.AsyncCallback,System.Object)
+extern void SetMetadataMethod_BeginInvoke_m2EAA2CE979E7DD90BBEDA60B3D397EA03B3BBCE0 (void);
+// 0x00000099 Discord.Result Discord.LobbyTransaction/FFIMethods/SetMetadataMethod::EndInvoke(System.IAsyncResult)
+extern void SetMetadataMethod_EndInvoke_m661BF90EDC7EE6CFED4CE482FBEE9EB4B81694E9 (void);
+// 0x0000009A System.Void Discord.LobbyTransaction/FFIMethods/DeleteMetadataMethod::.ctor(System.Object,System.IntPtr)
+extern void DeleteMetadataMethod__ctor_m8280DC4F3D4FDE14EA1FEB4F37683B3DE10CB827 (void);
+// 0x0000009B Discord.Result Discord.LobbyTransaction/FFIMethods/DeleteMetadataMethod::Invoke(System.IntPtr,System.String)
+extern void DeleteMetadataMethod_Invoke_m7D4D14CE412C55BD36228099633A7063652F8D29 (void);
+// 0x0000009C System.IAsyncResult Discord.LobbyTransaction/FFIMethods/DeleteMetadataMethod::BeginInvoke(System.IntPtr,System.String,System.AsyncCallback,System.Object)
+extern void DeleteMetadataMethod_BeginInvoke_mF3FEE26CB937D459AE784596EDC58B8C03C90232 (void);
+// 0x0000009D Discord.Result Discord.LobbyTransaction/FFIMethods/DeleteMetadataMethod::EndInvoke(System.IAsyncResult)
+extern void DeleteMetadataMethod_EndInvoke_m8E313091A3D0D16147088297598F44E920689B55 (void);
+// 0x0000009E System.Void Discord.LobbyTransaction/FFIMethods/SetLockedMethod::.ctor(System.Object,System.IntPtr)
+extern void SetLockedMethod__ctor_mF930EC6E5C4E9DA44E6B9975B5DA30257FFC3B10 (void);
+// 0x0000009F Discord.Result Discord.LobbyTransaction/FFIMethods/SetLockedMethod::Invoke(System.IntPtr,System.Boolean)
+extern void SetLockedMethod_Invoke_mC1A33917FF9543851D6C8FCA5E3B736A8FA658C1 (void);
+// 0x000000A0 System.IAsyncResult Discord.LobbyTransaction/FFIMethods/SetLockedMethod::BeginInvoke(System.IntPtr,System.Boolean,System.AsyncCallback,System.Object)
+extern void SetLockedMethod_BeginInvoke_m66F3554540F53238C85483E056B1E86018C797AE (void);
+// 0x000000A1 Discord.Result Discord.LobbyTransaction/FFIMethods/SetLockedMethod::EndInvoke(System.IAsyncResult)
+extern void SetLockedMethod_EndInvoke_m9B7733EEE2DAD9A0246DBDEBA3FD41FE6FE80C6C (void);
+// 0x000000A2 Discord.LobbyMemberTransaction/FFIMethods Discord.LobbyMemberTransaction::get_Methods()
+extern void LobbyMemberTransaction_get_Methods_m9569D2952B81674F554A8E5FA3E9A2714D57D3C9 (void);
+// 0x000000A3 System.Void Discord.LobbyMemberTransaction::SetMetadata(System.String,System.String)
+extern void LobbyMemberTransaction_SetMetadata_mAD66861706D7886C0E2DFCD4829F1CF966DAB1ED (void);
+// 0x000000A4 System.Void Discord.LobbyMemberTransaction::DeleteMetadata(System.String)
+extern void LobbyMemberTransaction_DeleteMetadata_m50E273AFEE95D21BCEB1C6E678B3C00DE9F503C6 (void);
+// 0x000000A5 System.Void Discord.LobbyMemberTransaction/FFIMethods/SetMetadataMethod::.ctor(System.Object,System.IntPtr)
+extern void SetMetadataMethod__ctor_m7428C12171E8FCFBEFC809587CE90C7885CCD8E3 (void);
+// 0x000000A6 Discord.Result Discord.LobbyMemberTransaction/FFIMethods/SetMetadataMethod::Invoke(System.IntPtr,System.String,System.String)
+extern void SetMetadataMethod_Invoke_mC7BC76D308AC8DA8D08155B09261F808A301876D (void);
+// 0x000000A7 System.IAsyncResult Discord.LobbyMemberTransaction/FFIMethods/SetMetadataMethod::BeginInvoke(System.IntPtr,System.String,System.String,System.AsyncCallback,System.Object)
+extern void SetMetadataMethod_BeginInvoke_mE718E58B82D9100CF9A22641D372A232EC60BB4B (void);
+// 0x000000A8 Discord.Result Discord.LobbyMemberTransaction/FFIMethods/SetMetadataMethod::EndInvoke(System.IAsyncResult)
+extern void SetMetadataMethod_EndInvoke_m6D40BCB994A19110A94FAADFBE76A5D86A2BF318 (void);
+// 0x000000A9 System.Void Discord.LobbyMemberTransaction/FFIMethods/DeleteMetadataMethod::.ctor(System.Object,System.IntPtr)
+extern void DeleteMetadataMethod__ctor_m43232B25735CAF05813ABAE1627EAFE45AD3067F (void);
+// 0x000000AA Discord.Result Discord.LobbyMemberTransaction/FFIMethods/DeleteMetadataMethod::Invoke(System.IntPtr,System.String)
+extern void DeleteMetadataMethod_Invoke_m9D2B5A344D310AAD8883D242A6A59789386C85C1 (void);
+// 0x000000AB System.IAsyncResult Discord.LobbyMemberTransaction/FFIMethods/DeleteMetadataMethod::BeginInvoke(System.IntPtr,System.String,System.AsyncCallback,System.Object)
+extern void DeleteMetadataMethod_BeginInvoke_m985024FDDA716E79F5ECB36761F5FE17A799E50A (void);
+// 0x000000AC Discord.Result Discord.LobbyMemberTransaction/FFIMethods/DeleteMetadataMethod::EndInvoke(System.IAsyncResult)
+extern void DeleteMetadataMethod_EndInvoke_mBF0858DA5F082C89FD830A11F9FBB6594474BE2F (void);
+// 0x000000AD Discord.LobbySearchQuery/FFIMethods Discord.LobbySearchQuery::get_Methods()
+extern void LobbySearchQuery_get_Methods_mD8E169C5F756975506EE6A1085DB650C1A59717E (void);
+// 0x000000AE System.Void Discord.LobbySearchQuery::Filter(System.String,Discord.LobbySearchComparison,Discord.LobbySearchCast,System.String)
+extern void LobbySearchQuery_Filter_mA61176224736F8C07864BC9304FB01EEB5661ED7 (void);
+// 0x000000AF System.Void Discord.LobbySearchQuery::Sort(System.String,Discord.LobbySearchCast,System.String)
+extern void LobbySearchQuery_Sort_mDD17E27E199456CCA7965BE75A5CA1FD88F3EEBC (void);
+// 0x000000B0 System.Void Discord.LobbySearchQuery::Limit(System.UInt32)
+extern void LobbySearchQuery_Limit_m1402E2FFB97B9E397C88F54DFF59C8599E12889F (void);
+// 0x000000B1 System.Void Discord.LobbySearchQuery::Distance(Discord.LobbySearchDistance)
+extern void LobbySearchQuery_Distance_m4C0D5EE78262E01A5D9ADD8F8CF2CB69727EF034 (void);
+// 0x000000B2 System.Void Discord.LobbySearchQuery/FFIMethods/FilterMethod::.ctor(System.Object,System.IntPtr)
+extern void FilterMethod__ctor_m62EF527A9B3676A6E600715ACBFA949AD3BBB8BC (void);
+// 0x000000B3 Discord.Result Discord.LobbySearchQuery/FFIMethods/FilterMethod::Invoke(System.IntPtr,System.String,Discord.LobbySearchComparison,Discord.LobbySearchCast,System.String)
+extern void FilterMethod_Invoke_m80873C84F957A7660AAA47FF4E1C475AAC60A670 (void);
+// 0x000000B4 System.IAsyncResult Discord.LobbySearchQuery/FFIMethods/FilterMethod::BeginInvoke(System.IntPtr,System.String,Discord.LobbySearchComparison,Discord.LobbySearchCast,System.String,System.AsyncCallback,System.Object)
+extern void FilterMethod_BeginInvoke_m7CF436DF73D9948F961728F0717F51B2E25825AA (void);
+// 0x000000B5 Discord.Result Discord.LobbySearchQuery/FFIMethods/FilterMethod::EndInvoke(System.IAsyncResult)
+extern void FilterMethod_EndInvoke_mEB6610C0620520FEA06D071FDD68970369C57EE7 (void);
+// 0x000000B6 System.Void Discord.LobbySearchQuery/FFIMethods/SortMethod::.ctor(System.Object,System.IntPtr)
+extern void SortMethod__ctor_m07E4CE4BD8123E807A4E4F1EE28FCB6EF370CEAF (void);
+// 0x000000B7 Discord.Result Discord.LobbySearchQuery/FFIMethods/SortMethod::Invoke(System.IntPtr,System.String,Discord.LobbySearchCast,System.String)
+extern void SortMethod_Invoke_m7152056E57AF16A3BE3B27655B4A226EE68E6177 (void);
+// 0x000000B8 System.IAsyncResult Discord.LobbySearchQuery/FFIMethods/SortMethod::BeginInvoke(System.IntPtr,System.String,Discord.LobbySearchCast,System.String,System.AsyncCallback,System.Object)
+extern void SortMethod_BeginInvoke_m61C369126B15A537ABE77566E24492C87E4DA546 (void);
+// 0x000000B9 Discord.Result Discord.LobbySearchQuery/FFIMethods/SortMethod::EndInvoke(System.IAsyncResult)
+extern void SortMethod_EndInvoke_mE3D24659AB925B20C31F9E092B470452CCD6AE8E (void);
+// 0x000000BA System.Void Discord.LobbySearchQuery/FFIMethods/LimitMethod::.ctor(System.Object,System.IntPtr)
+extern void LimitMethod__ctor_m6FDF05C37136F7CC93B270E9F30D83E02CD29719 (void);
+// 0x000000BB Discord.Result Discord.LobbySearchQuery/FFIMethods/LimitMethod::Invoke(System.IntPtr,System.UInt32)
+extern void LimitMethod_Invoke_m62CEE1D0B67475772EB5AE36BDC3D3F2FE325542 (void);
+// 0x000000BC System.IAsyncResult Discord.LobbySearchQuery/FFIMethods/LimitMethod::BeginInvoke(System.IntPtr,System.UInt32,System.AsyncCallback,System.Object)
+extern void LimitMethod_BeginInvoke_m29DA128B099787634D3BE744CE20172FA0B43664 (void);
+// 0x000000BD Discord.Result Discord.LobbySearchQuery/FFIMethods/LimitMethod::EndInvoke(System.IAsyncResult)
+extern void LimitMethod_EndInvoke_m76CC194DF70FF507BF8B3477989C576D83BE104E (void);
+// 0x000000BE System.Void Discord.LobbySearchQuery/FFIMethods/DistanceMethod::.ctor(System.Object,System.IntPtr)
+extern void DistanceMethod__ctor_m297FDC895A7FEDCF9552BC0FF4090C1947491DB1 (void);
+// 0x000000BF Discord.Result Discord.LobbySearchQuery/FFIMethods/DistanceMethod::Invoke(System.IntPtr,Discord.LobbySearchDistance)
+extern void DistanceMethod_Invoke_mA9039298C28896D58F8F5970750374D416BAFF03 (void);
+// 0x000000C0 System.IAsyncResult Discord.LobbySearchQuery/FFIMethods/DistanceMethod::BeginInvoke(System.IntPtr,Discord.LobbySearchDistance,System.AsyncCallback,System.Object)
+extern void DistanceMethod_BeginInvoke_m295884F1C396EF6B6CF2E740045DE146C2B97483 (void);
+// 0x000000C1 Discord.Result Discord.LobbySearchQuery/FFIMethods/DistanceMethod::EndInvoke(System.IAsyncResult)
+extern void DistanceMethod_EndInvoke_m6C37E786A17CA0A7AEEB72C1E9E3FC741F54E828 (void);
+// 0x000000C2 System.Void Discord.ResultException::.ctor(Discord.Result)
+extern void ResultException__ctor_m65C23AA5843E70955ECF5EDA7FF914E417A3B308 (void);
+// 0x000000C3 Discord.Result Discord.Discord::DiscordCreate(System.UInt32,Discord.Discord/FFICreateParams&,System.IntPtr&)
+extern void Discord_DiscordCreate_m0C6412168EEE9DCAF9CDE9A41CC955159F0AA73B (void);
+// 0x000000C4 Discord.Discord/FFIMethods Discord.Discord::get_Methods()
+extern void Discord_get_Methods_mEAD35CAD95B5ECF77C050D3D2ADA546522F9081A (void);
+// 0x000000C5 System.Void Discord.Discord::.ctor(System.Int64,System.UInt64)
+extern void Discord__ctor_m30D4843471D4FA099217005AAEA73B186FE6FF00 (void);
+// 0x000000C6 System.Void Discord.Discord::InitEvents(System.IntPtr,Discord.Discord/FFIEvents&)
+extern void Discord_InitEvents_m2E25F4C167F88C2B0D1430E09D8168FA6D2C7A24 (void);
+// 0x000000C7 System.Void Discord.Discord::Dispose()
+extern void Discord_Dispose_m660389C10FEBC51343127159D12102781144B947 (void);
+// 0x000000C8 System.Void Discord.Discord::RunCallbacks()
+extern void Discord_RunCallbacks_m2B9D1F027E70BAE3EE65A92A7D6267A2EA0AFBAC (void);
+// 0x000000C9 System.Void Discord.Discord::SetLogHookCallbackImpl(System.IntPtr,Discord.LogLevel,System.String)
+extern void Discord_SetLogHookCallbackImpl_mCC52A5E4BA9BA1EF2401FD2D7507992418ED6BA3 (void);
+// 0x000000CA System.Void Discord.Discord::SetLogHook(Discord.LogLevel,Discord.Discord/SetLogHookHandler)
+extern void Discord_SetLogHook_mB129E153C99C347CB7B62AAFD86EBE50EC0037DF (void);
+// 0x000000CB Discord.ApplicationManager Discord.Discord::GetApplicationManager()
+extern void Discord_GetApplicationManager_mAE7EADC4390ED3F441820BD9BB726418E832CEE2 (void);
+// 0x000000CC Discord.UserManager Discord.Discord::GetUserManager()
+extern void Discord_GetUserManager_m2377422BE0760107D46DEAE743E2C69C0984D040 (void);
+// 0x000000CD Discord.ImageManager Discord.Discord::GetImageManager()
+extern void Discord_GetImageManager_m84FF89ED1157E60AFEAF319161DE876BD7612216 (void);
+// 0x000000CE Discord.ActivityManager Discord.Discord::GetActivityManager()
+extern void Discord_GetActivityManager_m0C6511A1D7B4E9328F11608BFFF8C00D87BC5922 (void);
+// 0x000000CF Discord.RelationshipManager Discord.Discord::GetRelationshipManager()
+extern void Discord_GetRelationshipManager_mBC0AEDE44A33D6B757C288289F7B78E4B42D10C9 (void);
+// 0x000000D0 Discord.LobbyManager Discord.Discord::GetLobbyManager()
+extern void Discord_GetLobbyManager_m28378D0C9640DB43C1767A4C11882F8B2FECF662 (void);
+// 0x000000D1 Discord.NetworkManager Discord.Discord::GetNetworkManager()
+extern void Discord_GetNetworkManager_mFE091466F59B285960646B4ACAFF4BB663A0E47E (void);
+// 0x000000D2 Discord.OverlayManager Discord.Discord::GetOverlayManager()
+extern void Discord_GetOverlayManager_m48C256A791391B427E432F98FA144BEFC4671C91 (void);
+// 0x000000D3 Discord.StorageManager Discord.Discord::GetStorageManager()
+extern void Discord_GetStorageManager_mE5E7E483100AA562740B50707E950CA1355D065E (void);
+// 0x000000D4 Discord.StoreManager Discord.Discord::GetStoreManager()
+extern void Discord_GetStoreManager_mF69C4452F3D5DC48889F7F0922150993747FE40B (void);
+// 0x000000D5 Discord.VoiceManager Discord.Discord::GetVoiceManager()
+extern void Discord_GetVoiceManager_mACE02C26E305F847A32F6843D406AA66B525FDCF (void);
+// 0x000000D6 Discord.AchievementManager Discord.Discord::GetAchievementManager()
+extern void Discord_GetAchievementManager_mC8A23250C6A69FAB900643BE70DDDF33C84F04B6 (void);
+// 0x000000D7 System.Void Discord.Discord/FFIMethods/DestroyHandler::.ctor(System.Object,System.IntPtr)
+extern void DestroyHandler__ctor_m7DFA86ABACB61F9EC324F956B5CB9454C1FBAEE7 (void);
+// 0x000000D8 System.Void Discord.Discord/FFIMethods/DestroyHandler::Invoke(System.IntPtr)
+extern void DestroyHandler_Invoke_m5CE3DA622F18B66B3CC1C0CE46BC5ECE669DCA43 (void);
+// 0x000000D9 System.IAsyncResult Discord.Discord/FFIMethods/DestroyHandler::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void DestroyHandler_BeginInvoke_m36AD4C76B42DB7BED1F29840CE15CB5EB8359366 (void);
+// 0x000000DA System.Void Discord.Discord/FFIMethods/DestroyHandler::EndInvoke(System.IAsyncResult)
+extern void DestroyHandler_EndInvoke_m8528894CB30521C563916C333AB1150F81DEE012 (void);
+// 0x000000DB System.Void Discord.Discord/FFIMethods/RunCallbacksMethod::.ctor(System.Object,System.IntPtr)
+extern void RunCallbacksMethod__ctor_mF4CA791D06BE9E28A3513C83FBF5D988732973FC (void);
+// 0x000000DC Discord.Result Discord.Discord/FFIMethods/RunCallbacksMethod::Invoke(System.IntPtr)
+extern void RunCallbacksMethod_Invoke_m0472D851BE73F289A79227E4EC6DAAF0E250EF53 (void);
+// 0x000000DD System.IAsyncResult Discord.Discord/FFIMethods/RunCallbacksMethod::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void RunCallbacksMethod_BeginInvoke_m700AB297488AB42F6E49DAF8BC49B3C0B50836C2 (void);
+// 0x000000DE Discord.Result Discord.Discord/FFIMethods/RunCallbacksMethod::EndInvoke(System.IAsyncResult)
+extern void RunCallbacksMethod_EndInvoke_m58A3D71E46BC50819B84FC1C18128E8286C2921E (void);
+// 0x000000DF System.Void Discord.Discord/FFIMethods/SetLogHookCallback::.ctor(System.Object,System.IntPtr)
+extern void SetLogHookCallback__ctor_m721A4EE3E73926232E36E895A30D531EECA6109E (void);
+// 0x000000E0 System.Void Discord.Discord/FFIMethods/SetLogHookCallback::Invoke(System.IntPtr,Discord.LogLevel,System.String)
+extern void SetLogHookCallback_Invoke_m6EC753FC95BEC23105AE4F8D448538CBE1FDDF2D (void);
+// 0x000000E1 System.IAsyncResult Discord.Discord/FFIMethods/SetLogHookCallback::BeginInvoke(System.IntPtr,Discord.LogLevel,System.String,System.AsyncCallback,System.Object)
+extern void SetLogHookCallback_BeginInvoke_m9A09D61723685E4028FDC0E89BDBD238442A2343 (void);
+// 0x000000E2 System.Void Discord.Discord/FFIMethods/SetLogHookCallback::EndInvoke(System.IAsyncResult)
+extern void SetLogHookCallback_EndInvoke_m10F2F4CC664AC996778FC30681DFC82DEB1E4834 (void);
+// 0x000000E3 System.Void Discord.Discord/FFIMethods/SetLogHookMethod::.ctor(System.Object,System.IntPtr)
+extern void SetLogHookMethod__ctor_m8BD6166A3DDF6337FF46940CD28859B974BB7EF6 (void);
+// 0x000000E4 System.Void Discord.Discord/FFIMethods/SetLogHookMethod::Invoke(System.IntPtr,Discord.LogLevel,System.IntPtr,Discord.Discord/FFIMethods/SetLogHookCallback)
+extern void SetLogHookMethod_Invoke_mE50092BB5F899D0336FF79A2416F4D13976A5C99 (void);
+// 0x000000E5 System.IAsyncResult Discord.Discord/FFIMethods/SetLogHookMethod::BeginInvoke(System.IntPtr,Discord.LogLevel,System.IntPtr,Discord.Discord/FFIMethods/SetLogHookCallback,System.AsyncCallback,System.Object)
+extern void SetLogHookMethod_BeginInvoke_mDCC54FC91156CBEA8C7DA886B4B501153E525C83 (void);
+// 0x000000E6 System.Void Discord.Discord/FFIMethods/SetLogHookMethod::EndInvoke(System.IAsyncResult)
+extern void SetLogHookMethod_EndInvoke_m8443050C62D450AE70C025F8E62DA4157DB275A5 (void);
+// 0x000000E7 System.Void Discord.Discord/FFIMethods/GetApplicationManagerMethod::.ctor(System.Object,System.IntPtr)
+extern void GetApplicationManagerMethod__ctor_m5D6BC4C5B69E1E664CA7C89E6A635A01EC67605C (void);
+// 0x000000E8 System.IntPtr Discord.Discord/FFIMethods/GetApplicationManagerMethod::Invoke(System.IntPtr)
+extern void GetApplicationManagerMethod_Invoke_m4C52171A6642B5A0F56870FAD6B9D7697A8E578B (void);
+// 0x000000E9 System.IAsyncResult Discord.Discord/FFIMethods/GetApplicationManagerMethod::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GetApplicationManagerMethod_BeginInvoke_mC538E10653D1E9EF5F8986A8D23AD382505FB8A5 (void);
+// 0x000000EA System.IntPtr Discord.Discord/FFIMethods/GetApplicationManagerMethod::EndInvoke(System.IAsyncResult)
+extern void GetApplicationManagerMethod_EndInvoke_mD8F0443D6F03176258AF8C1BF580E0F4E80BAC8E (void);
+// 0x000000EB System.Void Discord.Discord/FFIMethods/GetUserManagerMethod::.ctor(System.Object,System.IntPtr)
+extern void GetUserManagerMethod__ctor_m7E7B928FB01A7960426975FF56B5B62E2DD96444 (void);
+// 0x000000EC System.IntPtr Discord.Discord/FFIMethods/GetUserManagerMethod::Invoke(System.IntPtr)
+extern void GetUserManagerMethod_Invoke_mA874C4BD79CF32EF80846156BF1C0247BE82E620 (void);
+// 0x000000ED System.IAsyncResult Discord.Discord/FFIMethods/GetUserManagerMethod::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GetUserManagerMethod_BeginInvoke_mFFAA2214010997FEEB3111659329B135D8D3DFBF (void);
+// 0x000000EE System.IntPtr Discord.Discord/FFIMethods/GetUserManagerMethod::EndInvoke(System.IAsyncResult)
+extern void GetUserManagerMethod_EndInvoke_mD66278B8E4103CA03E06C5AC1771D69C687773DA (void);
+// 0x000000EF System.Void Discord.Discord/FFIMethods/GetImageManagerMethod::.ctor(System.Object,System.IntPtr)
+extern void GetImageManagerMethod__ctor_mD658C66205C8FEF27B07F257756A145A8AF07CEC (void);
+// 0x000000F0 System.IntPtr Discord.Discord/FFIMethods/GetImageManagerMethod::Invoke(System.IntPtr)
+extern void GetImageManagerMethod_Invoke_mA46931B0BCB811F1A1A1D370186BFEAB9001AAE8 (void);
+// 0x000000F1 System.IAsyncResult Discord.Discord/FFIMethods/GetImageManagerMethod::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GetImageManagerMethod_BeginInvoke_m5CA629FC8C34AA8C10B980F56AE671F5E1D6CA0E (void);
+// 0x000000F2 System.IntPtr Discord.Discord/FFIMethods/GetImageManagerMethod::EndInvoke(System.IAsyncResult)
+extern void GetImageManagerMethod_EndInvoke_m3FC9AC49A7167F7FD565365053B9021F6EA02768 (void);
+// 0x000000F3 System.Void Discord.Discord/FFIMethods/GetActivityManagerMethod::.ctor(System.Object,System.IntPtr)
+extern void GetActivityManagerMethod__ctor_mC3A362E78C407DBB86A1C04A5A85AC00552061D9 (void);
+// 0x000000F4 System.IntPtr Discord.Discord/FFIMethods/GetActivityManagerMethod::Invoke(System.IntPtr)
+extern void GetActivityManagerMethod_Invoke_m157CC09A1C9093F72615B3E369878241589A9147 (void);
+// 0x000000F5 System.IAsyncResult Discord.Discord/FFIMethods/GetActivityManagerMethod::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GetActivityManagerMethod_BeginInvoke_m787C89D955267B08592A42B0BC706CD3E8D2D8F6 (void);
+// 0x000000F6 System.IntPtr Discord.Discord/FFIMethods/GetActivityManagerMethod::EndInvoke(System.IAsyncResult)
+extern void GetActivityManagerMethod_EndInvoke_mC1F5CF526965CF3C086E103AA1B2DDE812B394CC (void);
+// 0x000000F7 System.Void Discord.Discord/FFIMethods/GetRelationshipManagerMethod::.ctor(System.Object,System.IntPtr)
+extern void GetRelationshipManagerMethod__ctor_m466AB3EBB51793E0F33A9A6A274DC272C35EC029 (void);
+// 0x000000F8 System.IntPtr Discord.Discord/FFIMethods/GetRelationshipManagerMethod::Invoke(System.IntPtr)
+extern void GetRelationshipManagerMethod_Invoke_mE66DD29C8A3FD35EBB998348EBF6BCD49C618E73 (void);
+// 0x000000F9 System.IAsyncResult Discord.Discord/FFIMethods/GetRelationshipManagerMethod::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GetRelationshipManagerMethod_BeginInvoke_m3FD8BB4B24CDB4D27FEC7069B8218F7E5DA87CE5 (void);
+// 0x000000FA System.IntPtr Discord.Discord/FFIMethods/GetRelationshipManagerMethod::EndInvoke(System.IAsyncResult)
+extern void GetRelationshipManagerMethod_EndInvoke_m919E8C89CF1AA9ADE6B1081AFCE19F3E2BAC0DF2 (void);
+// 0x000000FB System.Void Discord.Discord/FFIMethods/GetLobbyManagerMethod::.ctor(System.Object,System.IntPtr)
+extern void GetLobbyManagerMethod__ctor_mE1DE92E796D4E8D4EE86D6C1C7D1F847EF2C4366 (void);
+// 0x000000FC System.IntPtr Discord.Discord/FFIMethods/GetLobbyManagerMethod::Invoke(System.IntPtr)
+extern void GetLobbyManagerMethod_Invoke_mF27483A55A24F8AA2AC4C8D031BA1AA1F259791A (void);
+// 0x000000FD System.IAsyncResult Discord.Discord/FFIMethods/GetLobbyManagerMethod::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GetLobbyManagerMethod_BeginInvoke_m26EB3A71B0E7A26A9F8860CC42C19135966AA0AC (void);
+// 0x000000FE System.IntPtr Discord.Discord/FFIMethods/GetLobbyManagerMethod::EndInvoke(System.IAsyncResult)
+extern void GetLobbyManagerMethod_EndInvoke_mB36F81E3860F5C4CB7CF02BB16218CC479207F30 (void);
+// 0x000000FF System.Void Discord.Discord/FFIMethods/GetNetworkManagerMethod::.ctor(System.Object,System.IntPtr)
+extern void GetNetworkManagerMethod__ctor_mEB858C19006627A1527CFB2A306D6213C9E6B791 (void);
+// 0x00000100 System.IntPtr Discord.Discord/FFIMethods/GetNetworkManagerMethod::Invoke(System.IntPtr)
+extern void GetNetworkManagerMethod_Invoke_m0A13538DB152AC380CDBC830E3706177574A4736 (void);
+// 0x00000101 System.IAsyncResult Discord.Discord/FFIMethods/GetNetworkManagerMethod::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GetNetworkManagerMethod_BeginInvoke_mD94E31C86C32541AD874D5857715F5B67429B1CF (void);
+// 0x00000102 System.IntPtr Discord.Discord/FFIMethods/GetNetworkManagerMethod::EndInvoke(System.IAsyncResult)
+extern void GetNetworkManagerMethod_EndInvoke_m96D13861D325E4DA4983D634035140C14C6A0D47 (void);
+// 0x00000103 System.Void Discord.Discord/FFIMethods/GetOverlayManagerMethod::.ctor(System.Object,System.IntPtr)
+extern void GetOverlayManagerMethod__ctor_m3A2EA7DC9E12B2D27424475B5E27DC8FCDE9AD50 (void);
+// 0x00000104 System.IntPtr Discord.Discord/FFIMethods/GetOverlayManagerMethod::Invoke(System.IntPtr)
+extern void GetOverlayManagerMethod_Invoke_m78EB4924E18492A1853375F3460CBFBDBFD775BF (void);
+// 0x00000105 System.IAsyncResult Discord.Discord/FFIMethods/GetOverlayManagerMethod::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GetOverlayManagerMethod_BeginInvoke_m2D56B6E7D764F8B864C2510125A9114F30304F35 (void);
+// 0x00000106 System.IntPtr Discord.Discord/FFIMethods/GetOverlayManagerMethod::EndInvoke(System.IAsyncResult)
+extern void GetOverlayManagerMethod_EndInvoke_m62822555D20EFE1A68D139236333E37950AA0C02 (void);
+// 0x00000107 System.Void Discord.Discord/FFIMethods/GetStorageManagerMethod::.ctor(System.Object,System.IntPtr)
+extern void GetStorageManagerMethod__ctor_m428854990F4A3F580D89E028A3E369FF735B8F23 (void);
+// 0x00000108 System.IntPtr Discord.Discord/FFIMethods/GetStorageManagerMethod::Invoke(System.IntPtr)
+extern void GetStorageManagerMethod_Invoke_m140B0AFAB5F40D1171902D0AC8C8B4D8C8219FD4 (void);
+// 0x00000109 System.IAsyncResult Discord.Discord/FFIMethods/GetStorageManagerMethod::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GetStorageManagerMethod_BeginInvoke_m02BA8C7021CE6BC09F18ADFDB6B3484D1716516A (void);
+// 0x0000010A System.IntPtr Discord.Discord/FFIMethods/GetStorageManagerMethod::EndInvoke(System.IAsyncResult)
+extern void GetStorageManagerMethod_EndInvoke_m296B8E0CB327A978404E82CECEF419ACAFD6E1DF (void);
+// 0x0000010B System.Void Discord.Discord/FFIMethods/GetStoreManagerMethod::.ctor(System.Object,System.IntPtr)
+extern void GetStoreManagerMethod__ctor_mBF14068687F0EFA620D581BABDB88FADDD1A5CEB (void);
+// 0x0000010C System.IntPtr Discord.Discord/FFIMethods/GetStoreManagerMethod::Invoke(System.IntPtr)
+extern void GetStoreManagerMethod_Invoke_mE8C9A6268F4BA12D38AC829AE196B159A8C53727 (void);
+// 0x0000010D System.IAsyncResult Discord.Discord/FFIMethods/GetStoreManagerMethod::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GetStoreManagerMethod_BeginInvoke_mDA936A48B8E547E417E26F8D8C89B63A4B737B8E (void);
+// 0x0000010E System.IntPtr Discord.Discord/FFIMethods/GetStoreManagerMethod::EndInvoke(System.IAsyncResult)
+extern void GetStoreManagerMethod_EndInvoke_m19CD09BD2DFB7D8B3C1B6B468B44FF04C3747E4B (void);
+// 0x0000010F System.Void Discord.Discord/FFIMethods/GetVoiceManagerMethod::.ctor(System.Object,System.IntPtr)
+extern void GetVoiceManagerMethod__ctor_m6A656F642F67F69A46FCF57B47022C24B6EA3ABF (void);
+// 0x00000110 System.IntPtr Discord.Discord/FFIMethods/GetVoiceManagerMethod::Invoke(System.IntPtr)
+extern void GetVoiceManagerMethod_Invoke_m6DEED2667594F453FEDF7E36074B3594188083E9 (void);
+// 0x00000111 System.IAsyncResult Discord.Discord/FFIMethods/GetVoiceManagerMethod::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GetVoiceManagerMethod_BeginInvoke_mA7ED6EC7580BD143841D74C1003A35EDF74123FC (void);
+// 0x00000112 System.IntPtr Discord.Discord/FFIMethods/GetVoiceManagerMethod::EndInvoke(System.IAsyncResult)
+extern void GetVoiceManagerMethod_EndInvoke_m67A7261738B8CD659A4958B523A52DE56E15C876 (void);
+// 0x00000113 System.Void Discord.Discord/FFIMethods/GetAchievementManagerMethod::.ctor(System.Object,System.IntPtr)
+extern void GetAchievementManagerMethod__ctor_m9A9E37FB31E2CCD746E27C79EC1EB1DABBA43750 (void);
+// 0x00000114 System.IntPtr Discord.Discord/FFIMethods/GetAchievementManagerMethod::Invoke(System.IntPtr)
+extern void GetAchievementManagerMethod_Invoke_m1E7D336C464A7F55CD6674D1546CA7EAF842C407 (void);
+// 0x00000115 System.IAsyncResult Discord.Discord/FFIMethods/GetAchievementManagerMethod::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GetAchievementManagerMethod_BeginInvoke_m4BF7436AEB0809742903AF8E773AA43DCFE958A6 (void);
+// 0x00000116 System.IntPtr Discord.Discord/FFIMethods/GetAchievementManagerMethod::EndInvoke(System.IAsyncResult)
+extern void GetAchievementManagerMethod_EndInvoke_mF9FE9873E87E27E3CD3EBE366F94D35FBF1D2EFB (void);
+// 0x00000117 System.Void Discord.Discord/SetLogHookHandler::.ctor(System.Object,System.IntPtr)
+extern void SetLogHookHandler__ctor_m61B36E56CC24873DF55BD3629643CE29E48F4570 (void);
+// 0x00000118 System.Void Discord.Discord/SetLogHookHandler::Invoke(Discord.LogLevel,System.String)
+extern void SetLogHookHandler_Invoke_mA50C254DE34649F2D36B806B5919FEA24A6620E4 (void);
+// 0x00000119 System.IAsyncResult Discord.Discord/SetLogHookHandler::BeginInvoke(Discord.LogLevel,System.String,System.AsyncCallback,System.Object)
+extern void SetLogHookHandler_BeginInvoke_m17D23F86C9148BEDEFC1F11143B3626E7517DDAD (void);
+// 0x0000011A System.Void Discord.Discord/SetLogHookHandler::EndInvoke(System.IAsyncResult)
+extern void SetLogHookHandler_EndInvoke_m06181570953B9AD6C70FCF5C6D0F4D7212355D8A (void);
+// 0x0000011B System.Void Discord.MonoPInvokeCallbackAttribute::.ctor()
+extern void MonoPInvokeCallbackAttribute__ctor_m2254943264F47CC9CF9F4B508260B63C5980725A (void);
+// 0x0000011C Discord.ApplicationManager/FFIMethods Discord.ApplicationManager::get_Methods()
+extern void ApplicationManager_get_Methods_m711BE87BE65F1752E80D39C5F9CCA6AA8997810E (void);
+// 0x0000011D System.Void Discord.ApplicationManager::.ctor(System.IntPtr,System.IntPtr,Discord.ApplicationManager/FFIEvents&)
+extern void ApplicationManager__ctor_m9232C2726EE2DCF488117FF4E84A7E796518716A (void);
+// 0x0000011E System.Void Discord.ApplicationManager::InitEvents(System.IntPtr,Discord.ApplicationManager/FFIEvents&)
+extern void ApplicationManager_InitEvents_mA5151FE7667CABF540B59801A02E31BC203665E1 (void);
+// 0x0000011F System.Void Discord.ApplicationManager::ValidateOrExitCallbackImpl(System.IntPtr,Discord.Result)
+extern void ApplicationManager_ValidateOrExitCallbackImpl_mFFC043E1E96C34147A2BB4E2F2CD55328FB3AD14 (void);
+// 0x00000120 System.Void Discord.ApplicationManager::ValidateOrExit(Discord.ApplicationManager/ValidateOrExitHandler)
+extern void ApplicationManager_ValidateOrExit_m4E356F9D8120338DD617039B0DF4CF3E703AA96D (void);
+// 0x00000121 System.String Discord.ApplicationManager::GetCurrentLocale()
+extern void ApplicationManager_GetCurrentLocale_m15F3CCCCA96A411E3D883B7FB2EB2A2D468D7D7A (void);
+// 0x00000122 System.String Discord.ApplicationManager::GetCurrentBranch()
+extern void ApplicationManager_GetCurrentBranch_m3130199E90DA6239886830CCB014354C7C51F040 (void);
+// 0x00000123 System.Void Discord.ApplicationManager::GetOAuth2TokenCallbackImpl(System.IntPtr,Discord.Result,Discord.OAuth2Token&)
+extern void ApplicationManager_GetOAuth2TokenCallbackImpl_m00F3F694AD26A843089812754035D9E834A1FAB7 (void);
+// 0x00000124 System.Void Discord.ApplicationManager::GetOAuth2Token(Discord.ApplicationManager/GetOAuth2TokenHandler)
+extern void ApplicationManager_GetOAuth2Token_m1802730CD954C1976E10F91440494B9E10FAF5D8 (void);
+// 0x00000125 System.Void Discord.ApplicationManager::GetTicketCallbackImpl(System.IntPtr,Discord.Result,System.String&)
+extern void ApplicationManager_GetTicketCallbackImpl_m5EAADE8988DE32AFB22D2B97326A340F1581BAC7 (void);
+// 0x00000126 System.Void Discord.ApplicationManager::GetTicket(Discord.ApplicationManager/GetTicketHandler)
+extern void ApplicationManager_GetTicket_m009805B518E8D78ED5636A1482DAA17B35AAF6DE (void);
+// 0x00000127 System.Void Discord.ApplicationManager/FFIMethods/ValidateOrExitCallback::.ctor(System.Object,System.IntPtr)
+extern void ValidateOrExitCallback__ctor_m15A9F4395B2AA9D75CD9AB845865A788419A2C55 (void);
+// 0x00000128 System.Void Discord.ApplicationManager/FFIMethods/ValidateOrExitCallback::Invoke(System.IntPtr,Discord.Result)
+extern void ValidateOrExitCallback_Invoke_m3D6BCE80B822C836A1F35E9861EB78D148062621 (void);
+// 0x00000129 System.IAsyncResult Discord.ApplicationManager/FFIMethods/ValidateOrExitCallback::BeginInvoke(System.IntPtr,Discord.Result,System.AsyncCallback,System.Object)
+extern void ValidateOrExitCallback_BeginInvoke_mFAF478F9B3CDAD1E8C66E2694437BEFDAB51083C (void);
+// 0x0000012A System.Void Discord.ApplicationManager/FFIMethods/ValidateOrExitCallback::EndInvoke(System.IAsyncResult)
+extern void ValidateOrExitCallback_EndInvoke_m9ACC06A1C994B69825182FF0F41D5ACDFA102E6D (void);
+// 0x0000012B System.Void Discord.ApplicationManager/FFIMethods/ValidateOrExitMethod::.ctor(System.Object,System.IntPtr)
+extern void ValidateOrExitMethod__ctor_mF3EB781E1EDCB934E267FBBCC7AA1E229B0AA74C (void);
+// 0x0000012C System.Void Discord.ApplicationManager/FFIMethods/ValidateOrExitMethod::Invoke(System.IntPtr,System.IntPtr,Discord.ApplicationManager/FFIMethods/ValidateOrExitCallback)
+extern void ValidateOrExitMethod_Invoke_m40FCB5EB6A212D277DE6C38125B5C5D8E4BC3A1B (void);
+// 0x0000012D System.IAsyncResult Discord.ApplicationManager/FFIMethods/ValidateOrExitMethod::BeginInvoke(System.IntPtr,System.IntPtr,Discord.ApplicationManager/FFIMethods/ValidateOrExitCallback,System.AsyncCallback,System.Object)
+extern void ValidateOrExitMethod_BeginInvoke_m5D3F1F9063541771BC70EB352E6A973900499EEA (void);
+// 0x0000012E System.Void Discord.ApplicationManager/FFIMethods/ValidateOrExitMethod::EndInvoke(System.IAsyncResult)
+extern void ValidateOrExitMethod_EndInvoke_m920E0AFA735BDB1393954933F292665CD90E573C (void);
+// 0x0000012F System.Void Discord.ApplicationManager/FFIMethods/GetCurrentLocaleMethod::.ctor(System.Object,System.IntPtr)
+extern void GetCurrentLocaleMethod__ctor_mFB27B011C6C1B7E7F5997D8483A6E6D35DBD4EF3 (void);
+// 0x00000130 System.Void Discord.ApplicationManager/FFIMethods/GetCurrentLocaleMethod::Invoke(System.IntPtr,System.Text.StringBuilder)
+extern void GetCurrentLocaleMethod_Invoke_m08F73042A45A2421898D3AC9AE0B98B636C6D190 (void);
+// 0x00000131 System.IAsyncResult Discord.ApplicationManager/FFIMethods/GetCurrentLocaleMethod::BeginInvoke(System.IntPtr,System.Text.StringBuilder,System.AsyncCallback,System.Object)
+extern void GetCurrentLocaleMethod_BeginInvoke_mA64A80A1B0095506CC71E982C0D257DC5506421D (void);
+// 0x00000132 System.Void Discord.ApplicationManager/FFIMethods/GetCurrentLocaleMethod::EndInvoke(System.IAsyncResult)
+extern void GetCurrentLocaleMethod_EndInvoke_m655FD9B7571A5BB56FB71AA8D5FC38333C91EDD1 (void);
+// 0x00000133 System.Void Discord.ApplicationManager/FFIMethods/GetCurrentBranchMethod::.ctor(System.Object,System.IntPtr)
+extern void GetCurrentBranchMethod__ctor_mAD414BDE76E41E0850A077FF19585995FBDED6FB (void);
+// 0x00000134 System.Void Discord.ApplicationManager/FFIMethods/GetCurrentBranchMethod::Invoke(System.IntPtr,System.Text.StringBuilder)
+extern void GetCurrentBranchMethod_Invoke_mBD0D02B7170E4670F76F968AE0A70FAB2156DBEC (void);
+// 0x00000135 System.IAsyncResult Discord.ApplicationManager/FFIMethods/GetCurrentBranchMethod::BeginInvoke(System.IntPtr,System.Text.StringBuilder,System.AsyncCallback,System.Object)
+extern void GetCurrentBranchMethod_BeginInvoke_m4F4339029062AE7F89082FB2EAA766B4FB892ACC (void);
+// 0x00000136 System.Void Discord.ApplicationManager/FFIMethods/GetCurrentBranchMethod::EndInvoke(System.IAsyncResult)
+extern void GetCurrentBranchMethod_EndInvoke_mDCCAB345A9046AAAB0B558B1FA13BF7711812A1F (void);
+// 0x00000137 System.Void Discord.ApplicationManager/FFIMethods/GetOAuth2TokenCallback::.ctor(System.Object,System.IntPtr)
+extern void GetOAuth2TokenCallback__ctor_mFB189247D28053E7E0D673ABAFE108093A4D2551 (void);
+// 0x00000138 System.Void Discord.ApplicationManager/FFIMethods/GetOAuth2TokenCallback::Invoke(System.IntPtr,Discord.Result,Discord.OAuth2Token&)
+extern void GetOAuth2TokenCallback_Invoke_mC8C9807A816B6CB4594F830EB1A2947BE503E7F9 (void);
+// 0x00000139 System.IAsyncResult Discord.ApplicationManager/FFIMethods/GetOAuth2TokenCallback::BeginInvoke(System.IntPtr,Discord.Result,Discord.OAuth2Token&,System.AsyncCallback,System.Object)
+extern void GetOAuth2TokenCallback_BeginInvoke_mCCFE976A743B27E1EAA82B604509573103D0144B (void);
+// 0x0000013A System.Void Discord.ApplicationManager/FFIMethods/GetOAuth2TokenCallback::EndInvoke(Discord.OAuth2Token&,System.IAsyncResult)
+extern void GetOAuth2TokenCallback_EndInvoke_mD74757FD41B161A556CA5AE192A870C1F6E71F33 (void);
+// 0x0000013B System.Void Discord.ApplicationManager/FFIMethods/GetOAuth2TokenMethod::.ctor(System.Object,System.IntPtr)
+extern void GetOAuth2TokenMethod__ctor_m008EBDE716993B063437A9C97303BF4E7959CAA6 (void);
+// 0x0000013C System.Void Discord.ApplicationManager/FFIMethods/GetOAuth2TokenMethod::Invoke(System.IntPtr,System.IntPtr,Discord.ApplicationManager/FFIMethods/GetOAuth2TokenCallback)
+extern void GetOAuth2TokenMethod_Invoke_mA09E4B13CA87565452C4BD17950E251B2C1B4183 (void);
+// 0x0000013D System.IAsyncResult Discord.ApplicationManager/FFIMethods/GetOAuth2TokenMethod::BeginInvoke(System.IntPtr,System.IntPtr,Discord.ApplicationManager/FFIMethods/GetOAuth2TokenCallback,System.AsyncCallback,System.Object)
+extern void GetOAuth2TokenMethod_BeginInvoke_m9318009CCD1FDB315D87392CCDBBD27582783449 (void);
+// 0x0000013E System.Void Discord.ApplicationManager/FFIMethods/GetOAuth2TokenMethod::EndInvoke(System.IAsyncResult)
+extern void GetOAuth2TokenMethod_EndInvoke_m56E072C88FB51DB0FE161DA5E66CC9F10331FAE2 (void);
+// 0x0000013F System.Void Discord.ApplicationManager/FFIMethods/GetTicketCallback::.ctor(System.Object,System.IntPtr)
+extern void GetTicketCallback__ctor_m7361BEFA0E672AB34BEAD9AA138F6E35E69BA1A1 (void);
+// 0x00000140 System.Void Discord.ApplicationManager/FFIMethods/GetTicketCallback::Invoke(System.IntPtr,Discord.Result,System.String&)
+extern void GetTicketCallback_Invoke_mAE30B481FED079EFA359B1F6527F14A2EF90130A (void);
+// 0x00000141 System.IAsyncResult Discord.ApplicationManager/FFIMethods/GetTicketCallback::BeginInvoke(System.IntPtr,Discord.Result,System.String&,System.AsyncCallback,System.Object)
+extern void GetTicketCallback_BeginInvoke_m0B28C1A5B8C717D86F1D83C6D091668E06F5215F (void);
+// 0x00000142 System.Void Discord.ApplicationManager/FFIMethods/GetTicketCallback::EndInvoke(System.String&,System.IAsyncResult)
+extern void GetTicketCallback_EndInvoke_m066AAE62463EB37BB1F4DD3C20C20823572E2CF3 (void);
+// 0x00000143 System.Void Discord.ApplicationManager/FFIMethods/GetTicketMethod::.ctor(System.Object,System.IntPtr)
+extern void GetTicketMethod__ctor_mBFF1F3B416B3E9ECD66D1DF116086417D588961F (void);
+// 0x00000144 System.Void Discord.ApplicationManager/FFIMethods/GetTicketMethod::Invoke(System.IntPtr,System.IntPtr,Discord.ApplicationManager/FFIMethods/GetTicketCallback)
+extern void GetTicketMethod_Invoke_m43D7AADA00479A650DE0C82DC71B0056245A9F68 (void);
+// 0x00000145 System.IAsyncResult Discord.ApplicationManager/FFIMethods/GetTicketMethod::BeginInvoke(System.IntPtr,System.IntPtr,Discord.ApplicationManager/FFIMethods/GetTicketCallback,System.AsyncCallback,System.Object)
+extern void GetTicketMethod_BeginInvoke_m87100414BD92EFF3F67BAF4FFFAF9C7153A8AC48 (void);
+// 0x00000146 System.Void Discord.ApplicationManager/FFIMethods/GetTicketMethod::EndInvoke(System.IAsyncResult)
+extern void GetTicketMethod_EndInvoke_m719EA58298986EFCA88B3A94AB60F4CF27A533B4 (void);
+// 0x00000147 System.Void Discord.ApplicationManager/ValidateOrExitHandler::.ctor(System.Object,System.IntPtr)
+extern void ValidateOrExitHandler__ctor_m3B8647BB0011C94AD4EB512FB06F6544309C3F31 (void);
+// 0x00000148 System.Void Discord.ApplicationManager/ValidateOrExitHandler::Invoke(Discord.Result)
+extern void ValidateOrExitHandler_Invoke_mB427A61832D63C539868F5AC2C675CEB8EE12C7B (void);
+// 0x00000149 System.IAsyncResult Discord.ApplicationManager/ValidateOrExitHandler::BeginInvoke(Discord.Result,System.AsyncCallback,System.Object)
+extern void ValidateOrExitHandler_BeginInvoke_mDD46C51A52283A3A244BFA5ABD425F5082F633A5 (void);
+// 0x0000014A System.Void Discord.ApplicationManager/ValidateOrExitHandler::EndInvoke(System.IAsyncResult)
+extern void ValidateOrExitHandler_EndInvoke_m21CEB2CCB9AD0CB460BCE3693C131181A8C057CA (void);
+// 0x0000014B System.Void Discord.ApplicationManager/GetOAuth2TokenHandler::.ctor(System.Object,System.IntPtr)
+extern void GetOAuth2TokenHandler__ctor_m4CBE1FA65A3C0BFA5CE368E628E56FD582716F88 (void);
+// 0x0000014C System.Void Discord.ApplicationManager/GetOAuth2TokenHandler::Invoke(Discord.Result,Discord.OAuth2Token&)
+extern void GetOAuth2TokenHandler_Invoke_m62B8B4B41C8454F4ED5844989F489DEEEBD39F2B (void);
+// 0x0000014D System.IAsyncResult Discord.ApplicationManager/GetOAuth2TokenHandler::BeginInvoke(Discord.Result,Discord.OAuth2Token&,System.AsyncCallback,System.Object)
+extern void GetOAuth2TokenHandler_BeginInvoke_mE5BD1B8FDB258FA411A1FE81E146178CBACB0DC3 (void);
+// 0x0000014E System.Void Discord.ApplicationManager/GetOAuth2TokenHandler::EndInvoke(Discord.OAuth2Token&,System.IAsyncResult)
+extern void GetOAuth2TokenHandler_EndInvoke_mB956036309F5614E23FC92877B56937F1B3BF16F (void);
+// 0x0000014F System.Void Discord.ApplicationManager/GetTicketHandler::.ctor(System.Object,System.IntPtr)
+extern void GetTicketHandler__ctor_mA5BAFED882487C004BCDECFC88D1CB06C3F80174 (void);
+// 0x00000150 System.Void Discord.ApplicationManager/GetTicketHandler::Invoke(Discord.Result,System.String&)
+extern void GetTicketHandler_Invoke_m752BD528AC84624BFB39B0DC8A74977DDBA4FFC3 (void);
+// 0x00000151 System.IAsyncResult Discord.ApplicationManager/GetTicketHandler::BeginInvoke(Discord.Result,System.String&,System.AsyncCallback,System.Object)
+extern void GetTicketHandler_BeginInvoke_m57352567EEB08728FFE35A6721EA0C3E288E2940 (void);
+// 0x00000152 System.Void Discord.ApplicationManager/GetTicketHandler::EndInvoke(System.String&,System.IAsyncResult)
+extern void GetTicketHandler_EndInvoke_mCCB07012871097F6C13997EF6CDDC970DDFAFD54 (void);
+// 0x00000153 Discord.UserManager/FFIMethods Discord.UserManager::get_Methods()
+extern void UserManager_get_Methods_m0A113574EB5DB7D3FF6B70C6123E301FAE812191 (void);
+// 0x00000154 System.Void Discord.UserManager::add_OnCurrentUserUpdate(Discord.UserManager/CurrentUserUpdateHandler)
+extern void UserManager_add_OnCurrentUserUpdate_m3429A2197AADC71B48691888D68C4ADC1CD2265B (void);
+// 0x00000155 System.Void Discord.UserManager::remove_OnCurrentUserUpdate(Discord.UserManager/CurrentUserUpdateHandler)
+extern void UserManager_remove_OnCurrentUserUpdate_m61587A50CD7418DE5BF6879C3C06E01C519FA6DF (void);
+// 0x00000156 System.Void Discord.UserManager::.ctor(System.IntPtr,System.IntPtr,Discord.UserManager/FFIEvents&)
+extern void UserManager__ctor_m0F8C7D704E9E8492B063B29DD1FF58087F11F36D (void);
+// 0x00000157 System.Void Discord.UserManager::InitEvents(System.IntPtr,Discord.UserManager/FFIEvents&)
+extern void UserManager_InitEvents_mC31ADD49CF2D3D4365F55A3BF4DA7078F86F44F8 (void);
+// 0x00000158 Discord.User Discord.UserManager::GetCurrentUser()
+extern void UserManager_GetCurrentUser_m138022D152976D660D78C60C024480BA8CC10F28 (void);
+// 0x00000159 System.Void Discord.UserManager::GetUserCallbackImpl(System.IntPtr,Discord.Result,Discord.User&)
+extern void UserManager_GetUserCallbackImpl_m9D478A7D492D948CC8DCA8AF34E9E6C3E9EE3FB7 (void);
+// 0x0000015A System.Void Discord.UserManager::GetUser(System.Int64,Discord.UserManager/GetUserHandler)
+extern void UserManager_GetUser_mE10058905D251C5941E3E5AF7A8B9187AD580C7D (void);
+// 0x0000015B Discord.PremiumType Discord.UserManager::GetCurrentUserPremiumType()
+extern void UserManager_GetCurrentUserPremiumType_m60B13A984FC03C473AC8837C4D114FCDC674F26A (void);
+// 0x0000015C System.Boolean Discord.UserManager::CurrentUserHasFlag(Discord.UserFlag)
+extern void UserManager_CurrentUserHasFlag_m6A0AD174E599A92D2CDF52AD227ECA03BCFE0C31 (void);
+// 0x0000015D System.Void Discord.UserManager::OnCurrentUserUpdateImpl(System.IntPtr)
+extern void UserManager_OnCurrentUserUpdateImpl_mFFDC0BF9F579135A09073EB28A536668BF332D04 (void);
+// 0x0000015E System.Void Discord.UserManager/FFIEvents/CurrentUserUpdateHandler::.ctor(System.Object,System.IntPtr)
+extern void CurrentUserUpdateHandler__ctor_m42180DF306C7DEA399B66C2808BE8FABC8C80073 (void);
+// 0x0000015F System.Void Discord.UserManager/FFIEvents/CurrentUserUpdateHandler::Invoke(System.IntPtr)
+extern void CurrentUserUpdateHandler_Invoke_mAAA0C2DE9D21664E564209DAC7881885D1D4E8C9 (void);
+// 0x00000160 System.IAsyncResult Discord.UserManager/FFIEvents/CurrentUserUpdateHandler::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void CurrentUserUpdateHandler_BeginInvoke_mB4F89D58E87956840C689F85FF1696756488C66A (void);
+// 0x00000161 System.Void Discord.UserManager/FFIEvents/CurrentUserUpdateHandler::EndInvoke(System.IAsyncResult)
+extern void CurrentUserUpdateHandler_EndInvoke_m73C521FFD2517453F0BE1444CC100C03047D86C3 (void);
+// 0x00000162 System.Void Discord.UserManager/FFIMethods/GetCurrentUserMethod::.ctor(System.Object,System.IntPtr)
+extern void GetCurrentUserMethod__ctor_mDF1172F7887236C7055C618C3386EA9BC149F2D7 (void);
+// 0x00000163 Discord.Result Discord.UserManager/FFIMethods/GetCurrentUserMethod::Invoke(System.IntPtr,Discord.User&)
+extern void GetCurrentUserMethod_Invoke_m072CB70E5B403A55CC89CB106614F2C0977845CC (void);
+// 0x00000164 System.IAsyncResult Discord.UserManager/FFIMethods/GetCurrentUserMethod::BeginInvoke(System.IntPtr,Discord.User&,System.AsyncCallback,System.Object)
+extern void GetCurrentUserMethod_BeginInvoke_m1050ECBCDC3ECE1D50D0D1C823CE3DBFF377D78E (void);
+// 0x00000165 Discord.Result Discord.UserManager/FFIMethods/GetCurrentUserMethod::EndInvoke(Discord.User&,System.IAsyncResult)
+extern void GetCurrentUserMethod_EndInvoke_mAA7144FC1D6C05DE5E66C02CC71EBE7F752C41FE (void);
+// 0x00000166 System.Void Discord.UserManager/FFIMethods/GetUserCallback::.ctor(System.Object,System.IntPtr)
+extern void GetUserCallback__ctor_m3C3E50391D21C97F9AEFF58E98F42B24B0BFF9E3 (void);
+// 0x00000167 System.Void Discord.UserManager/FFIMethods/GetUserCallback::Invoke(System.IntPtr,Discord.Result,Discord.User&)
+extern void GetUserCallback_Invoke_mC6101853E12DBBDAB9509190EFB4F98784F8551A (void);
+// 0x00000168 System.IAsyncResult Discord.UserManager/FFIMethods/GetUserCallback::BeginInvoke(System.IntPtr,Discord.Result,Discord.User&,System.AsyncCallback,System.Object)
+extern void GetUserCallback_BeginInvoke_m429ED828CD2B84683F0C48E481DA1BD1A920572B (void);
+// 0x00000169 System.Void Discord.UserManager/FFIMethods/GetUserCallback::EndInvoke(Discord.User&,System.IAsyncResult)
+extern void GetUserCallback_EndInvoke_m5D4E530458F30E258728EB91D1656C3A8D14C24F (void);
+// 0x0000016A System.Void Discord.UserManager/FFIMethods/GetUserMethod::.ctor(System.Object,System.IntPtr)
+extern void GetUserMethod__ctor_m07A1ABB875D438CAFB2EFE13F0FF7E746F1929D1 (void);
+// 0x0000016B System.Void Discord.UserManager/FFIMethods/GetUserMethod::Invoke(System.IntPtr,System.Int64,System.IntPtr,Discord.UserManager/FFIMethods/GetUserCallback)
+extern void GetUserMethod_Invoke_m06162F6B02A0227DEEB0382EAF9014447AF22F82 (void);
+// 0x0000016C System.IAsyncResult Discord.UserManager/FFIMethods/GetUserMethod::BeginInvoke(System.IntPtr,System.Int64,System.IntPtr,Discord.UserManager/FFIMethods/GetUserCallback,System.AsyncCallback,System.Object)
+extern void GetUserMethod_BeginInvoke_m7AC34F1C66CB4FD5D2344DC852F91D78200928D3 (void);
+// 0x0000016D System.Void Discord.UserManager/FFIMethods/GetUserMethod::EndInvoke(System.IAsyncResult)
+extern void GetUserMethod_EndInvoke_m5A1D03E1C1C85E36DD08CECB688F0D6F31F92BA7 (void);
+// 0x0000016E System.Void Discord.UserManager/FFIMethods/GetCurrentUserPremiumTypeMethod::.ctor(System.Object,System.IntPtr)
+extern void GetCurrentUserPremiumTypeMethod__ctor_m3710BEC2E840AE6C2D28AF465FF70B5F1B966C87 (void);
+// 0x0000016F Discord.Result Discord.UserManager/FFIMethods/GetCurrentUserPremiumTypeMethod::Invoke(System.IntPtr,Discord.PremiumType&)
+extern void GetCurrentUserPremiumTypeMethod_Invoke_m6DDF9B7B278D9A12CBE8E699BBA7A11F85747AE3 (void);
+// 0x00000170 System.IAsyncResult Discord.UserManager/FFIMethods/GetCurrentUserPremiumTypeMethod::BeginInvoke(System.IntPtr,Discord.PremiumType&,System.AsyncCallback,System.Object)
+extern void GetCurrentUserPremiumTypeMethod_BeginInvoke_m198F8874F6298CB5BAE11E249811CE169503AB92 (void);
+// 0x00000171 Discord.Result Discord.UserManager/FFIMethods/GetCurrentUserPremiumTypeMethod::EndInvoke(Discord.PremiumType&,System.IAsyncResult)
+extern void GetCurrentUserPremiumTypeMethod_EndInvoke_m64E1D53F00E2FDD1CC0BE37689404E1E4AE50DE0 (void);
+// 0x00000172 System.Void Discord.UserManager/FFIMethods/CurrentUserHasFlagMethod::.ctor(System.Object,System.IntPtr)
+extern void CurrentUserHasFlagMethod__ctor_m7EDC43057D24C9869140C21FDA23B61EBFA343AB (void);
+// 0x00000173 Discord.Result Discord.UserManager/FFIMethods/CurrentUserHasFlagMethod::Invoke(System.IntPtr,Discord.UserFlag,System.Boolean&)
+extern void CurrentUserHasFlagMethod_Invoke_mBA276B88F14FB68518347D1AF9983417E334B53A (void);
+// 0x00000174 System.IAsyncResult Discord.UserManager/FFIMethods/CurrentUserHasFlagMethod::BeginInvoke(System.IntPtr,Discord.UserFlag,System.Boolean&,System.AsyncCallback,System.Object)
+extern void CurrentUserHasFlagMethod_BeginInvoke_mA5C306982ED64B909B207AB3DD3D0DB59E21E352 (void);
+// 0x00000175 Discord.Result Discord.UserManager/FFIMethods/CurrentUserHasFlagMethod::EndInvoke(System.Boolean&,System.IAsyncResult)
+extern void CurrentUserHasFlagMethod_EndInvoke_m2038EB5E9994E1E981DD22DBB99952B211148779 (void);
+// 0x00000176 System.Void Discord.UserManager/GetUserHandler::.ctor(System.Object,System.IntPtr)
+extern void GetUserHandler__ctor_m01D787EAAF8AC1A840F1B0C08ED7C7E6C0EBCE0A (void);
+// 0x00000177 System.Void Discord.UserManager/GetUserHandler::Invoke(Discord.Result,Discord.User&)
+extern void GetUserHandler_Invoke_m68631DD972E9B8F86A6B43066B591DF59AFB4F85 (void);
+// 0x00000178 System.IAsyncResult Discord.UserManager/GetUserHandler::BeginInvoke(Discord.Result,Discord.User&,System.AsyncCallback,System.Object)
+extern void GetUserHandler_BeginInvoke_mC257E361E9283AF5DE718ED7C159207FB2124546 (void);
+// 0x00000179 System.Void Discord.UserManager/GetUserHandler::EndInvoke(Discord.User&,System.IAsyncResult)
+extern void GetUserHandler_EndInvoke_mF437B1F5889A41FF1C4B73BA234B29C95F157945 (void);
+// 0x0000017A System.Void Discord.UserManager/CurrentUserUpdateHandler::.ctor(System.Object,System.IntPtr)
+extern void CurrentUserUpdateHandler__ctor_m63FB2E9B88C2FF666B767658A31D06A3506BE958 (void);
+// 0x0000017B System.Void Discord.UserManager/CurrentUserUpdateHandler::Invoke()
+extern void CurrentUserUpdateHandler_Invoke_mF69C9267C69860A9A4FB69166E179A973D06C2CB (void);
+// 0x0000017C System.IAsyncResult Discord.UserManager/CurrentUserUpdateHandler::BeginInvoke(System.AsyncCallback,System.Object)
+extern void CurrentUserUpdateHandler_BeginInvoke_m5E0C92B894718D2028AFC1A942C4327C613B41C4 (void);
+// 0x0000017D System.Void Discord.UserManager/CurrentUserUpdateHandler::EndInvoke(System.IAsyncResult)
+extern void CurrentUserUpdateHandler_EndInvoke_mB8AB7D151D2BC0B1E499877B398D0D6B9709AE46 (void);
+// 0x0000017E Discord.ImageManager/FFIMethods Discord.ImageManager::get_Methods()
+extern void ImageManager_get_Methods_m00C061AA0F72405690D068AF97982D2B1C997486 (void);
+// 0x0000017F System.Void Discord.ImageManager::.ctor(System.IntPtr,System.IntPtr,Discord.ImageManager/FFIEvents&)
+extern void ImageManager__ctor_mB47DA4642E58EE8CDE66590EBB43BD9F302BF0FA (void);
+// 0x00000180 System.Void Discord.ImageManager::InitEvents(System.IntPtr,Discord.ImageManager/FFIEvents&)
+extern void ImageManager_InitEvents_m88CB3BB4DE180B0E9093166626F645EFB83A4AE8 (void);
+// 0x00000181 System.Void Discord.ImageManager::FetchCallbackImpl(System.IntPtr,Discord.Result,Discord.ImageHandle)
+extern void ImageManager_FetchCallbackImpl_m11A0579976A9FE8C9443E12870107DC546F94133 (void);
+// 0x00000182 System.Void Discord.ImageManager::Fetch(Discord.ImageHandle,System.Boolean,Discord.ImageManager/FetchHandler)
+extern void ImageManager_Fetch_mC622045200A635290D2F47F510F2A950B02C7FAE (void);
+// 0x00000183 Discord.ImageDimensions Discord.ImageManager::GetDimensions(Discord.ImageHandle)
+extern void ImageManager_GetDimensions_m42CEAD127A0DC94915F26B8F1832E71816355337 (void);
+// 0x00000184 System.Void Discord.ImageManager::GetData(Discord.ImageHandle,System.Byte[])
+extern void ImageManager_GetData_mC7834DB8DB35D67055360A4E8EA353EFA286495A (void);
+// 0x00000185 System.Void Discord.ImageManager::Fetch(Discord.ImageHandle,Discord.ImageManager/FetchHandler)
+extern void ImageManager_Fetch_m1A7510E203F08A429FDA5D3797B9037EB5A96D46 (void);
+// 0x00000186 System.Byte[] Discord.ImageManager::GetData(Discord.ImageHandle)
+extern void ImageManager_GetData_m47A909BFD6A1C8AE3280990DFF7E6857A6B4B71D (void);
+// 0x00000187 UnityEngine.Texture2D Discord.ImageManager::GetTexture(Discord.ImageHandle)
+extern void ImageManager_GetTexture_m00D879D139A541B0713E3920A0A17C9AF0C76CB5 (void);
+// 0x00000188 System.Void Discord.ImageManager/FFIMethods/FetchCallback::.ctor(System.Object,System.IntPtr)
+extern void FetchCallback__ctor_m81DFEC17DC842D0FE45F59C9699EFA9AC9EB2CF0 (void);
+// 0x00000189 System.Void Discord.ImageManager/FFIMethods/FetchCallback::Invoke(System.IntPtr,Discord.Result,Discord.ImageHandle)
+extern void FetchCallback_Invoke_m9B8A335203C8002E3A2125A69B858CAF8D2C74AD (void);
+// 0x0000018A System.IAsyncResult Discord.ImageManager/FFIMethods/FetchCallback::BeginInvoke(System.IntPtr,Discord.Result,Discord.ImageHandle,System.AsyncCallback,System.Object)
+extern void FetchCallback_BeginInvoke_mF8F1C55714A95D8EC0E881221D78F1BBE2363BF5 (void);
+// 0x0000018B System.Void Discord.ImageManager/FFIMethods/FetchCallback::EndInvoke(System.IAsyncResult)
+extern void FetchCallback_EndInvoke_m41C6513DF3451D4F40D48859A00D04C438BC9BF0 (void);
+// 0x0000018C System.Void Discord.ImageManager/FFIMethods/FetchMethod::.ctor(System.Object,System.IntPtr)
+extern void FetchMethod__ctor_mECC60758A2D14B7A8AC76CAB5A81970EAB40E3EE (void);
+// 0x0000018D System.Void Discord.ImageManager/FFIMethods/FetchMethod::Invoke(System.IntPtr,Discord.ImageHandle,System.Boolean,System.IntPtr,Discord.ImageManager/FFIMethods/FetchCallback)
+extern void FetchMethod_Invoke_mBB68BF6049B9058B7A98D44D9B49D8B28EBD08CE (void);
+// 0x0000018E System.IAsyncResult Discord.ImageManager/FFIMethods/FetchMethod::BeginInvoke(System.IntPtr,Discord.ImageHandle,System.Boolean,System.IntPtr,Discord.ImageManager/FFIMethods/FetchCallback,System.AsyncCallback,System.Object)
+extern void FetchMethod_BeginInvoke_m1ADE8C13ABDB23A63B54C938E136E09C14124626 (void);
+// 0x0000018F System.Void Discord.ImageManager/FFIMethods/FetchMethod::EndInvoke(System.IAsyncResult)
+extern void FetchMethod_EndInvoke_m2C57EC013687BE2E8BA17CA7E78533042F2996D5 (void);
+// 0x00000190 System.Void Discord.ImageManager/FFIMethods/GetDimensionsMethod::.ctor(System.Object,System.IntPtr)
+extern void GetDimensionsMethod__ctor_mDB93C01070389E59304362943571A692E594F37C (void);
+// 0x00000191 Discord.Result Discord.ImageManager/FFIMethods/GetDimensionsMethod::Invoke(System.IntPtr,Discord.ImageHandle,Discord.ImageDimensions&)
+extern void GetDimensionsMethod_Invoke_m66F7407F4F32D0481CEB9A8D6179E486CE80FABA (void);
+// 0x00000192 System.IAsyncResult Discord.ImageManager/FFIMethods/GetDimensionsMethod::BeginInvoke(System.IntPtr,Discord.ImageHandle,Discord.ImageDimensions&,System.AsyncCallback,System.Object)
+extern void GetDimensionsMethod_BeginInvoke_mBF22F78294FF76A48F892796492A239D103E3EEC (void);
+// 0x00000193 Discord.Result Discord.ImageManager/FFIMethods/GetDimensionsMethod::EndInvoke(Discord.ImageDimensions&,System.IAsyncResult)
+extern void GetDimensionsMethod_EndInvoke_mF616744D8B65BB52036FCB9FE8BB5CA7D4FA742A (void);
+// 0x00000194 System.Void Discord.ImageManager/FFIMethods/GetDataMethod::.ctor(System.Object,System.IntPtr)
+extern void GetDataMethod__ctor_m0FC7E75AFC11A1A3B8FE1DD1503D816D428929C9 (void);
+// 0x00000195 Discord.Result Discord.ImageManager/FFIMethods/GetDataMethod::Invoke(System.IntPtr,Discord.ImageHandle,System.Byte[],System.Int32)
+extern void GetDataMethod_Invoke_m5DDEDA0FB7D03B36451FD0AA9A5FB25B839C324E (void);
+// 0x00000196 System.IAsyncResult Discord.ImageManager/FFIMethods/GetDataMethod::BeginInvoke(System.IntPtr,Discord.ImageHandle,System.Byte[],System.Int32,System.AsyncCallback,System.Object)
+extern void GetDataMethod_BeginInvoke_m5E76E464BF2D33C8D55EF10B5ABE638D250F6950 (void);
+// 0x00000197 Discord.Result Discord.ImageManager/FFIMethods/GetDataMethod::EndInvoke(System.IAsyncResult)
+extern void GetDataMethod_EndInvoke_m9E80FD41DF2A8B383F8044C04D88E2D3A183665B (void);
+// 0x00000198 System.Void Discord.ImageManager/FetchHandler::.ctor(System.Object,System.IntPtr)
+extern void FetchHandler__ctor_mD4D2DDC2D1FB2B0A9102C6431F400F27547FE817 (void);
+// 0x00000199 System.Void Discord.ImageManager/FetchHandler::Invoke(Discord.Result,Discord.ImageHandle)
+extern void FetchHandler_Invoke_mA2DA761AF1BCA72AE5885D99FB9C0C743FFC33F1 (void);
+// 0x0000019A System.IAsyncResult Discord.ImageManager/FetchHandler::BeginInvoke(Discord.Result,Discord.ImageHandle,System.AsyncCallback,System.Object)
+extern void FetchHandler_BeginInvoke_m433E6AC11BAA824800848A5019D9B91C9244DEE9 (void);
+// 0x0000019B System.Void Discord.ImageManager/FetchHandler::EndInvoke(System.IAsyncResult)
+extern void FetchHandler_EndInvoke_m04B68750BC953711F96472173E3FA2AF9BCF0BB2 (void);
+// 0x0000019C Discord.RelationshipManager/FFIMethods Discord.RelationshipManager::get_Methods()
+extern void RelationshipManager_get_Methods_m37140A1CD1DCFEA9850B9CC0F752127D6A68A5FE (void);
+// 0x0000019D System.Void Discord.RelationshipManager::add_OnRefresh(Discord.RelationshipManager/RefreshHandler)
+extern void RelationshipManager_add_OnRefresh_mD51F9F3FD135DF009435AA847FCFC7A7924B079C (void);
+// 0x0000019E System.Void Discord.RelationshipManager::remove_OnRefresh(Discord.RelationshipManager/RefreshHandler)
+extern void RelationshipManager_remove_OnRefresh_mEF7355F417CAB5E02FCB7FC7351C9CC53EB4314E (void);
+// 0x0000019F System.Void Discord.RelationshipManager::add_OnRelationshipUpdate(Discord.RelationshipManager/RelationshipUpdateHandler)
+extern void RelationshipManager_add_OnRelationshipUpdate_m1DFBA6C80F359B443CF00A70E1B04A4B5E55DC57 (void);
+// 0x000001A0 System.Void Discord.RelationshipManager::remove_OnRelationshipUpdate(Discord.RelationshipManager/RelationshipUpdateHandler)
+extern void RelationshipManager_remove_OnRelationshipUpdate_mE7C8A7E3FFE9C206E9CA13E178A964471440967C (void);
+// 0x000001A1 System.Void Discord.RelationshipManager::.ctor(System.IntPtr,System.IntPtr,Discord.RelationshipManager/FFIEvents&)
+extern void RelationshipManager__ctor_m05DE9A84629902453308795D4E6600869BD7461F (void);
+// 0x000001A2 System.Void Discord.RelationshipManager::InitEvents(System.IntPtr,Discord.RelationshipManager/FFIEvents&)
+extern void RelationshipManager_InitEvents_m81DFC52CA9EA3109C45F32F4342B6AB3F2F7C1B2 (void);
+// 0x000001A3 System.Boolean Discord.RelationshipManager::FilterCallbackImpl(System.IntPtr,Discord.Relationship&)
+extern void RelationshipManager_FilterCallbackImpl_m321EE31368ABF48E97B1712C13D76395766B0150 (void);
+// 0x000001A4 System.Void Discord.RelationshipManager::Filter(Discord.RelationshipManager/FilterHandler)
+extern void RelationshipManager_Filter_mBAF2D160453970F628FC2F407282C89C45FD9E37 (void);
+// 0x000001A5 System.Int32 Discord.RelationshipManager::Count()
+extern void RelationshipManager_Count_m2DBEE32268B645AD0BC5DE83ADC9EABB76E53B99 (void);
+// 0x000001A6 Discord.Relationship Discord.RelationshipManager::Get(System.Int64)
+extern void RelationshipManager_Get_m7AFCFDD28D24FF2B138F8B1F655213FB07732C8F (void);
+// 0x000001A7 Discord.Relationship Discord.RelationshipManager::GetAt(System.UInt32)
+extern void RelationshipManager_GetAt_m0AFEB0E91F3244FADA6D4EE1B595980BFB01248B (void);
+// 0x000001A8 System.Void Discord.RelationshipManager::OnRefreshImpl(System.IntPtr)
+extern void RelationshipManager_OnRefreshImpl_mD28DECACA910F141BDEF373CC8BEC5782578B464 (void);
+// 0x000001A9 System.Void Discord.RelationshipManager::OnRelationshipUpdateImpl(System.IntPtr,Discord.Relationship&)
+extern void RelationshipManager_OnRelationshipUpdateImpl_m5D0DD09B6723DAC9FDF96F5CECD8F571476A8C99 (void);
+// 0x000001AA System.Void Discord.RelationshipManager/FFIEvents/RefreshHandler::.ctor(System.Object,System.IntPtr)
+extern void RefreshHandler__ctor_m9AD31516D2E291AD759B30B52CE029DC6EC51A26 (void);
+// 0x000001AB System.Void Discord.RelationshipManager/FFIEvents/RefreshHandler::Invoke(System.IntPtr)
+extern void RefreshHandler_Invoke_m3822622D7230122A35325AAD1B4A320EA19E85FA (void);
+// 0x000001AC System.IAsyncResult Discord.RelationshipManager/FFIEvents/RefreshHandler::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void RefreshHandler_BeginInvoke_m31B3EEBB5A4C8AF84CC276C0AA451ABA8F012C7D (void);
+// 0x000001AD System.Void Discord.RelationshipManager/FFIEvents/RefreshHandler::EndInvoke(System.IAsyncResult)
+extern void RefreshHandler_EndInvoke_mC8EA20376F87A20AF3C0D3913DCD43A3D225D55A (void);
+// 0x000001AE System.Void Discord.RelationshipManager/FFIEvents/RelationshipUpdateHandler::.ctor(System.Object,System.IntPtr)
+extern void RelationshipUpdateHandler__ctor_m0FBE44A8B1A5E8BDD79BAC910C829DB066A471C4 (void);
+// 0x000001AF System.Void Discord.RelationshipManager/FFIEvents/RelationshipUpdateHandler::Invoke(System.IntPtr,Discord.Relationship&)
+extern void RelationshipUpdateHandler_Invoke_m58FEBF1777CC7627124F2CC8320BC9C6149FD551 (void);
+// 0x000001B0 System.IAsyncResult Discord.RelationshipManager/FFIEvents/RelationshipUpdateHandler::BeginInvoke(System.IntPtr,Discord.Relationship&,System.AsyncCallback,System.Object)
+extern void RelationshipUpdateHandler_BeginInvoke_m157DF73C27B4AE78CB2EE5BF2D8E8A8416B398C4 (void);
+// 0x000001B1 System.Void Discord.RelationshipManager/FFIEvents/RelationshipUpdateHandler::EndInvoke(Discord.Relationship&,System.IAsyncResult)
+extern void RelationshipUpdateHandler_EndInvoke_m0AFE83FCD232CAFB004F5F953592DA19B44370BC (void);
+// 0x000001B2 System.Void Discord.RelationshipManager/FFIMethods/FilterCallback::.ctor(System.Object,System.IntPtr)
+extern void FilterCallback__ctor_m8D5544E81F76DAA6EF1BEB57746DCA209B3A59EA (void);
+// 0x000001B3 System.Boolean Discord.RelationshipManager/FFIMethods/FilterCallback::Invoke(System.IntPtr,Discord.Relationship&)
+extern void FilterCallback_Invoke_m121C52FF75C9497C64536C5BB8C6691D6B1230E3 (void);
+// 0x000001B4 System.IAsyncResult Discord.RelationshipManager/FFIMethods/FilterCallback::BeginInvoke(System.IntPtr,Discord.Relationship&,System.AsyncCallback,System.Object)
+extern void FilterCallback_BeginInvoke_m61072F09987FEA7D133D23CD760D6C617CD0E3A7 (void);
+// 0x000001B5 System.Boolean Discord.RelationshipManager/FFIMethods/FilterCallback::EndInvoke(Discord.Relationship&,System.IAsyncResult)
+extern void FilterCallback_EndInvoke_m54D19F4C8FD0E32AF8F7AAE11991EA8C0661A9EF (void);
+// 0x000001B6 System.Void Discord.RelationshipManager/FFIMethods/FilterMethod::.ctor(System.Object,System.IntPtr)
+extern void FilterMethod__ctor_m958D25BC1D6D64DFB1F9C7D6C69E0240C9815677 (void);
+// 0x000001B7 System.Void Discord.RelationshipManager/FFIMethods/FilterMethod::Invoke(System.IntPtr,System.IntPtr,Discord.RelationshipManager/FFIMethods/FilterCallback)
+extern void FilterMethod_Invoke_mE25976300871AF17876F3008C561E8D9866DCA56 (void);
+// 0x000001B8 System.IAsyncResult Discord.RelationshipManager/FFIMethods/FilterMethod::BeginInvoke(System.IntPtr,System.IntPtr,Discord.RelationshipManager/FFIMethods/FilterCallback,System.AsyncCallback,System.Object)
+extern void FilterMethod_BeginInvoke_m007BC5378B062882CD22010FB254297734E4B847 (void);
+// 0x000001B9 System.Void Discord.RelationshipManager/FFIMethods/FilterMethod::EndInvoke(System.IAsyncResult)
+extern void FilterMethod_EndInvoke_m0705D5F5F24ABEE983592F5B68D7F66C802BA62E (void);
+// 0x000001BA System.Void Discord.RelationshipManager/FFIMethods/CountMethod::.ctor(System.Object,System.IntPtr)
+extern void CountMethod__ctor_mCE7F40989C6976ADD5CE087ECFB822D58A31A9F3 (void);
+// 0x000001BB Discord.Result Discord.RelationshipManager/FFIMethods/CountMethod::Invoke(System.IntPtr,System.Int32&)
+extern void CountMethod_Invoke_mC4EB74E0B8ADC30B598AAA3CA43D5E4BBB0D3551 (void);
+// 0x000001BC System.IAsyncResult Discord.RelationshipManager/FFIMethods/CountMethod::BeginInvoke(System.IntPtr,System.Int32&,System.AsyncCallback,System.Object)
+extern void CountMethod_BeginInvoke_mDDF9802FA64823D3570247888B9E4DECC604B20C (void);
+// 0x000001BD Discord.Result Discord.RelationshipManager/FFIMethods/CountMethod::EndInvoke(System.Int32&,System.IAsyncResult)
+extern void CountMethod_EndInvoke_m438FA196E6DD477ED4571D7F9F323B3C69E20EA5 (void);
+// 0x000001BE System.Void Discord.RelationshipManager/FFIMethods/GetMethod::.ctor(System.Object,System.IntPtr)
+extern void GetMethod__ctor_m875E418CCAB39CB4CA7732231D5609965CE02BCA (void);
+// 0x000001BF Discord.Result Discord.RelationshipManager/FFIMethods/GetMethod::Invoke(System.IntPtr,System.Int64,Discord.Relationship&)
+extern void GetMethod_Invoke_mA64F8260F56B0CFA80F83DF5044484DF97B4F35A (void);
+// 0x000001C0 System.IAsyncResult Discord.RelationshipManager/FFIMethods/GetMethod::BeginInvoke(System.IntPtr,System.Int64,Discord.Relationship&,System.AsyncCallback,System.Object)
+extern void GetMethod_BeginInvoke_mA8256BD7B08E5CC509FE29E64BB79F5DDD63EE71 (void);
+// 0x000001C1 Discord.Result Discord.RelationshipManager/FFIMethods/GetMethod::EndInvoke(Discord.Relationship&,System.IAsyncResult)
+extern void GetMethod_EndInvoke_mCF8249A4D6C1BD17C2FE98C355BA1BD116E7C058 (void);
+// 0x000001C2 System.Void Discord.RelationshipManager/FFIMethods/GetAtMethod::.ctor(System.Object,System.IntPtr)
+extern void GetAtMethod__ctor_mA388D10C3FEAF2E6BD826C403C64ADE6A4AB81EA (void);
+// 0x000001C3 Discord.Result Discord.RelationshipManager/FFIMethods/GetAtMethod::Invoke(System.IntPtr,System.UInt32,Discord.Relationship&)
+extern void GetAtMethod_Invoke_mD05DEF693975FD39174039A2BA4642E609AFEC15 (void);
+// 0x000001C4 System.IAsyncResult Discord.RelationshipManager/FFIMethods/GetAtMethod::BeginInvoke(System.IntPtr,System.UInt32,Discord.Relationship&,System.AsyncCallback,System.Object)
+extern void GetAtMethod_BeginInvoke_m5610DB69E5D33F82597ACBF6174F5881404EE0FE (void);
+// 0x000001C5 Discord.Result Discord.RelationshipManager/FFIMethods/GetAtMethod::EndInvoke(Discord.Relationship&,System.IAsyncResult)
+extern void GetAtMethod_EndInvoke_mB178E0B9AC2308F1F360CEC574D7D1154DB02D62 (void);
+// 0x000001C6 System.Void Discord.RelationshipManager/FilterHandler::.ctor(System.Object,System.IntPtr)
+extern void FilterHandler__ctor_m495F7F14C8D80167315315DFBA970CC1B7723D68 (void);
+// 0x000001C7 System.Boolean Discord.RelationshipManager/FilterHandler::Invoke(Discord.Relationship&)
+extern void FilterHandler_Invoke_m077142399ADED3190485B4FAF9033C22E158FDCE (void);
+// 0x000001C8 System.IAsyncResult Discord.RelationshipManager/FilterHandler::BeginInvoke(Discord.Relationship&,System.AsyncCallback,System.Object)
+extern void FilterHandler_BeginInvoke_m756553C2358B9C2AD9381189CCC7E06437E0CE57 (void);
+// 0x000001C9 System.Boolean Discord.RelationshipManager/FilterHandler::EndInvoke(Discord.Relationship&,System.IAsyncResult)
+extern void FilterHandler_EndInvoke_m9B1DD93050D0AEF07126B0A5A7C827EE57D8DEE9 (void);
+// 0x000001CA System.Void Discord.RelationshipManager/RefreshHandler::.ctor(System.Object,System.IntPtr)
+extern void RefreshHandler__ctor_m6A76D322C6E3DA8C444C4A0CD31A9B1FCAFD431C (void);
+// 0x000001CB System.Void Discord.RelationshipManager/RefreshHandler::Invoke()
+extern void RefreshHandler_Invoke_m799655AD26967A6B353BFF2F55C041404CB77E6C (void);
+// 0x000001CC System.IAsyncResult Discord.RelationshipManager/RefreshHandler::BeginInvoke(System.AsyncCallback,System.Object)
+extern void RefreshHandler_BeginInvoke_m6077194E9F04D31FF9BF6A900CA31A2CF65BD707 (void);
+// 0x000001CD System.Void Discord.RelationshipManager/RefreshHandler::EndInvoke(System.IAsyncResult)
+extern void RefreshHandler_EndInvoke_m6AB0DC4A22C9DB28AF2A70248966DE68CCCFA505 (void);
+// 0x000001CE System.Void Discord.RelationshipManager/RelationshipUpdateHandler::.ctor(System.Object,System.IntPtr)
+extern void RelationshipUpdateHandler__ctor_mAC6B6C381B27EDD8B8B9978E024539066F30C26A (void);
+// 0x000001CF System.Void Discord.RelationshipManager/RelationshipUpdateHandler::Invoke(Discord.Relationship&)
+extern void RelationshipUpdateHandler_Invoke_mB0030315775C10473018812FD349C87DB2C19055 (void);
+// 0x000001D0 System.IAsyncResult Discord.RelationshipManager/RelationshipUpdateHandler::BeginInvoke(Discord.Relationship&,System.AsyncCallback,System.Object)
+extern void RelationshipUpdateHandler_BeginInvoke_m6E3462F8181ACF79C9AEC2798544253AE4E52784 (void);
+// 0x000001D1 System.Void Discord.RelationshipManager/RelationshipUpdateHandler::EndInvoke(Discord.Relationship&,System.IAsyncResult)
+extern void RelationshipUpdateHandler_EndInvoke_m407E4DD7673257398375D5DFBFBDF6D562E83451 (void);
+// 0x000001D2 Discord.LobbyManager/FFIMethods Discord.LobbyManager::get_Methods()
+extern void LobbyManager_get_Methods_mAB4671B56F1454762295870CA1C8E9808D6EE911 (void);
+// 0x000001D3 System.Void Discord.LobbyManager::add_OnLobbyUpdate(Discord.LobbyManager/LobbyUpdateHandler)
+extern void LobbyManager_add_OnLobbyUpdate_m3943E321AF4F7CCD29E154A38868D9CCA4F54FBF (void);
+// 0x000001D4 System.Void Discord.LobbyManager::remove_OnLobbyUpdate(Discord.LobbyManager/LobbyUpdateHandler)
+extern void LobbyManager_remove_OnLobbyUpdate_m6FCE33524C682C235AB9CF7517F00CF5DB92D5C1 (void);
+// 0x000001D5 System.Void Discord.LobbyManager::add_OnLobbyDelete(Discord.LobbyManager/LobbyDeleteHandler)
+extern void LobbyManager_add_OnLobbyDelete_mBA4C38B2B1C438E20E21600B527D21FF04E1AFEB (void);
+// 0x000001D6 System.Void Discord.LobbyManager::remove_OnLobbyDelete(Discord.LobbyManager/LobbyDeleteHandler)
+extern void LobbyManager_remove_OnLobbyDelete_m7A693FB765594FD6475BDF5E7CBAC3B5B0BC5574 (void);
+// 0x000001D7 System.Void Discord.LobbyManager::add_OnMemberConnect(Discord.LobbyManager/MemberConnectHandler)
+extern void LobbyManager_add_OnMemberConnect_mDA4D19640BE268D9C48B2DF68F8F171CAA5B50F0 (void);
+// 0x000001D8 System.Void Discord.LobbyManager::remove_OnMemberConnect(Discord.LobbyManager/MemberConnectHandler)
+extern void LobbyManager_remove_OnMemberConnect_mC4EAEB22CFA1FB3E0950F115072F6C6F678A4222 (void);
+// 0x000001D9 System.Void Discord.LobbyManager::add_OnMemberUpdate(Discord.LobbyManager/MemberUpdateHandler)
+extern void LobbyManager_add_OnMemberUpdate_m6F972B3D2F52147FF0301A20BE0A27CC73111D88 (void);
+// 0x000001DA System.Void Discord.LobbyManager::remove_OnMemberUpdate(Discord.LobbyManager/MemberUpdateHandler)
+extern void LobbyManager_remove_OnMemberUpdate_mCA99536C3C8E4C9176F5CC6D327EBF81617E13B7 (void);
+// 0x000001DB System.Void Discord.LobbyManager::add_OnMemberDisconnect(Discord.LobbyManager/MemberDisconnectHandler)
+extern void LobbyManager_add_OnMemberDisconnect_mB0E380B620D52372128149B60FA0BE3A350C1F12 (void);
+// 0x000001DC System.Void Discord.LobbyManager::remove_OnMemberDisconnect(Discord.LobbyManager/MemberDisconnectHandler)
+extern void LobbyManager_remove_OnMemberDisconnect_mE7C4CD0B52DEA211A9406F884C472DC516C0B2DB (void);
+// 0x000001DD System.Void Discord.LobbyManager::add_OnLobbyMessage(Discord.LobbyManager/LobbyMessageHandler)
+extern void LobbyManager_add_OnLobbyMessage_m7A4E1D9244421B6307BDB81E8A05DD4696B43437 (void);
+// 0x000001DE System.Void Discord.LobbyManager::remove_OnLobbyMessage(Discord.LobbyManager/LobbyMessageHandler)
+extern void LobbyManager_remove_OnLobbyMessage_m256A5A91A5B1CE9C678E8B408918032F91143F24 (void);
+// 0x000001DF System.Void Discord.LobbyManager::add_OnSpeaking(Discord.LobbyManager/SpeakingHandler)
+extern void LobbyManager_add_OnSpeaking_m7376A510F8F9F14C70643A80642B887CFBDD3046 (void);
+// 0x000001E0 System.Void Discord.LobbyManager::remove_OnSpeaking(Discord.LobbyManager/SpeakingHandler)
+extern void LobbyManager_remove_OnSpeaking_m4AE9B484993E3544445F82360770FEC5E91039DC (void);
+// 0x000001E1 System.Void Discord.LobbyManager::add_OnNetworkMessage(Discord.LobbyManager/NetworkMessageHandler)
+extern void LobbyManager_add_OnNetworkMessage_m97C00B16CEC065F170A8CC1C782048E866529AF0 (void);
+// 0x000001E2 System.Void Discord.LobbyManager::remove_OnNetworkMessage(Discord.LobbyManager/NetworkMessageHandler)
+extern void LobbyManager_remove_OnNetworkMessage_mA9D1AF95AD230DD038E8A532B518995D28C77108 (void);
+// 0x000001E3 System.Void Discord.LobbyManager::.ctor(System.IntPtr,System.IntPtr,Discord.LobbyManager/FFIEvents&)
+extern void LobbyManager__ctor_m708156974FE2F1CC377739B4658AF06BDAAE6517 (void);
+// 0x000001E4 System.Void Discord.LobbyManager::InitEvents(System.IntPtr,Discord.LobbyManager/FFIEvents&)
+extern void LobbyManager_InitEvents_mE79234483483F55D84FB6C1998EF361682F7B7C3 (void);
+// 0x000001E5 Discord.LobbyTransaction Discord.LobbyManager::GetLobbyCreateTransaction()
+extern void LobbyManager_GetLobbyCreateTransaction_mE7F8528D8475716DF18BDEF13F2D9045A2FD508C (void);
+// 0x000001E6 Discord.LobbyTransaction Discord.LobbyManager::GetLobbyUpdateTransaction(System.Int64)
+extern void LobbyManager_GetLobbyUpdateTransaction_m50291BAC8E91995D99BBDF7C960B65890EE2D6FA (void);
+// 0x000001E7 Discord.LobbyMemberTransaction Discord.LobbyManager::GetMemberUpdateTransaction(System.Int64,System.Int64)
+extern void LobbyManager_GetMemberUpdateTransaction_m33C85E4E0753F5F4E0940B76D69E99A8CAD69E87 (void);
+// 0x000001E8 System.Void Discord.LobbyManager::CreateLobbyCallbackImpl(System.IntPtr,Discord.Result,Discord.Lobby&)
+extern void LobbyManager_CreateLobbyCallbackImpl_mAEC695E946BF3C40173C82788DBDA66CF33E0545 (void);
+// 0x000001E9 System.Void Discord.LobbyManager::CreateLobby(Discord.LobbyTransaction,Discord.LobbyManager/CreateLobbyHandler)
+extern void LobbyManager_CreateLobby_mEA195F5958AD6558A08E8F2F6B04313849D95230 (void);
+// 0x000001EA System.Void Discord.LobbyManager::UpdateLobbyCallbackImpl(System.IntPtr,Discord.Result)
+extern void LobbyManager_UpdateLobbyCallbackImpl_m872BB837E05FB625708FD84A2FFF10203000FB48 (void);
+// 0x000001EB System.Void Discord.LobbyManager::UpdateLobby(System.Int64,Discord.LobbyTransaction,Discord.LobbyManager/UpdateLobbyHandler)
+extern void LobbyManager_UpdateLobby_mBFB2C351D72DFAAA8FEAD3270BB5BD233E5D2584 (void);
+// 0x000001EC System.Void Discord.LobbyManager::DeleteLobbyCallbackImpl(System.IntPtr,Discord.Result)
+extern void LobbyManager_DeleteLobbyCallbackImpl_m1EF2A8CD6ECED00010924FCD79A5DDA74321CDA4 (void);
+// 0x000001ED System.Void Discord.LobbyManager::DeleteLobby(System.Int64,Discord.LobbyManager/DeleteLobbyHandler)
+extern void LobbyManager_DeleteLobby_m8D74C8B82D703C1A71B251250181902BB5C5F664 (void);
+// 0x000001EE System.Void Discord.LobbyManager::ConnectLobbyCallbackImpl(System.IntPtr,Discord.Result,Discord.Lobby&)
+extern void LobbyManager_ConnectLobbyCallbackImpl_mC6F224135CB0F2DD39916FADA215914D813F76C3 (void);
+// 0x000001EF System.Void Discord.LobbyManager::ConnectLobby(System.Int64,System.String,Discord.LobbyManager/ConnectLobbyHandler)
+extern void LobbyManager_ConnectLobby_mA5020E8CD8D08DCD7EF6EC96094BEB74228A1274 (void);
+// 0x000001F0 System.Void Discord.LobbyManager::ConnectLobbyWithActivitySecretCallbackImpl(System.IntPtr,Discord.Result,Discord.Lobby&)
+extern void LobbyManager_ConnectLobbyWithActivitySecretCallbackImpl_mF0672B35B8B893A97CCDFA6BB76049782424D662 (void);
+// 0x000001F1 System.Void Discord.LobbyManager::ConnectLobbyWithActivitySecret(System.String,Discord.LobbyManager/ConnectLobbyWithActivitySecretHandler)
+extern void LobbyManager_ConnectLobbyWithActivitySecret_m17CD7EF5A09049BA281528E84B598787D9C1BAF5 (void);
+// 0x000001F2 System.Void Discord.LobbyManager::DisconnectLobbyCallbackImpl(System.IntPtr,Discord.Result)
+extern void LobbyManager_DisconnectLobbyCallbackImpl_m0C82CC19DC9831ABE6D399AFA8C27B3223AA07BC (void);
+// 0x000001F3 System.Void Discord.LobbyManager::DisconnectLobby(System.Int64,Discord.LobbyManager/DisconnectLobbyHandler)
+extern void LobbyManager_DisconnectLobby_m4B12BEB08E974011A161221D4A1B07EBBC320D44 (void);
+// 0x000001F4 Discord.Lobby Discord.LobbyManager::GetLobby(System.Int64)
+extern void LobbyManager_GetLobby_m45DDC16D1D9DDF252F1D3B0697B525AA4F386E2F (void);
+// 0x000001F5 System.String Discord.LobbyManager::GetLobbyActivitySecret(System.Int64)
+extern void LobbyManager_GetLobbyActivitySecret_m4A46AB47234CA2084D53E418A34F3B46EC7A40DD (void);
+// 0x000001F6 System.String Discord.LobbyManager::GetLobbyMetadataValue(System.Int64,System.String)
+extern void LobbyManager_GetLobbyMetadataValue_m6DF470379764671F0D59AB9F02E7AAEED324B2A2 (void);
+// 0x000001F7 System.String Discord.LobbyManager::GetLobbyMetadataKey(System.Int64,System.Int32)
+extern void LobbyManager_GetLobbyMetadataKey_m193FB116B7BBD64C87FC55C648B5E2FAA6732243 (void);
+// 0x000001F8 System.Int32 Discord.LobbyManager::LobbyMetadataCount(System.Int64)
+extern void LobbyManager_LobbyMetadataCount_m2FDBDBC33D35B57A3631052BE00FB661E585B919 (void);
+// 0x000001F9 System.Int32 Discord.LobbyManager::MemberCount(System.Int64)
+extern void LobbyManager_MemberCount_m072C6C31C891D1BF48DEE53301EF15904F23A148 (void);
+// 0x000001FA System.Int64 Discord.LobbyManager::GetMemberUserId(System.Int64,System.Int32)
+extern void LobbyManager_GetMemberUserId_m8F20BD5EC19A79A45EAA2C4D4ED5B8F75DA1E95D (void);
+// 0x000001FB Discord.User Discord.LobbyManager::GetMemberUser(System.Int64,System.Int64)
+extern void LobbyManager_GetMemberUser_m421F60EF55004D704CE90027363CD6E82B1F8A55 (void);
+// 0x000001FC System.String Discord.LobbyManager::GetMemberMetadataValue(System.Int64,System.Int64,System.String)
+extern void LobbyManager_GetMemberMetadataValue_m087028C8DDB75D180B44E7E7876C37B07984199F (void);
+// 0x000001FD System.String Discord.LobbyManager::GetMemberMetadataKey(System.Int64,System.Int64,System.Int32)
+extern void LobbyManager_GetMemberMetadataKey_m2457FCC99A4F226297AC991800FFFBE549BD2B47 (void);
+// 0x000001FE System.Int32 Discord.LobbyManager::MemberMetadataCount(System.Int64,System.Int64)
+extern void LobbyManager_MemberMetadataCount_m43FC6E8E4933B29E5CCEB07D5F8299D2E1DD62F8 (void);
+// 0x000001FF System.Void Discord.LobbyManager::UpdateMemberCallbackImpl(System.IntPtr,Discord.Result)
+extern void LobbyManager_UpdateMemberCallbackImpl_mD3A20BFB5B62AF19ED7B7602771F398581D57D5E (void);
+// 0x00000200 System.Void Discord.LobbyManager::UpdateMember(System.Int64,System.Int64,Discord.LobbyMemberTransaction,Discord.LobbyManager/UpdateMemberHandler)
+extern void LobbyManager_UpdateMember_m67176BB07FB706AFCF7C6A2D8B30145A5C75C371 (void);
+// 0x00000201 System.Void Discord.LobbyManager::SendLobbyMessageCallbackImpl(System.IntPtr,Discord.Result)
+extern void LobbyManager_SendLobbyMessageCallbackImpl_m959A23A89207490DE4DFAF663F5FE28F9770AD60 (void);
+// 0x00000202 System.Void Discord.LobbyManager::SendLobbyMessage(System.Int64,System.Byte[],Discord.LobbyManager/SendLobbyMessageHandler)
+extern void LobbyManager_SendLobbyMessage_mA0AD19660BD38435E9DB95C219B6906C92757D03 (void);
+// 0x00000203 Discord.LobbySearchQuery Discord.LobbyManager::GetSearchQuery()
+extern void LobbyManager_GetSearchQuery_mF8C10FC9CF699D96142B17BA44377CD6D58DC935 (void);
+// 0x00000204 System.Void Discord.LobbyManager::SearchCallbackImpl(System.IntPtr,Discord.Result)
+extern void LobbyManager_SearchCallbackImpl_mED88264E1F99571C56A6BCE7033296640C4364AE (void);
+// 0x00000205 System.Void Discord.LobbyManager::Search(Discord.LobbySearchQuery,Discord.LobbyManager/SearchHandler)
+extern void LobbyManager_Search_m61F72C124CB7810E821A17F05FA82E6380FE191B (void);
+// 0x00000206 System.Int32 Discord.LobbyManager::LobbyCount()
+extern void LobbyManager_LobbyCount_mC9459B8A11282CA62E2526EC51E9A0025BB57DF5 (void);
+// 0x00000207 System.Int64 Discord.LobbyManager::GetLobbyId(System.Int32)
+extern void LobbyManager_GetLobbyId_m1086CA9660BA35E655B7F0F63C77FAB83023ECFA (void);
+// 0x00000208 System.Void Discord.LobbyManager::ConnectVoiceCallbackImpl(System.IntPtr,Discord.Result)
+extern void LobbyManager_ConnectVoiceCallbackImpl_mD540710CDFBB59D63315731DCF839713FFA7CF61 (void);
+// 0x00000209 System.Void Discord.LobbyManager::ConnectVoice(System.Int64,Discord.LobbyManager/ConnectVoiceHandler)
+extern void LobbyManager_ConnectVoice_m8D8E9AD933BE1A37BED49CCC87E1B719E03CD69F (void);
+// 0x0000020A System.Void Discord.LobbyManager::DisconnectVoiceCallbackImpl(System.IntPtr,Discord.Result)
+extern void LobbyManager_DisconnectVoiceCallbackImpl_m2120A7C9C6B19BA9F8E647F6C0F3D09120E86BE6 (void);
+// 0x0000020B System.Void Discord.LobbyManager::DisconnectVoice(System.Int64,Discord.LobbyManager/DisconnectVoiceHandler)
+extern void LobbyManager_DisconnectVoice_m1E2BD53C2BEFB2E94869CF4AA30138DC42858CCE (void);
+// 0x0000020C System.Void Discord.LobbyManager::ConnectNetwork(System.Int64)
+extern void LobbyManager_ConnectNetwork_mDFF60DD4CB1625D8E8615E592928A061AFBECD86 (void);
+// 0x0000020D System.Void Discord.LobbyManager::DisconnectNetwork(System.Int64)
+extern void LobbyManager_DisconnectNetwork_mC0027BEC165916194049CCBD0B1DF4A589F6C253 (void);
+// 0x0000020E System.Void Discord.LobbyManager::FlushNetwork()
+extern void LobbyManager_FlushNetwork_m36941BDC49A666F233048E471329AFE405D0237F (void);
+// 0x0000020F System.Void Discord.LobbyManager::OpenNetworkChannel(System.Int64,System.Byte,System.Boolean)
+extern void LobbyManager_OpenNetworkChannel_m4A81D808FDB7395EBB9879F7ACB37FE02038C0E1 (void);
+// 0x00000210 System.Void Discord.LobbyManager::SendNetworkMessage(System.Int64,System.Int64,System.Byte,System.Byte[])
+extern void LobbyManager_SendNetworkMessage_m02F3F276B19266DAB19AC5A16D44C62194DC9DF4 (void);
+// 0x00000211 System.Void Discord.LobbyManager::OnLobbyUpdateImpl(System.IntPtr,System.Int64)
+extern void LobbyManager_OnLobbyUpdateImpl_m44AD90AF0ED29FF182C4742C4929634D5317B731 (void);
+// 0x00000212 System.Void Discord.LobbyManager::OnLobbyDeleteImpl(System.IntPtr,System.Int64,System.UInt32)
+extern void LobbyManager_OnLobbyDeleteImpl_m37D4C69CBA595571A546AA1B95531BE36CFACBD8 (void);
+// 0x00000213 System.Void Discord.LobbyManager::OnMemberConnectImpl(System.IntPtr,System.Int64,System.Int64)
+extern void LobbyManager_OnMemberConnectImpl_m65F4BFCEDB9DE6B163B5307E44F38785B380846E (void);
+// 0x00000214 System.Void Discord.LobbyManager::OnMemberUpdateImpl(System.IntPtr,System.Int64,System.Int64)
+extern void LobbyManager_OnMemberUpdateImpl_mB4FF5EC811FED31616E2F0CFF40351CFFC2D64DD (void);
+// 0x00000215 System.Void Discord.LobbyManager::OnMemberDisconnectImpl(System.IntPtr,System.Int64,System.Int64)
+extern void LobbyManager_OnMemberDisconnectImpl_m9E9D0AB3B26776234EA3D57609CE627C14448B39 (void);
+// 0x00000216 System.Void Discord.LobbyManager::OnLobbyMessageImpl(System.IntPtr,System.Int64,System.Int64,System.IntPtr,System.Int32)
+extern void LobbyManager_OnLobbyMessageImpl_m1DA5EC8E401742A7B240BE6167F23A8D414CFBC9 (void);
+// 0x00000217 System.Void Discord.LobbyManager::OnSpeakingImpl(System.IntPtr,System.Int64,System.Int64,System.Boolean)
+extern void LobbyManager_OnSpeakingImpl_m9C171D737C50D9C79C84DE59B2C57CE37CE2D64F (void);
+// 0x00000218 System.Void Discord.LobbyManager::OnNetworkMessageImpl(System.IntPtr,System.Int64,System.Int64,System.Byte,System.IntPtr,System.Int32)
+extern void LobbyManager_OnNetworkMessageImpl_mF5ED77A9685583B4B4B2AD7D9AE87446E33D7B6F (void);
+// 0x00000219 System.Collections.Generic.IEnumerable`1<Discord.User> Discord.LobbyManager::GetMemberUsers(System.Int64)
+extern void LobbyManager_GetMemberUsers_m86B091A0039609744313618122A1E61DA1C2970F (void);
+// 0x0000021A System.Void Discord.LobbyManager::SendLobbyMessage(System.Int64,System.String,Discord.LobbyManager/SendLobbyMessageHandler)
+extern void LobbyManager_SendLobbyMessage_m1B5D1631CF8D38C40FBD9EE5A63A807F307A85C4 (void);
+// 0x0000021B System.Void Discord.LobbyManager/FFIEvents/LobbyUpdateHandler::.ctor(System.Object,System.IntPtr)
+extern void LobbyUpdateHandler__ctor_m1372C703137A7B6F954EE1B17E8542C46A3DBDD8 (void);
+// 0x0000021C System.Void Discord.LobbyManager/FFIEvents/LobbyUpdateHandler::Invoke(System.IntPtr,System.Int64)
+extern void LobbyUpdateHandler_Invoke_mAFB677CD4DD8957A7F8DA3FA7DD8B57B91389923 (void);
+// 0x0000021D System.IAsyncResult Discord.LobbyManager/FFIEvents/LobbyUpdateHandler::BeginInvoke(System.IntPtr,System.Int64,System.AsyncCallback,System.Object)
+extern void LobbyUpdateHandler_BeginInvoke_m59E9398D0A2563052BEFF642CD1A17E011378493 (void);
+// 0x0000021E System.Void Discord.LobbyManager/FFIEvents/LobbyUpdateHandler::EndInvoke(System.IAsyncResult)
+extern void LobbyUpdateHandler_EndInvoke_m03F80CB1164C39DEFF17C3F1444B9AB74BB7EBCE (void);
+// 0x0000021F System.Void Discord.LobbyManager/FFIEvents/LobbyDeleteHandler::.ctor(System.Object,System.IntPtr)
+extern void LobbyDeleteHandler__ctor_mBD37458772630B29EC45DA55256186F23F5FF8DD (void);
+// 0x00000220 System.Void Discord.LobbyManager/FFIEvents/LobbyDeleteHandler::Invoke(System.IntPtr,System.Int64,System.UInt32)
+extern void LobbyDeleteHandler_Invoke_m3E2B0DF919CDC552A56BD36559208A79C164BF1D (void);
+// 0x00000221 System.IAsyncResult Discord.LobbyManager/FFIEvents/LobbyDeleteHandler::BeginInvoke(System.IntPtr,System.Int64,System.UInt32,System.AsyncCallback,System.Object)
+extern void LobbyDeleteHandler_BeginInvoke_m7C1D2497CB06E5E38A14E3924E6F69F93269A687 (void);
+// 0x00000222 System.Void Discord.LobbyManager/FFIEvents/LobbyDeleteHandler::EndInvoke(System.IAsyncResult)
+extern void LobbyDeleteHandler_EndInvoke_m1E31876213A18AA3F888844A501FC19A9989C684 (void);
+// 0x00000223 System.Void Discord.LobbyManager/FFIEvents/MemberConnectHandler::.ctor(System.Object,System.IntPtr)
+extern void MemberConnectHandler__ctor_mA8F80572C0336DA7A3C207BA1C6112729A262B61 (void);
+// 0x00000224 System.Void Discord.LobbyManager/FFIEvents/MemberConnectHandler::Invoke(System.IntPtr,System.Int64,System.Int64)
+extern void MemberConnectHandler_Invoke_m3245B6A630A4385972B621D3A120E5038C3A1621 (void);
+// 0x00000225 System.IAsyncResult Discord.LobbyManager/FFIEvents/MemberConnectHandler::BeginInvoke(System.IntPtr,System.Int64,System.Int64,System.AsyncCallback,System.Object)
+extern void MemberConnectHandler_BeginInvoke_mCABAF156F4B74AAB13FF2C567002D7182C6C5339 (void);
+// 0x00000226 System.Void Discord.LobbyManager/FFIEvents/MemberConnectHandler::EndInvoke(System.IAsyncResult)
+extern void MemberConnectHandler_EndInvoke_m196ACD442832169A8710408A07966454F4FE48D3 (void);
+// 0x00000227 System.Void Discord.LobbyManager/FFIEvents/MemberUpdateHandler::.ctor(System.Object,System.IntPtr)
+extern void MemberUpdateHandler__ctor_m65508DBF41F396EF04BDCAD7DD5FA9CCE6822F03 (void);
+// 0x00000228 System.Void Discord.LobbyManager/FFIEvents/MemberUpdateHandler::Invoke(System.IntPtr,System.Int64,System.Int64)
+extern void MemberUpdateHandler_Invoke_m5794DA2BC4B1D13CE05D39FC439EFBD0111CC337 (void);
+// 0x00000229 System.IAsyncResult Discord.LobbyManager/FFIEvents/MemberUpdateHandler::BeginInvoke(System.IntPtr,System.Int64,System.Int64,System.AsyncCallback,System.Object)
+extern void MemberUpdateHandler_BeginInvoke_m849FEFF17504D5F6FBC32F575E89CC975680BF6C (void);
+// 0x0000022A System.Void Discord.LobbyManager/FFIEvents/MemberUpdateHandler::EndInvoke(System.IAsyncResult)
+extern void MemberUpdateHandler_EndInvoke_mC8B42CEC5529C0CF6D97480AFDFD3416A1932312 (void);
+// 0x0000022B System.Void Discord.LobbyManager/FFIEvents/MemberDisconnectHandler::.ctor(System.Object,System.IntPtr)
+extern void MemberDisconnectHandler__ctor_m7FE118FD66BC43F9E040DCB667D5E2A87F235227 (void);
+// 0x0000022C System.Void Discord.LobbyManager/FFIEvents/MemberDisconnectHandler::Invoke(System.IntPtr,System.Int64,System.Int64)
+extern void MemberDisconnectHandler_Invoke_mEEE8AEFE5B3736D2EE78A59E5C74A21C0E154099 (void);
+// 0x0000022D System.IAsyncResult Discord.LobbyManager/FFIEvents/MemberDisconnectHandler::BeginInvoke(System.IntPtr,System.Int64,System.Int64,System.AsyncCallback,System.Object)
+extern void MemberDisconnectHandler_BeginInvoke_m4AD5657DED608A5DACE332CA0BD232AF14C1DA14 (void);
+// 0x0000022E System.Void Discord.LobbyManager/FFIEvents/MemberDisconnectHandler::EndInvoke(System.IAsyncResult)
+extern void MemberDisconnectHandler_EndInvoke_m5A412B8089040BF53056517BD3A5F2F2BEA6DABE (void);
+// 0x0000022F System.Void Discord.LobbyManager/FFIEvents/LobbyMessageHandler::.ctor(System.Object,System.IntPtr)
+extern void LobbyMessageHandler__ctor_m3A27C15974AEF6D832A12AD68A87E387EAC47B2F (void);
+// 0x00000230 System.Void Discord.LobbyManager/FFIEvents/LobbyMessageHandler::Invoke(System.IntPtr,System.Int64,System.Int64,System.IntPtr,System.Int32)
+extern void LobbyMessageHandler_Invoke_mE182492D5FCADD9E4BC1F1CDADE98ABF2D4642DD (void);
+// 0x00000231 System.IAsyncResult Discord.LobbyManager/FFIEvents/LobbyMessageHandler::BeginInvoke(System.IntPtr,System.Int64,System.Int64,System.IntPtr,System.Int32,System.AsyncCallback,System.Object)
+extern void LobbyMessageHandler_BeginInvoke_m84306E4884A75DC703F7B2F9C5A6809967A23214 (void);
+// 0x00000232 System.Void Discord.LobbyManager/FFIEvents/LobbyMessageHandler::EndInvoke(System.IAsyncResult)
+extern void LobbyMessageHandler_EndInvoke_m701564211103456154466691B1F13CE26B68DD1D (void);
+// 0x00000233 System.Void Discord.LobbyManager/FFIEvents/SpeakingHandler::.ctor(System.Object,System.IntPtr)
+extern void SpeakingHandler__ctor_mE844BCAC971CD7B3BD54D416AFA611FB549B9865 (void);
+// 0x00000234 System.Void Discord.LobbyManager/FFIEvents/SpeakingHandler::Invoke(System.IntPtr,System.Int64,System.Int64,System.Boolean)
+extern void SpeakingHandler_Invoke_m69B9B8E5B659EC387603B0874371D7257C475596 (void);
+// 0x00000235 System.IAsyncResult Discord.LobbyManager/FFIEvents/SpeakingHandler::BeginInvoke(System.IntPtr,System.Int64,System.Int64,System.Boolean,System.AsyncCallback,System.Object)
+extern void SpeakingHandler_BeginInvoke_mC1AD16D0602879CD90F0F87A1276134DE3F8BE18 (void);
+// 0x00000236 System.Void Discord.LobbyManager/FFIEvents/SpeakingHandler::EndInvoke(System.IAsyncResult)
+extern void SpeakingHandler_EndInvoke_m699C78120F1903E499078B0A9612157E9980CFC8 (void);
+// 0x00000237 System.Void Discord.LobbyManager/FFIEvents/NetworkMessageHandler::.ctor(System.Object,System.IntPtr)
+extern void NetworkMessageHandler__ctor_mEEEFBCA7689954C3631DCE664BA48F40AF9880A7 (void);
+// 0x00000238 System.Void Discord.LobbyManager/FFIEvents/NetworkMessageHandler::Invoke(System.IntPtr,System.Int64,System.Int64,System.Byte,System.IntPtr,System.Int32)
+extern void NetworkMessageHandler_Invoke_m2D1A66A5B6919455813F9EDEEB039686EB8A51E8 (void);
+// 0x00000239 System.IAsyncResult Discord.LobbyManager/FFIEvents/NetworkMessageHandler::BeginInvoke(System.IntPtr,System.Int64,System.Int64,System.Byte,System.IntPtr,System.Int32,System.AsyncCallback,System.Object)
+extern void NetworkMessageHandler_BeginInvoke_m9C444C0C26CECA0DCA93749F8C592F685AF0B929 (void);
+// 0x0000023A System.Void Discord.LobbyManager/FFIEvents/NetworkMessageHandler::EndInvoke(System.IAsyncResult)
+extern void NetworkMessageHandler_EndInvoke_mEF8873E6C701B48309663CE1077F1AFEE1BC1655 (void);
+// 0x0000023B System.Void Discord.LobbyManager/FFIMethods/GetLobbyCreateTransactionMethod::.ctor(System.Object,System.IntPtr)
+extern void GetLobbyCreateTransactionMethod__ctor_m0ED90914F11D13FE59819D8906F6E0C74E3734AC (void);
+// 0x0000023C Discord.Result Discord.LobbyManager/FFIMethods/GetLobbyCreateTransactionMethod::Invoke(System.IntPtr,System.IntPtr&)
+extern void GetLobbyCreateTransactionMethod_Invoke_mD9062AA76E4D9B892BA2542846966E32E329C344 (void);
+// 0x0000023D System.IAsyncResult Discord.LobbyManager/FFIMethods/GetLobbyCreateTransactionMethod::BeginInvoke(System.IntPtr,System.IntPtr&,System.AsyncCallback,System.Object)
+extern void GetLobbyCreateTransactionMethod_BeginInvoke_mC2389D15D197DAFAF0A2BF9B4DA7CE796FD0AE9B (void);
+// 0x0000023E Discord.Result Discord.LobbyManager/FFIMethods/GetLobbyCreateTransactionMethod::EndInvoke(System.IntPtr&,System.IAsyncResult)
+extern void GetLobbyCreateTransactionMethod_EndInvoke_mE8955850CC93AC345A05263C85EFC3AD39769C1F (void);
+// 0x0000023F System.Void Discord.LobbyManager/FFIMethods/GetLobbyUpdateTransactionMethod::.ctor(System.Object,System.IntPtr)
+extern void GetLobbyUpdateTransactionMethod__ctor_m038300BD08C69BD79D2C6182E6C4F900B35390E0 (void);
+// 0x00000240 Discord.Result Discord.LobbyManager/FFIMethods/GetLobbyUpdateTransactionMethod::Invoke(System.IntPtr,System.Int64,System.IntPtr&)
+extern void GetLobbyUpdateTransactionMethod_Invoke_m4244DC7142CFB1874B020AF352C3B34063A8751A (void);
+// 0x00000241 System.IAsyncResult Discord.LobbyManager/FFIMethods/GetLobbyUpdateTransactionMethod::BeginInvoke(System.IntPtr,System.Int64,System.IntPtr&,System.AsyncCallback,System.Object)
+extern void GetLobbyUpdateTransactionMethod_BeginInvoke_m918C51CBD73942A106CCF8BA6F541C9AEB79B13A (void);
+// 0x00000242 Discord.Result Discord.LobbyManager/FFIMethods/GetLobbyUpdateTransactionMethod::EndInvoke(System.IntPtr&,System.IAsyncResult)
+extern void GetLobbyUpdateTransactionMethod_EndInvoke_m74751FD8D432FA2227639D5A42743912F6BEE0F7 (void);
+// 0x00000243 System.Void Discord.LobbyManager/FFIMethods/GetMemberUpdateTransactionMethod::.ctor(System.Object,System.IntPtr)
+extern void GetMemberUpdateTransactionMethod__ctor_m39BC4D7D586D41602FBA00682FDBBC50DEFC957A (void);
+// 0x00000244 Discord.Result Discord.LobbyManager/FFIMethods/GetMemberUpdateTransactionMethod::Invoke(System.IntPtr,System.Int64,System.Int64,System.IntPtr&)
+extern void GetMemberUpdateTransactionMethod_Invoke_m29EAEC9FCBAC5C4F9A0B04FBD28BFAE23CA1CC5B (void);
+// 0x00000245 System.IAsyncResult Discord.LobbyManager/FFIMethods/GetMemberUpdateTransactionMethod::BeginInvoke(System.IntPtr,System.Int64,System.Int64,System.IntPtr&,System.AsyncCallback,System.Object)
+extern void GetMemberUpdateTransactionMethod_BeginInvoke_m8B39E47DCE57186802DA55E1312172D3F45FE20D (void);
+// 0x00000246 Discord.Result Discord.LobbyManager/FFIMethods/GetMemberUpdateTransactionMethod::EndInvoke(System.IntPtr&,System.IAsyncResult)
+extern void GetMemberUpdateTransactionMethod_EndInvoke_m33D110C73E27B4265F447A67AC18FC6F52983D47 (void);
+// 0x00000247 System.Void Discord.LobbyManager/FFIMethods/CreateLobbyCallback::.ctor(System.Object,System.IntPtr)
+extern void CreateLobbyCallback__ctor_mC850859DDB18C4D5FAC9C9B612CB036BB9D7AD32 (void);
+// 0x00000248 System.Void Discord.LobbyManager/FFIMethods/CreateLobbyCallback::Invoke(System.IntPtr,Discord.Result,Discord.Lobby&)
+extern void CreateLobbyCallback_Invoke_m1861EF3B487FF43F47861253177285BA2D07462D (void);
+// 0x00000249 System.IAsyncResult Discord.LobbyManager/FFIMethods/CreateLobbyCallback::BeginInvoke(System.IntPtr,Discord.Result,Discord.Lobby&,System.AsyncCallback,System.Object)
+extern void CreateLobbyCallback_BeginInvoke_m12BFE02D626C7D337FFD8B56551781CF677D95C1 (void);
+// 0x0000024A System.Void Discord.LobbyManager/FFIMethods/CreateLobbyCallback::EndInvoke(Discord.Lobby&,System.IAsyncResult)
+extern void CreateLobbyCallback_EndInvoke_mD8B6891D7BB75E88729C302E41428D51FC7F70C0 (void);
+// 0x0000024B System.Void Discord.LobbyManager/FFIMethods/CreateLobbyMethod::.ctor(System.Object,System.IntPtr)
+extern void CreateLobbyMethod__ctor_m6045AC2A01AE5D514489028A69654FBEBAAAD1DA (void);
+// 0x0000024C System.Void Discord.LobbyManager/FFIMethods/CreateLobbyMethod::Invoke(System.IntPtr,System.IntPtr,System.IntPtr,Discord.LobbyManager/FFIMethods/CreateLobbyCallback)
+extern void CreateLobbyMethod_Invoke_mAC9C24CA504B30366260B818866B3DA7D90D67F4 (void);
+// 0x0000024D System.IAsyncResult Discord.LobbyManager/FFIMethods/CreateLobbyMethod::BeginInvoke(System.IntPtr,System.IntPtr,System.IntPtr,Discord.LobbyManager/FFIMethods/CreateLobbyCallback,System.AsyncCallback,System.Object)
+extern void CreateLobbyMethod_BeginInvoke_m207CF791D2DED519F621FE7529B72595045EBEF8 (void);
+// 0x0000024E System.Void Discord.LobbyManager/FFIMethods/CreateLobbyMethod::EndInvoke(System.IAsyncResult)
+extern void CreateLobbyMethod_EndInvoke_m52EE145AF7F35DBE8F5E3B32D781253713C2FEFA (void);
+// 0x0000024F System.Void Discord.LobbyManager/FFIMethods/UpdateLobbyCallback::.ctor(System.Object,System.IntPtr)
+extern void UpdateLobbyCallback__ctor_m45066206BBEBD6345D8DB2F19CA2C6F9AFCCE75C (void);
+// 0x00000250 System.Void Discord.LobbyManager/FFIMethods/UpdateLobbyCallback::Invoke(System.IntPtr,Discord.Result)
+extern void UpdateLobbyCallback_Invoke_m643B9CCD2C5436D9CA19FF58311A5BF7347D048E (void);
+// 0x00000251 System.IAsyncResult Discord.LobbyManager/FFIMethods/UpdateLobbyCallback::BeginInvoke(System.IntPtr,Discord.Result,System.AsyncCallback,System.Object)
+extern void UpdateLobbyCallback_BeginInvoke_m22A0AF56012B262AED7F2270DF349A31D497B2E3 (void);
+// 0x00000252 System.Void Discord.LobbyManager/FFIMethods/UpdateLobbyCallback::EndInvoke(System.IAsyncResult)
+extern void UpdateLobbyCallback_EndInvoke_m18A813D47A5E44A060D771B181A216287D5D684F (void);
+// 0x00000253 System.Void Discord.LobbyManager/FFIMethods/UpdateLobbyMethod::.ctor(System.Object,System.IntPtr)
+extern void UpdateLobbyMethod__ctor_m0A49E3CF69C6727FD6B10A172DB26FDE6AA1098F (void);
+// 0x00000254 System.Void Discord.LobbyManager/FFIMethods/UpdateLobbyMethod::Invoke(System.IntPtr,System.Int64,System.IntPtr,System.IntPtr,Discord.LobbyManager/FFIMethods/UpdateLobbyCallback)
+extern void UpdateLobbyMethod_Invoke_m328AB7DA92A95B997C1248339A32EAC36AF35102 (void);
+// 0x00000255 System.IAsyncResult Discord.LobbyManager/FFIMethods/UpdateLobbyMethod::BeginInvoke(System.IntPtr,System.Int64,System.IntPtr,System.IntPtr,Discord.LobbyManager/FFIMethods/UpdateLobbyCallback,System.AsyncCallback,System.Object)
+extern void UpdateLobbyMethod_BeginInvoke_m85E4227ABBBC61EF4DB3F2CE498A81BAC7C2FC8A (void);
+// 0x00000256 System.Void Discord.LobbyManager/FFIMethods/UpdateLobbyMethod::EndInvoke(System.IAsyncResult)
+extern void UpdateLobbyMethod_EndInvoke_mCAA6C4FA5A76403CBA93B4C48E776B3C302A1C2E (void);
+// 0x00000257 System.Void Discord.LobbyManager/FFIMethods/DeleteLobbyCallback::.ctor(System.Object,System.IntPtr)
+extern void DeleteLobbyCallback__ctor_m3A618C93419608D4E1AB9A799974B78E54745F1C (void);
+// 0x00000258 System.Void Discord.LobbyManager/FFIMethods/DeleteLobbyCallback::Invoke(System.IntPtr,Discord.Result)
+extern void DeleteLobbyCallback_Invoke_m2A613F0CCD88946E7C04413E086ECE11D070DB5D (void);
+// 0x00000259 System.IAsyncResult Discord.LobbyManager/FFIMethods/DeleteLobbyCallback::BeginInvoke(System.IntPtr,Discord.Result,System.AsyncCallback,System.Object)
+extern void DeleteLobbyCallback_BeginInvoke_m069D222D88A79AC0E1532AFB78E4A7C0E3DC953E (void);
+// 0x0000025A System.Void Discord.LobbyManager/FFIMethods/DeleteLobbyCallback::EndInvoke(System.IAsyncResult)
+extern void DeleteLobbyCallback_EndInvoke_mDBE83787B9399CD8C77D779A80657CFEE0FEC89A (void);
+// 0x0000025B System.Void Discord.LobbyManager/FFIMethods/DeleteLobbyMethod::.ctor(System.Object,System.IntPtr)
+extern void DeleteLobbyMethod__ctor_mD1CFBB82437F2C12883DA360A040C888EC775DB3 (void);
+// 0x0000025C System.Void Discord.LobbyManager/FFIMethods/DeleteLobbyMethod::Invoke(System.IntPtr,System.Int64,System.IntPtr,Discord.LobbyManager/FFIMethods/DeleteLobbyCallback)
+extern void DeleteLobbyMethod_Invoke_m8F2CA2F0F9AC5EAE62A56C3179851B770E02B734 (void);
+// 0x0000025D System.IAsyncResult Discord.LobbyManager/FFIMethods/DeleteLobbyMethod::BeginInvoke(System.IntPtr,System.Int64,System.IntPtr,Discord.LobbyManager/FFIMethods/DeleteLobbyCallback,System.AsyncCallback,System.Object)
+extern void DeleteLobbyMethod_BeginInvoke_m90E83F20A9A14684DB510BB51AF016960694823C (void);
+// 0x0000025E System.Void Discord.LobbyManager/FFIMethods/DeleteLobbyMethod::EndInvoke(System.IAsyncResult)
+extern void DeleteLobbyMethod_EndInvoke_m83061B4541A8B8A0CF366B01491DFAA8C254D7BB (void);
+// 0x0000025F System.Void Discord.LobbyManager/FFIMethods/ConnectLobbyCallback::.ctor(System.Object,System.IntPtr)
+extern void ConnectLobbyCallback__ctor_m4335CD54AFB7DA46E5CBC11F856DE39113EF85FE (void);
+// 0x00000260 System.Void Discord.LobbyManager/FFIMethods/ConnectLobbyCallback::Invoke(System.IntPtr,Discord.Result,Discord.Lobby&)
+extern void ConnectLobbyCallback_Invoke_m15F1B1C4F4C0950AA0ADFF6F0E6D02E4381532E7 (void);
+// 0x00000261 System.IAsyncResult Discord.LobbyManager/FFIMethods/ConnectLobbyCallback::BeginInvoke(System.IntPtr,Discord.Result,Discord.Lobby&,System.AsyncCallback,System.Object)
+extern void ConnectLobbyCallback_BeginInvoke_m563CEA79E3F0BF31FA89AB6ED057D217B0D5D94B (void);
+// 0x00000262 System.Void Discord.LobbyManager/FFIMethods/ConnectLobbyCallback::EndInvoke(Discord.Lobby&,System.IAsyncResult)
+extern void ConnectLobbyCallback_EndInvoke_m4347FF163C8E220D7DAE1CDADD638EB923F18694 (void);
+// 0x00000263 System.Void Discord.LobbyManager/FFIMethods/ConnectLobbyMethod::.ctor(System.Object,System.IntPtr)
+extern void ConnectLobbyMethod__ctor_mCC8DCF4B5FC80345F3E9D6EC626703E4BA887705 (void);
+// 0x00000264 System.Void Discord.LobbyManager/FFIMethods/ConnectLobbyMethod::Invoke(System.IntPtr,System.Int64,System.String,System.IntPtr,Discord.LobbyManager/FFIMethods/ConnectLobbyCallback)
+extern void ConnectLobbyMethod_Invoke_m5E25B7C1A035DDBD720B9F9E1C955CBF6808D584 (void);
+// 0x00000265 System.IAsyncResult Discord.LobbyManager/FFIMethods/ConnectLobbyMethod::BeginInvoke(System.IntPtr,System.Int64,System.String,System.IntPtr,Discord.LobbyManager/FFIMethods/ConnectLobbyCallback,System.AsyncCallback,System.Object)
+extern void ConnectLobbyMethod_BeginInvoke_m4EE8D5E45A7F87A98D9BA94C967E7527BAB1966F (void);
+// 0x00000266 System.Void Discord.LobbyManager/FFIMethods/ConnectLobbyMethod::EndInvoke(System.IAsyncResult)
+extern void ConnectLobbyMethod_EndInvoke_mBC259C4D4E6788A37C0281A71CBCE1E2AEB25540 (void);
+// 0x00000267 System.Void Discord.LobbyManager/FFIMethods/ConnectLobbyWithActivitySecretCallback::.ctor(System.Object,System.IntPtr)
+extern void ConnectLobbyWithActivitySecretCallback__ctor_m4A886732B3CDC5994446AF27A2402C41127434A8 (void);
+// 0x00000268 System.Void Discord.LobbyManager/FFIMethods/ConnectLobbyWithActivitySecretCallback::Invoke(System.IntPtr,Discord.Result,Discord.Lobby&)
+extern void ConnectLobbyWithActivitySecretCallback_Invoke_m84D345B0F1465FAA13ECE88B8903521FC24C37E9 (void);
+// 0x00000269 System.IAsyncResult Discord.LobbyManager/FFIMethods/ConnectLobbyWithActivitySecretCallback::BeginInvoke(System.IntPtr,Discord.Result,Discord.Lobby&,System.AsyncCallback,System.Object)
+extern void ConnectLobbyWithActivitySecretCallback_BeginInvoke_m6332392E4D181EAC7ADC91E472152178845CBAC6 (void);
+// 0x0000026A System.Void Discord.LobbyManager/FFIMethods/ConnectLobbyWithActivitySecretCallback::EndInvoke(Discord.Lobby&,System.IAsyncResult)
+extern void ConnectLobbyWithActivitySecretCallback_EndInvoke_mD19506E1BBE5AA0C498BA7445A34152273006135 (void);
+// 0x0000026B System.Void Discord.LobbyManager/FFIMethods/ConnectLobbyWithActivitySecretMethod::.ctor(System.Object,System.IntPtr)
+extern void ConnectLobbyWithActivitySecretMethod__ctor_mC741C205B500A5453FC7B39D80C71ABBA5491E86 (void);
+// 0x0000026C System.Void Discord.LobbyManager/FFIMethods/ConnectLobbyWithActivitySecretMethod::Invoke(System.IntPtr,System.String,System.IntPtr,Discord.LobbyManager/FFIMethods/ConnectLobbyWithActivitySecretCallback)
+extern void ConnectLobbyWithActivitySecretMethod_Invoke_mCA10B53B301B2EECC54960B76363726FBB8C76ED (void);
+// 0x0000026D System.IAsyncResult Discord.LobbyManager/FFIMethods/ConnectLobbyWithActivitySecretMethod::BeginInvoke(System.IntPtr,System.String,System.IntPtr,Discord.LobbyManager/FFIMethods/ConnectLobbyWithActivitySecretCallback,System.AsyncCallback,System.Object)
+extern void ConnectLobbyWithActivitySecretMethod_BeginInvoke_mE1320B5A87D31A5683697CD794D1536E3F3C3B89 (void);
+// 0x0000026E System.Void Discord.LobbyManager/FFIMethods/ConnectLobbyWithActivitySecretMethod::EndInvoke(System.IAsyncResult)
+extern void ConnectLobbyWithActivitySecretMethod_EndInvoke_mB37ED5639A8A737B60AAD05AE74A55C8DD816ED3 (void);
+// 0x0000026F System.Void Discord.LobbyManager/FFIMethods/DisconnectLobbyCallback::.ctor(System.Object,System.IntPtr)
+extern void DisconnectLobbyCallback__ctor_m176BF1FC5432E427442163D61B849941EB1AAF23 (void);
+// 0x00000270 System.Void Discord.LobbyManager/FFIMethods/DisconnectLobbyCallback::Invoke(System.IntPtr,Discord.Result)
+extern void DisconnectLobbyCallback_Invoke_mEBF3B64DB27EF06883AE8A9BDF0132D1026ABA33 (void);
+// 0x00000271 System.IAsyncResult Discord.LobbyManager/FFIMethods/DisconnectLobbyCallback::BeginInvoke(System.IntPtr,Discord.Result,System.AsyncCallback,System.Object)
+extern void DisconnectLobbyCallback_BeginInvoke_m63A3C90F0E404B8B580D3597104E69C65F9230DF (void);
+// 0x00000272 System.Void Discord.LobbyManager/FFIMethods/DisconnectLobbyCallback::EndInvoke(System.IAsyncResult)
+extern void DisconnectLobbyCallback_EndInvoke_m713888550749F008C13A25145C6A65EE607237A6 (void);
+// 0x00000273 System.Void Discord.LobbyManager/FFIMethods/DisconnectLobbyMethod::.ctor(System.Object,System.IntPtr)
+extern void DisconnectLobbyMethod__ctor_m63DD541E649493653697F5A7D68FB41F36A29DF0 (void);
+// 0x00000274 System.Void Discord.LobbyManager/FFIMethods/DisconnectLobbyMethod::Invoke(System.IntPtr,System.Int64,System.IntPtr,Discord.LobbyManager/FFIMethods/DisconnectLobbyCallback)
+extern void DisconnectLobbyMethod_Invoke_m8933BE64CF1926FF814FD44AD378F591520BE403 (void);
+// 0x00000275 System.IAsyncResult Discord.LobbyManager/FFIMethods/DisconnectLobbyMethod::BeginInvoke(System.IntPtr,System.Int64,System.IntPtr,Discord.LobbyManager/FFIMethods/DisconnectLobbyCallback,System.AsyncCallback,System.Object)
+extern void DisconnectLobbyMethod_BeginInvoke_m69B056C26602A49FA731D965F1A86E20E1A6A04A (void);
+// 0x00000276 System.Void Discord.LobbyManager/FFIMethods/DisconnectLobbyMethod::EndInvoke(System.IAsyncResult)
+extern void DisconnectLobbyMethod_EndInvoke_m928A941D843F70B2A27D1670ABCD741314163DBA (void);
+// 0x00000277 System.Void Discord.LobbyManager/FFIMethods/GetLobbyMethod::.ctor(System.Object,System.IntPtr)
+extern void GetLobbyMethod__ctor_mF9DE8A0A2157AE72C295C2D1113BF0BA1E264B2F (void);
+// 0x00000278 Discord.Result Discord.LobbyManager/FFIMethods/GetLobbyMethod::Invoke(System.IntPtr,System.Int64,Discord.Lobby&)
+extern void GetLobbyMethod_Invoke_m811E0A762F650D014BDD1AA4C25A652596B6EEEF (void);
+// 0x00000279 System.IAsyncResult Discord.LobbyManager/FFIMethods/GetLobbyMethod::BeginInvoke(System.IntPtr,System.Int64,Discord.Lobby&,System.AsyncCallback,System.Object)
+extern void GetLobbyMethod_BeginInvoke_m846FBF3F05E99B4C82E82BA65AA7744731470095 (void);
+// 0x0000027A Discord.Result Discord.LobbyManager/FFIMethods/GetLobbyMethod::EndInvoke(Discord.Lobby&,System.IAsyncResult)
+extern void GetLobbyMethod_EndInvoke_m9080F7DE2571D19ACDF93B7440749A2B1E9B2B70 (void);
+// 0x0000027B System.Void Discord.LobbyManager/FFIMethods/GetLobbyActivitySecretMethod::.ctor(System.Object,System.IntPtr)
+extern void GetLobbyActivitySecretMethod__ctor_m0D01FD534601D15B28FE6BF88C33EB025DE97EE1 (void);
+// 0x0000027C Discord.Result Discord.LobbyManager/FFIMethods/GetLobbyActivitySecretMethod::Invoke(System.IntPtr,System.Int64,System.Text.StringBuilder)
+extern void GetLobbyActivitySecretMethod_Invoke_mF50EE8CBFF0D22CD3AAC087F2FB0E93C51896770 (void);
+// 0x0000027D System.IAsyncResult Discord.LobbyManager/FFIMethods/GetLobbyActivitySecretMethod::BeginInvoke(System.IntPtr,System.Int64,System.Text.StringBuilder,System.AsyncCallback,System.Object)
+extern void GetLobbyActivitySecretMethod_BeginInvoke_m778CAA70DE4F5EA74101438BD7374F19719E7153 (void);
+// 0x0000027E Discord.Result Discord.LobbyManager/FFIMethods/GetLobbyActivitySecretMethod::EndInvoke(System.IAsyncResult)
+extern void GetLobbyActivitySecretMethod_EndInvoke_mCAE10884FF14C7090329DA66566588860E1DCB7D (void);
+// 0x0000027F System.Void Discord.LobbyManager/FFIMethods/GetLobbyMetadataValueMethod::.ctor(System.Object,System.IntPtr)
+extern void GetLobbyMetadataValueMethod__ctor_m35141C686D83F54A851A0F35947613473FA95D33 (void);
+// 0x00000280 Discord.Result Discord.LobbyManager/FFIMethods/GetLobbyMetadataValueMethod::Invoke(System.IntPtr,System.Int64,System.String,System.Text.StringBuilder)
+extern void GetLobbyMetadataValueMethod_Invoke_mC064B10E1AAC0C3522CD79D6A004DAD703377121 (void);
+// 0x00000281 System.IAsyncResult Discord.LobbyManager/FFIMethods/GetLobbyMetadataValueMethod::BeginInvoke(System.IntPtr,System.Int64,System.String,System.Text.StringBuilder,System.AsyncCallback,System.Object)
+extern void GetLobbyMetadataValueMethod_BeginInvoke_m1ED2992EC854B5F82245F01FDEACD6A865E495D3 (void);
+// 0x00000282 Discord.Result Discord.LobbyManager/FFIMethods/GetLobbyMetadataValueMethod::EndInvoke(System.IAsyncResult)
+extern void GetLobbyMetadataValueMethod_EndInvoke_m245343647564CB73813A6384D7C433AFC00D60CB (void);
+// 0x00000283 System.Void Discord.LobbyManager/FFIMethods/GetLobbyMetadataKeyMethod::.ctor(System.Object,System.IntPtr)
+extern void GetLobbyMetadataKeyMethod__ctor_mC454BFD69B9968E10A1B76A002D9DC962A5BE3F6 (void);
+// 0x00000284 Discord.Result Discord.LobbyManager/FFIMethods/GetLobbyMetadataKeyMethod::Invoke(System.IntPtr,System.Int64,System.Int32,System.Text.StringBuilder)
+extern void GetLobbyMetadataKeyMethod_Invoke_mDE41809E4FD0A3F89084DF5C2BDE98D67743B0EF (void);
+// 0x00000285 System.IAsyncResult Discord.LobbyManager/FFIMethods/GetLobbyMetadataKeyMethod::BeginInvoke(System.IntPtr,System.Int64,System.Int32,System.Text.StringBuilder,System.AsyncCallback,System.Object)
+extern void GetLobbyMetadataKeyMethod_BeginInvoke_m98A94795DF558022F1AF9057F311EB7110E61254 (void);
+// 0x00000286 Discord.Result Discord.LobbyManager/FFIMethods/GetLobbyMetadataKeyMethod::EndInvoke(System.IAsyncResult)
+extern void GetLobbyMetadataKeyMethod_EndInvoke_mA474DC2C3FDFFEA52B9C9C1291202D92FFC134DB (void);
+// 0x00000287 System.Void Discord.LobbyManager/FFIMethods/LobbyMetadataCountMethod::.ctor(System.Object,System.IntPtr)
+extern void LobbyMetadataCountMethod__ctor_m36FE7161AD73D029BFB6AB60B09C64AA4739A957 (void);
+// 0x00000288 Discord.Result Discord.LobbyManager/FFIMethods/LobbyMetadataCountMethod::Invoke(System.IntPtr,System.Int64,System.Int32&)
+extern void LobbyMetadataCountMethod_Invoke_mA876E6884BD9C77397BBFD3389ACFFC5C37E3019 (void);
+// 0x00000289 System.IAsyncResult Discord.LobbyManager/FFIMethods/LobbyMetadataCountMethod::BeginInvoke(System.IntPtr,System.Int64,System.Int32&,System.AsyncCallback,System.Object)
+extern void LobbyMetadataCountMethod_BeginInvoke_mDA96784CCDECE40A000F5D073AF7CE4A20EC42EB (void);
+// 0x0000028A Discord.Result Discord.LobbyManager/FFIMethods/LobbyMetadataCountMethod::EndInvoke(System.Int32&,System.IAsyncResult)
+extern void LobbyMetadataCountMethod_EndInvoke_m1D0B5CFCCCB98C3E9E9FCDF490129AA530224411 (void);
+// 0x0000028B System.Void Discord.LobbyManager/FFIMethods/MemberCountMethod::.ctor(System.Object,System.IntPtr)
+extern void MemberCountMethod__ctor_mC82D5A9AEBD522073BFF3592038969E09EFA7F40 (void);
+// 0x0000028C Discord.Result Discord.LobbyManager/FFIMethods/MemberCountMethod::Invoke(System.IntPtr,System.Int64,System.Int32&)
+extern void MemberCountMethod_Invoke_m9446EF3D14BC4934C6F78B00DFC8AD244B3E1BFC (void);
+// 0x0000028D System.IAsyncResult Discord.LobbyManager/FFIMethods/MemberCountMethod::BeginInvoke(System.IntPtr,System.Int64,System.Int32&,System.AsyncCallback,System.Object)
+extern void MemberCountMethod_BeginInvoke_m41824888A7EB994EEC5313FE5C65E376F335703E (void);
+// 0x0000028E Discord.Result Discord.LobbyManager/FFIMethods/MemberCountMethod::EndInvoke(System.Int32&,System.IAsyncResult)
+extern void MemberCountMethod_EndInvoke_mB26480DD8B27E5C067009413AA3B5DCF80FB5546 (void);
+// 0x0000028F System.Void Discord.LobbyManager/FFIMethods/GetMemberUserIdMethod::.ctor(System.Object,System.IntPtr)
+extern void GetMemberUserIdMethod__ctor_m25E0210DF7E2C6C2CDD6CE6B747FD6D7B42C9BB9 (void);
+// 0x00000290 Discord.Result Discord.LobbyManager/FFIMethods/GetMemberUserIdMethod::Invoke(System.IntPtr,System.Int64,System.Int32,System.Int64&)
+extern void GetMemberUserIdMethod_Invoke_m2258007AADBF6E81213CFB22C867F0477F51783B (void);
+// 0x00000291 System.IAsyncResult Discord.LobbyManager/FFIMethods/GetMemberUserIdMethod::BeginInvoke(System.IntPtr,System.Int64,System.Int32,System.Int64&,System.AsyncCallback,System.Object)
+extern void GetMemberUserIdMethod_BeginInvoke_m97BC68A3F5CECE0DB613B196680D9FFC25C99860 (void);
+// 0x00000292 Discord.Result Discord.LobbyManager/FFIMethods/GetMemberUserIdMethod::EndInvoke(System.Int64&,System.IAsyncResult)
+extern void GetMemberUserIdMethod_EndInvoke_m4C01D7BB5348086D918B680208CEF407415AB060 (void);
+// 0x00000293 System.Void Discord.LobbyManager/FFIMethods/GetMemberUserMethod::.ctor(System.Object,System.IntPtr)
+extern void GetMemberUserMethod__ctor_mA43732DA734980F125939D6036D9D49D87913A10 (void);
+// 0x00000294 Discord.Result Discord.LobbyManager/FFIMethods/GetMemberUserMethod::Invoke(System.IntPtr,System.Int64,System.Int64,Discord.User&)
+extern void GetMemberUserMethod_Invoke_m4A536359FF74FAD62A0A5F0AC08FE2CFF7C98F69 (void);
+// 0x00000295 System.IAsyncResult Discord.LobbyManager/FFIMethods/GetMemberUserMethod::BeginInvoke(System.IntPtr,System.Int64,System.Int64,Discord.User&,System.AsyncCallback,System.Object)
+extern void GetMemberUserMethod_BeginInvoke_m2B3C113DB9270BCC673F7A89B388740B582A48DA (void);
+// 0x00000296 Discord.Result Discord.LobbyManager/FFIMethods/GetMemberUserMethod::EndInvoke(Discord.User&,System.IAsyncResult)
+extern void GetMemberUserMethod_EndInvoke_mA86394808307861001800B2E38A911CA4AB79841 (void);
+// 0x00000297 System.Void Discord.LobbyManager/FFIMethods/GetMemberMetadataValueMethod::.ctor(System.Object,System.IntPtr)
+extern void GetMemberMetadataValueMethod__ctor_mA51203FEA771397FF866350538C3566B4710D371 (void);
+// 0x00000298 Discord.Result Discord.LobbyManager/FFIMethods/GetMemberMetadataValueMethod::Invoke(System.IntPtr,System.Int64,System.Int64,System.String,System.Text.StringBuilder)
+extern void GetMemberMetadataValueMethod_Invoke_m7733B564C5D4EF7FBE7DA6F755336053AEB3BD0D (void);
+// 0x00000299 System.IAsyncResult Discord.LobbyManager/FFIMethods/GetMemberMetadataValueMethod::BeginInvoke(System.IntPtr,System.Int64,System.Int64,System.String,System.Text.StringBuilder,System.AsyncCallback,System.Object)
+extern void GetMemberMetadataValueMethod_BeginInvoke_m47D9C0A8677645D54A31793B53F166EB4EEC6EED (void);
+// 0x0000029A Discord.Result Discord.LobbyManager/FFIMethods/GetMemberMetadataValueMethod::EndInvoke(System.IAsyncResult)
+extern void GetMemberMetadataValueMethod_EndInvoke_m520EB14524C6B5B1FE054F32D4D205D1014C3AE3 (void);
+// 0x0000029B System.Void Discord.LobbyManager/FFIMethods/GetMemberMetadataKeyMethod::.ctor(System.Object,System.IntPtr)
+extern void GetMemberMetadataKeyMethod__ctor_mFE3ED7372F8E4E7EDF36CD2D980F6904D9055585 (void);
+// 0x0000029C Discord.Result Discord.LobbyManager/FFIMethods/GetMemberMetadataKeyMethod::Invoke(System.IntPtr,System.Int64,System.Int64,System.Int32,System.Text.StringBuilder)
+extern void GetMemberMetadataKeyMethod_Invoke_mCFFDF6EFE4D6EB910BA1EA4305BE28E8366E7287 (void);
+// 0x0000029D System.IAsyncResult Discord.LobbyManager/FFIMethods/GetMemberMetadataKeyMethod::BeginInvoke(System.IntPtr,System.Int64,System.Int64,System.Int32,System.Text.StringBuilder,System.AsyncCallback,System.Object)
+extern void GetMemberMetadataKeyMethod_BeginInvoke_m5D171FC570133C8248BD19B5FE0D2C2B2E533211 (void);
+// 0x0000029E Discord.Result Discord.LobbyManager/FFIMethods/GetMemberMetadataKeyMethod::EndInvoke(System.IAsyncResult)
+extern void GetMemberMetadataKeyMethod_EndInvoke_mA83DEB7DE5E56C0C24AF48F324945A114BB10A25 (void);
+// 0x0000029F System.Void Discord.LobbyManager/FFIMethods/MemberMetadataCountMethod::.ctor(System.Object,System.IntPtr)
+extern void MemberMetadataCountMethod__ctor_mFB2E04BA01E3614E6B186C76A316DB7D334C23CD (void);
+// 0x000002A0 Discord.Result Discord.LobbyManager/FFIMethods/MemberMetadataCountMethod::Invoke(System.IntPtr,System.Int64,System.Int64,System.Int32&)
+extern void MemberMetadataCountMethod_Invoke_m64E8173CA67BD3806E38AE7F658FD880543837AA (void);
+// 0x000002A1 System.IAsyncResult Discord.LobbyManager/FFIMethods/MemberMetadataCountMethod::BeginInvoke(System.IntPtr,System.Int64,System.Int64,System.Int32&,System.AsyncCallback,System.Object)
+extern void MemberMetadataCountMethod_BeginInvoke_m3BCE9697C53F3170DE6493675B18FE2FEEF7E902 (void);
+// 0x000002A2 Discord.Result Discord.LobbyManager/FFIMethods/MemberMetadataCountMethod::EndInvoke(System.Int32&,System.IAsyncResult)
+extern void MemberMetadataCountMethod_EndInvoke_m2EBA22CF94B29D6EE2E8F7B59A922A40796B538C (void);
+// 0x000002A3 System.Void Discord.LobbyManager/FFIMethods/UpdateMemberCallback::.ctor(System.Object,System.IntPtr)
+extern void UpdateMemberCallback__ctor_mA14E7656222A3929886D07A03CD31B1295302E90 (void);
+// 0x000002A4 System.Void Discord.LobbyManager/FFIMethods/UpdateMemberCallback::Invoke(System.IntPtr,Discord.Result)
+extern void UpdateMemberCallback_Invoke_mE6554FFE582D72BCCCC5A9B8855A2F185E043AC4 (void);
+// 0x000002A5 System.IAsyncResult Discord.LobbyManager/FFIMethods/UpdateMemberCallback::BeginInvoke(System.IntPtr,Discord.Result,System.AsyncCallback,System.Object)
+extern void UpdateMemberCallback_BeginInvoke_mE34820C8A802A9C41CFF65E7F003143C6147874D (void);
+// 0x000002A6 System.Void Discord.LobbyManager/FFIMethods/UpdateMemberCallback::EndInvoke(System.IAsyncResult)
+extern void UpdateMemberCallback_EndInvoke_mDF9C6E899AD25D25CC96C008EEAE54677A82C8F0 (void);
+// 0x000002A7 System.Void Discord.LobbyManager/FFIMethods/UpdateMemberMethod::.ctor(System.Object,System.IntPtr)
+extern void UpdateMemberMethod__ctor_mF6FE78D56C5450407231A6E2BD3507FBEE0B9EEA (void);
+// 0x000002A8 System.Void Discord.LobbyManager/FFIMethods/UpdateMemberMethod::Invoke(System.IntPtr,System.Int64,System.Int64,System.IntPtr,System.IntPtr,Discord.LobbyManager/FFIMethods/UpdateMemberCallback)
+extern void UpdateMemberMethod_Invoke_mD45957A637169B2E7BD9F7E6C002E6E7A323641D (void);
+// 0x000002A9 System.IAsyncResult Discord.LobbyManager/FFIMethods/UpdateMemberMethod::BeginInvoke(System.IntPtr,System.Int64,System.Int64,System.IntPtr,System.IntPtr,Discord.LobbyManager/FFIMethods/UpdateMemberCallback,System.AsyncCallback,System.Object)
+extern void UpdateMemberMethod_BeginInvoke_m60338F8834DD82B9C28458A16A90C06503D54759 (void);
+// 0x000002AA System.Void Discord.LobbyManager/FFIMethods/UpdateMemberMethod::EndInvoke(System.IAsyncResult)
+extern void UpdateMemberMethod_EndInvoke_m3B081C4E083068DE5FAD011DE4A94CFC270A5F2B (void);
+// 0x000002AB System.Void Discord.LobbyManager/FFIMethods/SendLobbyMessageCallback::.ctor(System.Object,System.IntPtr)
+extern void SendLobbyMessageCallback__ctor_mC9650728209F323A13FA3989556D3710A5BA3444 (void);
+// 0x000002AC System.Void Discord.LobbyManager/FFIMethods/SendLobbyMessageCallback::Invoke(System.IntPtr,Discord.Result)
+extern void SendLobbyMessageCallback_Invoke_m2BBDE80DF4E97B2371A7F6F15599A69CB749ACF7 (void);
+// 0x000002AD System.IAsyncResult Discord.LobbyManager/FFIMethods/SendLobbyMessageCallback::BeginInvoke(System.IntPtr,Discord.Result,System.AsyncCallback,System.Object)
+extern void SendLobbyMessageCallback_BeginInvoke_m0AD8FAB997F833CFCCB516E2CE28356FB5CF8E13 (void);
+// 0x000002AE System.Void Discord.LobbyManager/FFIMethods/SendLobbyMessageCallback::EndInvoke(System.IAsyncResult)
+extern void SendLobbyMessageCallback_EndInvoke_m45B8EA259A2DD55EDE3B697E925233FE3105C126 (void);
+// 0x000002AF System.Void Discord.LobbyManager/FFIMethods/SendLobbyMessageMethod::.ctor(System.Object,System.IntPtr)
+extern void SendLobbyMessageMethod__ctor_m1CEE1DB3041FDE4BB24D6830C8BBF8EF00E8011C (void);
+// 0x000002B0 System.Void Discord.LobbyManager/FFIMethods/SendLobbyMessageMethod::Invoke(System.IntPtr,System.Int64,System.Byte[],System.Int32,System.IntPtr,Discord.LobbyManager/FFIMethods/SendLobbyMessageCallback)
+extern void SendLobbyMessageMethod_Invoke_mD0F22AD95DF3E3BFB0991CD66B424D515CEA6D2C (void);
+// 0x000002B1 System.IAsyncResult Discord.LobbyManager/FFIMethods/SendLobbyMessageMethod::BeginInvoke(System.IntPtr,System.Int64,System.Byte[],System.Int32,System.IntPtr,Discord.LobbyManager/FFIMethods/SendLobbyMessageCallback,System.AsyncCallback,System.Object)
+extern void SendLobbyMessageMethod_BeginInvoke_m9AE496EF2321B0902314DDB60760EAF9B952AE7E (void);
+// 0x000002B2 System.Void Discord.LobbyManager/FFIMethods/SendLobbyMessageMethod::EndInvoke(System.IAsyncResult)
+extern void SendLobbyMessageMethod_EndInvoke_mB187D478039C07AC5017582D0162BCA1D34334A1 (void);
+// 0x000002B3 System.Void Discord.LobbyManager/FFIMethods/GetSearchQueryMethod::.ctor(System.Object,System.IntPtr)
+extern void GetSearchQueryMethod__ctor_mA93CF4B0D12E7DF806DC59106EED7D2ACC2609B3 (void);
+// 0x000002B4 Discord.Result Discord.LobbyManager/FFIMethods/GetSearchQueryMethod::Invoke(System.IntPtr,System.IntPtr&)
+extern void GetSearchQueryMethod_Invoke_m9DB4C24FECB91DC50D710E6CF5920F64F2ADD2C7 (void);
+// 0x000002B5 System.IAsyncResult Discord.LobbyManager/FFIMethods/GetSearchQueryMethod::BeginInvoke(System.IntPtr,System.IntPtr&,System.AsyncCallback,System.Object)
+extern void GetSearchQueryMethod_BeginInvoke_mFEA587709C7525A08F122F62522F21EE2563EF1B (void);
+// 0x000002B6 Discord.Result Discord.LobbyManager/FFIMethods/GetSearchQueryMethod::EndInvoke(System.IntPtr&,System.IAsyncResult)
+extern void GetSearchQueryMethod_EndInvoke_m94D8D6721AD68DC32E45D5BB76F0EC4F20A6CFE3 (void);
+// 0x000002B7 System.Void Discord.LobbyManager/FFIMethods/SearchCallback::.ctor(System.Object,System.IntPtr)
+extern void SearchCallback__ctor_m6D055A9DDF4CFE1DBBAEFB77848ECA923EE5F64F (void);
+// 0x000002B8 System.Void Discord.LobbyManager/FFIMethods/SearchCallback::Invoke(System.IntPtr,Discord.Result)
+extern void SearchCallback_Invoke_mB636BBB1DDF99DA16E8F06542BB670F38F1979CC (void);
+// 0x000002B9 System.IAsyncResult Discord.LobbyManager/FFIMethods/SearchCallback::BeginInvoke(System.IntPtr,Discord.Result,System.AsyncCallback,System.Object)
+extern void SearchCallback_BeginInvoke_mF2CB87B82466521DD7321900A8BC6CE7307E2165 (void);
+// 0x000002BA System.Void Discord.LobbyManager/FFIMethods/SearchCallback::EndInvoke(System.IAsyncResult)
+extern void SearchCallback_EndInvoke_m6C74282C22E535F154D3328C96309FD7CC0A3B54 (void);
+// 0x000002BB System.Void Discord.LobbyManager/FFIMethods/SearchMethod::.ctor(System.Object,System.IntPtr)
+extern void SearchMethod__ctor_m50D7A4AD62D4B73EA9E5D6BD10B65453FFD1FE46 (void);
+// 0x000002BC System.Void Discord.LobbyManager/FFIMethods/SearchMethod::Invoke(System.IntPtr,System.IntPtr,System.IntPtr,Discord.LobbyManager/FFIMethods/SearchCallback)
+extern void SearchMethod_Invoke_m3FDF0F83DA9BE4FF037BA8900288C56639EFE5CC (void);
+// 0x000002BD System.IAsyncResult Discord.LobbyManager/FFIMethods/SearchMethod::BeginInvoke(System.IntPtr,System.IntPtr,System.IntPtr,Discord.LobbyManager/FFIMethods/SearchCallback,System.AsyncCallback,System.Object)
+extern void SearchMethod_BeginInvoke_mADDC9A0DB28008BF051F64CAC1BF187F31FC0168 (void);
+// 0x000002BE System.Void Discord.LobbyManager/FFIMethods/SearchMethod::EndInvoke(System.IAsyncResult)
+extern void SearchMethod_EndInvoke_m97AD530C514368E1BAD2AA1D5C6D0D6ECE0C3027 (void);
+// 0x000002BF System.Void Discord.LobbyManager/FFIMethods/LobbyCountMethod::.ctor(System.Object,System.IntPtr)
+extern void LobbyCountMethod__ctor_mEEE01DA807BAE85B6FFFB0C4055EBCADA075B84B (void);
+// 0x000002C0 System.Void Discord.LobbyManager/FFIMethods/LobbyCountMethod::Invoke(System.IntPtr,System.Int32&)
+extern void LobbyCountMethod_Invoke_mDB281E5D6095826823249FDA943676014E919EF2 (void);
+// 0x000002C1 System.IAsyncResult Discord.LobbyManager/FFIMethods/LobbyCountMethod::BeginInvoke(System.IntPtr,System.Int32&,System.AsyncCallback,System.Object)
+extern void LobbyCountMethod_BeginInvoke_mF38BC68E4D2AE333B33E45FD16FB48E149C30188 (void);
+// 0x000002C2 System.Void Discord.LobbyManager/FFIMethods/LobbyCountMethod::EndInvoke(System.Int32&,System.IAsyncResult)
+extern void LobbyCountMethod_EndInvoke_mCED7824B76EDC33D6FED7D97E2AAACED2C254323 (void);
+// 0x000002C3 System.Void Discord.LobbyManager/FFIMethods/GetLobbyIdMethod::.ctor(System.Object,System.IntPtr)
+extern void GetLobbyIdMethod__ctor_m44B1C4C4DA1A6EC35128EFE8C7D6B761E44475C0 (void);
+// 0x000002C4 Discord.Result Discord.LobbyManager/FFIMethods/GetLobbyIdMethod::Invoke(System.IntPtr,System.Int32,System.Int64&)
+extern void GetLobbyIdMethod_Invoke_m2B4850EFD63B69BA16B567369AC13ED0A70FBE38 (void);
+// 0x000002C5 System.IAsyncResult Discord.LobbyManager/FFIMethods/GetLobbyIdMethod::BeginInvoke(System.IntPtr,System.Int32,System.Int64&,System.AsyncCallback,System.Object)
+extern void GetLobbyIdMethod_BeginInvoke_m4DDB3FFC0B20D8D61D3DDF6FE72642FA63555447 (void);
+// 0x000002C6 Discord.Result Discord.LobbyManager/FFIMethods/GetLobbyIdMethod::EndInvoke(System.Int64&,System.IAsyncResult)
+extern void GetLobbyIdMethod_EndInvoke_m99A528FCDE58FD40AF78D8DB75C3760EDD45054E (void);
+// 0x000002C7 System.Void Discord.LobbyManager/FFIMethods/ConnectVoiceCallback::.ctor(System.Object,System.IntPtr)
+extern void ConnectVoiceCallback__ctor_mA6575C3AD1114DDE7F9E7F646D81E6335AAAA40D (void);
+// 0x000002C8 System.Void Discord.LobbyManager/FFIMethods/ConnectVoiceCallback::Invoke(System.IntPtr,Discord.Result)
+extern void ConnectVoiceCallback_Invoke_m720E238B616F2D54D2078047C978907543052D0B (void);
+// 0x000002C9 System.IAsyncResult Discord.LobbyManager/FFIMethods/ConnectVoiceCallback::BeginInvoke(System.IntPtr,Discord.Result,System.AsyncCallback,System.Object)
+extern void ConnectVoiceCallback_BeginInvoke_m66CC16B1B2B4F82433F1351C68DFE6100539B7EC (void);
+// 0x000002CA System.Void Discord.LobbyManager/FFIMethods/ConnectVoiceCallback::EndInvoke(System.IAsyncResult)
+extern void ConnectVoiceCallback_EndInvoke_m8BDC90B24159394C488CBE533A9CFF8D38967D19 (void);
+// 0x000002CB System.Void Discord.LobbyManager/FFIMethods/ConnectVoiceMethod::.ctor(System.Object,System.IntPtr)
+extern void ConnectVoiceMethod__ctor_mC1F00A8A0803E163138780C32E3BF03B2056D966 (void);
+// 0x000002CC System.Void Discord.LobbyManager/FFIMethods/ConnectVoiceMethod::Invoke(System.IntPtr,System.Int64,System.IntPtr,Discord.LobbyManager/FFIMethods/ConnectVoiceCallback)
+extern void ConnectVoiceMethod_Invoke_m6A162E4DC45A81D435A290DE797C73F51EC05BDC (void);
+// 0x000002CD System.IAsyncResult Discord.LobbyManager/FFIMethods/ConnectVoiceMethod::BeginInvoke(System.IntPtr,System.Int64,System.IntPtr,Discord.LobbyManager/FFIMethods/ConnectVoiceCallback,System.AsyncCallback,System.Object)
+extern void ConnectVoiceMethod_BeginInvoke_m2BE8F16F1FFE0BA218D5D2712AF96416AE018648 (void);
+// 0x000002CE System.Void Discord.LobbyManager/FFIMethods/ConnectVoiceMethod::EndInvoke(System.IAsyncResult)
+extern void ConnectVoiceMethod_EndInvoke_m39D65C215D8B8B58E5DE3A729B2ECDC904F8B140 (void);
+// 0x000002CF System.Void Discord.LobbyManager/FFIMethods/DisconnectVoiceCallback::.ctor(System.Object,System.IntPtr)
+extern void DisconnectVoiceCallback__ctor_m4E85909A46CCAB672858A43CB01E01546300811D (void);
+// 0x000002D0 System.Void Discord.LobbyManager/FFIMethods/DisconnectVoiceCallback::Invoke(System.IntPtr,Discord.Result)
+extern void DisconnectVoiceCallback_Invoke_m47D74D7FF6D83D36F34CC3435FAF754ECD34BD3C (void);
+// 0x000002D1 System.IAsyncResult Discord.LobbyManager/FFIMethods/DisconnectVoiceCallback::BeginInvoke(System.IntPtr,Discord.Result,System.AsyncCallback,System.Object)
+extern void DisconnectVoiceCallback_BeginInvoke_mF387C51159B5644D66A9F6C886549AFEE4CB0825 (void);
+// 0x000002D2 System.Void Discord.LobbyManager/FFIMethods/DisconnectVoiceCallback::EndInvoke(System.IAsyncResult)
+extern void DisconnectVoiceCallback_EndInvoke_mCC22E88CCBCE8ACCDFC6E60E707F842E59C6E580 (void);
+// 0x000002D3 System.Void Discord.LobbyManager/FFIMethods/DisconnectVoiceMethod::.ctor(System.Object,System.IntPtr)
+extern void DisconnectVoiceMethod__ctor_m53B95891F8D3C4D494BFBED91A353CF20BB22EF9 (void);
+// 0x000002D4 System.Void Discord.LobbyManager/FFIMethods/DisconnectVoiceMethod::Invoke(System.IntPtr,System.Int64,System.IntPtr,Discord.LobbyManager/FFIMethods/DisconnectVoiceCallback)
+extern void DisconnectVoiceMethod_Invoke_m088842A53816EC8D68870210AB7C800D03493C08 (void);
+// 0x000002D5 System.IAsyncResult Discord.LobbyManager/FFIMethods/DisconnectVoiceMethod::BeginInvoke(System.IntPtr,System.Int64,System.IntPtr,Discord.LobbyManager/FFIMethods/DisconnectVoiceCallback,System.AsyncCallback,System.Object)
+extern void DisconnectVoiceMethod_BeginInvoke_mDE9871FB01BCC039E8B88D6319AFB9966CE05DE6 (void);
+// 0x000002D6 System.Void Discord.LobbyManager/FFIMethods/DisconnectVoiceMethod::EndInvoke(System.IAsyncResult)
+extern void DisconnectVoiceMethod_EndInvoke_mF224F381A780848B7D98A7EAED1DC355804B8381 (void);
+// 0x000002D7 System.Void Discord.LobbyManager/FFIMethods/ConnectNetworkMethod::.ctor(System.Object,System.IntPtr)
+extern void ConnectNetworkMethod__ctor_m9981B2C443FD82FBE952B6B89F7DF7F64C5C461E (void);
+// 0x000002D8 Discord.Result Discord.LobbyManager/FFIMethods/ConnectNetworkMethod::Invoke(System.IntPtr,System.Int64)
+extern void ConnectNetworkMethod_Invoke_m5B4ABAFB4A845E8761C17FA176F735F9966BA024 (void);
+// 0x000002D9 System.IAsyncResult Discord.LobbyManager/FFIMethods/ConnectNetworkMethod::BeginInvoke(System.IntPtr,System.Int64,System.AsyncCallback,System.Object)
+extern void ConnectNetworkMethod_BeginInvoke_m5E2262C4D702DE8C7E7A1A95EEB8AB640BC32446 (void);
+// 0x000002DA Discord.Result Discord.LobbyManager/FFIMethods/ConnectNetworkMethod::EndInvoke(System.IAsyncResult)
+extern void ConnectNetworkMethod_EndInvoke_m10CB5A82B9CF3E20DA930C096F07EB33BF75A844 (void);
+// 0x000002DB System.Void Discord.LobbyManager/FFIMethods/DisconnectNetworkMethod::.ctor(System.Object,System.IntPtr)
+extern void DisconnectNetworkMethod__ctor_m387D2E2226A4C3761CA1FABC7FB05F0621952F44 (void);
+// 0x000002DC Discord.Result Discord.LobbyManager/FFIMethods/DisconnectNetworkMethod::Invoke(System.IntPtr,System.Int64)
+extern void DisconnectNetworkMethod_Invoke_m5C70BAC2C88809A4687D6493895F335C49D10DA6 (void);
+// 0x000002DD System.IAsyncResult Discord.LobbyManager/FFIMethods/DisconnectNetworkMethod::BeginInvoke(System.IntPtr,System.Int64,System.AsyncCallback,System.Object)
+extern void DisconnectNetworkMethod_BeginInvoke_m771C77C91E6173F51466BAC9BBEF1DB015E1F08B (void);
+// 0x000002DE Discord.Result Discord.LobbyManager/FFIMethods/DisconnectNetworkMethod::EndInvoke(System.IAsyncResult)
+extern void DisconnectNetworkMethod_EndInvoke_m653B677F2CF2E7B22075114B90957E722DFE6F17 (void);
+// 0x000002DF System.Void Discord.LobbyManager/FFIMethods/FlushNetworkMethod::.ctor(System.Object,System.IntPtr)
+extern void FlushNetworkMethod__ctor_m4E4AC274CB24C48ECBCC69E20FEE5E1FF7A0B263 (void);
+// 0x000002E0 Discord.Result Discord.LobbyManager/FFIMethods/FlushNetworkMethod::Invoke(System.IntPtr)
+extern void FlushNetworkMethod_Invoke_mB7076343433BAFE6ADCC7A67C39CD619C8E98932 (void);
+// 0x000002E1 System.IAsyncResult Discord.LobbyManager/FFIMethods/FlushNetworkMethod::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void FlushNetworkMethod_BeginInvoke_mFFB29CEC1B35DA9F88832CF342B9544B18E2A641 (void);
+// 0x000002E2 Discord.Result Discord.LobbyManager/FFIMethods/FlushNetworkMethod::EndInvoke(System.IAsyncResult)
+extern void FlushNetworkMethod_EndInvoke_m59AAFE0ADDC2179C94C2988D52391F5D7889AAF9 (void);
+// 0x000002E3 System.Void Discord.LobbyManager/FFIMethods/OpenNetworkChannelMethod::.ctor(System.Object,System.IntPtr)
+extern void OpenNetworkChannelMethod__ctor_mE41023881A556C9996D8B023E6F4AFB3FE4B29EE (void);
+// 0x000002E4 Discord.Result Discord.LobbyManager/FFIMethods/OpenNetworkChannelMethod::Invoke(System.IntPtr,System.Int64,System.Byte,System.Boolean)
+extern void OpenNetworkChannelMethod_Invoke_m614F5559673F4F828FBAA74DB7ED41DAD5067F7F (void);
+// 0x000002E5 System.IAsyncResult Discord.LobbyManager/FFIMethods/OpenNetworkChannelMethod::BeginInvoke(System.IntPtr,System.Int64,System.Byte,System.Boolean,System.AsyncCallback,System.Object)
+extern void OpenNetworkChannelMethod_BeginInvoke_mB224F97D762723EEC7703EC05343A42957CBA372 (void);
+// 0x000002E6 Discord.Result Discord.LobbyManager/FFIMethods/OpenNetworkChannelMethod::EndInvoke(System.IAsyncResult)
+extern void OpenNetworkChannelMethod_EndInvoke_m52EDF02DC986FECC7C0F8B0752573341BF49C2BF (void);
+// 0x000002E7 System.Void Discord.LobbyManager/FFIMethods/SendNetworkMessageMethod::.ctor(System.Object,System.IntPtr)
+extern void SendNetworkMessageMethod__ctor_m864AB2043A96225D74A017455ADA46DC2469A82C (void);
+// 0x000002E8 Discord.Result Discord.LobbyManager/FFIMethods/SendNetworkMessageMethod::Invoke(System.IntPtr,System.Int64,System.Int64,System.Byte,System.Byte[],System.Int32)
+extern void SendNetworkMessageMethod_Invoke_mEFD22C0BFFE5C9BC0C8DA612281DEA6E96DB6E2A (void);
+// 0x000002E9 System.IAsyncResult Discord.LobbyManager/FFIMethods/SendNetworkMessageMethod::BeginInvoke(System.IntPtr,System.Int64,System.Int64,System.Byte,System.Byte[],System.Int32,System.AsyncCallback,System.Object)
+extern void SendNetworkMessageMethod_BeginInvoke_m146287D2FC81ECBD492593FA968A6C507EF9CE1B (void);
+// 0x000002EA Discord.Result Discord.LobbyManager/FFIMethods/SendNetworkMessageMethod::EndInvoke(System.IAsyncResult)
+extern void SendNetworkMessageMethod_EndInvoke_m2B3FE5556A0A417F957FA8D23ED5123A316F9D34 (void);
+// 0x000002EB System.Void Discord.LobbyManager/CreateLobbyHandler::.ctor(System.Object,System.IntPtr)
+extern void CreateLobbyHandler__ctor_m7F0874C2FC545B2A69646E47A09585AE8428A425 (void);
+// 0x000002EC System.Void Discord.LobbyManager/CreateLobbyHandler::Invoke(Discord.Result,Discord.Lobby&)
+extern void CreateLobbyHandler_Invoke_mF75AE6089D9F9CEDCA5B144B60AA08F4337E246E (void);
+// 0x000002ED System.IAsyncResult Discord.LobbyManager/CreateLobbyHandler::BeginInvoke(Discord.Result,Discord.Lobby&,System.AsyncCallback,System.Object)
+extern void CreateLobbyHandler_BeginInvoke_mAFF833FDD35D893A77B9B6BC3CB8D34BE84EE600 (void);
+// 0x000002EE System.Void Discord.LobbyManager/CreateLobbyHandler::EndInvoke(Discord.Lobby&,System.IAsyncResult)
+extern void CreateLobbyHandler_EndInvoke_m756EF2755253F889FA15FC3BAB47309C352DBFB1 (void);
+// 0x000002EF System.Void Discord.LobbyManager/UpdateLobbyHandler::.ctor(System.Object,System.IntPtr)
+extern void UpdateLobbyHandler__ctor_m86559C31B16FEEF1AF3822E48EDFBBF7E9D7F26E (void);
+// 0x000002F0 System.Void Discord.LobbyManager/UpdateLobbyHandler::Invoke(Discord.Result)
+extern void UpdateLobbyHandler_Invoke_m56EE2B776CD00F6675C5A48611349840EAA3E045 (void);
+// 0x000002F1 System.IAsyncResult Discord.LobbyManager/UpdateLobbyHandler::BeginInvoke(Discord.Result,System.AsyncCallback,System.Object)
+extern void UpdateLobbyHandler_BeginInvoke_mD8D1FEB6AF1B427170F3999D11029EB18E1E38C6 (void);
+// 0x000002F2 System.Void Discord.LobbyManager/UpdateLobbyHandler::EndInvoke(System.IAsyncResult)
+extern void UpdateLobbyHandler_EndInvoke_m8DE8A8878F966275B6A7FE1EBD1F6BA69CD37241 (void);
+// 0x000002F3 System.Void Discord.LobbyManager/DeleteLobbyHandler::.ctor(System.Object,System.IntPtr)
+extern void DeleteLobbyHandler__ctor_m57892818C29B49544FDEC761F501696270FA464E (void);
+// 0x000002F4 System.Void Discord.LobbyManager/DeleteLobbyHandler::Invoke(Discord.Result)
+extern void DeleteLobbyHandler_Invoke_mB8F935B166526E02B0ACB313880B372B89E5BDE5 (void);
+// 0x000002F5 System.IAsyncResult Discord.LobbyManager/DeleteLobbyHandler::BeginInvoke(Discord.Result,System.AsyncCallback,System.Object)
+extern void DeleteLobbyHandler_BeginInvoke_m44DB61C1A19C47537D6A4A88BA8D9A1FA49EAEB6 (void);
+// 0x000002F6 System.Void Discord.LobbyManager/DeleteLobbyHandler::EndInvoke(System.IAsyncResult)
+extern void DeleteLobbyHandler_EndInvoke_mC569FAC4ED74EC49883C68A68927FE9A004BAE3D (void);
+// 0x000002F7 System.Void Discord.LobbyManager/ConnectLobbyHandler::.ctor(System.Object,System.IntPtr)
+extern void ConnectLobbyHandler__ctor_m3EB701C8B0CDAB220D0AD9FE8258B7B37E28825E (void);
+// 0x000002F8 System.Void Discord.LobbyManager/ConnectLobbyHandler::Invoke(Discord.Result,Discord.Lobby&)
+extern void ConnectLobbyHandler_Invoke_m6C6BDFBD23D20147056C9A8DC9DCA75523BEA6A2 (void);
+// 0x000002F9 System.IAsyncResult Discord.LobbyManager/ConnectLobbyHandler::BeginInvoke(Discord.Result,Discord.Lobby&,System.AsyncCallback,System.Object)
+extern void ConnectLobbyHandler_BeginInvoke_mFA5C9D5A8287A91D5A6E800256C762979DB3C5A6 (void);
+// 0x000002FA System.Void Discord.LobbyManager/ConnectLobbyHandler::EndInvoke(Discord.Lobby&,System.IAsyncResult)
+extern void ConnectLobbyHandler_EndInvoke_m61A38B07E4760CF4D9CD6B27159C2FA713D66946 (void);
+// 0x000002FB System.Void Discord.LobbyManager/ConnectLobbyWithActivitySecretHandler::.ctor(System.Object,System.IntPtr)
+extern void ConnectLobbyWithActivitySecretHandler__ctor_mD0F5672351F53D91ABB5A2E65BB5684A649FB5F2 (void);
+// 0x000002FC System.Void Discord.LobbyManager/ConnectLobbyWithActivitySecretHandler::Invoke(Discord.Result,Discord.Lobby&)
+extern void ConnectLobbyWithActivitySecretHandler_Invoke_mBF8CEC9CE2ADC70964AF708C80D278F9C4685424 (void);
+// 0x000002FD System.IAsyncResult Discord.LobbyManager/ConnectLobbyWithActivitySecretHandler::BeginInvoke(Discord.Result,Discord.Lobby&,System.AsyncCallback,System.Object)
+extern void ConnectLobbyWithActivitySecretHandler_BeginInvoke_mC3C54A013FBA7A5070ED02D2EA2386832F996423 (void);
+// 0x000002FE System.Void Discord.LobbyManager/ConnectLobbyWithActivitySecretHandler::EndInvoke(Discord.Lobby&,System.IAsyncResult)
+extern void ConnectLobbyWithActivitySecretHandler_EndInvoke_m0F7CF86FD16F51F6D767288F3BBE437A0764D4F4 (void);
+// 0x000002FF System.Void Discord.LobbyManager/DisconnectLobbyHandler::.ctor(System.Object,System.IntPtr)
+extern void DisconnectLobbyHandler__ctor_mC2A39B06102FA91BBEFADA7C766A043535579E9A (void);
+// 0x00000300 System.Void Discord.LobbyManager/DisconnectLobbyHandler::Invoke(Discord.Result)
+extern void DisconnectLobbyHandler_Invoke_m73224755979AC71F71DD175357A021566C8EE20D (void);
+// 0x00000301 System.IAsyncResult Discord.LobbyManager/DisconnectLobbyHandler::BeginInvoke(Discord.Result,System.AsyncCallback,System.Object)
+extern void DisconnectLobbyHandler_BeginInvoke_mD85180EBF43CD3F54BA42A7B478C7B81A4D518A2 (void);
+// 0x00000302 System.Void Discord.LobbyManager/DisconnectLobbyHandler::EndInvoke(System.IAsyncResult)
+extern void DisconnectLobbyHandler_EndInvoke_m6AFC680059FC549562FA7262C44E9E75EA0AD58B (void);
+// 0x00000303 System.Void Discord.LobbyManager/UpdateMemberHandler::.ctor(System.Object,System.IntPtr)
+extern void UpdateMemberHandler__ctor_mFC1AA1AF494398609B8B233104681222863D6E73 (void);
+// 0x00000304 System.Void Discord.LobbyManager/UpdateMemberHandler::Invoke(Discord.Result)
+extern void UpdateMemberHandler_Invoke_mABE0248D16C0167BBDD282A158FD23B6AA642EAF (void);
+// 0x00000305 System.IAsyncResult Discord.LobbyManager/UpdateMemberHandler::BeginInvoke(Discord.Result,System.AsyncCallback,System.Object)
+extern void UpdateMemberHandler_BeginInvoke_m3C9027ADCAB488532E2755B332BEF52735B76C56 (void);
+// 0x00000306 System.Void Discord.LobbyManager/UpdateMemberHandler::EndInvoke(System.IAsyncResult)
+extern void UpdateMemberHandler_EndInvoke_mB50822D4DB8E7313397BEA3DB8A616F59B3C0659 (void);
+// 0x00000307 System.Void Discord.LobbyManager/SendLobbyMessageHandler::.ctor(System.Object,System.IntPtr)
+extern void SendLobbyMessageHandler__ctor_mFDB9C5ADAA158466FA621EE1A74357C765819358 (void);
+// 0x00000308 System.Void Discord.LobbyManager/SendLobbyMessageHandler::Invoke(Discord.Result)
+extern void SendLobbyMessageHandler_Invoke_m446EF63004176B2621BB3F7162A811D06A341244 (void);
+// 0x00000309 System.IAsyncResult Discord.LobbyManager/SendLobbyMessageHandler::BeginInvoke(Discord.Result,System.AsyncCallback,System.Object)
+extern void SendLobbyMessageHandler_BeginInvoke_m13F0B83320A6CC7DC4413EFBCA4CD46C31C8DB07 (void);
+// 0x0000030A System.Void Discord.LobbyManager/SendLobbyMessageHandler::EndInvoke(System.IAsyncResult)
+extern void SendLobbyMessageHandler_EndInvoke_m0F03488021AF5FCA38E168BDC831CFD36E735772 (void);
+// 0x0000030B System.Void Discord.LobbyManager/SearchHandler::.ctor(System.Object,System.IntPtr)
+extern void SearchHandler__ctor_mD1354C5C9494DBB13C93B75D823E345F8A1D4410 (void);
+// 0x0000030C System.Void Discord.LobbyManager/SearchHandler::Invoke(Discord.Result)
+extern void SearchHandler_Invoke_m0DB66129BE451792670D8ADDC84FD9BF4B94AA3A (void);
+// 0x0000030D System.IAsyncResult Discord.LobbyManager/SearchHandler::BeginInvoke(Discord.Result,System.AsyncCallback,System.Object)
+extern void SearchHandler_BeginInvoke_m0A07CD39C1675F34EAD83B2FE12248956EB93EC0 (void);
+// 0x0000030E System.Void Discord.LobbyManager/SearchHandler::EndInvoke(System.IAsyncResult)
+extern void SearchHandler_EndInvoke_mEE4A061B2D29EA00BBC9829239BAD966621807F8 (void);
+// 0x0000030F System.Void Discord.LobbyManager/ConnectVoiceHandler::.ctor(System.Object,System.IntPtr)
+extern void ConnectVoiceHandler__ctor_m7368349AA69DA7897A50EB459106D653C338DB92 (void);
+// 0x00000310 System.Void Discord.LobbyManager/ConnectVoiceHandler::Invoke(Discord.Result)
+extern void ConnectVoiceHandler_Invoke_mF9804BAE45F00C6A86C0AF97389F2B978B404A4B (void);
+// 0x00000311 System.IAsyncResult Discord.LobbyManager/ConnectVoiceHandler::BeginInvoke(Discord.Result,System.AsyncCallback,System.Object)
+extern void ConnectVoiceHandler_BeginInvoke_m02CC5ED7975C5D793D8A133E7FED98C015C2D723 (void);
+// 0x00000312 System.Void Discord.LobbyManager/ConnectVoiceHandler::EndInvoke(System.IAsyncResult)
+extern void ConnectVoiceHandler_EndInvoke_m1BF8CA7A25D8E27CCFC78B5E51BDCB7F023F2E23 (void);
+// 0x00000313 System.Void Discord.LobbyManager/DisconnectVoiceHandler::.ctor(System.Object,System.IntPtr)
+extern void DisconnectVoiceHandler__ctor_m98B9EFC1B86B04B4F7C0B3883F99FA134285B1EB (void);
+// 0x00000314 System.Void Discord.LobbyManager/DisconnectVoiceHandler::Invoke(Discord.Result)
+extern void DisconnectVoiceHandler_Invoke_m045D320072853635A8F6E50C4895B18827E1CF58 (void);
+// 0x00000315 System.IAsyncResult Discord.LobbyManager/DisconnectVoiceHandler::BeginInvoke(Discord.Result,System.AsyncCallback,System.Object)
+extern void DisconnectVoiceHandler_BeginInvoke_mBE708F3C7E179D2DF762C7F39BFA21F598B215B5 (void);
+// 0x00000316 System.Void Discord.LobbyManager/DisconnectVoiceHandler::EndInvoke(System.IAsyncResult)
+extern void DisconnectVoiceHandler_EndInvoke_m1F1EF9661014CB823C772997A348FD6A8A7827A9 (void);
+// 0x00000317 System.Void Discord.LobbyManager/LobbyUpdateHandler::.ctor(System.Object,System.IntPtr)
+extern void LobbyUpdateHandler__ctor_m6D5B534146A1822D9CA1D719EA729DD84B0A31F4 (void);
+// 0x00000318 System.Void Discord.LobbyManager/LobbyUpdateHandler::Invoke(System.Int64)
+extern void LobbyUpdateHandler_Invoke_mFE1914EEE35019339B536B3281ED945A91D0D2A4 (void);
+// 0x00000319 System.IAsyncResult Discord.LobbyManager/LobbyUpdateHandler::BeginInvoke(System.Int64,System.AsyncCallback,System.Object)
+extern void LobbyUpdateHandler_BeginInvoke_mD1E58AB36C2E09CBB5AA3C21AFD153DD0DE3A466 (void);
+// 0x0000031A System.Void Discord.LobbyManager/LobbyUpdateHandler::EndInvoke(System.IAsyncResult)
+extern void LobbyUpdateHandler_EndInvoke_mD96CB214BA9CC971D19710174CCA0E973029F2E6 (void);
+// 0x0000031B System.Void Discord.LobbyManager/LobbyDeleteHandler::.ctor(System.Object,System.IntPtr)
+extern void LobbyDeleteHandler__ctor_mFEFF844E34F477F54C4798787E33799EABCC448A (void);
+// 0x0000031C System.Void Discord.LobbyManager/LobbyDeleteHandler::Invoke(System.Int64,System.UInt32)
+extern void LobbyDeleteHandler_Invoke_m9EFA92AF8156D63BC50BEEDF3E6E12FC9E8CBBA3 (void);
+// 0x0000031D System.IAsyncResult Discord.LobbyManager/LobbyDeleteHandler::BeginInvoke(System.Int64,System.UInt32,System.AsyncCallback,System.Object)
+extern void LobbyDeleteHandler_BeginInvoke_mF43F788C457A0B6BF2D9ECE91C08B1C394405FBB (void);
+// 0x0000031E System.Void Discord.LobbyManager/LobbyDeleteHandler::EndInvoke(System.IAsyncResult)
+extern void LobbyDeleteHandler_EndInvoke_m4E6F9D807000B2889A9384DC373179E97F1600FA (void);
+// 0x0000031F System.Void Discord.LobbyManager/MemberConnectHandler::.ctor(System.Object,System.IntPtr)
+extern void MemberConnectHandler__ctor_m7334EC2E0CD460B5C81B8A6E5A2CF0FB0B915642 (void);
+// 0x00000320 System.Void Discord.LobbyManager/MemberConnectHandler::Invoke(System.Int64,System.Int64)
+extern void MemberConnectHandler_Invoke_m595CB0AB822D04CB15E861FE547BABBFF3D89FE0 (void);
+// 0x00000321 System.IAsyncResult Discord.LobbyManager/MemberConnectHandler::BeginInvoke(System.Int64,System.Int64,System.AsyncCallback,System.Object)
+extern void MemberConnectHandler_BeginInvoke_mC8D1DDECFC6A6F041D122C9BEB1F459D9948521F (void);
+// 0x00000322 System.Void Discord.LobbyManager/MemberConnectHandler::EndInvoke(System.IAsyncResult)
+extern void MemberConnectHandler_EndInvoke_mABE1CEA7F5B5C2BD0014B7996974123010AE37ED (void);
+// 0x00000323 System.Void Discord.LobbyManager/MemberUpdateHandler::.ctor(System.Object,System.IntPtr)
+extern void MemberUpdateHandler__ctor_m7ECB5B179F51FDA7A0A31E7F89E0CA736CDB52F1 (void);
+// 0x00000324 System.Void Discord.LobbyManager/MemberUpdateHandler::Invoke(System.Int64,System.Int64)
+extern void MemberUpdateHandler_Invoke_m09C3A4ED5BA88FA9EA285B0A699F78B40DCA185E (void);
+// 0x00000325 System.IAsyncResult Discord.LobbyManager/MemberUpdateHandler::BeginInvoke(System.Int64,System.Int64,System.AsyncCallback,System.Object)
+extern void MemberUpdateHandler_BeginInvoke_m2B127CFBC26BC44CA6B7084B351AC09B3F566489 (void);
+// 0x00000326 System.Void Discord.LobbyManager/MemberUpdateHandler::EndInvoke(System.IAsyncResult)
+extern void MemberUpdateHandler_EndInvoke_mFDF3304D5CB5C03BF7FD67BF1234FE83F41F9981 (void);
+// 0x00000327 System.Void Discord.LobbyManager/MemberDisconnectHandler::.ctor(System.Object,System.IntPtr)
+extern void MemberDisconnectHandler__ctor_mC41152E6B9DDD1A9ED150637FCBDD57E243978F3 (void);
+// 0x00000328 System.Void Discord.LobbyManager/MemberDisconnectHandler::Invoke(System.Int64,System.Int64)
+extern void MemberDisconnectHandler_Invoke_mD7DB5DCD9B7E09B61880769CDD0AC3960B65FF98 (void);
+// 0x00000329 System.IAsyncResult Discord.LobbyManager/MemberDisconnectHandler::BeginInvoke(System.Int64,System.Int64,System.AsyncCallback,System.Object)
+extern void MemberDisconnectHandler_BeginInvoke_m69A4527516C104020D3FE6DBCE7F8A666F2BD59D (void);
+// 0x0000032A System.Void Discord.LobbyManager/MemberDisconnectHandler::EndInvoke(System.IAsyncResult)
+extern void MemberDisconnectHandler_EndInvoke_mE4E835DFF91DC390D9522D762A0A9A7CF2ED80F2 (void);
+// 0x0000032B System.Void Discord.LobbyManager/LobbyMessageHandler::.ctor(System.Object,System.IntPtr)
+extern void LobbyMessageHandler__ctor_m7B96A61BAE8BF813EFB847F7C924C0580772B307 (void);
+// 0x0000032C System.Void Discord.LobbyManager/LobbyMessageHandler::Invoke(System.Int64,System.Int64,System.Byte[])
+extern void LobbyMessageHandler_Invoke_mF4276BAA606BCBFD10AFAA7FDD70022619BE0FFE (void);
+// 0x0000032D System.IAsyncResult Discord.LobbyManager/LobbyMessageHandler::BeginInvoke(System.Int64,System.Int64,System.Byte[],System.AsyncCallback,System.Object)
+extern void LobbyMessageHandler_BeginInvoke_m064FFEEE0B589A4F56642F8019B6CD71C6A66E3B (void);
+// 0x0000032E System.Void Discord.LobbyManager/LobbyMessageHandler::EndInvoke(System.IAsyncResult)
+extern void LobbyMessageHandler_EndInvoke_mE71A22C9DAD593E4429110B998E612D7B9330CFE (void);
+// 0x0000032F System.Void Discord.LobbyManager/SpeakingHandler::.ctor(System.Object,System.IntPtr)
+extern void SpeakingHandler__ctor_mEC3F24C80D1289B6E082B30D6D81AF2BF146FD65 (void);
+// 0x00000330 System.Void Discord.LobbyManager/SpeakingHandler::Invoke(System.Int64,System.Int64,System.Boolean)
+extern void SpeakingHandler_Invoke_mF22B27DBCB5655B10F863AC0A2C2F5FDBAA82A10 (void);
+// 0x00000331 System.IAsyncResult Discord.LobbyManager/SpeakingHandler::BeginInvoke(System.Int64,System.Int64,System.Boolean,System.AsyncCallback,System.Object)
+extern void SpeakingHandler_BeginInvoke_mE42E017267197687900FE25EEE4FB9DB026BE93D (void);
+// 0x00000332 System.Void Discord.LobbyManager/SpeakingHandler::EndInvoke(System.IAsyncResult)
+extern void SpeakingHandler_EndInvoke_mB246462F8C4DB6BBC7A4AEE3E189DBE83D7BA924 (void);
+// 0x00000333 System.Void Discord.LobbyManager/NetworkMessageHandler::.ctor(System.Object,System.IntPtr)
+extern void NetworkMessageHandler__ctor_m886BBCBD4B85C5DF1C8FA7A24FE14475D85DBC53 (void);
+// 0x00000334 System.Void Discord.LobbyManager/NetworkMessageHandler::Invoke(System.Int64,System.Int64,System.Byte,System.Byte[])
+extern void NetworkMessageHandler_Invoke_mD332CA3CE6F50822EE5AF861267DC53D51959592 (void);
+// 0x00000335 System.IAsyncResult Discord.LobbyManager/NetworkMessageHandler::BeginInvoke(System.Int64,System.Int64,System.Byte,System.Byte[],System.AsyncCallback,System.Object)
+extern void NetworkMessageHandler_BeginInvoke_mB0689B85957FAB99FA87093E1CD2B7AAE51D7704 (void);
+// 0x00000336 System.Void Discord.LobbyManager/NetworkMessageHandler::EndInvoke(System.IAsyncResult)
+extern void NetworkMessageHandler_EndInvoke_mA6C622B37DC4EF7DF52F590505908029C41ECED0 (void);
+// 0x00000337 Discord.NetworkManager/FFIMethods Discord.NetworkManager::get_Methods()
+extern void NetworkManager_get_Methods_mE672DD7C224824CA7620DF1773987CBC7749B2B3 (void);
+// 0x00000338 System.Void Discord.NetworkManager::add_OnMessage(Discord.NetworkManager/MessageHandler)
+extern void NetworkManager_add_OnMessage_m27B90B62CB69407FCB73AFA8F784AD8CBD3778E3 (void);
+// 0x00000339 System.Void Discord.NetworkManager::remove_OnMessage(Discord.NetworkManager/MessageHandler)
+extern void NetworkManager_remove_OnMessage_mA3B03450F73962A8056AD34C26113CD81A2E6FFA (void);
+// 0x0000033A System.Void Discord.NetworkManager::add_OnRouteUpdate(Discord.NetworkManager/RouteUpdateHandler)
+extern void NetworkManager_add_OnRouteUpdate_m4EB3747003DCE90A4635DE9622F9B568C306AC38 (void);
+// 0x0000033B System.Void Discord.NetworkManager::remove_OnRouteUpdate(Discord.NetworkManager/RouteUpdateHandler)
+extern void NetworkManager_remove_OnRouteUpdate_mF526CFB384580BAC1B29870B4F980877D306D802 (void);
+// 0x0000033C System.Void Discord.NetworkManager::.ctor(System.IntPtr,System.IntPtr,Discord.NetworkManager/FFIEvents&)
+extern void NetworkManager__ctor_m2E1CFD543038F6FA6A4C2F359394D2503F2144FE (void);
+// 0x0000033D System.Void Discord.NetworkManager::InitEvents(System.IntPtr,Discord.NetworkManager/FFIEvents&)
+extern void NetworkManager_InitEvents_m2F0639A8468236C5242A4DFBF10D66D99D6B936A (void);
+// 0x0000033E System.UInt64 Discord.NetworkManager::GetPeerId()
+extern void NetworkManager_GetPeerId_mB67FE310290987BCA676E99FCFC62B4CE01E818A (void);
+// 0x0000033F System.Void Discord.NetworkManager::Flush()
+extern void NetworkManager_Flush_mAB427036C166241359E857E47FF861C06DDF942D (void);
+// 0x00000340 System.Void Discord.NetworkManager::OpenPeer(System.UInt64,System.String)
+extern void NetworkManager_OpenPeer_m760482F0668DBA14F5D15E83D986DCB0B763D3ED (void);
+// 0x00000341 System.Void Discord.NetworkManager::UpdatePeer(System.UInt64,System.String)
+extern void NetworkManager_UpdatePeer_m52090F0A7C0FC907ACBCEEDF26A5174E4B2E1AA1 (void);
+// 0x00000342 System.Void Discord.NetworkManager::ClosePeer(System.UInt64)
+extern void NetworkManager_ClosePeer_m19835044BF6490E13B93575B978018A9DACDA9AF (void);
+// 0x00000343 System.Void Discord.NetworkManager::OpenChannel(System.UInt64,System.Byte,System.Boolean)
+extern void NetworkManager_OpenChannel_m33D9E8AD86B02DCC46F2D7594834B548642C786B (void);
+// 0x00000344 System.Void Discord.NetworkManager::CloseChannel(System.UInt64,System.Byte)
+extern void NetworkManager_CloseChannel_mAF21ECADAAE10733012A2931C89C6015628F4DD9 (void);
+// 0x00000345 System.Void Discord.NetworkManager::SendMessage(System.UInt64,System.Byte,System.Byte[])
+extern void NetworkManager_SendMessage_mDBB2C81805379A34D799B0D2E4144079A3D14E65 (void);
+// 0x00000346 System.Void Discord.NetworkManager::OnMessageImpl(System.IntPtr,System.UInt64,System.Byte,System.IntPtr,System.Int32)
+extern void NetworkManager_OnMessageImpl_m18583CA74C8A43C34C1981A77DD2960DCBE11225 (void);
+// 0x00000347 System.Void Discord.NetworkManager::OnRouteUpdateImpl(System.IntPtr,System.String)
+extern void NetworkManager_OnRouteUpdateImpl_m7D7147123A6A374E1CAF05A420C59FBCCF96B450 (void);
+// 0x00000348 System.Void Discord.NetworkManager/FFIEvents/MessageHandler::.ctor(System.Object,System.IntPtr)
+extern void MessageHandler__ctor_m92FDEAD126DBF6BD98035725AFE110FA18AF96CE (void);
+// 0x00000349 System.Void Discord.NetworkManager/FFIEvents/MessageHandler::Invoke(System.IntPtr,System.UInt64,System.Byte,System.IntPtr,System.Int32)
+extern void MessageHandler_Invoke_m25F265D15550D3617CC6356DB3F0051C8EE316ED (void);
+// 0x0000034A System.IAsyncResult Discord.NetworkManager/FFIEvents/MessageHandler::BeginInvoke(System.IntPtr,System.UInt64,System.Byte,System.IntPtr,System.Int32,System.AsyncCallback,System.Object)
+extern void MessageHandler_BeginInvoke_m723E39D3F5E919C3CFAA2CEE70E93D38BEECD1F2 (void);
+// 0x0000034B System.Void Discord.NetworkManager/FFIEvents/MessageHandler::EndInvoke(System.IAsyncResult)
+extern void MessageHandler_EndInvoke_m6896E05811F3B70F0D12D09DF3D658E6CFA82307 (void);
+// 0x0000034C System.Void Discord.NetworkManager/FFIEvents/RouteUpdateHandler::.ctor(System.Object,System.IntPtr)
+extern void RouteUpdateHandler__ctor_mD26FBEBE91D03F21BF6D1DF61E4D762EA9AA8EA1 (void);
+// 0x0000034D System.Void Discord.NetworkManager/FFIEvents/RouteUpdateHandler::Invoke(System.IntPtr,System.String)
+extern void RouteUpdateHandler_Invoke_m67366B32AA8D95FFF120109BAFD23B80134C4ED5 (void);
+// 0x0000034E System.IAsyncResult Discord.NetworkManager/FFIEvents/RouteUpdateHandler::BeginInvoke(System.IntPtr,System.String,System.AsyncCallback,System.Object)
+extern void RouteUpdateHandler_BeginInvoke_m60DE86BF89E1F80C0E9967BD05E1812924E72CFA (void);
+// 0x0000034F System.Void Discord.NetworkManager/FFIEvents/RouteUpdateHandler::EndInvoke(System.IAsyncResult)
+extern void RouteUpdateHandler_EndInvoke_m7FB8B4DCEB5AFA4E0BB2459D0F9634417EECB477 (void);
+// 0x00000350 System.Void Discord.NetworkManager/FFIMethods/GetPeerIdMethod::.ctor(System.Object,System.IntPtr)
+extern void GetPeerIdMethod__ctor_mA045FFAE0158474EFC09A45BF2DA77843EF46036 (void);
+// 0x00000351 System.Void Discord.NetworkManager/FFIMethods/GetPeerIdMethod::Invoke(System.IntPtr,System.UInt64&)
+extern void GetPeerIdMethod_Invoke_mA2A5B6E9C7CD1AFB4C0CEE691DD0D1BAC6A1D339 (void);
+// 0x00000352 System.IAsyncResult Discord.NetworkManager/FFIMethods/GetPeerIdMethod::BeginInvoke(System.IntPtr,System.UInt64&,System.AsyncCallback,System.Object)
+extern void GetPeerIdMethod_BeginInvoke_m90569C48349CCC52392D61A0E61ACEE5068C322D (void);
+// 0x00000353 System.Void Discord.NetworkManager/FFIMethods/GetPeerIdMethod::EndInvoke(System.UInt64&,System.IAsyncResult)
+extern void GetPeerIdMethod_EndInvoke_mE712C5CA93F02A75D4E47B6445CC8F4BE461CC87 (void);
+// 0x00000354 System.Void Discord.NetworkManager/FFIMethods/FlushMethod::.ctor(System.Object,System.IntPtr)
+extern void FlushMethod__ctor_m6D75D4AF5242C3E5DCEF06BD34B24BDE2D4BD3C6 (void);
+// 0x00000355 Discord.Result Discord.NetworkManager/FFIMethods/FlushMethod::Invoke(System.IntPtr)
+extern void FlushMethod_Invoke_m7197C3D1F74124505D00B2FCC5D68E239B0720E0 (void);
+// 0x00000356 System.IAsyncResult Discord.NetworkManager/FFIMethods/FlushMethod::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void FlushMethod_BeginInvoke_m247A498A07A00D0C9B7400A61E96D5F9A03B281F (void);
+// 0x00000357 Discord.Result Discord.NetworkManager/FFIMethods/FlushMethod::EndInvoke(System.IAsyncResult)
+extern void FlushMethod_EndInvoke_m2BCF2A453B9BAC0B743E9A4FF649CF6FEADDE8EB (void);
+// 0x00000358 System.Void Discord.NetworkManager/FFIMethods/OpenPeerMethod::.ctor(System.Object,System.IntPtr)
+extern void OpenPeerMethod__ctor_mDC850D2561E8C1A9672B508260F76513434B7DB2 (void);
+// 0x00000359 Discord.Result Discord.NetworkManager/FFIMethods/OpenPeerMethod::Invoke(System.IntPtr,System.UInt64,System.String)
+extern void OpenPeerMethod_Invoke_mE6A76E8D7C178F746E654BC6A84BEFC4CDB61B52 (void);
+// 0x0000035A System.IAsyncResult Discord.NetworkManager/FFIMethods/OpenPeerMethod::BeginInvoke(System.IntPtr,System.UInt64,System.String,System.AsyncCallback,System.Object)
+extern void OpenPeerMethod_BeginInvoke_mAF4F633458D48004A4F4D1AA3BA729CFD66D3AC5 (void);
+// 0x0000035B Discord.Result Discord.NetworkManager/FFIMethods/OpenPeerMethod::EndInvoke(System.IAsyncResult)
+extern void OpenPeerMethod_EndInvoke_m723F354D8B97FCB12F75AB4DD4B22C47E92ACBE7 (void);
+// 0x0000035C System.Void Discord.NetworkManager/FFIMethods/UpdatePeerMethod::.ctor(System.Object,System.IntPtr)
+extern void UpdatePeerMethod__ctor_mD3E2B66E3A8F3BFABE5B81771220E7749D7AF19A (void);
+// 0x0000035D Discord.Result Discord.NetworkManager/FFIMethods/UpdatePeerMethod::Invoke(System.IntPtr,System.UInt64,System.String)
+extern void UpdatePeerMethod_Invoke_m4943E0F7475101BFF54F2C1F56ACEA0A9A4DABB7 (void);
+// 0x0000035E System.IAsyncResult Discord.NetworkManager/FFIMethods/UpdatePeerMethod::BeginInvoke(System.IntPtr,System.UInt64,System.String,System.AsyncCallback,System.Object)
+extern void UpdatePeerMethod_BeginInvoke_m1EF7B8F2EE424CDB96CA224D5F6EB2567CA025F3 (void);
+// 0x0000035F Discord.Result Discord.NetworkManager/FFIMethods/UpdatePeerMethod::EndInvoke(System.IAsyncResult)
+extern void UpdatePeerMethod_EndInvoke_m303D1AE45C8D937B14E6A3ECDB6D339751923C60 (void);
+// 0x00000360 System.Void Discord.NetworkManager/FFIMethods/ClosePeerMethod::.ctor(System.Object,System.IntPtr)
+extern void ClosePeerMethod__ctor_mA2F1A5727756A006F4FA973A9A9D901AC609F774 (void);
+// 0x00000361 Discord.Result Discord.NetworkManager/FFIMethods/ClosePeerMethod::Invoke(System.IntPtr,System.UInt64)
+extern void ClosePeerMethod_Invoke_mE7351C312C1CA8B0900F5C844283F29B6E17178E (void);
+// 0x00000362 System.IAsyncResult Discord.NetworkManager/FFIMethods/ClosePeerMethod::BeginInvoke(System.IntPtr,System.UInt64,System.AsyncCallback,System.Object)
+extern void ClosePeerMethod_BeginInvoke_m8091BFC5ECE7E7156918465FE3B5D16AA3DED9DB (void);
+// 0x00000363 Discord.Result Discord.NetworkManager/FFIMethods/ClosePeerMethod::EndInvoke(System.IAsyncResult)
+extern void ClosePeerMethod_EndInvoke_m91A9CF352D8505BD8E3DEB5A84FF3B9EDE4964E3 (void);
+// 0x00000364 System.Void Discord.NetworkManager/FFIMethods/OpenChannelMethod::.ctor(System.Object,System.IntPtr)
+extern void OpenChannelMethod__ctor_m0DAEDBC0FBA1F687BD98C9483BFB4A08332300AF (void);
+// 0x00000365 Discord.Result Discord.NetworkManager/FFIMethods/OpenChannelMethod::Invoke(System.IntPtr,System.UInt64,System.Byte,System.Boolean)
+extern void OpenChannelMethod_Invoke_m4500A00911659BC923957A8E8F8B9ABCE91C527E (void);
+// 0x00000366 System.IAsyncResult Discord.NetworkManager/FFIMethods/OpenChannelMethod::BeginInvoke(System.IntPtr,System.UInt64,System.Byte,System.Boolean,System.AsyncCallback,System.Object)
+extern void OpenChannelMethod_BeginInvoke_m56ECC7D7D711EBE58F993F024FD2634CB5DB74F0 (void);
+// 0x00000367 Discord.Result Discord.NetworkManager/FFIMethods/OpenChannelMethod::EndInvoke(System.IAsyncResult)
+extern void OpenChannelMethod_EndInvoke_mA6A001A62D660E2BC7696138667A2AFEAFF461AE (void);
+// 0x00000368 System.Void Discord.NetworkManager/FFIMethods/CloseChannelMethod::.ctor(System.Object,System.IntPtr)
+extern void CloseChannelMethod__ctor_m5F04C14EAF1E8E9C8B18F24D34A96E2176FAB1DD (void);
+// 0x00000369 Discord.Result Discord.NetworkManager/FFIMethods/CloseChannelMethod::Invoke(System.IntPtr,System.UInt64,System.Byte)
+extern void CloseChannelMethod_Invoke_m76DD6674FD53A6784FF1A909F7B2B5680A76EC1B (void);
+// 0x0000036A System.IAsyncResult Discord.NetworkManager/FFIMethods/CloseChannelMethod::BeginInvoke(System.IntPtr,System.UInt64,System.Byte,System.AsyncCallback,System.Object)
+extern void CloseChannelMethod_BeginInvoke_mE66F75387185E74A7773BF0BD2B3EC76328494BA (void);
+// 0x0000036B Discord.Result Discord.NetworkManager/FFIMethods/CloseChannelMethod::EndInvoke(System.IAsyncResult)
+extern void CloseChannelMethod_EndInvoke_m5155BE7067EF0BAB8290E292786A2F56DC96F726 (void);
+// 0x0000036C System.Void Discord.NetworkManager/FFIMethods/SendMessageMethod::.ctor(System.Object,System.IntPtr)
+extern void SendMessageMethod__ctor_mC581BAF5B777DC01278D460305B73B5FC888F053 (void);
+// 0x0000036D Discord.Result Discord.NetworkManager/FFIMethods/SendMessageMethod::Invoke(System.IntPtr,System.UInt64,System.Byte,System.Byte[],System.Int32)
+extern void SendMessageMethod_Invoke_m015F3FDFB9D750E68E5D675A40EFD9F6CEFADCB2 (void);
+// 0x0000036E System.IAsyncResult Discord.NetworkManager/FFIMethods/SendMessageMethod::BeginInvoke(System.IntPtr,System.UInt64,System.Byte,System.Byte[],System.Int32,System.AsyncCallback,System.Object)
+extern void SendMessageMethod_BeginInvoke_m4B39CE0B38CDE96303FD42103CA13BB4457AC61F (void);
+// 0x0000036F Discord.Result Discord.NetworkManager/FFIMethods/SendMessageMethod::EndInvoke(System.IAsyncResult)
+extern void SendMessageMethod_EndInvoke_m0143ED186B80FE629DFC70D8C2A98591AC83B10C (void);
+// 0x00000370 System.Void Discord.NetworkManager/MessageHandler::.ctor(System.Object,System.IntPtr)
+extern void MessageHandler__ctor_m8D58B78074EDAAD9714E79D19287C3D391E8FEC9 (void);
+// 0x00000371 System.Void Discord.NetworkManager/MessageHandler::Invoke(System.UInt64,System.Byte,System.Byte[])
+extern void MessageHandler_Invoke_mDEC09F577D5E38D1CD15EABD482A99685761B6C5 (void);
+// 0x00000372 System.IAsyncResult Discord.NetworkManager/MessageHandler::BeginInvoke(System.UInt64,System.Byte,System.Byte[],System.AsyncCallback,System.Object)
+extern void MessageHandler_BeginInvoke_mB8E7A48BE4F107BDF79EF2361E4B3B324E5C9E93 (void);
+// 0x00000373 System.Void Discord.NetworkManager/MessageHandler::EndInvoke(System.IAsyncResult)
+extern void MessageHandler_EndInvoke_m99AB53595A759DBC3498A66DB4FF209C81159DE4 (void);
+// 0x00000374 System.Void Discord.NetworkManager/RouteUpdateHandler::.ctor(System.Object,System.IntPtr)
+extern void RouteUpdateHandler__ctor_m5D6111608000231DF4D800BF0B9590B45A3A201D (void);
+// 0x00000375 System.Void Discord.NetworkManager/RouteUpdateHandler::Invoke(System.String)
+extern void RouteUpdateHandler_Invoke_m48D2340822A112FEC63102A3D65E02D340A72CEE (void);
+// 0x00000376 System.IAsyncResult Discord.NetworkManager/RouteUpdateHandler::BeginInvoke(System.String,System.AsyncCallback,System.Object)
+extern void RouteUpdateHandler_BeginInvoke_m85A5F2EC8134943A0D85C6921C03D9E02EDCD9B2 (void);
+// 0x00000377 System.Void Discord.NetworkManager/RouteUpdateHandler::EndInvoke(System.IAsyncResult)
+extern void RouteUpdateHandler_EndInvoke_m6BE793FB261A27C445E57CFF5ABD6FA71859179C (void);
+// 0x00000378 Discord.OverlayManager/FFIMethods Discord.OverlayManager::get_Methods()
+extern void OverlayManager_get_Methods_m83679EA7F647AD79C0C5046245C92FDFB9250EBF (void);
+// 0x00000379 System.Void Discord.OverlayManager::add_OnToggle(Discord.OverlayManager/ToggleHandler)
+extern void OverlayManager_add_OnToggle_m398D2C8759D90D305DF2E35E8B2FC231462FF7C8 (void);
+// 0x0000037A System.Void Discord.OverlayManager::remove_OnToggle(Discord.OverlayManager/ToggleHandler)
+extern void OverlayManager_remove_OnToggle_mB27FCC3951030EC1F44493808FDC2ACD521ECEDF (void);
+// 0x0000037B System.Void Discord.OverlayManager::.ctor(System.IntPtr,System.IntPtr,Discord.OverlayManager/FFIEvents&)
+extern void OverlayManager__ctor_m3AD1837FA07CBBF4FAADE5C5F79ED4E60EB422A6 (void);
+// 0x0000037C System.Void Discord.OverlayManager::InitEvents(System.IntPtr,Discord.OverlayManager/FFIEvents&)
+extern void OverlayManager_InitEvents_mBD5D8078CECD373F848820CF920BD7478AA5A105 (void);
+// 0x0000037D System.Boolean Discord.OverlayManager::IsEnabled()
+extern void OverlayManager_IsEnabled_m620EA232C8AB0155611D40A7BC5257E8838BF0CB (void);
+// 0x0000037E System.Boolean Discord.OverlayManager::IsLocked()
+extern void OverlayManager_IsLocked_m987110296954C8D48647909B9EEB108F68CAF6FD (void);
+// 0x0000037F System.Void Discord.OverlayManager::SetLockedCallbackImpl(System.IntPtr,Discord.Result)
+extern void OverlayManager_SetLockedCallbackImpl_mA2DD371D00A962466969FCDC012BA993848D9502 (void);
+// 0x00000380 System.Void Discord.OverlayManager::SetLocked(System.Boolean,Discord.OverlayManager/SetLockedHandler)
+extern void OverlayManager_SetLocked_mA888777D0FCBA5A59D36E627829F8BB024CC55E8 (void);
+// 0x00000381 System.Void Discord.OverlayManager::OpenActivityInviteCallbackImpl(System.IntPtr,Discord.Result)
+extern void OverlayManager_OpenActivityInviteCallbackImpl_mA882AEFD6082EE89D518DB806EDC636DA4C94C96 (void);
+// 0x00000382 System.Void Discord.OverlayManager::OpenActivityInvite(Discord.ActivityActionType,Discord.OverlayManager/OpenActivityInviteHandler)
+extern void OverlayManager_OpenActivityInvite_m962A73AD5106F5227CC58670A43580FD469034EB (void);
+// 0x00000383 System.Void Discord.OverlayManager::OpenGuildInviteCallbackImpl(System.IntPtr,Discord.Result)
+extern void OverlayManager_OpenGuildInviteCallbackImpl_mB6F529BEA85A3E7AAF89770548AA2CDCBB68380A (void);
+// 0x00000384 System.Void Discord.OverlayManager::OpenGuildInvite(System.String,Discord.OverlayManager/OpenGuildInviteHandler)
+extern void OverlayManager_OpenGuildInvite_m1F1AD00F0A5626FDB5CEFE9EED5A9D7B2F75E560 (void);
+// 0x00000385 System.Void Discord.OverlayManager::OpenVoiceSettingsCallbackImpl(System.IntPtr,Discord.Result)
+extern void OverlayManager_OpenVoiceSettingsCallbackImpl_m6E3EA3CDF9900198E267646A9E8D73083794B6D9 (void);
+// 0x00000386 System.Void Discord.OverlayManager::OpenVoiceSettings(Discord.OverlayManager/OpenVoiceSettingsHandler)
+extern void OverlayManager_OpenVoiceSettings_m856676B8FD2FCBE89AA05A125509730FE5C3A005 (void);
+// 0x00000387 System.Void Discord.OverlayManager::OnToggleImpl(System.IntPtr,System.Boolean)
+extern void OverlayManager_OnToggleImpl_mE6E91D51D97432DC7914FAEAFB52A438B4E0FB95 (void);
+// 0x00000388 System.Void Discord.OverlayManager/FFIEvents/ToggleHandler::.ctor(System.Object,System.IntPtr)
+extern void ToggleHandler__ctor_mBD78B3A175BA7F44B83BB3649AA771B63E963C89 (void);
+// 0x00000389 System.Void Discord.OverlayManager/FFIEvents/ToggleHandler::Invoke(System.IntPtr,System.Boolean)
+extern void ToggleHandler_Invoke_mF6900F215EB51CAC8A4D0410C3D8D37F52538729 (void);
+// 0x0000038A System.IAsyncResult Discord.OverlayManager/FFIEvents/ToggleHandler::BeginInvoke(System.IntPtr,System.Boolean,System.AsyncCallback,System.Object)
+extern void ToggleHandler_BeginInvoke_m6844F23A8EFE11446B65CAEF268E7E6698675A95 (void);
+// 0x0000038B System.Void Discord.OverlayManager/FFIEvents/ToggleHandler::EndInvoke(System.IAsyncResult)
+extern void ToggleHandler_EndInvoke_mDC56DA0FC331814E5A5467CAEF162C16031D08AB (void);
+// 0x0000038C System.Void Discord.OverlayManager/FFIMethods/IsEnabledMethod::.ctor(System.Object,System.IntPtr)
+extern void IsEnabledMethod__ctor_m75B708FF5DBAF39EF43D949282B5F40E9C77CB7C (void);
+// 0x0000038D System.Void Discord.OverlayManager/FFIMethods/IsEnabledMethod::Invoke(System.IntPtr,System.Boolean&)
+extern void IsEnabledMethod_Invoke_m212E633A16DE3720D33278FEBB9CEF44456F1140 (void);
+// 0x0000038E System.IAsyncResult Discord.OverlayManager/FFIMethods/IsEnabledMethod::BeginInvoke(System.IntPtr,System.Boolean&,System.AsyncCallback,System.Object)
+extern void IsEnabledMethod_BeginInvoke_m6D7CF373F90DAD685439D4F6C88793CE1021AE86 (void);
+// 0x0000038F System.Void Discord.OverlayManager/FFIMethods/IsEnabledMethod::EndInvoke(System.Boolean&,System.IAsyncResult)
+extern void IsEnabledMethod_EndInvoke_m46669CB7EE76CF6E211304777F234E0A0D6D3F1C (void);
+// 0x00000390 System.Void Discord.OverlayManager/FFIMethods/IsLockedMethod::.ctor(System.Object,System.IntPtr)
+extern void IsLockedMethod__ctor_m0A4AC52FEB0F630F6F6671F8A8461B7B78A32960 (void);
+// 0x00000391 System.Void Discord.OverlayManager/FFIMethods/IsLockedMethod::Invoke(System.IntPtr,System.Boolean&)
+extern void IsLockedMethod_Invoke_mB2DEC3B0686576516C59D9FF0550C3615FC7364C (void);
+// 0x00000392 System.IAsyncResult Discord.OverlayManager/FFIMethods/IsLockedMethod::BeginInvoke(System.IntPtr,System.Boolean&,System.AsyncCallback,System.Object)
+extern void IsLockedMethod_BeginInvoke_m8994F6936CD72897271C609CB4D511E549CE3727 (void);
+// 0x00000393 System.Void Discord.OverlayManager/FFIMethods/IsLockedMethod::EndInvoke(System.Boolean&,System.IAsyncResult)
+extern void IsLockedMethod_EndInvoke_mCB2983152B1A50C48689D0795B19C5B58B7EB1D5 (void);
+// 0x00000394 System.Void Discord.OverlayManager/FFIMethods/SetLockedCallback::.ctor(System.Object,System.IntPtr)
+extern void SetLockedCallback__ctor_m24A4669F212ECF6BB24663DA9EFC7FDD22586ADD (void);
+// 0x00000395 System.Void Discord.OverlayManager/FFIMethods/SetLockedCallback::Invoke(System.IntPtr,Discord.Result)
+extern void SetLockedCallback_Invoke_m6DBCE4CE2BBA2AEDA5C709BA9865D74F34FE4764 (void);
+// 0x00000396 System.IAsyncResult Discord.OverlayManager/FFIMethods/SetLockedCallback::BeginInvoke(System.IntPtr,Discord.Result,System.AsyncCallback,System.Object)
+extern void SetLockedCallback_BeginInvoke_m66CF993E49904A9A51DA06305D3DE51AE2429761 (void);
+// 0x00000397 System.Void Discord.OverlayManager/FFIMethods/SetLockedCallback::EndInvoke(System.IAsyncResult)
+extern void SetLockedCallback_EndInvoke_m5BB3F2FE209C23AF84B0A6C158DD9FF5F9771B43 (void);
+// 0x00000398 System.Void Discord.OverlayManager/FFIMethods/SetLockedMethod::.ctor(System.Object,System.IntPtr)
+extern void SetLockedMethod__ctor_mC1A45999FFDC95E2EE0FC89F3B644E952D605D51 (void);
+// 0x00000399 System.Void Discord.OverlayManager/FFIMethods/SetLockedMethod::Invoke(System.IntPtr,System.Boolean,System.IntPtr,Discord.OverlayManager/FFIMethods/SetLockedCallback)
+extern void SetLockedMethod_Invoke_mAD45B3C6520B017DEA736690FE12F61F5F4E4335 (void);
+// 0x0000039A System.IAsyncResult Discord.OverlayManager/FFIMethods/SetLockedMethod::BeginInvoke(System.IntPtr,System.Boolean,System.IntPtr,Discord.OverlayManager/FFIMethods/SetLockedCallback,System.AsyncCallback,System.Object)
+extern void SetLockedMethod_BeginInvoke_m4AB1F5CFFC501EEF579EAD3AFC68EB1169AFAF81 (void);
+// 0x0000039B System.Void Discord.OverlayManager/FFIMethods/SetLockedMethod::EndInvoke(System.IAsyncResult)
+extern void SetLockedMethod_EndInvoke_m038CD2A89D65033309ECF0E1A61FBFF43F81A249 (void);
+// 0x0000039C System.Void Discord.OverlayManager/FFIMethods/OpenActivityInviteCallback::.ctor(System.Object,System.IntPtr)
+extern void OpenActivityInviteCallback__ctor_m99658540C566AD7A87BC8D2605341DD17D67210F (void);
+// 0x0000039D System.Void Discord.OverlayManager/FFIMethods/OpenActivityInviteCallback::Invoke(System.IntPtr,Discord.Result)
+extern void OpenActivityInviteCallback_Invoke_m2B2037B948503FDDC521BF52EEFA546A1F7201E5 (void);
+// 0x0000039E System.IAsyncResult Discord.OverlayManager/FFIMethods/OpenActivityInviteCallback::BeginInvoke(System.IntPtr,Discord.Result,System.AsyncCallback,System.Object)
+extern void OpenActivityInviteCallback_BeginInvoke_m850D29B108DF6E980AA96D35CD9B1C68247C6A21 (void);
+// 0x0000039F System.Void Discord.OverlayManager/FFIMethods/OpenActivityInviteCallback::EndInvoke(System.IAsyncResult)
+extern void OpenActivityInviteCallback_EndInvoke_mB89F2D6AA77941C5A7D1589A7EC8739C3334CF24 (void);
+// 0x000003A0 System.Void Discord.OverlayManager/FFIMethods/OpenActivityInviteMethod::.ctor(System.Object,System.IntPtr)
+extern void OpenActivityInviteMethod__ctor_m526E85A53A26F3B77863DC3D6BE7EFF9C04701BE (void);
+// 0x000003A1 System.Void Discord.OverlayManager/FFIMethods/OpenActivityInviteMethod::Invoke(System.IntPtr,Discord.ActivityActionType,System.IntPtr,Discord.OverlayManager/FFIMethods/OpenActivityInviteCallback)
+extern void OpenActivityInviteMethod_Invoke_m68CDB2160CDFB82217617A28F7BBB7307583A854 (void);
+// 0x000003A2 System.IAsyncResult Discord.OverlayManager/FFIMethods/OpenActivityInviteMethod::BeginInvoke(System.IntPtr,Discord.ActivityActionType,System.IntPtr,Discord.OverlayManager/FFIMethods/OpenActivityInviteCallback,System.AsyncCallback,System.Object)
+extern void OpenActivityInviteMethod_BeginInvoke_m3218120328BA77221A0E3928F27849F8ED71BEC7 (void);
+// 0x000003A3 System.Void Discord.OverlayManager/FFIMethods/OpenActivityInviteMethod::EndInvoke(System.IAsyncResult)
+extern void OpenActivityInviteMethod_EndInvoke_mCD2E7F005B4DDA10B45C6891B1CF2EE95707D70B (void);
+// 0x000003A4 System.Void Discord.OverlayManager/FFIMethods/OpenGuildInviteCallback::.ctor(System.Object,System.IntPtr)
+extern void OpenGuildInviteCallback__ctor_m929504316444344657783C438945B8555E4D4859 (void);
+// 0x000003A5 System.Void Discord.OverlayManager/FFIMethods/OpenGuildInviteCallback::Invoke(System.IntPtr,Discord.Result)
+extern void OpenGuildInviteCallback_Invoke_m1FE4896B43C748FF440807C93A74E5022006D152 (void);
+// 0x000003A6 System.IAsyncResult Discord.OverlayManager/FFIMethods/OpenGuildInviteCallback::BeginInvoke(System.IntPtr,Discord.Result,System.AsyncCallback,System.Object)
+extern void OpenGuildInviteCallback_BeginInvoke_m17E56EE239EBD10D22B560684876088B94EE8451 (void);
+// 0x000003A7 System.Void Discord.OverlayManager/FFIMethods/OpenGuildInviteCallback::EndInvoke(System.IAsyncResult)
+extern void OpenGuildInviteCallback_EndInvoke_m392438DD9CC47DD3E73B6EF3AAA5887E89204A46 (void);
+// 0x000003A8 System.Void Discord.OverlayManager/FFIMethods/OpenGuildInviteMethod::.ctor(System.Object,System.IntPtr)
+extern void OpenGuildInviteMethod__ctor_m077BC3357313DD00A09C68A3D148A6CFBC4B86BC (void);
+// 0x000003A9 System.Void Discord.OverlayManager/FFIMethods/OpenGuildInviteMethod::Invoke(System.IntPtr,System.String,System.IntPtr,Discord.OverlayManager/FFIMethods/OpenGuildInviteCallback)
+extern void OpenGuildInviteMethod_Invoke_m87849AC6C8390985ACFEA96553AB520B9E737165 (void);
+// 0x000003AA System.IAsyncResult Discord.OverlayManager/FFIMethods/OpenGuildInviteMethod::BeginInvoke(System.IntPtr,System.String,System.IntPtr,Discord.OverlayManager/FFIMethods/OpenGuildInviteCallback,System.AsyncCallback,System.Object)
+extern void OpenGuildInviteMethod_BeginInvoke_m2DD8552D189ED5941BD15D9E21587A527BC2A43F (void);
+// 0x000003AB System.Void Discord.OverlayManager/FFIMethods/OpenGuildInviteMethod::EndInvoke(System.IAsyncResult)
+extern void OpenGuildInviteMethod_EndInvoke_m0902CCA80ECD4AFCEB28FCB31219BD6656549041 (void);
+// 0x000003AC System.Void Discord.OverlayManager/FFIMethods/OpenVoiceSettingsCallback::.ctor(System.Object,System.IntPtr)
+extern void OpenVoiceSettingsCallback__ctor_m5F259528E46EBD42121BA2CA1BADF6367B2CD9FF (void);
+// 0x000003AD System.Void Discord.OverlayManager/FFIMethods/OpenVoiceSettingsCallback::Invoke(System.IntPtr,Discord.Result)
+extern void OpenVoiceSettingsCallback_Invoke_mB4927F53B627ED57C2A06D27836D1128512A1AC7 (void);
+// 0x000003AE System.IAsyncResult Discord.OverlayManager/FFIMethods/OpenVoiceSettingsCallback::BeginInvoke(System.IntPtr,Discord.Result,System.AsyncCallback,System.Object)
+extern void OpenVoiceSettingsCallback_BeginInvoke_m6A468ABBD6F38E8705247E5BA5BFA24637EC6588 (void);
+// 0x000003AF System.Void Discord.OverlayManager/FFIMethods/OpenVoiceSettingsCallback::EndInvoke(System.IAsyncResult)
+extern void OpenVoiceSettingsCallback_EndInvoke_m149999805413D9A5ECC551914D5D71C595322056 (void);
+// 0x000003B0 System.Void Discord.OverlayManager/FFIMethods/OpenVoiceSettingsMethod::.ctor(System.Object,System.IntPtr)
+extern void OpenVoiceSettingsMethod__ctor_mBA95F9501B9285B1A1EEFD48013FDF32E92CEC84 (void);
+// 0x000003B1 System.Void Discord.OverlayManager/FFIMethods/OpenVoiceSettingsMethod::Invoke(System.IntPtr,System.IntPtr,Discord.OverlayManager/FFIMethods/OpenVoiceSettingsCallback)
+extern void OpenVoiceSettingsMethod_Invoke_mACCA451FF17AEBF9EE64F86F7F0C89A903F54670 (void);
+// 0x000003B2 System.IAsyncResult Discord.OverlayManager/FFIMethods/OpenVoiceSettingsMethod::BeginInvoke(System.IntPtr,System.IntPtr,Discord.OverlayManager/FFIMethods/OpenVoiceSettingsCallback,System.AsyncCallback,System.Object)
+extern void OpenVoiceSettingsMethod_BeginInvoke_mC5700A3FEF7CF39402DF0C27700C9754F9062087 (void);
+// 0x000003B3 System.Void Discord.OverlayManager/FFIMethods/OpenVoiceSettingsMethod::EndInvoke(System.IAsyncResult)
+extern void OpenVoiceSettingsMethod_EndInvoke_m2B95E08064BC729FF81F6B77800613317750CC1F (void);
+// 0x000003B4 System.Void Discord.OverlayManager/SetLockedHandler::.ctor(System.Object,System.IntPtr)
+extern void SetLockedHandler__ctor_m44999790D7F5ABD1E136E6EF0A081F74BFBBE0A4 (void);
+// 0x000003B5 System.Void Discord.OverlayManager/SetLockedHandler::Invoke(Discord.Result)
+extern void SetLockedHandler_Invoke_m3EAEF878CFE536C481C9DB17E68078663E470D39 (void);
+// 0x000003B6 System.IAsyncResult Discord.OverlayManager/SetLockedHandler::BeginInvoke(Discord.Result,System.AsyncCallback,System.Object)
+extern void SetLockedHandler_BeginInvoke_m5E92F368B153017A5D7A01F6E5FF6826AFA80CB7 (void);
+// 0x000003B7 System.Void Discord.OverlayManager/SetLockedHandler::EndInvoke(System.IAsyncResult)
+extern void SetLockedHandler_EndInvoke_m22FA8889993C558767B45A7BAB8CEDE92A4B7A48 (void);
+// 0x000003B8 System.Void Discord.OverlayManager/OpenActivityInviteHandler::.ctor(System.Object,System.IntPtr)
+extern void OpenActivityInviteHandler__ctor_m02A9737F77884ED2C5AEA948BFD5FDA1C6AC3FD4 (void);
+// 0x000003B9 System.Void Discord.OverlayManager/OpenActivityInviteHandler::Invoke(Discord.Result)
+extern void OpenActivityInviteHandler_Invoke_m39295F4B6E58E9095CF89C579656B4C03A5F3AF6 (void);
+// 0x000003BA System.IAsyncResult Discord.OverlayManager/OpenActivityInviteHandler::BeginInvoke(Discord.Result,System.AsyncCallback,System.Object)
+extern void OpenActivityInviteHandler_BeginInvoke_m484A4A4FA65F8E99B0C9073125E99D05AD917FCB (void);
+// 0x000003BB System.Void Discord.OverlayManager/OpenActivityInviteHandler::EndInvoke(System.IAsyncResult)
+extern void OpenActivityInviteHandler_EndInvoke_m25BEF1C1189942DB8A72326A520763BDAC893FAE (void);
+// 0x000003BC System.Void Discord.OverlayManager/OpenGuildInviteHandler::.ctor(System.Object,System.IntPtr)
+extern void OpenGuildInviteHandler__ctor_m63276F54C4C0FA75E9724D4B4799ABAEA83EFB5F (void);
+// 0x000003BD System.Void Discord.OverlayManager/OpenGuildInviteHandler::Invoke(Discord.Result)
+extern void OpenGuildInviteHandler_Invoke_m048F32BD2826B9E31543F3745C724FC2867E7C19 (void);
+// 0x000003BE System.IAsyncResult Discord.OverlayManager/OpenGuildInviteHandler::BeginInvoke(Discord.Result,System.AsyncCallback,System.Object)
+extern void OpenGuildInviteHandler_BeginInvoke_m7B9380E2250B499155BAC7FBA77CFA93601CF5A3 (void);
+// 0x000003BF System.Void Discord.OverlayManager/OpenGuildInviteHandler::EndInvoke(System.IAsyncResult)
+extern void OpenGuildInviteHandler_EndInvoke_m0FA9F85B27CBEE1FE9C2580F823B0BA963878748 (void);
+// 0x000003C0 System.Void Discord.OverlayManager/OpenVoiceSettingsHandler::.ctor(System.Object,System.IntPtr)
+extern void OpenVoiceSettingsHandler__ctor_m6B0EC1A7D407CDC64DBA67566D8AAD5E51C7F9CB (void);
+// 0x000003C1 System.Void Discord.OverlayManager/OpenVoiceSettingsHandler::Invoke(Discord.Result)
+extern void OpenVoiceSettingsHandler_Invoke_mDCA14238B15DD726D6741BA9570A620BA8AA0590 (void);
+// 0x000003C2 System.IAsyncResult Discord.OverlayManager/OpenVoiceSettingsHandler::BeginInvoke(Discord.Result,System.AsyncCallback,System.Object)
+extern void OpenVoiceSettingsHandler_BeginInvoke_mE4ED3399A0FD6E5B30108026FF42EB901C5C2C48 (void);
+// 0x000003C3 System.Void Discord.OverlayManager/OpenVoiceSettingsHandler::EndInvoke(System.IAsyncResult)
+extern void OpenVoiceSettingsHandler_EndInvoke_mFFF909DCAF109F6A7B8EDC38F695C592DA22D18A (void);
+// 0x000003C4 System.Void Discord.OverlayManager/ToggleHandler::.ctor(System.Object,System.IntPtr)
+extern void ToggleHandler__ctor_mB6FA7547F01E5BE13CA09A05385630254980FA6A (void);
+// 0x000003C5 System.Void Discord.OverlayManager/ToggleHandler::Invoke(System.Boolean)
+extern void ToggleHandler_Invoke_mC9A8C503561E5B4715E3576AE79AF34AE1C873C8 (void);
+// 0x000003C6 System.IAsyncResult Discord.OverlayManager/ToggleHandler::BeginInvoke(System.Boolean,System.AsyncCallback,System.Object)
+extern void ToggleHandler_BeginInvoke_mC574B7A8D6BABB4A0EB8804DB84DEAE16A0DDE0F (void);
+// 0x000003C7 System.Void Discord.OverlayManager/ToggleHandler::EndInvoke(System.IAsyncResult)
+extern void ToggleHandler_EndInvoke_m161DF42F8CA57E0A1A87974D591DFEC963530C93 (void);
+// 0x000003C8 Discord.StorageManager/FFIMethods Discord.StorageManager::get_Methods()
+extern void StorageManager_get_Methods_mB2E78355C89B91CAD5BBC6A8876C716C7CC1529E (void);
+// 0x000003C9 System.Void Discord.StorageManager::.ctor(System.IntPtr,System.IntPtr,Discord.StorageManager/FFIEvents&)
+extern void StorageManager__ctor_mBE5FA9841F7667455F708883C3FB36F5EF37921D (void);
+// 0x000003CA System.Void Discord.StorageManager::InitEvents(System.IntPtr,Discord.StorageManager/FFIEvents&)
+extern void StorageManager_InitEvents_m0E71F073D72A2267FA675E1F8283B2B4384A46CC (void);
+// 0x000003CB System.UInt32 Discord.StorageManager::Read(System.String,System.Byte[])
+extern void StorageManager_Read_mA22915AC8A75923E2DEA50E523F44E62F1090990 (void);
+// 0x000003CC System.Void Discord.StorageManager::ReadAsyncCallbackImpl(System.IntPtr,Discord.Result,System.IntPtr,System.Int32)
+extern void StorageManager_ReadAsyncCallbackImpl_m379D8FE2836A4CEFEB640C4E2D2687566DC3607B (void);
+// 0x000003CD System.Void Discord.StorageManager::ReadAsync(System.String,Discord.StorageManager/ReadAsyncHandler)
+extern void StorageManager_ReadAsync_m578DDE85B3D95636928D61A34307DC161909F2EC (void);
+// 0x000003CE System.Void Discord.StorageManager::ReadAsyncPartialCallbackImpl(System.IntPtr,Discord.Result,System.IntPtr,System.Int32)
+extern void StorageManager_ReadAsyncPartialCallbackImpl_mB5ECDC560EA4DF77FCB6F9723A011F28A9FDDF6B (void);
+// 0x000003CF System.Void Discord.StorageManager::ReadAsyncPartial(System.String,System.UInt64,System.UInt64,Discord.StorageManager/ReadAsyncPartialHandler)
+extern void StorageManager_ReadAsyncPartial_m3FC1B4D49007E77F464E7753E0D23616EAC70BFB (void);
+// 0x000003D0 System.Void Discord.StorageManager::Write(System.String,System.Byte[])
+extern void StorageManager_Write_mC5F61B95AFF9DE9E2A4AA82FA03F349D6A4472ED (void);
+// 0x000003D1 System.Void Discord.StorageManager::WriteAsyncCallbackImpl(System.IntPtr,Discord.Result)
+extern void StorageManager_WriteAsyncCallbackImpl_m01D87702F478BF71E272AA0A2BC14A7D73976E9D (void);
+// 0x000003D2 System.Void Discord.StorageManager::WriteAsync(System.String,System.Byte[],Discord.StorageManager/WriteAsyncHandler)
+extern void StorageManager_WriteAsync_m38E02815C01A3FD2D06CCC055E0EA7E6FA4AEA87 (void);
+// 0x000003D3 System.Void Discord.StorageManager::Delete(System.String)
+extern void StorageManager_Delete_mB4374DAA299C743420E7C4BCADDDFB3895C08E10 (void);
+// 0x000003D4 System.Boolean Discord.StorageManager::Exists(System.String)
+extern void StorageManager_Exists_m5E3E67133C075C7F69F431FEB2A9DD0924FE999F (void);
+// 0x000003D5 System.Int32 Discord.StorageManager::Count()
+extern void StorageManager_Count_m7C739EC10A10B6E38E46563F8D9C717808D7D595 (void);
+// 0x000003D6 Discord.FileStat Discord.StorageManager::Stat(System.String)
+extern void StorageManager_Stat_m95AD4A207F27E35117A656FB830890ECF39EA0B6 (void);
+// 0x000003D7 Discord.FileStat Discord.StorageManager::StatAt(System.Int32)
+extern void StorageManager_StatAt_mABFCDBB1B9FF0A2D186E0E9C4EFE075C0C2DFC20 (void);
+// 0x000003D8 System.String Discord.StorageManager::GetPath()
+extern void StorageManager_GetPath_m2B20A7ED351A029AB4C93A91A064635F39945341 (void);
+// 0x000003D9 System.Collections.Generic.IEnumerable`1<Discord.FileStat> Discord.StorageManager::Files()
+extern void StorageManager_Files_m59EE8BA5F869ACA9BC329A965050DB235C5E5DE4 (void);
+// 0x000003DA System.Void Discord.StorageManager/FFIMethods/ReadMethod::.ctor(System.Object,System.IntPtr)
+extern void ReadMethod__ctor_mC790646741DA2FB9E7456DD6D063002D21678E9F (void);
+// 0x000003DB Discord.Result Discord.StorageManager/FFIMethods/ReadMethod::Invoke(System.IntPtr,System.String,System.Byte[],System.Int32,System.UInt32&)
+extern void ReadMethod_Invoke_mDC3DD8AC7FCAA9BCF8762C2FCDC5BBE0C62F16F3 (void);
+// 0x000003DC System.IAsyncResult Discord.StorageManager/FFIMethods/ReadMethod::BeginInvoke(System.IntPtr,System.String,System.Byte[],System.Int32,System.UInt32&,System.AsyncCallback,System.Object)
+extern void ReadMethod_BeginInvoke_m81ABAF6C1A236EA404AD0D2C6D2570E74BE665DE (void);
+// 0x000003DD Discord.Result Discord.StorageManager/FFIMethods/ReadMethod::EndInvoke(System.UInt32&,System.IAsyncResult)
+extern void ReadMethod_EndInvoke_m517BC16E99DB5F465D1DE0AF3BDB2C585ADF39F5 (void);
+// 0x000003DE System.Void Discord.StorageManager/FFIMethods/ReadAsyncCallback::.ctor(System.Object,System.IntPtr)
+extern void ReadAsyncCallback__ctor_mB29172272899E44E8EE438F06137270C3C18AF3B (void);
+// 0x000003DF System.Void Discord.StorageManager/FFIMethods/ReadAsyncCallback::Invoke(System.IntPtr,Discord.Result,System.IntPtr,System.Int32)
+extern void ReadAsyncCallback_Invoke_mD7584D5705BEF6B0CA5F1C0D589C3892BE832FFF (void);
+// 0x000003E0 System.IAsyncResult Discord.StorageManager/FFIMethods/ReadAsyncCallback::BeginInvoke(System.IntPtr,Discord.Result,System.IntPtr,System.Int32,System.AsyncCallback,System.Object)
+extern void ReadAsyncCallback_BeginInvoke_mB245A0346B82FE38622E6114DF5B4E02C1FFA888 (void);
+// 0x000003E1 System.Void Discord.StorageManager/FFIMethods/ReadAsyncCallback::EndInvoke(System.IAsyncResult)
+extern void ReadAsyncCallback_EndInvoke_m7278385BB4467E658BBE1027FD9F57CC0EA2DDE8 (void);
+// 0x000003E2 System.Void Discord.StorageManager/FFIMethods/ReadAsyncMethod::.ctor(System.Object,System.IntPtr)
+extern void ReadAsyncMethod__ctor_mD6807079FD3A781339C9E5CAA7E83ACF8523850E (void);
+// 0x000003E3 System.Void Discord.StorageManager/FFIMethods/ReadAsyncMethod::Invoke(System.IntPtr,System.String,System.IntPtr,Discord.StorageManager/FFIMethods/ReadAsyncCallback)
+extern void ReadAsyncMethod_Invoke_m12BBD704D58906A358D203690776FACE087E98E2 (void);
+// 0x000003E4 System.IAsyncResult Discord.StorageManager/FFIMethods/ReadAsyncMethod::BeginInvoke(System.IntPtr,System.String,System.IntPtr,Discord.StorageManager/FFIMethods/ReadAsyncCallback,System.AsyncCallback,System.Object)
+extern void ReadAsyncMethod_BeginInvoke_m7733677A22B2EBE9E7F18585D620111F2B716DCF (void);
+// 0x000003E5 System.Void Discord.StorageManager/FFIMethods/ReadAsyncMethod::EndInvoke(System.IAsyncResult)
+extern void ReadAsyncMethod_EndInvoke_m90B74033FF7EEE1F1FE36BC4399CB56FD8D7B875 (void);
+// 0x000003E6 System.Void Discord.StorageManager/FFIMethods/ReadAsyncPartialCallback::.ctor(System.Object,System.IntPtr)
+extern void ReadAsyncPartialCallback__ctor_m78E6EAC1EA9D5064D526597FBC5D1F460196F015 (void);
+// 0x000003E7 System.Void Discord.StorageManager/FFIMethods/ReadAsyncPartialCallback::Invoke(System.IntPtr,Discord.Result,System.IntPtr,System.Int32)
+extern void ReadAsyncPartialCallback_Invoke_mF1E63EADED5EF7D6FAAD928EDEBB24D820E0C96C (void);
+// 0x000003E8 System.IAsyncResult Discord.StorageManager/FFIMethods/ReadAsyncPartialCallback::BeginInvoke(System.IntPtr,Discord.Result,System.IntPtr,System.Int32,System.AsyncCallback,System.Object)
+extern void ReadAsyncPartialCallback_BeginInvoke_mAAF81D49756228AA6571BC16505F0A64F126B763 (void);
+// 0x000003E9 System.Void Discord.StorageManager/FFIMethods/ReadAsyncPartialCallback::EndInvoke(System.IAsyncResult)
+extern void ReadAsyncPartialCallback_EndInvoke_mBAA833D665E0647429CA95C8D3AE1D51CB013C27 (void);
+// 0x000003EA System.Void Discord.StorageManager/FFIMethods/ReadAsyncPartialMethod::.ctor(System.Object,System.IntPtr)
+extern void ReadAsyncPartialMethod__ctor_mF064B9ABB13BA8A679D3608E496F78004891C6D4 (void);
+// 0x000003EB System.Void Discord.StorageManager/FFIMethods/ReadAsyncPartialMethod::Invoke(System.IntPtr,System.String,System.UInt64,System.UInt64,System.IntPtr,Discord.StorageManager/FFIMethods/ReadAsyncPartialCallback)
+extern void ReadAsyncPartialMethod_Invoke_mE373B3B0785233B24ECE94351EA120DDD9AFDA79 (void);
+// 0x000003EC System.IAsyncResult Discord.StorageManager/FFIMethods/ReadAsyncPartialMethod::BeginInvoke(System.IntPtr,System.String,System.UInt64,System.UInt64,System.IntPtr,Discord.StorageManager/FFIMethods/ReadAsyncPartialCallback,System.AsyncCallback,System.Object)
+extern void ReadAsyncPartialMethod_BeginInvoke_m706985844DF472C57CB626B25251E99A4D2F27E6 (void);
+// 0x000003ED System.Void Discord.StorageManager/FFIMethods/ReadAsyncPartialMethod::EndInvoke(System.IAsyncResult)
+extern void ReadAsyncPartialMethod_EndInvoke_m24D24DAF437C943BBA1C6783A8A438E342FD2F15 (void);
+// 0x000003EE System.Void Discord.StorageManager/FFIMethods/WriteMethod::.ctor(System.Object,System.IntPtr)
+extern void WriteMethod__ctor_mBC3D8FBFA133072BEFFF71C16CA2F35E648ECAF0 (void);
+// 0x000003EF Discord.Result Discord.StorageManager/FFIMethods/WriteMethod::Invoke(System.IntPtr,System.String,System.Byte[],System.Int32)
+extern void WriteMethod_Invoke_mEE1FF5DE7439E3F6F92D599723677DFF398D2FAA (void);
+// 0x000003F0 System.IAsyncResult Discord.StorageManager/FFIMethods/WriteMethod::BeginInvoke(System.IntPtr,System.String,System.Byte[],System.Int32,System.AsyncCallback,System.Object)
+extern void WriteMethod_BeginInvoke_m06CF16A9A42E07B5E171B56E3698E1A06E2FE54E (void);
+// 0x000003F1 Discord.Result Discord.StorageManager/FFIMethods/WriteMethod::EndInvoke(System.IAsyncResult)
+extern void WriteMethod_EndInvoke_m8802BF012A25DD7F220FA0BB07C49D46F7DBD4DE (void);
+// 0x000003F2 System.Void Discord.StorageManager/FFIMethods/WriteAsyncCallback::.ctor(System.Object,System.IntPtr)
+extern void WriteAsyncCallback__ctor_m0EBA2EC08D32AEC7B3F669ACBDC52246CE157CD4 (void);
+// 0x000003F3 System.Void Discord.StorageManager/FFIMethods/WriteAsyncCallback::Invoke(System.IntPtr,Discord.Result)
+extern void WriteAsyncCallback_Invoke_mE972D1B8054CF7328278426FEE0BA85A4C4CE754 (void);
+// 0x000003F4 System.IAsyncResult Discord.StorageManager/FFIMethods/WriteAsyncCallback::BeginInvoke(System.IntPtr,Discord.Result,System.AsyncCallback,System.Object)
+extern void WriteAsyncCallback_BeginInvoke_mCF52C4156DEE6A481FCBB89C119DA8950F22851D (void);
+// 0x000003F5 System.Void Discord.StorageManager/FFIMethods/WriteAsyncCallback::EndInvoke(System.IAsyncResult)
+extern void WriteAsyncCallback_EndInvoke_m3EBF5128508607DA39A102633B46B9E141225F26 (void);
+// 0x000003F6 System.Void Discord.StorageManager/FFIMethods/WriteAsyncMethod::.ctor(System.Object,System.IntPtr)
+extern void WriteAsyncMethod__ctor_mA915B4E21361B873E98B40E394F1397F5C96AA7C (void);
+// 0x000003F7 System.Void Discord.StorageManager/FFIMethods/WriteAsyncMethod::Invoke(System.IntPtr,System.String,System.Byte[],System.Int32,System.IntPtr,Discord.StorageManager/FFIMethods/WriteAsyncCallback)
+extern void WriteAsyncMethod_Invoke_mA325170E014FDF154B50A35268385602E5E6EF6F (void);
+// 0x000003F8 System.IAsyncResult Discord.StorageManager/FFIMethods/WriteAsyncMethod::BeginInvoke(System.IntPtr,System.String,System.Byte[],System.Int32,System.IntPtr,Discord.StorageManager/FFIMethods/WriteAsyncCallback,System.AsyncCallback,System.Object)
+extern void WriteAsyncMethod_BeginInvoke_m10179DFB3D08ECD3B6554718A269B0925EE5C5F4 (void);
+// 0x000003F9 System.Void Discord.StorageManager/FFIMethods/WriteAsyncMethod::EndInvoke(System.IAsyncResult)
+extern void WriteAsyncMethod_EndInvoke_m0CE8C2A19B0B21B3068D9557A4E7F9A18DF179B4 (void);
+// 0x000003FA System.Void Discord.StorageManager/FFIMethods/DeleteMethod::.ctor(System.Object,System.IntPtr)
+extern void DeleteMethod__ctor_m20A1798B79E063ADA577E65D0786040F41CD192C (void);
+// 0x000003FB Discord.Result Discord.StorageManager/FFIMethods/DeleteMethod::Invoke(System.IntPtr,System.String)
+extern void DeleteMethod_Invoke_mA691E0A46CCFB4123FF692B37E86FC54E1D25F36 (void);
+// 0x000003FC System.IAsyncResult Discord.StorageManager/FFIMethods/DeleteMethod::BeginInvoke(System.IntPtr,System.String,System.AsyncCallback,System.Object)
+extern void DeleteMethod_BeginInvoke_mE876219DE47D7722D43074FBF88133CF79DAC4F4 (void);
+// 0x000003FD Discord.Result Discord.StorageManager/FFIMethods/DeleteMethod::EndInvoke(System.IAsyncResult)
+extern void DeleteMethod_EndInvoke_mD1F0516CC677ECC3B7A03B4EF0196537250421A1 (void);
+// 0x000003FE System.Void Discord.StorageManager/FFIMethods/ExistsMethod::.ctor(System.Object,System.IntPtr)
+extern void ExistsMethod__ctor_mF641782C9B478378BC1F4C6F0D1006F525437290 (void);
+// 0x000003FF Discord.Result Discord.StorageManager/FFIMethods/ExistsMethod::Invoke(System.IntPtr,System.String,System.Boolean&)
+extern void ExistsMethod_Invoke_mBD766DF50039C19D4098AB0B4DFA275C14FF82F6 (void);
+// 0x00000400 System.IAsyncResult Discord.StorageManager/FFIMethods/ExistsMethod::BeginInvoke(System.IntPtr,System.String,System.Boolean&,System.AsyncCallback,System.Object)
+extern void ExistsMethod_BeginInvoke_m74DC5928C6FDC4B69A869E43A1FAB6B615B728F2 (void);
+// 0x00000401 Discord.Result Discord.StorageManager/FFIMethods/ExistsMethod::EndInvoke(System.Boolean&,System.IAsyncResult)
+extern void ExistsMethod_EndInvoke_mB2BB9428A6358BAD1F8409685E2C3099DF9B1706 (void);
+// 0x00000402 System.Void Discord.StorageManager/FFIMethods/CountMethod::.ctor(System.Object,System.IntPtr)
+extern void CountMethod__ctor_mD42283CBB2912BDC5B833168C262FA4F6CA7E22D (void);
+// 0x00000403 System.Void Discord.StorageManager/FFIMethods/CountMethod::Invoke(System.IntPtr,System.Int32&)
+extern void CountMethod_Invoke_mBFC21E7D8DC4BDD66B3776069EA8F30FC5BAE025 (void);
+// 0x00000404 System.IAsyncResult Discord.StorageManager/FFIMethods/CountMethod::BeginInvoke(System.IntPtr,System.Int32&,System.AsyncCallback,System.Object)
+extern void CountMethod_BeginInvoke_m8A10E4E6ED74B85B6B367C958EAC490E94CC5ACA (void);
+// 0x00000405 System.Void Discord.StorageManager/FFIMethods/CountMethod::EndInvoke(System.Int32&,System.IAsyncResult)
+extern void CountMethod_EndInvoke_mE345758B2DA352171A4CDBE0485649BDD021EA01 (void);
+// 0x00000406 System.Void Discord.StorageManager/FFIMethods/StatMethod::.ctor(System.Object,System.IntPtr)
+extern void StatMethod__ctor_m48344023D2DB847879AAC575E9D15E2B47B3AD45 (void);
+// 0x00000407 Discord.Result Discord.StorageManager/FFIMethods/StatMethod::Invoke(System.IntPtr,System.String,Discord.FileStat&)
+extern void StatMethod_Invoke_m8EFF96086122787F2B9A7603356C8B9CC0B96F4B (void);
+// 0x00000408 System.IAsyncResult Discord.StorageManager/FFIMethods/StatMethod::BeginInvoke(System.IntPtr,System.String,Discord.FileStat&,System.AsyncCallback,System.Object)
+extern void StatMethod_BeginInvoke_mC2C59C1D20F28AFC79A28BBA9CA06C9930143DBE (void);
+// 0x00000409 Discord.Result Discord.StorageManager/FFIMethods/StatMethod::EndInvoke(Discord.FileStat&,System.IAsyncResult)
+extern void StatMethod_EndInvoke_mC55D7CB135C1A93A9CA5BEF7B3E40EBF6DA38985 (void);
+// 0x0000040A System.Void Discord.StorageManager/FFIMethods/StatAtMethod::.ctor(System.Object,System.IntPtr)
+extern void StatAtMethod__ctor_mFC40A48D6F6988A3D40C005ACFD95E9D47C9AE4B (void);
+// 0x0000040B Discord.Result Discord.StorageManager/FFIMethods/StatAtMethod::Invoke(System.IntPtr,System.Int32,Discord.FileStat&)
+extern void StatAtMethod_Invoke_m0FD7F0A5DAA980D9090744B9276C5AF2E091931A (void);
+// 0x0000040C System.IAsyncResult Discord.StorageManager/FFIMethods/StatAtMethod::BeginInvoke(System.IntPtr,System.Int32,Discord.FileStat&,System.AsyncCallback,System.Object)
+extern void StatAtMethod_BeginInvoke_mE84D2B582762F95265BE4FF13709A5FA4A3805EF (void);
+// 0x0000040D Discord.Result Discord.StorageManager/FFIMethods/StatAtMethod::EndInvoke(Discord.FileStat&,System.IAsyncResult)
+extern void StatAtMethod_EndInvoke_m846ED6E955DBA1F671C26E20BD8AB3656FCDD03E (void);
+// 0x0000040E System.Void Discord.StorageManager/FFIMethods/GetPathMethod::.ctor(System.Object,System.IntPtr)
+extern void GetPathMethod__ctor_mFE908E2ED185DF9AF50EB35025DCB8A00D851A3D (void);
+// 0x0000040F Discord.Result Discord.StorageManager/FFIMethods/GetPathMethod::Invoke(System.IntPtr,System.Text.StringBuilder)
+extern void GetPathMethod_Invoke_m130C199D80089A19F4C0233CEEDD4791B99736B5 (void);
+// 0x00000410 System.IAsyncResult Discord.StorageManager/FFIMethods/GetPathMethod::BeginInvoke(System.IntPtr,System.Text.StringBuilder,System.AsyncCallback,System.Object)
+extern void GetPathMethod_BeginInvoke_mCB6E9C4F6B89C55EB97C416900F3444A4C7A8DB8 (void);
+// 0x00000411 Discord.Result Discord.StorageManager/FFIMethods/GetPathMethod::EndInvoke(System.IAsyncResult)
+extern void GetPathMethod_EndInvoke_m1E5BAE52BF744E657847A7830B4B943A77E90E47 (void);
+// 0x00000412 System.Void Discord.StorageManager/ReadAsyncHandler::.ctor(System.Object,System.IntPtr)
+extern void ReadAsyncHandler__ctor_m6D51DB11E56DE5656A1A3FB69AAD89D7D2E7F975 (void);
+// 0x00000413 System.Void Discord.StorageManager/ReadAsyncHandler::Invoke(Discord.Result,System.Byte[])
+extern void ReadAsyncHandler_Invoke_m6C09EE32DAE2836318EA3ACAFA26D8882F321A9E (void);
+// 0x00000414 System.IAsyncResult Discord.StorageManager/ReadAsyncHandler::BeginInvoke(Discord.Result,System.Byte[],System.AsyncCallback,System.Object)
+extern void ReadAsyncHandler_BeginInvoke_m6A998DDED3F0DA6E3B6EE255B900F1380FC5E992 (void);
+// 0x00000415 System.Void Discord.StorageManager/ReadAsyncHandler::EndInvoke(System.IAsyncResult)
+extern void ReadAsyncHandler_EndInvoke_m1F5D49B9D0B02F2ABF77C006EDEF1CDDF482A933 (void);
+// 0x00000416 System.Void Discord.StorageManager/ReadAsyncPartialHandler::.ctor(System.Object,System.IntPtr)
+extern void ReadAsyncPartialHandler__ctor_m0A2DFF70E26D92327BA49A6773E69AFC30DC044A (void);
+// 0x00000417 System.Void Discord.StorageManager/ReadAsyncPartialHandler::Invoke(Discord.Result,System.Byte[])
+extern void ReadAsyncPartialHandler_Invoke_mF3FCF5E07E3EE8F5E052B7AB15DC34EBBC84EF04 (void);
+// 0x00000418 System.IAsyncResult Discord.StorageManager/ReadAsyncPartialHandler::BeginInvoke(Discord.Result,System.Byte[],System.AsyncCallback,System.Object)
+extern void ReadAsyncPartialHandler_BeginInvoke_m096C2B4C59D7211FAC36323E2D045E4059E69DE0 (void);
+// 0x00000419 System.Void Discord.StorageManager/ReadAsyncPartialHandler::EndInvoke(System.IAsyncResult)
+extern void ReadAsyncPartialHandler_EndInvoke_m57DEDE1610AB7FBC50EA4EB98E9F16B1BA9FD778 (void);
+// 0x0000041A System.Void Discord.StorageManager/WriteAsyncHandler::.ctor(System.Object,System.IntPtr)
+extern void WriteAsyncHandler__ctor_mC3B307834D6E1C4801C7D052387E4A557023674A (void);
+// 0x0000041B System.Void Discord.StorageManager/WriteAsyncHandler::Invoke(Discord.Result)
+extern void WriteAsyncHandler_Invoke_m4CCC2437F90EA4F3775F7DCF0347EC9D51952C13 (void);
+// 0x0000041C System.IAsyncResult Discord.StorageManager/WriteAsyncHandler::BeginInvoke(Discord.Result,System.AsyncCallback,System.Object)
+extern void WriteAsyncHandler_BeginInvoke_mE19D156062D7E0A9656F7FE01686E504FE2073AD (void);
+// 0x0000041D System.Void Discord.StorageManager/WriteAsyncHandler::EndInvoke(System.IAsyncResult)
+extern void WriteAsyncHandler_EndInvoke_m53E24A2894950F3E7C1774FC7A455DB0B069C42F (void);
+// 0x0000041E Discord.StoreManager/FFIMethods Discord.StoreManager::get_Methods()
+extern void StoreManager_get_Methods_m15D5F90A475663782846CE1ED3570B17E93C4E2C (void);
+// 0x0000041F System.Void Discord.StoreManager::add_OnEntitlementCreate(Discord.StoreManager/EntitlementCreateHandler)
+extern void StoreManager_add_OnEntitlementCreate_m0E56702FC62B7A227CF10C96F549709634652BB6 (void);
+// 0x00000420 System.Void Discord.StoreManager::remove_OnEntitlementCreate(Discord.StoreManager/EntitlementCreateHandler)
+extern void StoreManager_remove_OnEntitlementCreate_mB895657430342A2C4F6868DE59618AD0BB6D0866 (void);
+// 0x00000421 System.Void Discord.StoreManager::add_OnEntitlementDelete(Discord.StoreManager/EntitlementDeleteHandler)
+extern void StoreManager_add_OnEntitlementDelete_mFEBBF642CF6CA18419E78B422FD94E7F5B1062B0 (void);
+// 0x00000422 System.Void Discord.StoreManager::remove_OnEntitlementDelete(Discord.StoreManager/EntitlementDeleteHandler)
+extern void StoreManager_remove_OnEntitlementDelete_m75C9B53A0733220BC27DA8961746A7656C894C30 (void);
+// 0x00000423 System.Void Discord.StoreManager::.ctor(System.IntPtr,System.IntPtr,Discord.StoreManager/FFIEvents&)
+extern void StoreManager__ctor_m13882E3F5BC7DA308B6FDB214DEF241CBA4BC798 (void);
+// 0x00000424 System.Void Discord.StoreManager::InitEvents(System.IntPtr,Discord.StoreManager/FFIEvents&)
+extern void StoreManager_InitEvents_m20BC26F192D3D885E37F687CBBF603C8028EA051 (void);
+// 0x00000425 System.Void Discord.StoreManager::FetchSkusCallbackImpl(System.IntPtr,Discord.Result)
+extern void StoreManager_FetchSkusCallbackImpl_m2116A7447264449345A320A94ABC482275F8EB3D (void);
+// 0x00000426 System.Void Discord.StoreManager::FetchSkus(Discord.StoreManager/FetchSkusHandler)
+extern void StoreManager_FetchSkus_mADDF16A8EE7870A4C13942B0C238AB70FFBF10E3 (void);
+// 0x00000427 System.Int32 Discord.StoreManager::CountSkus()
+extern void StoreManager_CountSkus_mAB227115113D4C11A4B46943D5F1484ED78C8F34 (void);
+// 0x00000428 Discord.Sku Discord.StoreManager::GetSku(System.Int64)
+extern void StoreManager_GetSku_m632398A7618A0BC4004E6DDC6F4D467A1DC23F31 (void);
+// 0x00000429 Discord.Sku Discord.StoreManager::GetSkuAt(System.Int32)
+extern void StoreManager_GetSkuAt_mAE7C7DE305BC30FC3784D1A1BF0A87E3731D1EDA (void);
+// 0x0000042A System.Void Discord.StoreManager::FetchEntitlementsCallbackImpl(System.IntPtr,Discord.Result)
+extern void StoreManager_FetchEntitlementsCallbackImpl_m9DD2D717D429B6F8F9C4CDFEFEBD9D3C054940F9 (void);
+// 0x0000042B System.Void Discord.StoreManager::FetchEntitlements(Discord.StoreManager/FetchEntitlementsHandler)
+extern void StoreManager_FetchEntitlements_m4843E18301CF5F5F6CDA3A58A52A1CBB149F5A9B (void);
+// 0x0000042C System.Int32 Discord.StoreManager::CountEntitlements()
+extern void StoreManager_CountEntitlements_m1F43E92C492A73B610CDB3C10CE1E35B41F75646 (void);
+// 0x0000042D Discord.Entitlement Discord.StoreManager::GetEntitlement(System.Int64)
+extern void StoreManager_GetEntitlement_mA6160EF125E9C51E93A1B0E4645BA50590521BC1 (void);
+// 0x0000042E Discord.Entitlement Discord.StoreManager::GetEntitlementAt(System.Int32)
+extern void StoreManager_GetEntitlementAt_m3BD1F13AE7D6EE9937AD07BF1087C1FE4EC6BE50 (void);
+// 0x0000042F System.Boolean Discord.StoreManager::HasSkuEntitlement(System.Int64)
+extern void StoreManager_HasSkuEntitlement_mF5DE964A79FEFE7803EA2B8C0FB418F29B230172 (void);
+// 0x00000430 System.Void Discord.StoreManager::StartPurchaseCallbackImpl(System.IntPtr,Discord.Result)
+extern void StoreManager_StartPurchaseCallbackImpl_mD7AFAEB1DBCB4299B3B3B005A84273E7B4D986C1 (void);
+// 0x00000431 System.Void Discord.StoreManager::StartPurchase(System.Int64,Discord.StoreManager/StartPurchaseHandler)
+extern void StoreManager_StartPurchase_m0805FD5D38E2D247ED47BCB145EF627342A50F46 (void);
+// 0x00000432 System.Void Discord.StoreManager::OnEntitlementCreateImpl(System.IntPtr,Discord.Entitlement&)
+extern void StoreManager_OnEntitlementCreateImpl_m61F1778914C0C5793995510328C6351D450D1E57 (void);
+// 0x00000433 System.Void Discord.StoreManager::OnEntitlementDeleteImpl(System.IntPtr,Discord.Entitlement&)
+extern void StoreManager_OnEntitlementDeleteImpl_m140EA562EC6DC924037B0F982C946D9702B34802 (void);
+// 0x00000434 System.Collections.Generic.IEnumerable`1<Discord.Entitlement> Discord.StoreManager::GetEntitlements()
+extern void StoreManager_GetEntitlements_mCAA2B3F78E369CE00CC8FD946E111BE1E46AC9BB (void);
+// 0x00000435 System.Collections.Generic.IEnumerable`1<Discord.Sku> Discord.StoreManager::GetSkus()
+extern void StoreManager_GetSkus_m8A6299B53A4957BFF3CD5328A94AB86DA0937EFC (void);
+// 0x00000436 System.Void Discord.StoreManager/FFIEvents/EntitlementCreateHandler::.ctor(System.Object,System.IntPtr)
+extern void EntitlementCreateHandler__ctor_m0562AD0F1594EF1D10297A36EBB758F0DDB99DBB (void);
+// 0x00000437 System.Void Discord.StoreManager/FFIEvents/EntitlementCreateHandler::Invoke(System.IntPtr,Discord.Entitlement&)
+extern void EntitlementCreateHandler_Invoke_mC5BA5C7FD7B9CC0C1B8F39E342F89317B6B99019 (void);
+// 0x00000438 System.IAsyncResult Discord.StoreManager/FFIEvents/EntitlementCreateHandler::BeginInvoke(System.IntPtr,Discord.Entitlement&,System.AsyncCallback,System.Object)
+extern void EntitlementCreateHandler_BeginInvoke_mD73F6298C4D79D546C95D28A1981801D5B19B776 (void);
+// 0x00000439 System.Void Discord.StoreManager/FFIEvents/EntitlementCreateHandler::EndInvoke(Discord.Entitlement&,System.IAsyncResult)
+extern void EntitlementCreateHandler_EndInvoke_m9C529C863A1BB59A862B364E138AC8F2C741E7E5 (void);
+// 0x0000043A System.Void Discord.StoreManager/FFIEvents/EntitlementDeleteHandler::.ctor(System.Object,System.IntPtr)
+extern void EntitlementDeleteHandler__ctor_mCA0BCB70EED54549BEC6338AE7A1C0EE5D2E5C3E (void);
+// 0x0000043B System.Void Discord.StoreManager/FFIEvents/EntitlementDeleteHandler::Invoke(System.IntPtr,Discord.Entitlement&)
+extern void EntitlementDeleteHandler_Invoke_m0CB90AEA38E88C291749B2D2877B2610A0D58F67 (void);
+// 0x0000043C System.IAsyncResult Discord.StoreManager/FFIEvents/EntitlementDeleteHandler::BeginInvoke(System.IntPtr,Discord.Entitlement&,System.AsyncCallback,System.Object)
+extern void EntitlementDeleteHandler_BeginInvoke_m6D3C54B716E5B64B01C06B120E78555E6769E582 (void);
+// 0x0000043D System.Void Discord.StoreManager/FFIEvents/EntitlementDeleteHandler::EndInvoke(Discord.Entitlement&,System.IAsyncResult)
+extern void EntitlementDeleteHandler_EndInvoke_m470204A2603C2CF9F82D8007429BCF76430CD72A (void);
+// 0x0000043E System.Void Discord.StoreManager/FFIMethods/FetchSkusCallback::.ctor(System.Object,System.IntPtr)
+extern void FetchSkusCallback__ctor_mA9A0DC447AD16267B5E8C59407DF77CF6D3A24F2 (void);
+// 0x0000043F System.Void Discord.StoreManager/FFIMethods/FetchSkusCallback::Invoke(System.IntPtr,Discord.Result)
+extern void FetchSkusCallback_Invoke_mB6E024AC65A4CEDBABE900C4D28A26568537C72D (void);
+// 0x00000440 System.IAsyncResult Discord.StoreManager/FFIMethods/FetchSkusCallback::BeginInvoke(System.IntPtr,Discord.Result,System.AsyncCallback,System.Object)
+extern void FetchSkusCallback_BeginInvoke_m40FD365CC8641840A5A77A6DD0A54531283112D9 (void);
+// 0x00000441 System.Void Discord.StoreManager/FFIMethods/FetchSkusCallback::EndInvoke(System.IAsyncResult)
+extern void FetchSkusCallback_EndInvoke_m4569A4B2CC96FA399C1333CFC696B7BDDC3ADB28 (void);
+// 0x00000442 System.Void Discord.StoreManager/FFIMethods/FetchSkusMethod::.ctor(System.Object,System.IntPtr)
+extern void FetchSkusMethod__ctor_mAEC0C445691D65029CE515D8B1B09E40C5174CCA (void);
+// 0x00000443 System.Void Discord.StoreManager/FFIMethods/FetchSkusMethod::Invoke(System.IntPtr,System.IntPtr,Discord.StoreManager/FFIMethods/FetchSkusCallback)
+extern void FetchSkusMethod_Invoke_m85AC3B370A10749A573A63842824460ACBAC189E (void);
+// 0x00000444 System.IAsyncResult Discord.StoreManager/FFIMethods/FetchSkusMethod::BeginInvoke(System.IntPtr,System.IntPtr,Discord.StoreManager/FFIMethods/FetchSkusCallback,System.AsyncCallback,System.Object)
+extern void FetchSkusMethod_BeginInvoke_m4A5BC94B6EB270549F0EE03E6791D0B0C32B483D (void);
+// 0x00000445 System.Void Discord.StoreManager/FFIMethods/FetchSkusMethod::EndInvoke(System.IAsyncResult)
+extern void FetchSkusMethod_EndInvoke_m90BA0B7920F1E3206B9110D49A3BC33F6E595BE9 (void);
+// 0x00000446 System.Void Discord.StoreManager/FFIMethods/CountSkusMethod::.ctor(System.Object,System.IntPtr)
+extern void CountSkusMethod__ctor_m8568EC128BAC7667EC801B7194EC269FD7470A79 (void);
+// 0x00000447 System.Void Discord.StoreManager/FFIMethods/CountSkusMethod::Invoke(System.IntPtr,System.Int32&)
+extern void CountSkusMethod_Invoke_m42BB6D49C7B5D7EC91C07D1768DA4148028F88B5 (void);
+// 0x00000448 System.IAsyncResult Discord.StoreManager/FFIMethods/CountSkusMethod::BeginInvoke(System.IntPtr,System.Int32&,System.AsyncCallback,System.Object)
+extern void CountSkusMethod_BeginInvoke_m65175D0E8A511A2C3FA5DFF6FB4AE9D80FE02CD6 (void);
+// 0x00000449 System.Void Discord.StoreManager/FFIMethods/CountSkusMethod::EndInvoke(System.Int32&,System.IAsyncResult)
+extern void CountSkusMethod_EndInvoke_mA8B64B28E37ED5CF8F5852C6532237C3321F96EC (void);
+// 0x0000044A System.Void Discord.StoreManager/FFIMethods/GetSkuMethod::.ctor(System.Object,System.IntPtr)
+extern void GetSkuMethod__ctor_m7AF9218692A97AE4C6F7D8CC4478BEC5E3A5B375 (void);
+// 0x0000044B Discord.Result Discord.StoreManager/FFIMethods/GetSkuMethod::Invoke(System.IntPtr,System.Int64,Discord.Sku&)
+extern void GetSkuMethod_Invoke_m9BC645A98CC5E1A5E7D5D955F770E0BFB425FC18 (void);
+// 0x0000044C System.IAsyncResult Discord.StoreManager/FFIMethods/GetSkuMethod::BeginInvoke(System.IntPtr,System.Int64,Discord.Sku&,System.AsyncCallback,System.Object)
+extern void GetSkuMethod_BeginInvoke_mA605F017EC4A43584E8FF05B4F8C07F93412AE14 (void);
+// 0x0000044D Discord.Result Discord.StoreManager/FFIMethods/GetSkuMethod::EndInvoke(Discord.Sku&,System.IAsyncResult)
+extern void GetSkuMethod_EndInvoke_m23C345D321AD9D9C935533DA289116F391D4DFE9 (void);
+// 0x0000044E System.Void Discord.StoreManager/FFIMethods/GetSkuAtMethod::.ctor(System.Object,System.IntPtr)
+extern void GetSkuAtMethod__ctor_m357AA49033D85DAFEB586DF186D9B4FF14F3A12D (void);
+// 0x0000044F Discord.Result Discord.StoreManager/FFIMethods/GetSkuAtMethod::Invoke(System.IntPtr,System.Int32,Discord.Sku&)
+extern void GetSkuAtMethod_Invoke_m306F62FC9B5070A8984B7E907189BFCD8F497405 (void);
+// 0x00000450 System.IAsyncResult Discord.StoreManager/FFIMethods/GetSkuAtMethod::BeginInvoke(System.IntPtr,System.Int32,Discord.Sku&,System.AsyncCallback,System.Object)
+extern void GetSkuAtMethod_BeginInvoke_m066E053B9DA7CC8A791081B9CD8C4081517D6104 (void);
+// 0x00000451 Discord.Result Discord.StoreManager/FFIMethods/GetSkuAtMethod::EndInvoke(Discord.Sku&,System.IAsyncResult)
+extern void GetSkuAtMethod_EndInvoke_mA4BD4F173D268BA0D08DE06630DFFF8284E1FE1E (void);
+// 0x00000452 System.Void Discord.StoreManager/FFIMethods/FetchEntitlementsCallback::.ctor(System.Object,System.IntPtr)
+extern void FetchEntitlementsCallback__ctor_mE7FAF0E06AD89E85872A77D0B6335F548EB99B0E (void);
+// 0x00000453 System.Void Discord.StoreManager/FFIMethods/FetchEntitlementsCallback::Invoke(System.IntPtr,Discord.Result)
+extern void FetchEntitlementsCallback_Invoke_m6B6368CD15F0DDF80990B5B7E3427464E59BE854 (void);
+// 0x00000454 System.IAsyncResult Discord.StoreManager/FFIMethods/FetchEntitlementsCallback::BeginInvoke(System.IntPtr,Discord.Result,System.AsyncCallback,System.Object)
+extern void FetchEntitlementsCallback_BeginInvoke_m1F991F31322F308F36320364641CFFEB09FBC3E4 (void);
+// 0x00000455 System.Void Discord.StoreManager/FFIMethods/FetchEntitlementsCallback::EndInvoke(System.IAsyncResult)
+extern void FetchEntitlementsCallback_EndInvoke_m186889E064AAF3AE9E1B2B6B844E9DE3474E03DA (void);
+// 0x00000456 System.Void Discord.StoreManager/FFIMethods/FetchEntitlementsMethod::.ctor(System.Object,System.IntPtr)
+extern void FetchEntitlementsMethod__ctor_m61C56B74A6555AF3FDAC1E0E5A5CEFAECB2C7FB8 (void);
+// 0x00000457 System.Void Discord.StoreManager/FFIMethods/FetchEntitlementsMethod::Invoke(System.IntPtr,System.IntPtr,Discord.StoreManager/FFIMethods/FetchEntitlementsCallback)
+extern void FetchEntitlementsMethod_Invoke_m913416284DB33133364D71CF7544E2F30678D6A8 (void);
+// 0x00000458 System.IAsyncResult Discord.StoreManager/FFIMethods/FetchEntitlementsMethod::BeginInvoke(System.IntPtr,System.IntPtr,Discord.StoreManager/FFIMethods/FetchEntitlementsCallback,System.AsyncCallback,System.Object)
+extern void FetchEntitlementsMethod_BeginInvoke_mBB0A419AD1BEB832B44CBE8D011A2B38115E5FF4 (void);
+// 0x00000459 System.Void Discord.StoreManager/FFIMethods/FetchEntitlementsMethod::EndInvoke(System.IAsyncResult)
+extern void FetchEntitlementsMethod_EndInvoke_m6B74C1501241D6B741C035FBF65993E486A0CFB1 (void);
+// 0x0000045A System.Void Discord.StoreManager/FFIMethods/CountEntitlementsMethod::.ctor(System.Object,System.IntPtr)
+extern void CountEntitlementsMethod__ctor_m6794DA1A94F69F59DBA4451C361821201379DAE4 (void);
+// 0x0000045B System.Void Discord.StoreManager/FFIMethods/CountEntitlementsMethod::Invoke(System.IntPtr,System.Int32&)
+extern void CountEntitlementsMethod_Invoke_m346A3BAD4AE7210047F0DBED4F2A2FD701AFB1D1 (void);
+// 0x0000045C System.IAsyncResult Discord.StoreManager/FFIMethods/CountEntitlementsMethod::BeginInvoke(System.IntPtr,System.Int32&,System.AsyncCallback,System.Object)
+extern void CountEntitlementsMethod_BeginInvoke_mDDEC610701E12723BD372D5834FB70B6F753EC95 (void);
+// 0x0000045D System.Void Discord.StoreManager/FFIMethods/CountEntitlementsMethod::EndInvoke(System.Int32&,System.IAsyncResult)
+extern void CountEntitlementsMethod_EndInvoke_m46F559D25217E79788A11182DDD9BC7EDBC3F6A4 (void);
+// 0x0000045E System.Void Discord.StoreManager/FFIMethods/GetEntitlementMethod::.ctor(System.Object,System.IntPtr)
+extern void GetEntitlementMethod__ctor_m212753E6E11D71F1951E9F7A935A38749309784B (void);
+// 0x0000045F Discord.Result Discord.StoreManager/FFIMethods/GetEntitlementMethod::Invoke(System.IntPtr,System.Int64,Discord.Entitlement&)
+extern void GetEntitlementMethod_Invoke_mF1357E3C6068085B9C1A89A8A25871639654FD96 (void);
+// 0x00000460 System.IAsyncResult Discord.StoreManager/FFIMethods/GetEntitlementMethod::BeginInvoke(System.IntPtr,System.Int64,Discord.Entitlement&,System.AsyncCallback,System.Object)
+extern void GetEntitlementMethod_BeginInvoke_m5553ABD6FF573B5464871B3F2E51DA4E85D33E78 (void);
+// 0x00000461 Discord.Result Discord.StoreManager/FFIMethods/GetEntitlementMethod::EndInvoke(Discord.Entitlement&,System.IAsyncResult)
+extern void GetEntitlementMethod_EndInvoke_m6F66CFA89EA644D4F66EF385C72A272AA03580EC (void);
+// 0x00000462 System.Void Discord.StoreManager/FFIMethods/GetEntitlementAtMethod::.ctor(System.Object,System.IntPtr)
+extern void GetEntitlementAtMethod__ctor_mC23B57A7C6C263BAD178FE41B9B6E64E5A1C5D52 (void);
+// 0x00000463 Discord.Result Discord.StoreManager/FFIMethods/GetEntitlementAtMethod::Invoke(System.IntPtr,System.Int32,Discord.Entitlement&)
+extern void GetEntitlementAtMethod_Invoke_m08C83A080BF8DC4E1D05E9CA2CD2DF7F169CE59B (void);
+// 0x00000464 System.IAsyncResult Discord.StoreManager/FFIMethods/GetEntitlementAtMethod::BeginInvoke(System.IntPtr,System.Int32,Discord.Entitlement&,System.AsyncCallback,System.Object)
+extern void GetEntitlementAtMethod_BeginInvoke_mE8595BB5ACDF0EC796C2BFCB46E637A2A8B56D5B (void);
+// 0x00000465 Discord.Result Discord.StoreManager/FFIMethods/GetEntitlementAtMethod::EndInvoke(Discord.Entitlement&,System.IAsyncResult)
+extern void GetEntitlementAtMethod_EndInvoke_m3EE99590CE5D83DE1275436A290046C96BE89AF0 (void);
+// 0x00000466 System.Void Discord.StoreManager/FFIMethods/HasSkuEntitlementMethod::.ctor(System.Object,System.IntPtr)
+extern void HasSkuEntitlementMethod__ctor_m8ED483003EFC94B30CA023A36DBFFBBA4E0FBFDF (void);
+// 0x00000467 Discord.Result Discord.StoreManager/FFIMethods/HasSkuEntitlementMethod::Invoke(System.IntPtr,System.Int64,System.Boolean&)
+extern void HasSkuEntitlementMethod_Invoke_mAA4EA6CC48203AE021A8C0051BFC428DFC7310E9 (void);
+// 0x00000468 System.IAsyncResult Discord.StoreManager/FFIMethods/HasSkuEntitlementMethod::BeginInvoke(System.IntPtr,System.Int64,System.Boolean&,System.AsyncCallback,System.Object)
+extern void HasSkuEntitlementMethod_BeginInvoke_m02ABE5825BF456FFBE57DA8B599F6A1BB4E03972 (void);
+// 0x00000469 Discord.Result Discord.StoreManager/FFIMethods/HasSkuEntitlementMethod::EndInvoke(System.Boolean&,System.IAsyncResult)
+extern void HasSkuEntitlementMethod_EndInvoke_mA3FA07252E13BA187F21C80A0782B226F8A7728D (void);
+// 0x0000046A System.Void Discord.StoreManager/FFIMethods/StartPurchaseCallback::.ctor(System.Object,System.IntPtr)
+extern void StartPurchaseCallback__ctor_m947078929B83CEA966A096A1CDC846CE090E3B8B (void);
+// 0x0000046B System.Void Discord.StoreManager/FFIMethods/StartPurchaseCallback::Invoke(System.IntPtr,Discord.Result)
+extern void StartPurchaseCallback_Invoke_mC5323EB33A21C0D20E6943DD5F1F7428B2D8B580 (void);
+// 0x0000046C System.IAsyncResult Discord.StoreManager/FFIMethods/StartPurchaseCallback::BeginInvoke(System.IntPtr,Discord.Result,System.AsyncCallback,System.Object)
+extern void StartPurchaseCallback_BeginInvoke_m830AABD76C79974C2BFC69AD26CD0ED953B7937C (void);
+// 0x0000046D System.Void Discord.StoreManager/FFIMethods/StartPurchaseCallback::EndInvoke(System.IAsyncResult)
+extern void StartPurchaseCallback_EndInvoke_mE2939689782860F7B093F362B2519E4B3E331306 (void);
+// 0x0000046E System.Void Discord.StoreManager/FFIMethods/StartPurchaseMethod::.ctor(System.Object,System.IntPtr)
+extern void StartPurchaseMethod__ctor_mC45AE047FC0458A103C6627A315396EEBE62730D (void);
+// 0x0000046F System.Void Discord.StoreManager/FFIMethods/StartPurchaseMethod::Invoke(System.IntPtr,System.Int64,System.IntPtr,Discord.StoreManager/FFIMethods/StartPurchaseCallback)
+extern void StartPurchaseMethod_Invoke_m731755215043FB6E275E19667D6E10242B4BD05B (void);
+// 0x00000470 System.IAsyncResult Discord.StoreManager/FFIMethods/StartPurchaseMethod::BeginInvoke(System.IntPtr,System.Int64,System.IntPtr,Discord.StoreManager/FFIMethods/StartPurchaseCallback,System.AsyncCallback,System.Object)
+extern void StartPurchaseMethod_BeginInvoke_m5AAFBF9C2FC72E5158D7953FFB1C53A54B7C62CF (void);
+// 0x00000471 System.Void Discord.StoreManager/FFIMethods/StartPurchaseMethod::EndInvoke(System.IAsyncResult)
+extern void StartPurchaseMethod_EndInvoke_m617FAFE6A6F01A2DE4697A31D2912D961AE2AB1F (void);
+// 0x00000472 System.Void Discord.StoreManager/FetchSkusHandler::.ctor(System.Object,System.IntPtr)
+extern void FetchSkusHandler__ctor_mD23A4FC4A09E0C7C976A4CEEE1E81BB59AAF6E39 (void);
+// 0x00000473 System.Void Discord.StoreManager/FetchSkusHandler::Invoke(Discord.Result)
+extern void FetchSkusHandler_Invoke_m70743184B29C332208A7EAAD8C0C828303E8AD85 (void);
+// 0x00000474 System.IAsyncResult Discord.StoreManager/FetchSkusHandler::BeginInvoke(Discord.Result,System.AsyncCallback,System.Object)
+extern void FetchSkusHandler_BeginInvoke_m250298676F6F7FE45212AB2AFF57DE5E7FC6B8A5 (void);
+// 0x00000475 System.Void Discord.StoreManager/FetchSkusHandler::EndInvoke(System.IAsyncResult)
+extern void FetchSkusHandler_EndInvoke_mCC572C079D484EA905AD7A60B24D06C2FE84BA81 (void);
+// 0x00000476 System.Void Discord.StoreManager/FetchEntitlementsHandler::.ctor(System.Object,System.IntPtr)
+extern void FetchEntitlementsHandler__ctor_m4A4D2B672B1A388F322EE92BAC2F4222D5F434E6 (void);
+// 0x00000477 System.Void Discord.StoreManager/FetchEntitlementsHandler::Invoke(Discord.Result)
+extern void FetchEntitlementsHandler_Invoke_mCEFE19FD333D5CD0F2FD4EADA9869B18630125DC (void);
+// 0x00000478 System.IAsyncResult Discord.StoreManager/FetchEntitlementsHandler::BeginInvoke(Discord.Result,System.AsyncCallback,System.Object)
+extern void FetchEntitlementsHandler_BeginInvoke_m981CAF6B5C0A29DD0EA1EDEEDF29DE401B365EB4 (void);
+// 0x00000479 System.Void Discord.StoreManager/FetchEntitlementsHandler::EndInvoke(System.IAsyncResult)
+extern void FetchEntitlementsHandler_EndInvoke_m1E2344F058E5AF6DB28A34D0E5392A602FC561E8 (void);
+// 0x0000047A System.Void Discord.StoreManager/StartPurchaseHandler::.ctor(System.Object,System.IntPtr)
+extern void StartPurchaseHandler__ctor_mDC926A83FA7DEC7139389B29715CDF6FCA94E156 (void);
+// 0x0000047B System.Void Discord.StoreManager/StartPurchaseHandler::Invoke(Discord.Result)
+extern void StartPurchaseHandler_Invoke_m308224490F207945C71F66ADB3C091B2896174C9 (void);
+// 0x0000047C System.IAsyncResult Discord.StoreManager/StartPurchaseHandler::BeginInvoke(Discord.Result,System.AsyncCallback,System.Object)
+extern void StartPurchaseHandler_BeginInvoke_m3620251038497C9D94411132128E7F8E4DC5B49F (void);
+// 0x0000047D System.Void Discord.StoreManager/StartPurchaseHandler::EndInvoke(System.IAsyncResult)
+extern void StartPurchaseHandler_EndInvoke_m3934F0A480021016F9A11786D0AF27FE50565586 (void);
+// 0x0000047E System.Void Discord.StoreManager/EntitlementCreateHandler::.ctor(System.Object,System.IntPtr)
+extern void EntitlementCreateHandler__ctor_mED48A816BB905DBCDD2747AB6E42CED4266CEEAD (void);
+// 0x0000047F System.Void Discord.StoreManager/EntitlementCreateHandler::Invoke(Discord.Entitlement&)
+extern void EntitlementCreateHandler_Invoke_mD6916CE162E152763A5366B9E4B5F60C66BC6A8B (void);
+// 0x00000480 System.IAsyncResult Discord.StoreManager/EntitlementCreateHandler::BeginInvoke(Discord.Entitlement&,System.AsyncCallback,System.Object)
+extern void EntitlementCreateHandler_BeginInvoke_mD7AED6790BED711A3DD3234D8993656C7C67D6B4 (void);
+// 0x00000481 System.Void Discord.StoreManager/EntitlementCreateHandler::EndInvoke(Discord.Entitlement&,System.IAsyncResult)
+extern void EntitlementCreateHandler_EndInvoke_mCA618B81A410BF57473C46D1712E6103599EFC3D (void);
+// 0x00000482 System.Void Discord.StoreManager/EntitlementDeleteHandler::.ctor(System.Object,System.IntPtr)
+extern void EntitlementDeleteHandler__ctor_m46F23BF03E6F51D25173112BFCA88ECB59BDCF2C (void);
+// 0x00000483 System.Void Discord.StoreManager/EntitlementDeleteHandler::Invoke(Discord.Entitlement&)
+extern void EntitlementDeleteHandler_Invoke_m14A4B6089953D3C7EFC09F6B4C164B8448791A45 (void);
+// 0x00000484 System.IAsyncResult Discord.StoreManager/EntitlementDeleteHandler::BeginInvoke(Discord.Entitlement&,System.AsyncCallback,System.Object)
+extern void EntitlementDeleteHandler_BeginInvoke_m50863C620149E0858AFADF36BAD895872DCCF663 (void);
+// 0x00000485 System.Void Discord.StoreManager/EntitlementDeleteHandler::EndInvoke(Discord.Entitlement&,System.IAsyncResult)
+extern void EntitlementDeleteHandler_EndInvoke_m532A69AF15461A65F17434962E8B7344A41FF56D (void);
+// 0x00000486 Discord.VoiceManager/FFIMethods Discord.VoiceManager::get_Methods()
+extern void VoiceManager_get_Methods_m80A2C4CA01F2579D7B7F3C4BD76C0A3C8EF7CF4E (void);
+// 0x00000487 System.Void Discord.VoiceManager::add_OnSettingsUpdate(Discord.VoiceManager/SettingsUpdateHandler)
+extern void VoiceManager_add_OnSettingsUpdate_m46AE66570DE22C53F795F4C1AF6007CCDD67423F (void);
+// 0x00000488 System.Void Discord.VoiceManager::remove_OnSettingsUpdate(Discord.VoiceManager/SettingsUpdateHandler)
+extern void VoiceManager_remove_OnSettingsUpdate_mA8396018D65AF604A251A71A100531F516BDFFEB (void);
+// 0x00000489 System.Void Discord.VoiceManager::.ctor(System.IntPtr,System.IntPtr,Discord.VoiceManager/FFIEvents&)
+extern void VoiceManager__ctor_mBB769C6951BE1C8F13C5B030ECED1377577DD57D (void);
+// 0x0000048A System.Void Discord.VoiceManager::InitEvents(System.IntPtr,Discord.VoiceManager/FFIEvents&)
+extern void VoiceManager_InitEvents_m07193AFE3C315F6FFECDD398FD5A678B514F59F9 (void);
+// 0x0000048B Discord.InputMode Discord.VoiceManager::GetInputMode()
+extern void VoiceManager_GetInputMode_m5FBB30E854B89D36BA41A5E7DA54747108AB3367 (void);
+// 0x0000048C System.Void Discord.VoiceManager::SetInputModeCallbackImpl(System.IntPtr,Discord.Result)
+extern void VoiceManager_SetInputModeCallbackImpl_mAD12021EC7B3FF6B0E84186F81FC2FBFADFECF27 (void);
+// 0x0000048D System.Void Discord.VoiceManager::SetInputMode(Discord.InputMode,Discord.VoiceManager/SetInputModeHandler)
+extern void VoiceManager_SetInputMode_m055417C7FF73686C311AF61EF1B8EB30B8091A84 (void);
+// 0x0000048E System.Boolean Discord.VoiceManager::IsSelfMute()
+extern void VoiceManager_IsSelfMute_m8C94E998743812295F69309EB0C2239DC951575D (void);
+// 0x0000048F System.Void Discord.VoiceManager::SetSelfMute(System.Boolean)
+extern void VoiceManager_SetSelfMute_mF3C9CD9245DA17DB331E29831238B69A4BA79EAC (void);
+// 0x00000490 System.Boolean Discord.VoiceManager::IsSelfDeaf()
+extern void VoiceManager_IsSelfDeaf_m1AC1BCFF8D0D93BC37D5BB20B6651D9B779699D3 (void);
+// 0x00000491 System.Void Discord.VoiceManager::SetSelfDeaf(System.Boolean)
+extern void VoiceManager_SetSelfDeaf_m03BA5ABD1B4DB56710C7A606C162C8B8F161280B (void);
+// 0x00000492 System.Boolean Discord.VoiceManager::IsLocalMute(System.Int64)
+extern void VoiceManager_IsLocalMute_mA1A01E65FEE430F8FB3F6A31E6EF1FB852579B9D (void);
+// 0x00000493 System.Void Discord.VoiceManager::SetLocalMute(System.Int64,System.Boolean)
+extern void VoiceManager_SetLocalMute_mD8C0ABF183EEB0F9A850B8622169DCF069A3E221 (void);
+// 0x00000494 System.Byte Discord.VoiceManager::GetLocalVolume(System.Int64)
+extern void VoiceManager_GetLocalVolume_m51E7D3137067B491E6229CA2A688106DB3A6EF6F (void);
+// 0x00000495 System.Void Discord.VoiceManager::SetLocalVolume(System.Int64,System.Byte)
+extern void VoiceManager_SetLocalVolume_m3A158E24E24E6049D79FE6076CB2D22DC252539E (void);
+// 0x00000496 System.Void Discord.VoiceManager::OnSettingsUpdateImpl(System.IntPtr)
+extern void VoiceManager_OnSettingsUpdateImpl_m5E67420E73068E57125D8D1DB95776B37EFD5E1D (void);
+// 0x00000497 System.Void Discord.VoiceManager/FFIEvents/SettingsUpdateHandler::.ctor(System.Object,System.IntPtr)
+extern void SettingsUpdateHandler__ctor_mCF245ED2B0E16CE4FAAE8D7CA4707A26FEF3575A (void);
+// 0x00000498 System.Void Discord.VoiceManager/FFIEvents/SettingsUpdateHandler::Invoke(System.IntPtr)
+extern void SettingsUpdateHandler_Invoke_m3C64F67A43012BA3304982E1A1A5D5D573838CFF (void);
+// 0x00000499 System.IAsyncResult Discord.VoiceManager/FFIEvents/SettingsUpdateHandler::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void SettingsUpdateHandler_BeginInvoke_m32A058042A9A38475DA97C7D5BF5E1B24C54C032 (void);
+// 0x0000049A System.Void Discord.VoiceManager/FFIEvents/SettingsUpdateHandler::EndInvoke(System.IAsyncResult)
+extern void SettingsUpdateHandler_EndInvoke_m6F947175FAE8BFAB407EE59FC216EB342194EDB8 (void);
+// 0x0000049B System.Void Discord.VoiceManager/FFIMethods/GetInputModeMethod::.ctor(System.Object,System.IntPtr)
+extern void GetInputModeMethod__ctor_mCBC0F51D5668EE07EB251758D80B18A44B0616D3 (void);
+// 0x0000049C Discord.Result Discord.VoiceManager/FFIMethods/GetInputModeMethod::Invoke(System.IntPtr,Discord.InputMode&)
+extern void GetInputModeMethod_Invoke_m5C735CF7B8B1EE44B221D59D4C98F1656D208DFF (void);
+// 0x0000049D System.IAsyncResult Discord.VoiceManager/FFIMethods/GetInputModeMethod::BeginInvoke(System.IntPtr,Discord.InputMode&,System.AsyncCallback,System.Object)
+extern void GetInputModeMethod_BeginInvoke_m5AC4C55693FA8442618925D2F9D2B7775AF6C2AF (void);
+// 0x0000049E Discord.Result Discord.VoiceManager/FFIMethods/GetInputModeMethod::EndInvoke(Discord.InputMode&,System.IAsyncResult)
+extern void GetInputModeMethod_EndInvoke_m7F81A6AB363F0829D9B192F3C952521E5AD9680D (void);
+// 0x0000049F System.Void Discord.VoiceManager/FFIMethods/SetInputModeCallback::.ctor(System.Object,System.IntPtr)
+extern void SetInputModeCallback__ctor_mA2F1A2AAEC10053F8F2170226CFB5FCCBE7F1334 (void);
+// 0x000004A0 System.Void Discord.VoiceManager/FFIMethods/SetInputModeCallback::Invoke(System.IntPtr,Discord.Result)
+extern void SetInputModeCallback_Invoke_m53178E35E5892B308516291E08CAAA527943AC9B (void);
+// 0x000004A1 System.IAsyncResult Discord.VoiceManager/FFIMethods/SetInputModeCallback::BeginInvoke(System.IntPtr,Discord.Result,System.AsyncCallback,System.Object)
+extern void SetInputModeCallback_BeginInvoke_m3F5A601E01F121F6913775C1E2854CA9C80F94ED (void);
+// 0x000004A2 System.Void Discord.VoiceManager/FFIMethods/SetInputModeCallback::EndInvoke(System.IAsyncResult)
+extern void SetInputModeCallback_EndInvoke_m31535EB742D9706CDAAF2ED01579DDC78CDC2D68 (void);
+// 0x000004A3 System.Void Discord.VoiceManager/FFIMethods/SetInputModeMethod::.ctor(System.Object,System.IntPtr)
+extern void SetInputModeMethod__ctor_m8F89A6E3E940B40CC658B72B432004273C54989F (void);
+// 0x000004A4 System.Void Discord.VoiceManager/FFIMethods/SetInputModeMethod::Invoke(System.IntPtr,Discord.InputMode,System.IntPtr,Discord.VoiceManager/FFIMethods/SetInputModeCallback)
+extern void SetInputModeMethod_Invoke_mC95ED5478BFED0B00DFE1F7F8934A3D6A303F649 (void);
+// 0x000004A5 System.IAsyncResult Discord.VoiceManager/FFIMethods/SetInputModeMethod::BeginInvoke(System.IntPtr,Discord.InputMode,System.IntPtr,Discord.VoiceManager/FFIMethods/SetInputModeCallback,System.AsyncCallback,System.Object)
+extern void SetInputModeMethod_BeginInvoke_m12056F5970B4EC2FC724FE320E1FEAF00CBC8A00 (void);
+// 0x000004A6 System.Void Discord.VoiceManager/FFIMethods/SetInputModeMethod::EndInvoke(System.IAsyncResult)
+extern void SetInputModeMethod_EndInvoke_m349CBA64193F318DB8A186A3FC5F8CF397F13EF2 (void);
+// 0x000004A7 System.Void Discord.VoiceManager/FFIMethods/IsSelfMuteMethod::.ctor(System.Object,System.IntPtr)
+extern void IsSelfMuteMethod__ctor_m8C18359E239FF718B7AC9419DBD52CA69BECFBA9 (void);
+// 0x000004A8 Discord.Result Discord.VoiceManager/FFIMethods/IsSelfMuteMethod::Invoke(System.IntPtr,System.Boolean&)
+extern void IsSelfMuteMethod_Invoke_mA7BADA24B1DB4B1CC127CE86CAB01E02258A1315 (void);
+// 0x000004A9 System.IAsyncResult Discord.VoiceManager/FFIMethods/IsSelfMuteMethod::BeginInvoke(System.IntPtr,System.Boolean&,System.AsyncCallback,System.Object)
+extern void IsSelfMuteMethod_BeginInvoke_m501A1AC4921840F2B74071230C448BBBCEE27813 (void);
+// 0x000004AA Discord.Result Discord.VoiceManager/FFIMethods/IsSelfMuteMethod::EndInvoke(System.Boolean&,System.IAsyncResult)
+extern void IsSelfMuteMethod_EndInvoke_m615B5BEE6B4B5748486A12C3F1D7FEB4093CEAC8 (void);
+// 0x000004AB System.Void Discord.VoiceManager/FFIMethods/SetSelfMuteMethod::.ctor(System.Object,System.IntPtr)
+extern void SetSelfMuteMethod__ctor_mE401F8B29E14110DF549806A65A0807298F7FF86 (void);
+// 0x000004AC Discord.Result Discord.VoiceManager/FFIMethods/SetSelfMuteMethod::Invoke(System.IntPtr,System.Boolean)
+extern void SetSelfMuteMethod_Invoke_mFB5916058FB57361D885722E26C6027BC255B57E (void);
+// 0x000004AD System.IAsyncResult Discord.VoiceManager/FFIMethods/SetSelfMuteMethod::BeginInvoke(System.IntPtr,System.Boolean,System.AsyncCallback,System.Object)
+extern void SetSelfMuteMethod_BeginInvoke_m0111C3D9B9A1310CC54D1C529AFCCE68BEB28779 (void);
+// 0x000004AE Discord.Result Discord.VoiceManager/FFIMethods/SetSelfMuteMethod::EndInvoke(System.IAsyncResult)
+extern void SetSelfMuteMethod_EndInvoke_mE6486623E042128AFB1D2ED4323A9DD685F52B16 (void);
+// 0x000004AF System.Void Discord.VoiceManager/FFIMethods/IsSelfDeafMethod::.ctor(System.Object,System.IntPtr)
+extern void IsSelfDeafMethod__ctor_m1FF9C36BDE439BAEC753F438AE534E4C6E9AC4DF (void);
+// 0x000004B0 Discord.Result Discord.VoiceManager/FFIMethods/IsSelfDeafMethod::Invoke(System.IntPtr,System.Boolean&)
+extern void IsSelfDeafMethod_Invoke_mA92EF37C93CA4C848DD338C6FB9C59F68CFFBA8E (void);
+// 0x000004B1 System.IAsyncResult Discord.VoiceManager/FFIMethods/IsSelfDeafMethod::BeginInvoke(System.IntPtr,System.Boolean&,System.AsyncCallback,System.Object)
+extern void IsSelfDeafMethod_BeginInvoke_m8E63465207199B288BD7667458AD410A86CA553A (void);
+// 0x000004B2 Discord.Result Discord.VoiceManager/FFIMethods/IsSelfDeafMethod::EndInvoke(System.Boolean&,System.IAsyncResult)
+extern void IsSelfDeafMethod_EndInvoke_m566F2D9D0468090CDD8E6BADE87E5D17045F826D (void);
+// 0x000004B3 System.Void Discord.VoiceManager/FFIMethods/SetSelfDeafMethod::.ctor(System.Object,System.IntPtr)
+extern void SetSelfDeafMethod__ctor_mB15B023B2A88DAB0C0A20D22B7050BCC0EBA9BF1 (void);
+// 0x000004B4 Discord.Result Discord.VoiceManager/FFIMethods/SetSelfDeafMethod::Invoke(System.IntPtr,System.Boolean)
+extern void SetSelfDeafMethod_Invoke_mA014696D3D47904901670E31DAA62EEB74CEE163 (void);
+// 0x000004B5 System.IAsyncResult Discord.VoiceManager/FFIMethods/SetSelfDeafMethod::BeginInvoke(System.IntPtr,System.Boolean,System.AsyncCallback,System.Object)
+extern void SetSelfDeafMethod_BeginInvoke_mBE7305515451A2FE0BAC55C86BFEA0EB404591A1 (void);
+// 0x000004B6 Discord.Result Discord.VoiceManager/FFIMethods/SetSelfDeafMethod::EndInvoke(System.IAsyncResult)
+extern void SetSelfDeafMethod_EndInvoke_mAB81137EEB16842B192072B7D47E6A64489A381D (void);
+// 0x000004B7 System.Void Discord.VoiceManager/FFIMethods/IsLocalMuteMethod::.ctor(System.Object,System.IntPtr)
+extern void IsLocalMuteMethod__ctor_m6D6A0D2C41F80C9AEC49E0BA8145490F5FE0051C (void);
+// 0x000004B8 Discord.Result Discord.VoiceManager/FFIMethods/IsLocalMuteMethod::Invoke(System.IntPtr,System.Int64,System.Boolean&)
+extern void IsLocalMuteMethod_Invoke_m1E2DB4DE1F89D78B89774A0B3D18DFE10133DBDD (void);
+// 0x000004B9 System.IAsyncResult Discord.VoiceManager/FFIMethods/IsLocalMuteMethod::BeginInvoke(System.IntPtr,System.Int64,System.Boolean&,System.AsyncCallback,System.Object)
+extern void IsLocalMuteMethod_BeginInvoke_mDDF0E8E68A2E6604B745976434BA791F16510DA3 (void);
+// 0x000004BA Discord.Result Discord.VoiceManager/FFIMethods/IsLocalMuteMethod::EndInvoke(System.Boolean&,System.IAsyncResult)
+extern void IsLocalMuteMethod_EndInvoke_m40E86D999296937BCB005F280DA9732551FD2F14 (void);
+// 0x000004BB System.Void Discord.VoiceManager/FFIMethods/SetLocalMuteMethod::.ctor(System.Object,System.IntPtr)
+extern void SetLocalMuteMethod__ctor_mBD09913861C063B20328D101A4D6DE9E1261FECA (void);
+// 0x000004BC Discord.Result Discord.VoiceManager/FFIMethods/SetLocalMuteMethod::Invoke(System.IntPtr,System.Int64,System.Boolean)
+extern void SetLocalMuteMethod_Invoke_m70CF0B73F72D33174833035C3219069FABB1A713 (void);
+// 0x000004BD System.IAsyncResult Discord.VoiceManager/FFIMethods/SetLocalMuteMethod::BeginInvoke(System.IntPtr,System.Int64,System.Boolean,System.AsyncCallback,System.Object)
+extern void SetLocalMuteMethod_BeginInvoke_m15057B310EB05543E4CABD8E76FC166CB5FB3083 (void);
+// 0x000004BE Discord.Result Discord.VoiceManager/FFIMethods/SetLocalMuteMethod::EndInvoke(System.IAsyncResult)
+extern void SetLocalMuteMethod_EndInvoke_m08B51EF5046DAC2FC6B62FCBB53D1C58124067E5 (void);
+// 0x000004BF System.Void Discord.VoiceManager/FFIMethods/GetLocalVolumeMethod::.ctor(System.Object,System.IntPtr)
+extern void GetLocalVolumeMethod__ctor_mA4114E6E19518D31758D8425183F3CCA9D3D4177 (void);
+// 0x000004C0 Discord.Result Discord.VoiceManager/FFIMethods/GetLocalVolumeMethod::Invoke(System.IntPtr,System.Int64,System.Byte&)
+extern void GetLocalVolumeMethod_Invoke_mF2172AA2ABD4D0BED9E20B0E73C6F9F343A03714 (void);
+// 0x000004C1 System.IAsyncResult Discord.VoiceManager/FFIMethods/GetLocalVolumeMethod::BeginInvoke(System.IntPtr,System.Int64,System.Byte&,System.AsyncCallback,System.Object)
+extern void GetLocalVolumeMethod_BeginInvoke_m7F00C803EA4D01C4227B5D763F3ACF8EE7070D7E (void);
+// 0x000004C2 Discord.Result Discord.VoiceManager/FFIMethods/GetLocalVolumeMethod::EndInvoke(System.Byte&,System.IAsyncResult)
+extern void GetLocalVolumeMethod_EndInvoke_m9BE579015448400F63028FB854530F759ADEBF67 (void);
+// 0x000004C3 System.Void Discord.VoiceManager/FFIMethods/SetLocalVolumeMethod::.ctor(System.Object,System.IntPtr)
+extern void SetLocalVolumeMethod__ctor_m4072E7BE351242DA509F7F0C5A8A136687D19B26 (void);
+// 0x000004C4 Discord.Result Discord.VoiceManager/FFIMethods/SetLocalVolumeMethod::Invoke(System.IntPtr,System.Int64,System.Byte)
+extern void SetLocalVolumeMethod_Invoke_mE07FEC5603720777CC3B04145C2B6ACEC6FE288B (void);
+// 0x000004C5 System.IAsyncResult Discord.VoiceManager/FFIMethods/SetLocalVolumeMethod::BeginInvoke(System.IntPtr,System.Int64,System.Byte,System.AsyncCallback,System.Object)
+extern void SetLocalVolumeMethod_BeginInvoke_m466EB060B7B771F536168120FA7E9E07AE55B3EA (void);
+// 0x000004C6 Discord.Result Discord.VoiceManager/FFIMethods/SetLocalVolumeMethod::EndInvoke(System.IAsyncResult)
+extern void SetLocalVolumeMethod_EndInvoke_m00D641A53465E14E08BF7E366384BB50FC33588D (void);
+// 0x000004C7 System.Void Discord.VoiceManager/SetInputModeHandler::.ctor(System.Object,System.IntPtr)
+extern void SetInputModeHandler__ctor_m35FA6B3F40D0E39312E3F90677B5C594106BFF86 (void);
+// 0x000004C8 System.Void Discord.VoiceManager/SetInputModeHandler::Invoke(Discord.Result)
+extern void SetInputModeHandler_Invoke_mF9BC3E8E3592A9A3CD86201F02FB6E1066FB19DC (void);
+// 0x000004C9 System.IAsyncResult Discord.VoiceManager/SetInputModeHandler::BeginInvoke(Discord.Result,System.AsyncCallback,System.Object)
+extern void SetInputModeHandler_BeginInvoke_m3918F03F21474ACAE21838FF7F87A6FC7F3466B1 (void);
+// 0x000004CA System.Void Discord.VoiceManager/SetInputModeHandler::EndInvoke(System.IAsyncResult)
+extern void SetInputModeHandler_EndInvoke_m4B61A24895CA872D2D887EA5D88056A6CF4CA0B8 (void);
+// 0x000004CB System.Void Discord.VoiceManager/SettingsUpdateHandler::.ctor(System.Object,System.IntPtr)
+extern void SettingsUpdateHandler__ctor_mFA6DCBEBC8F366A2653E1851484466B8E5D0F398 (void);
+// 0x000004CC System.Void Discord.VoiceManager/SettingsUpdateHandler::Invoke()
+extern void SettingsUpdateHandler_Invoke_mC38D75F73CF086B655E6D6545E869420D9EBC877 (void);
+// 0x000004CD System.IAsyncResult Discord.VoiceManager/SettingsUpdateHandler::BeginInvoke(System.AsyncCallback,System.Object)
+extern void SettingsUpdateHandler_BeginInvoke_mE03AFF685F76E252DCEF0A480E31D38F356C86EC (void);
+// 0x000004CE System.Void Discord.VoiceManager/SettingsUpdateHandler::EndInvoke(System.IAsyncResult)
+extern void SettingsUpdateHandler_EndInvoke_mB73CFAA4D2CEABD03BE64F1D7F383B7D6A1E0732 (void);
+// 0x000004CF Discord.AchievementManager/FFIMethods Discord.AchievementManager::get_Methods()
+extern void AchievementManager_get_Methods_m7238CB64083D60BCA2092E1FCF129553DCDAF7BA (void);
+// 0x000004D0 System.Void Discord.AchievementManager::add_OnUserAchievementUpdate(Discord.AchievementManager/UserAchievementUpdateHandler)
+extern void AchievementManager_add_OnUserAchievementUpdate_m26E3ECFB045F10F15EB1774F46EF330972E1EC17 (void);
+// 0x000004D1 System.Void Discord.AchievementManager::remove_OnUserAchievementUpdate(Discord.AchievementManager/UserAchievementUpdateHandler)
+extern void AchievementManager_remove_OnUserAchievementUpdate_m81E7009DD6F3FB854B33C2BE3A3DEBEAEF5A54FF (void);
+// 0x000004D2 System.Void Discord.AchievementManager::.ctor(System.IntPtr,System.IntPtr,Discord.AchievementManager/FFIEvents&)
+extern void AchievementManager__ctor_m0298A8037106F93F6A3466B6A5A772FC407A738E (void);
+// 0x000004D3 System.Void Discord.AchievementManager::InitEvents(System.IntPtr,Discord.AchievementManager/FFIEvents&)
+extern void AchievementManager_InitEvents_mD27B2CDAC443B2BBA6D2336B220C63600AE7581C (void);
+// 0x000004D4 System.Void Discord.AchievementManager::SetUserAchievementCallbackImpl(System.IntPtr,Discord.Result)
+extern void AchievementManager_SetUserAchievementCallbackImpl_mA215295D45E8C3828A670A5EEF4EA14B227B4D48 (void);
+// 0x000004D5 System.Void Discord.AchievementManager::SetUserAchievement(System.Int64,System.Byte,Discord.AchievementManager/SetUserAchievementHandler)
+extern void AchievementManager_SetUserAchievement_mAC84DC8B856A38CEF943367864E212677AE8AAEE (void);
+// 0x000004D6 System.Void Discord.AchievementManager::FetchUserAchievementsCallbackImpl(System.IntPtr,Discord.Result)
+extern void AchievementManager_FetchUserAchievementsCallbackImpl_m874E128FB096BC63CE1DE950EAAF8A9A97736DDE (void);
+// 0x000004D7 System.Void Discord.AchievementManager::FetchUserAchievements(Discord.AchievementManager/FetchUserAchievementsHandler)
+extern void AchievementManager_FetchUserAchievements_m093229C904DB7B05281CF58F54F0AAB9DF85FF93 (void);
+// 0x000004D8 System.Int32 Discord.AchievementManager::CountUserAchievements()
+extern void AchievementManager_CountUserAchievements_m611BE8D5B7E349541062F9E545A7D94B28EEF6F2 (void);
+// 0x000004D9 Discord.UserAchievement Discord.AchievementManager::GetUserAchievement(System.Int64)
+extern void AchievementManager_GetUserAchievement_mFEFFCD355F0469EE850380FD1026A677F2B39D8A (void);
+// 0x000004DA Discord.UserAchievement Discord.AchievementManager::GetUserAchievementAt(System.Int32)
+extern void AchievementManager_GetUserAchievementAt_m0DCFE89C6DDFE26B624CB298CCAF6580088B24DC (void);
+// 0x000004DB System.Void Discord.AchievementManager::OnUserAchievementUpdateImpl(System.IntPtr,Discord.UserAchievement&)
+extern void AchievementManager_OnUserAchievementUpdateImpl_m0DD9CA2C245D7F2685AE78723BE87998428E6F73 (void);
+// 0x000004DC System.Void Discord.AchievementManager/FFIEvents/UserAchievementUpdateHandler::.ctor(System.Object,System.IntPtr)
+extern void UserAchievementUpdateHandler__ctor_m1923BB8B4C532E28F29EF5AADDA9890C1CA83C89 (void);
+// 0x000004DD System.Void Discord.AchievementManager/FFIEvents/UserAchievementUpdateHandler::Invoke(System.IntPtr,Discord.UserAchievement&)
+extern void UserAchievementUpdateHandler_Invoke_mEC8878DD2EEE8C78B6EB855F2E7BE94454EDFA8E (void);
+// 0x000004DE System.IAsyncResult Discord.AchievementManager/FFIEvents/UserAchievementUpdateHandler::BeginInvoke(System.IntPtr,Discord.UserAchievement&,System.AsyncCallback,System.Object)
+extern void UserAchievementUpdateHandler_BeginInvoke_m76FE33811DE22F950D71FB4D8D3ACF5331ED6BE9 (void);
+// 0x000004DF System.Void Discord.AchievementManager/FFIEvents/UserAchievementUpdateHandler::EndInvoke(Discord.UserAchievement&,System.IAsyncResult)
+extern void UserAchievementUpdateHandler_EndInvoke_m4CD51F7D2C23D489B4100EF0C03C585B38203AF7 (void);
+// 0x000004E0 System.Void Discord.AchievementManager/FFIMethods/SetUserAchievementCallback::.ctor(System.Object,System.IntPtr)
+extern void SetUserAchievementCallback__ctor_m76CCE5DD74E3C3671329735A28F21D8E70BD5BED (void);
+// 0x000004E1 System.Void Discord.AchievementManager/FFIMethods/SetUserAchievementCallback::Invoke(System.IntPtr,Discord.Result)
+extern void SetUserAchievementCallback_Invoke_mABD434E33CACE5282E878BCB9767F84C90FA2512 (void);
+// 0x000004E2 System.IAsyncResult Discord.AchievementManager/FFIMethods/SetUserAchievementCallback::BeginInvoke(System.IntPtr,Discord.Result,System.AsyncCallback,System.Object)
+extern void SetUserAchievementCallback_BeginInvoke_m9C7718C62A10128964E7B7E04923A49D88E429C7 (void);
+// 0x000004E3 System.Void Discord.AchievementManager/FFIMethods/SetUserAchievementCallback::EndInvoke(System.IAsyncResult)
+extern void SetUserAchievementCallback_EndInvoke_m228EBF27B8B7398FEA9421712C3957D0C8DAFB23 (void);
+// 0x000004E4 System.Void Discord.AchievementManager/FFIMethods/SetUserAchievementMethod::.ctor(System.Object,System.IntPtr)
+extern void SetUserAchievementMethod__ctor_m848ED6758A478F6F1DD18581CF38D99FC3326BA0 (void);
+// 0x000004E5 System.Void Discord.AchievementManager/FFIMethods/SetUserAchievementMethod::Invoke(System.IntPtr,System.Int64,System.Byte,System.IntPtr,Discord.AchievementManager/FFIMethods/SetUserAchievementCallback)
+extern void SetUserAchievementMethod_Invoke_m21435B6EC0EB1EC94D5BE6DC9DDCF78F5D903838 (void);
+// 0x000004E6 System.IAsyncResult Discord.AchievementManager/FFIMethods/SetUserAchievementMethod::BeginInvoke(System.IntPtr,System.Int64,System.Byte,System.IntPtr,Discord.AchievementManager/FFIMethods/SetUserAchievementCallback,System.AsyncCallback,System.Object)
+extern void SetUserAchievementMethod_BeginInvoke_mF68A84FCA461879F13187407DE161866DFE87902 (void);
+// 0x000004E7 System.Void Discord.AchievementManager/FFIMethods/SetUserAchievementMethod::EndInvoke(System.IAsyncResult)
+extern void SetUserAchievementMethod_EndInvoke_m4F011158189F4BFDAB7265587ECBBBCC3B023B0A (void);
+// 0x000004E8 System.Void Discord.AchievementManager/FFIMethods/FetchUserAchievementsCallback::.ctor(System.Object,System.IntPtr)
+extern void FetchUserAchievementsCallback__ctor_m63F84BD0E8D052966A24F0EF6C7B1B26D3F6F138 (void);
+// 0x000004E9 System.Void Discord.AchievementManager/FFIMethods/FetchUserAchievementsCallback::Invoke(System.IntPtr,Discord.Result)
+extern void FetchUserAchievementsCallback_Invoke_m69610F6603F52972949D3D5EC8F244B8AF969ABE (void);
+// 0x000004EA System.IAsyncResult Discord.AchievementManager/FFIMethods/FetchUserAchievementsCallback::BeginInvoke(System.IntPtr,Discord.Result,System.AsyncCallback,System.Object)
+extern void FetchUserAchievementsCallback_BeginInvoke_m7A39746C7DD5ACCC4DAF5B07249C58BF11B955CE (void);
+// 0x000004EB System.Void Discord.AchievementManager/FFIMethods/FetchUserAchievementsCallback::EndInvoke(System.IAsyncResult)
+extern void FetchUserAchievementsCallback_EndInvoke_m45D54458BF1A40A1B621FFD8F51E5FCAAF5424D8 (void);
+// 0x000004EC System.Void Discord.AchievementManager/FFIMethods/FetchUserAchievementsMethod::.ctor(System.Object,System.IntPtr)
+extern void FetchUserAchievementsMethod__ctor_mD871D78F4A550B4529DB9505377B70456A81D9E2 (void);
+// 0x000004ED System.Void Discord.AchievementManager/FFIMethods/FetchUserAchievementsMethod::Invoke(System.IntPtr,System.IntPtr,Discord.AchievementManager/FFIMethods/FetchUserAchievementsCallback)
+extern void FetchUserAchievementsMethod_Invoke_mC533DA1C5DC65BE79C3DAF8A762C33768543E2E9 (void);
+// 0x000004EE System.IAsyncResult Discord.AchievementManager/FFIMethods/FetchUserAchievementsMethod::BeginInvoke(System.IntPtr,System.IntPtr,Discord.AchievementManager/FFIMethods/FetchUserAchievementsCallback,System.AsyncCallback,System.Object)
+extern void FetchUserAchievementsMethod_BeginInvoke_mEC3E506214CF871BF241A32AC9C020B278133C67 (void);
+// 0x000004EF System.Void Discord.AchievementManager/FFIMethods/FetchUserAchievementsMethod::EndInvoke(System.IAsyncResult)
+extern void FetchUserAchievementsMethod_EndInvoke_mA3EF5FE6C73531F00A909873E09C07A139F07FEE (void);
+// 0x000004F0 System.Void Discord.AchievementManager/FFIMethods/CountUserAchievementsMethod::.ctor(System.Object,System.IntPtr)
+extern void CountUserAchievementsMethod__ctor_m0CC368F8B720A851D848A31D2FB76B58A0D671E5 (void);
+// 0x000004F1 System.Void Discord.AchievementManager/FFIMethods/CountUserAchievementsMethod::Invoke(System.IntPtr,System.Int32&)
+extern void CountUserAchievementsMethod_Invoke_m86594D71326105CDB8914830DDE29D32E8CC908D (void);
+// 0x000004F2 System.IAsyncResult Discord.AchievementManager/FFIMethods/CountUserAchievementsMethod::BeginInvoke(System.IntPtr,System.Int32&,System.AsyncCallback,System.Object)
+extern void CountUserAchievementsMethod_BeginInvoke_m3298A44B6215ABC9104F150727F868F086AABD11 (void);
+// 0x000004F3 System.Void Discord.AchievementManager/FFIMethods/CountUserAchievementsMethod::EndInvoke(System.Int32&,System.IAsyncResult)
+extern void CountUserAchievementsMethod_EndInvoke_mE7E62384844909031C25715D5DF9AF5C1D905D4E (void);
+// 0x000004F4 System.Void Discord.AchievementManager/FFIMethods/GetUserAchievementMethod::.ctor(System.Object,System.IntPtr)
+extern void GetUserAchievementMethod__ctor_m95817B3546873C0404CA2D7178B35730CA3964CE (void);
+// 0x000004F5 Discord.Result Discord.AchievementManager/FFIMethods/GetUserAchievementMethod::Invoke(System.IntPtr,System.Int64,Discord.UserAchievement&)
+extern void GetUserAchievementMethod_Invoke_mC05AA161BA2B94BFC2ACA332A55F74B8375EB921 (void);
+// 0x000004F6 System.IAsyncResult Discord.AchievementManager/FFIMethods/GetUserAchievementMethod::BeginInvoke(System.IntPtr,System.Int64,Discord.UserAchievement&,System.AsyncCallback,System.Object)
+extern void GetUserAchievementMethod_BeginInvoke_mC66093E3E4AA2C3F49D5FD249DB35F6451508974 (void);
+// 0x000004F7 Discord.Result Discord.AchievementManager/FFIMethods/GetUserAchievementMethod::EndInvoke(Discord.UserAchievement&,System.IAsyncResult)
+extern void GetUserAchievementMethod_EndInvoke_mFCC4492B89DEDC2D1889BF8D1C92F9F4FE57582E (void);
+// 0x000004F8 System.Void Discord.AchievementManager/FFIMethods/GetUserAchievementAtMethod::.ctor(System.Object,System.IntPtr)
+extern void GetUserAchievementAtMethod__ctor_mE6F097DE37EACE328859FA416B8CA5A00FEDC095 (void);
+// 0x000004F9 Discord.Result Discord.AchievementManager/FFIMethods/GetUserAchievementAtMethod::Invoke(System.IntPtr,System.Int32,Discord.UserAchievement&)
+extern void GetUserAchievementAtMethod_Invoke_mA72C945DB94AFCDCB25C72223A324AB624595430 (void);
+// 0x000004FA System.IAsyncResult Discord.AchievementManager/FFIMethods/GetUserAchievementAtMethod::BeginInvoke(System.IntPtr,System.Int32,Discord.UserAchievement&,System.AsyncCallback,System.Object)
+extern void GetUserAchievementAtMethod_BeginInvoke_m7A0C193231091050E78FF7BA9EC762D902DC0454 (void);
+// 0x000004FB Discord.Result Discord.AchievementManager/FFIMethods/GetUserAchievementAtMethod::EndInvoke(Discord.UserAchievement&,System.IAsyncResult)
+extern void GetUserAchievementAtMethod_EndInvoke_mACFC5687144D4962E5E0A82798575D009F1BF20D (void);
+// 0x000004FC System.Void Discord.AchievementManager/SetUserAchievementHandler::.ctor(System.Object,System.IntPtr)
+extern void SetUserAchievementHandler__ctor_mF149C6FFACBDF3E30673094966A329514DA26ED4 (void);
+// 0x000004FD System.Void Discord.AchievementManager/SetUserAchievementHandler::Invoke(Discord.Result)
+extern void SetUserAchievementHandler_Invoke_mBCDA2C8061540E037972E811B2D9E0599904EB7A (void);
+// 0x000004FE System.IAsyncResult Discord.AchievementManager/SetUserAchievementHandler::BeginInvoke(Discord.Result,System.AsyncCallback,System.Object)
+extern void SetUserAchievementHandler_BeginInvoke_m6E8BC8DA25E5BFE6A655047E644D69CDC2394473 (void);
+// 0x000004FF System.Void Discord.AchievementManager/SetUserAchievementHandler::EndInvoke(System.IAsyncResult)
+extern void SetUserAchievementHandler_EndInvoke_m70206C17B02E0B6CA29CC1CECB4FCA4B63C0A291 (void);
+// 0x00000500 System.Void Discord.AchievementManager/FetchUserAchievementsHandler::.ctor(System.Object,System.IntPtr)
+extern void FetchUserAchievementsHandler__ctor_m07BA4E7E51FFD05AED88932FF0E24E134DE8C00B (void);
+// 0x00000501 System.Void Discord.AchievementManager/FetchUserAchievementsHandler::Invoke(Discord.Result)
+extern void FetchUserAchievementsHandler_Invoke_m4EC28EC629003E649DE3613D689881F0F785FA4D (void);
+// 0x00000502 System.IAsyncResult Discord.AchievementManager/FetchUserAchievementsHandler::BeginInvoke(Discord.Result,System.AsyncCallback,System.Object)
+extern void FetchUserAchievementsHandler_BeginInvoke_m3DB59C957D02AED39361A4181EE3095380F1A567 (void);
+// 0x00000503 System.Void Discord.AchievementManager/FetchUserAchievementsHandler::EndInvoke(System.IAsyncResult)
+extern void FetchUserAchievementsHandler_EndInvoke_m89F8DB1DB438FDDB767B14EB240CD8A2AD25E0B5 (void);
+// 0x00000504 System.Void Discord.AchievementManager/UserAchievementUpdateHandler::.ctor(System.Object,System.IntPtr)
+extern void UserAchievementUpdateHandler__ctor_m3B490DAC4275F46E83D8A210AB33050CB681784C (void);
+// 0x00000505 System.Void Discord.AchievementManager/UserAchievementUpdateHandler::Invoke(Discord.UserAchievement&)
+extern void UserAchievementUpdateHandler_Invoke_mB7236992A2396755DE207D35F81343E407486630 (void);
+// 0x00000506 System.IAsyncResult Discord.AchievementManager/UserAchievementUpdateHandler::BeginInvoke(Discord.UserAchievement&,System.AsyncCallback,System.Object)
+extern void UserAchievementUpdateHandler_BeginInvoke_m9D6D33CE001E16C039397D5BBEE2D507CADB1348 (void);
+// 0x00000507 System.Void Discord.AchievementManager/UserAchievementUpdateHandler::EndInvoke(Discord.UserAchievement&,System.IAsyncResult)
+extern void UserAchievementUpdateHandler_EndInvoke_m56941B9689742A2DCDD7B17E0CBFC6214AC4C547 (void);
+static Il2CppMethodPointer s_methodPointers[1287] = 
+{
+	ActivityManager_RegisterCommand_m3515E8D2A9B211FF36E8A5CC45BDD197FE3BFDC8,
+	ActivityManager_get_Methods_mF3A1D2C664174FEDB9AF077F7E1CE27EE5D07411,
+	ActivityManager_add_OnActivityJoin_m22A9F92FA65E00423FA0B5696BD2EC0EE81BC830,
+	ActivityManager_remove_OnActivityJoin_mC2560F78D20BCEFC5D3F537BDBFBC2CEF7495DC7,
+	ActivityManager_add_OnActivitySpectate_m9DBBB19E3B97AEAB59CCD36CF50414E96F38512F,
+	ActivityManager_remove_OnActivitySpectate_mF9BF0E7D6694D540C6050A66EDCDAE5DD4AE3435,
+	ActivityManager_add_OnActivityJoinRequest_mBFFEC9BBF55D81A28E39BE506462252C642EAFB0,
+	ActivityManager_remove_OnActivityJoinRequest_mADB571F0C3374B79A45D46C3A67AD126934B3D23,
+	ActivityManager_add_OnActivityInvite_mF9CC0835FC57758F3ACA099FFF1F5B544D847283,
+	ActivityManager_remove_OnActivityInvite_m7930BF56D959079D17D534370BDFA8A5DAD70D14,
+	ActivityManager__ctor_m3DDF38B8F6A4DF9675E621E44C902119DFC3A878,
+	ActivityManager_InitEvents_m27E452C7DC69F71E82EAEA5FAC5A0415CD9DF503,
+	ActivityManager_RegisterCommand_m0381A33DE51B767AD518E1A3EDA26805AD87008C,
+	ActivityManager_RegisterSteam_mA83F09E4E1F85D42DFD89E1DF1BEAD4D271BD005,
+	ActivityManager_UpdateActivityCallbackImpl_m5B7EFCBA23BB8417B1F85CAA64BC6C82B488761E,
+	ActivityManager_UpdateActivity_m898AF4AC22423258137DBAECBDA0A3F667D85152,
+	ActivityManager_ClearActivityCallbackImpl_m812BC54DA3304551A134DB290E6941279A30B3A2,
+	ActivityManager_ClearActivity_mF4FAFDED4F9D8E79CC7112813ED0CA9BE5F7AAEA,
+	ActivityManager_SendRequestReplyCallbackImpl_m7DBA16165BE25B83293A53B9E96D71A864998623,
+	ActivityManager_SendRequestReply_m538BDE2A3812A6927ADFA8AC3A3EEE3AC3A6E723,
+	ActivityManager_SendInviteCallbackImpl_mB99BA3C65FDF9EDDD464CFBE5D2FF074B361B22C,
+	ActivityManager_SendInvite_m3DF1CE101556387E936926F248648BC62F0D705B,
+	ActivityManager_AcceptInviteCallbackImpl_m0698FD39A5AF57FA9ADF67306472C48D50BD10B7,
+	ActivityManager_AcceptInvite_mC0DC8267D9F275DBF7EB8E54D46E4386DAD1B418,
+	ActivityManager_OnActivityJoinImpl_m013267BDA2F4B077B64BD2BB2F50152AEB3C329C,
+	ActivityManager_OnActivitySpectateImpl_m2EBD0B1759E799443479A8751C8AE6946D84BF33,
+	ActivityManager_OnActivityJoinRequestImpl_mBFFEDA7C51FB53ACFD3C319C25948D6C2CE65684,
+	ActivityManager_OnActivityInviteImpl_m77E77CA1A10E96587B28C06902E895D0BA07EC44,
+	ActivityJoinHandler__ctor_m7348465ABE2BC128AF56E40265FF501BDEBF3780,
+	ActivityJoinHandler_Invoke_mA265E7431D9057825FAE4F926F712F9EFBD6F697,
+	ActivityJoinHandler_BeginInvoke_mCF7D9C4D06EDB80DD58C195D174CDF445120DE83,
+	ActivityJoinHandler_EndInvoke_m5F68316436A77DA8BBF215B513F4C511ABE7D321,
+	ActivitySpectateHandler__ctor_m853324C24F7FD228B8FF0300000BCCB68B0386B3,
+	ActivitySpectateHandler_Invoke_m43A505ED0579B57D1A75454DDDD28DB2D7E1EF4C,
+	ActivitySpectateHandler_BeginInvoke_mACBF60714DA88FA873BC832C20200FC3DD732E9C,
+	ActivitySpectateHandler_EndInvoke_m893D1DE5516882E80E876458D859934A1611A74A,
+	ActivityJoinRequestHandler__ctor_mB042780866F53383271D7B115E9D0CE59F8AC4FA,
+	ActivityJoinRequestHandler_Invoke_m073A1DBF00085C428E23C8F57839F4CCCB1CF110,
+	ActivityJoinRequestHandler_BeginInvoke_mB73EE21335207A200DBB269677E3F32137222B69,
+	ActivityJoinRequestHandler_EndInvoke_m4899991E4144E88D3E2DE0E6FE138531A82D11D9,
+	ActivityInviteHandler__ctor_m578EDF64849C029B9241F0207D5549FCA7EDAEFD,
+	ActivityInviteHandler_Invoke_mB977D62D11A923CA68453AE744EED81DC9546BA5,
+	ActivityInviteHandler_BeginInvoke_m4A42EE67A4A2FFD755E51548CF3D98DB0E8F5976,
+	ActivityInviteHandler_EndInvoke_mCC629842DB3D81605808DA9580CFA705A6771ABC,
+	RegisterCommandMethod__ctor_mEB46458F76953300C1A4E891EA2B8500D052BF15,
+	RegisterCommandMethod_Invoke_mE04D10D19E90C5574836E040B638555525ECBFD2,
+	RegisterCommandMethod_BeginInvoke_m2908E8256C9949D58FCD35A673F323A77DF5DE45,
+	RegisterCommandMethod_EndInvoke_m825BDDC994D9A30E03B1ED1B888BB66D6D4201CE,
+	RegisterSteamMethod__ctor_m6EB80A10C2FF81D21FF143AC9494DC162A0F12C2,
+	RegisterSteamMethod_Invoke_m48FCD6D03EF6CD3A1751D8CABDB1E2098B4C0C8D,
+	RegisterSteamMethod_BeginInvoke_m7C34C5EA3B0B333E807B81AF9D4D46FBFEAE438E,
+	RegisterSteamMethod_EndInvoke_mBB4D09B74BEF0E1C37739A5C5FC8B9DCE13D91F3,
+	UpdateActivityCallback__ctor_mFC35639DA01BFE25EBCC3B5EBD2A99DA95046544,
+	UpdateActivityCallback_Invoke_m929983880FFD21A989C88A7F05505CC8106EB650,
+	UpdateActivityCallback_BeginInvoke_m167070E52BEDC17B03F0E497F41AC77BBA9595F1,
+	UpdateActivityCallback_EndInvoke_m7337AE76AB7D0C85924A7BE65ABBB39023FB04D3,
+	UpdateActivityMethod__ctor_m44670BAAEABBF4D51AA849EA634BF4B958A1B17A,
+	UpdateActivityMethod_Invoke_m6ADFAD58A5B8C38843B37DF4CF3A50C83A9EC749,
+	UpdateActivityMethod_BeginInvoke_mE27F48D4B591E2A05699CB53750CC5D3907AC33F,
+	UpdateActivityMethod_EndInvoke_m8CBA8EDA5A6FE114E1FF469468580F4E9AA23F0E,
+	ClearActivityCallback__ctor_mD8718E8FF9BC508763A960735A717D502B1D0D4F,
+	ClearActivityCallback_Invoke_mE5CE7233909469248CD808300F5FD8D6DFBBA069,
+	ClearActivityCallback_BeginInvoke_m882296CD576025CA5F1763F883DBFE4E70594547,
+	ClearActivityCallback_EndInvoke_mBAE940735D7E59BA2A953A4AC08BEB89B8AFE027,
+	ClearActivityMethod__ctor_m8BBFDD0611ACE5244A673550869426D3CA0A57BC,
+	ClearActivityMethod_Invoke_mDC1EFF08EC15EF4F3DF42DFC4EB3A1232E6E9C3C,
+	ClearActivityMethod_BeginInvoke_mA98C003A2B7331188E0138144040EB1F4B9F704B,
+	ClearActivityMethod_EndInvoke_mDDF560ACFBA63B6DCD7229D14F469D28D8670F41,
+	SendRequestReplyCallback__ctor_m3A026D250E6FEE8AA4EC780C6A9127C28A7A53B4,
+	SendRequestReplyCallback_Invoke_m24EF9CC99FDF019DDD7CD73C44A52668D4BB6091,
+	SendRequestReplyCallback_BeginInvoke_mF69DD80781663A2D0635B3D06208FB80BC8DBEF6,
+	SendRequestReplyCallback_EndInvoke_mEE094FDC68D6BF31B417E10B513B5A3D9469F830,
+	SendRequestReplyMethod__ctor_mD2AB31B037A33969312F61E16DB712F6B7930E2F,
+	SendRequestReplyMethod_Invoke_m8F452136B36D5618B4BF290581B73D6BBBD3BD16,
+	SendRequestReplyMethod_BeginInvoke_m8D974F01061FB79F9C87C6D86DCFC0162C67C5E4,
+	SendRequestReplyMethod_EndInvoke_m6E33BE95621DA1115D4A26E08C680762BBE90AB6,
+	SendInviteCallback__ctor_mA2D2B887A8DC2AA96B78A8ACC47A1C92268E050A,
+	SendInviteCallback_Invoke_m0002AFA3A1C36E7B611447B4858B9350982C9F98,
+	SendInviteCallback_BeginInvoke_m6C754CB03D5C1ABC6D5DEF6D149D7B9B69081E9C,
+	SendInviteCallback_EndInvoke_m7BBF401FDFDEC1E6ED87632EC41675DA3F3EDA41,
+	SendInviteMethod__ctor_mA0B72BEA9C040CBB0B7AEBCA67568183E0554F39,
+	SendInviteMethod_Invoke_mF885659297F915FC1B9B1D3E52D224150E63F6ED,
+	SendInviteMethod_BeginInvoke_m83AA2DD10871A68F30D406CFE8C90710D9726314,
+	SendInviteMethod_EndInvoke_m4492B0002C87DF8E952EB9AEB1E0C63AEF44CC6B,
+	AcceptInviteCallback__ctor_m99767E61CD12E2A54A777EB65802B4F2D8C40EC0,
+	AcceptInviteCallback_Invoke_mD610419D27A6B79F75CE157A385A03E566574F52,
+	AcceptInviteCallback_BeginInvoke_mC57A7FCF25872BD2C6C198427296BF64971D212D,
+	AcceptInviteCallback_EndInvoke_m9A222BFCBF941D05F377AE426C8C965A184DBCBA,
+	AcceptInviteMethod__ctor_m1A178CBC91903A57CF768119FB22EF6572B5C179,
+	AcceptInviteMethod_Invoke_mDFFAC9BB2EEC07FB71EE09BF499DC0FD4034E705,
+	AcceptInviteMethod_BeginInvoke_mB01D98F5E7E38B96CBC5CD0973B0CABDFFDE1905,
+	AcceptInviteMethod_EndInvoke_mD8D0C45454409411AFDDB61ED6DAC97CF2476DA0,
+	UpdateActivityHandler__ctor_m6502F0B7E259454D7C7465826DD5EC5A2BC55334,
+	UpdateActivityHandler_Invoke_m6D8EA27B04612C600B000EC59ACB5E8AF79AF1C4,
+	UpdateActivityHandler_BeginInvoke_m333BE34A55789F6FEAFF60C63E5B088092DA1DFF,
+	UpdateActivityHandler_EndInvoke_m39570EDCE4E897DB2C74EFA77FC7216B1A072D4D,
+	ClearActivityHandler__ctor_m962EDFE8FC3D942BDC498A8FBCBDB722537109A5,
+	ClearActivityHandler_Invoke_m14E45608C5337A610399C1B9584D6A6D2ACF960C,
+	ClearActivityHandler_BeginInvoke_m9F650902B1DB61D9D71DC12A45DC07E038214616,
+	ClearActivityHandler_EndInvoke_mC319BAF102895FF235E7E3DCAFF30D0192C3D42F,
+	SendRequestReplyHandler__ctor_m429123D9A3DDA554884594C9FA81CF4242600502,
+	SendRequestReplyHandler_Invoke_mE6F1430793C59FF0520F09D4D701F3F03529E44C,
+	SendRequestReplyHandler_BeginInvoke_m27251C072C85069DA9585710758AF2427C9553BF,
+	SendRequestReplyHandler_EndInvoke_mE4BDF5B59EFCC18B89D97C573A5F017D9064F3A3,
+	SendInviteHandler__ctor_m8F11162F38312D3E41BC4E7C9504D6584856BE8F,
+	SendInviteHandler_Invoke_mF21A737D05C35B4BF4327329E34EB4A30575D259,
+	SendInviteHandler_BeginInvoke_mB045896AA651CF9D723E1C5617BF371502AA0ED0,
+	SendInviteHandler_EndInvoke_m70CB589BB6B6E60DF3875EBC8BD1239AE7DEA966,
+	AcceptInviteHandler__ctor_m7E10CE8734DD4C1402C8C8923851AC34ACCEA7B1,
+	AcceptInviteHandler_Invoke_m62BEB7714EF3E75FD620F57231578100F2695F1B,
+	AcceptInviteHandler_BeginInvoke_m7F342E5546D0542317A5EB511DEEA8B5799CBBF9,
+	AcceptInviteHandler_EndInvoke_m7C3970462414FC6F6508F8119CB4A2D1F1542B6A,
+	ActivityJoinHandler__ctor_m1CD628D88B953C6343732396D984DE2E74384557,
+	ActivityJoinHandler_Invoke_mC06687530565D5CEAC4224F637FDE1F83D6F155B,
+	ActivityJoinHandler_BeginInvoke_m816F6B64EADA807552388DE762FCEFA238C5080B,
+	ActivityJoinHandler_EndInvoke_m9988808D35ACCE2FFCF1D92F5255CB97B6B4638F,
+	ActivitySpectateHandler__ctor_mD539F7ED54D5D584FADFE70C105DD52801E5C551,
+	ActivitySpectateHandler_Invoke_mD98E56175B3F153A90C4A73C0F259EDC97F8CD1E,
+	ActivitySpectateHandler_BeginInvoke_m24742D5D4F0154C69FEF87D6C2A1F50018F6C7D4,
+	ActivitySpectateHandler_EndInvoke_m6FE4A91A9F6F29F8D0A8CB7017E6E28F2702019E,
+	ActivityJoinRequestHandler__ctor_m3A09E3A8D81EA4176BCFE9E482904FD7D1493A83,
+	ActivityJoinRequestHandler_Invoke_m9F9B2CD211D61E8792FD7C70B797558F3D0AC423,
+	ActivityJoinRequestHandler_BeginInvoke_m53479C9AD1D8FE0D37507D49546BC6AAF0942A29,
+	ActivityJoinRequestHandler_EndInvoke_mCB9E40A5337B96057F7DCE30A82EF009015F257C,
+	ActivityInviteHandler__ctor_m3DFF207B26438D4CAE2529959E7B518A6097C298,
+	ActivityInviteHandler_Invoke_mBE9CA245E2188B4C47AB86539D2253114C29B0BF,
+	ActivityInviteHandler_BeginInvoke_mAA3DBA1A6DEE3AAB9108E52EA46A6A6530DCE031,
+	ActivityInviteHandler_EndInvoke_m771CE7316DF83E996E0CDF676F3575441892B02D,
+	ImageHandle_User_mF59A6CAEF009FACC9E38A6CAE260428B9BC701A5,
+	ImageHandle_User_m159982A6E295678A6B6E92E10430EF9E3B9C6FE2,
+	LobbyTransaction_get_Methods_m2F781F0CFAE74A7DAF3AE2B729F3D30279DF8EE9,
+	LobbyTransaction_SetType_m5D230700FFBF3AF54E92A7B47B43023D4A4719DA,
+	LobbyTransaction_SetOwner_m8FFF44D0FFFB04266651FFECB3B8625D5CEABD50,
+	LobbyTransaction_SetCapacity_m6BE6875331BA369599C7FB7731C63E3D872A3BA8,
+	LobbyTransaction_SetMetadata_mBAC7C7984CFB4E2337ED9DF1427C6D6112B0F7EA,
+	LobbyTransaction_DeleteMetadata_mE26075EAC91E4A3CD5577D2852AEC2EA5472772F,
+	LobbyTransaction_SetLocked_m790AFC92AD9FA4EF17B7C01298531ED259D84E69,
+	SetTypeMethod__ctor_mA1E19F230BCDCEE7999C1003157D3F6DA9DF558E,
+	SetTypeMethod_Invoke_m097A4CB413415C351132692B5027CAA36FAF0AD0,
+	SetTypeMethod_BeginInvoke_mA43592674C568A7BB99B0E7627E61F3EE77C963B,
+	SetTypeMethod_EndInvoke_mABC59B4D3060D0E128DC0C0F931E5A09D5EC16B0,
+	SetOwnerMethod__ctor_m5C3BAACFE924C1E0B12F6025B55D88B1BB731884,
+	SetOwnerMethod_Invoke_m9C11C97D1DD03AD924A84ECE845EA1A1AE7D80F6,
+	SetOwnerMethod_BeginInvoke_m7090BBBC57C2DB87634E2DD2C545D63B51A98621,
+	SetOwnerMethod_EndInvoke_m6FBD4E214F0EB0244EFE7083E4D7E4738B565122,
+	SetCapacityMethod__ctor_mFB6519CA2013CD63B4A43A059E57E51BD7867D58,
+	SetCapacityMethod_Invoke_m4EA27B8AFAC845C3CDB5E44A2A3AAE0A9AFDB299,
+	SetCapacityMethod_BeginInvoke_m70A6302168B836B6A04EC9875E87701A35DCEE76,
+	SetCapacityMethod_EndInvoke_m82D6ED48625897919EA98791379DE127519BAB5F,
+	SetMetadataMethod__ctor_m031AE0D900E074E1BFA7FDAFDBD0102606DA267D,
+	SetMetadataMethod_Invoke_mB2074518D054718B21017A5CBBADF9094144CBF7,
+	SetMetadataMethod_BeginInvoke_m2EAA2CE979E7DD90BBEDA60B3D397EA03B3BBCE0,
+	SetMetadataMethod_EndInvoke_m661BF90EDC7EE6CFED4CE482FBEE9EB4B81694E9,
+	DeleteMetadataMethod__ctor_m8280DC4F3D4FDE14EA1FEB4F37683B3DE10CB827,
+	DeleteMetadataMethod_Invoke_m7D4D14CE412C55BD36228099633A7063652F8D29,
+	DeleteMetadataMethod_BeginInvoke_mF3FEE26CB937D459AE784596EDC58B8C03C90232,
+	DeleteMetadataMethod_EndInvoke_m8E313091A3D0D16147088297598F44E920689B55,
+	SetLockedMethod__ctor_mF930EC6E5C4E9DA44E6B9975B5DA30257FFC3B10,
+	SetLockedMethod_Invoke_mC1A33917FF9543851D6C8FCA5E3B736A8FA658C1,
+	SetLockedMethod_BeginInvoke_m66F3554540F53238C85483E056B1E86018C797AE,
+	SetLockedMethod_EndInvoke_m9B7733EEE2DAD9A0246DBDEBA3FD41FE6FE80C6C,
+	LobbyMemberTransaction_get_Methods_m9569D2952B81674F554A8E5FA3E9A2714D57D3C9,
+	LobbyMemberTransaction_SetMetadata_mAD66861706D7886C0E2DFCD4829F1CF966DAB1ED,
+	LobbyMemberTransaction_DeleteMetadata_m50E273AFEE95D21BCEB1C6E678B3C00DE9F503C6,
+	SetMetadataMethod__ctor_m7428C12171E8FCFBEFC809587CE90C7885CCD8E3,
+	SetMetadataMethod_Invoke_mC7BC76D308AC8DA8D08155B09261F808A301876D,
+	SetMetadataMethod_BeginInvoke_mE718E58B82D9100CF9A22641D372A232EC60BB4B,
+	SetMetadataMethod_EndInvoke_m6D40BCB994A19110A94FAADFBE76A5D86A2BF318,
+	DeleteMetadataMethod__ctor_m43232B25735CAF05813ABAE1627EAFE45AD3067F,
+	DeleteMetadataMethod_Invoke_m9D2B5A344D310AAD8883D242A6A59789386C85C1,
+	DeleteMetadataMethod_BeginInvoke_m985024FDDA716E79F5ECB36761F5FE17A799E50A,
+	DeleteMetadataMethod_EndInvoke_mBF0858DA5F082C89FD830A11F9FBB6594474BE2F,
+	LobbySearchQuery_get_Methods_mD8E169C5F756975506EE6A1085DB650C1A59717E,
+	LobbySearchQuery_Filter_mA61176224736F8C07864BC9304FB01EEB5661ED7,
+	LobbySearchQuery_Sort_mDD17E27E199456CCA7965BE75A5CA1FD88F3EEBC,
+	LobbySearchQuery_Limit_m1402E2FFB97B9E397C88F54DFF59C8599E12889F,
+	LobbySearchQuery_Distance_m4C0D5EE78262E01A5D9ADD8F8CF2CB69727EF034,
+	FilterMethod__ctor_m62EF527A9B3676A6E600715ACBFA949AD3BBB8BC,
+	FilterMethod_Invoke_m80873C84F957A7660AAA47FF4E1C475AAC60A670,
+	FilterMethod_BeginInvoke_m7CF436DF73D9948F961728F0717F51B2E25825AA,
+	FilterMethod_EndInvoke_mEB6610C0620520FEA06D071FDD68970369C57EE7,
+	SortMethod__ctor_m07E4CE4BD8123E807A4E4F1EE28FCB6EF370CEAF,
+	SortMethod_Invoke_m7152056E57AF16A3BE3B27655B4A226EE68E6177,
+	SortMethod_BeginInvoke_m61C369126B15A537ABE77566E24492C87E4DA546,
+	SortMethod_EndInvoke_mE3D24659AB925B20C31F9E092B470452CCD6AE8E,
+	LimitMethod__ctor_m6FDF05C37136F7CC93B270E9F30D83E02CD29719,
+	LimitMethod_Invoke_m62CEE1D0B67475772EB5AE36BDC3D3F2FE325542,
+	LimitMethod_BeginInvoke_m29DA128B099787634D3BE744CE20172FA0B43664,
+	LimitMethod_EndInvoke_m76CC194DF70FF507BF8B3477989C576D83BE104E,
+	DistanceMethod__ctor_m297FDC895A7FEDCF9552BC0FF4090C1947491DB1,
+	DistanceMethod_Invoke_mA9039298C28896D58F8F5970750374D416BAFF03,
+	DistanceMethod_BeginInvoke_m295884F1C396EF6B6CF2E740045DE146C2B97483,
+	DistanceMethod_EndInvoke_m6C37E786A17CA0A7AEEB72C1E9E3FC741F54E828,
+	ResultException__ctor_m65C23AA5843E70955ECF5EDA7FF914E417A3B308,
+	Discord_DiscordCreate_m0C6412168EEE9DCAF9CDE9A41CC955159F0AA73B,
+	Discord_get_Methods_mEAD35CAD95B5ECF77C050D3D2ADA546522F9081A,
+	Discord__ctor_m30D4843471D4FA099217005AAEA73B186FE6FF00,
+	Discord_InitEvents_m2E25F4C167F88C2B0D1430E09D8168FA6D2C7A24,
+	Discord_Dispose_m660389C10FEBC51343127159D12102781144B947,
+	Discord_RunCallbacks_m2B9D1F027E70BAE3EE65A92A7D6267A2EA0AFBAC,
+	Discord_SetLogHookCallbackImpl_mCC52A5E4BA9BA1EF2401FD2D7507992418ED6BA3,
+	Discord_SetLogHook_mB129E153C99C347CB7B62AAFD86EBE50EC0037DF,
+	Discord_GetApplicationManager_mAE7EADC4390ED3F441820BD9BB726418E832CEE2,
+	Discord_GetUserManager_m2377422BE0760107D46DEAE743E2C69C0984D040,
+	Discord_GetImageManager_m84FF89ED1157E60AFEAF319161DE876BD7612216,
+	Discord_GetActivityManager_m0C6511A1D7B4E9328F11608BFFF8C00D87BC5922,
+	Discord_GetRelationshipManager_mBC0AEDE44A33D6B757C288289F7B78E4B42D10C9,
+	Discord_GetLobbyManager_m28378D0C9640DB43C1767A4C11882F8B2FECF662,
+	Discord_GetNetworkManager_mFE091466F59B285960646B4ACAFF4BB663A0E47E,
+	Discord_GetOverlayManager_m48C256A791391B427E432F98FA144BEFC4671C91,
+	Discord_GetStorageManager_mE5E7E483100AA562740B50707E950CA1355D065E,
+	Discord_GetStoreManager_mF69C4452F3D5DC48889F7F0922150993747FE40B,
+	Discord_GetVoiceManager_mACE02C26E305F847A32F6843D406AA66B525FDCF,
+	Discord_GetAchievementManager_mC8A23250C6A69FAB900643BE70DDDF33C84F04B6,
+	DestroyHandler__ctor_m7DFA86ABACB61F9EC324F956B5CB9454C1FBAEE7,
+	DestroyHandler_Invoke_m5CE3DA622F18B66B3CC1C0CE46BC5ECE669DCA43,
+	DestroyHandler_BeginInvoke_m36AD4C76B42DB7BED1F29840CE15CB5EB8359366,
+	DestroyHandler_EndInvoke_m8528894CB30521C563916C333AB1150F81DEE012,
+	RunCallbacksMethod__ctor_mF4CA791D06BE9E28A3513C83FBF5D988732973FC,
+	RunCallbacksMethod_Invoke_m0472D851BE73F289A79227E4EC6DAAF0E250EF53,
+	RunCallbacksMethod_BeginInvoke_m700AB297488AB42F6E49DAF8BC49B3C0B50836C2,
+	RunCallbacksMethod_EndInvoke_m58A3D71E46BC50819B84FC1C18128E8286C2921E,
+	SetLogHookCallback__ctor_m721A4EE3E73926232E36E895A30D531EECA6109E,
+	SetLogHookCallback_Invoke_m6EC753FC95BEC23105AE4F8D448538CBE1FDDF2D,
+	SetLogHookCallback_BeginInvoke_m9A09D61723685E4028FDC0E89BDBD238442A2343,
+	SetLogHookCallback_EndInvoke_m10F2F4CC664AC996778FC30681DFC82DEB1E4834,
+	SetLogHookMethod__ctor_m8BD6166A3DDF6337FF46940CD28859B974BB7EF6,
+	SetLogHookMethod_Invoke_mE50092BB5F899D0336FF79A2416F4D13976A5C99,
+	SetLogHookMethod_BeginInvoke_mDCC54FC91156CBEA8C7DA886B4B501153E525C83,
+	SetLogHookMethod_EndInvoke_m8443050C62D450AE70C025F8E62DA4157DB275A5,
+	GetApplicationManagerMethod__ctor_m5D6BC4C5B69E1E664CA7C89E6A635A01EC67605C,
+	GetApplicationManagerMethod_Invoke_m4C52171A6642B5A0F56870FAD6B9D7697A8E578B,
+	GetApplicationManagerMethod_BeginInvoke_mC538E10653D1E9EF5F8986A8D23AD382505FB8A5,
+	GetApplicationManagerMethod_EndInvoke_mD8F0443D6F03176258AF8C1BF580E0F4E80BAC8E,
+	GetUserManagerMethod__ctor_m7E7B928FB01A7960426975FF56B5B62E2DD96444,
+	GetUserManagerMethod_Invoke_mA874C4BD79CF32EF80846156BF1C0247BE82E620,
+	GetUserManagerMethod_BeginInvoke_mFFAA2214010997FEEB3111659329B135D8D3DFBF,
+	GetUserManagerMethod_EndInvoke_mD66278B8E4103CA03E06C5AC1771D69C687773DA,
+	GetImageManagerMethod__ctor_mD658C66205C8FEF27B07F257756A145A8AF07CEC,
+	GetImageManagerMethod_Invoke_mA46931B0BCB811F1A1A1D370186BFEAB9001AAE8,
+	GetImageManagerMethod_BeginInvoke_m5CA629FC8C34AA8C10B980F56AE671F5E1D6CA0E,
+	GetImageManagerMethod_EndInvoke_m3FC9AC49A7167F7FD565365053B9021F6EA02768,
+	GetActivityManagerMethod__ctor_mC3A362E78C407DBB86A1C04A5A85AC00552061D9,
+	GetActivityManagerMethod_Invoke_m157CC09A1C9093F72615B3E369878241589A9147,
+	GetActivityManagerMethod_BeginInvoke_m787C89D955267B08592A42B0BC706CD3E8D2D8F6,
+	GetActivityManagerMethod_EndInvoke_mC1F5CF526965CF3C086E103AA1B2DDE812B394CC,
+	GetRelationshipManagerMethod__ctor_m466AB3EBB51793E0F33A9A6A274DC272C35EC029,
+	GetRelationshipManagerMethod_Invoke_mE66DD29C8A3FD35EBB998348EBF6BCD49C618E73,
+	GetRelationshipManagerMethod_BeginInvoke_m3FD8BB4B24CDB4D27FEC7069B8218F7E5DA87CE5,
+	GetRelationshipManagerMethod_EndInvoke_m919E8C89CF1AA9ADE6B1081AFCE19F3E2BAC0DF2,
+	GetLobbyManagerMethod__ctor_mE1DE92E796D4E8D4EE86D6C1C7D1F847EF2C4366,
+	GetLobbyManagerMethod_Invoke_mF27483A55A24F8AA2AC4C8D031BA1AA1F259791A,
+	GetLobbyManagerMethod_BeginInvoke_m26EB3A71B0E7A26A9F8860CC42C19135966AA0AC,
+	GetLobbyManagerMethod_EndInvoke_mB36F81E3860F5C4CB7CF02BB16218CC479207F30,
+	GetNetworkManagerMethod__ctor_mEB858C19006627A1527CFB2A306D6213C9E6B791,
+	GetNetworkManagerMethod_Invoke_m0A13538DB152AC380CDBC830E3706177574A4736,
+	GetNetworkManagerMethod_BeginInvoke_mD94E31C86C32541AD874D5857715F5B67429B1CF,
+	GetNetworkManagerMethod_EndInvoke_m96D13861D325E4DA4983D634035140C14C6A0D47,
+	GetOverlayManagerMethod__ctor_m3A2EA7DC9E12B2D27424475B5E27DC8FCDE9AD50,
+	GetOverlayManagerMethod_Invoke_m78EB4924E18492A1853375F3460CBFBDBFD775BF,
+	GetOverlayManagerMethod_BeginInvoke_m2D56B6E7D764F8B864C2510125A9114F30304F35,
+	GetOverlayManagerMethod_EndInvoke_m62822555D20EFE1A68D139236333E37950AA0C02,
+	GetStorageManagerMethod__ctor_m428854990F4A3F580D89E028A3E369FF735B8F23,
+	GetStorageManagerMethod_Invoke_m140B0AFAB5F40D1171902D0AC8C8B4D8C8219FD4,
+	GetStorageManagerMethod_BeginInvoke_m02BA8C7021CE6BC09F18ADFDB6B3484D1716516A,
+	GetStorageManagerMethod_EndInvoke_m296B8E0CB327A978404E82CECEF419ACAFD6E1DF,
+	GetStoreManagerMethod__ctor_mBF14068687F0EFA620D581BABDB88FADDD1A5CEB,
+	GetStoreManagerMethod_Invoke_mE8C9A6268F4BA12D38AC829AE196B159A8C53727,
+	GetStoreManagerMethod_BeginInvoke_mDA936A48B8E547E417E26F8D8C89B63A4B737B8E,
+	GetStoreManagerMethod_EndInvoke_m19CD09BD2DFB7D8B3C1B6B468B44FF04C3747E4B,
+	GetVoiceManagerMethod__ctor_m6A656F642F67F69A46FCF57B47022C24B6EA3ABF,
+	GetVoiceManagerMethod_Invoke_m6DEED2667594F453FEDF7E36074B3594188083E9,
+	GetVoiceManagerMethod_BeginInvoke_mA7ED6EC7580BD143841D74C1003A35EDF74123FC,
+	GetVoiceManagerMethod_EndInvoke_m67A7261738B8CD659A4958B523A52DE56E15C876,
+	GetAchievementManagerMethod__ctor_m9A9E37FB31E2CCD746E27C79EC1EB1DABBA43750,
+	GetAchievementManagerMethod_Invoke_m1E7D336C464A7F55CD6674D1546CA7EAF842C407,
+	GetAchievementManagerMethod_BeginInvoke_m4BF7436AEB0809742903AF8E773AA43DCFE958A6,
+	GetAchievementManagerMethod_EndInvoke_mF9FE9873E87E27E3CD3EBE366F94D35FBF1D2EFB,
+	SetLogHookHandler__ctor_m61B36E56CC24873DF55BD3629643CE29E48F4570,
+	SetLogHookHandler_Invoke_mA50C254DE34649F2D36B806B5919FEA24A6620E4,
+	SetLogHookHandler_BeginInvoke_m17D23F86C9148BEDEFC1F11143B3626E7517DDAD,
+	SetLogHookHandler_EndInvoke_m06181570953B9AD6C70FCF5C6D0F4D7212355D8A,
+	MonoPInvokeCallbackAttribute__ctor_m2254943264F47CC9CF9F4B508260B63C5980725A,
+	ApplicationManager_get_Methods_m711BE87BE65F1752E80D39C5F9CCA6AA8997810E,
+	ApplicationManager__ctor_m9232C2726EE2DCF488117FF4E84A7E796518716A,
+	ApplicationManager_InitEvents_mA5151FE7667CABF540B59801A02E31BC203665E1,
+	ApplicationManager_ValidateOrExitCallbackImpl_mFFC043E1E96C34147A2BB4E2F2CD55328FB3AD14,
+	ApplicationManager_ValidateOrExit_m4E356F9D8120338DD617039B0DF4CF3E703AA96D,
+	ApplicationManager_GetCurrentLocale_m15F3CCCCA96A411E3D883B7FB2EB2A2D468D7D7A,
+	ApplicationManager_GetCurrentBranch_m3130199E90DA6239886830CCB014354C7C51F040,
+	ApplicationManager_GetOAuth2TokenCallbackImpl_m00F3F694AD26A843089812754035D9E834A1FAB7,
+	ApplicationManager_GetOAuth2Token_m1802730CD954C1976E10F91440494B9E10FAF5D8,
+	ApplicationManager_GetTicketCallbackImpl_m5EAADE8988DE32AFB22D2B97326A340F1581BAC7,
+	ApplicationManager_GetTicket_m009805B518E8D78ED5636A1482DAA17B35AAF6DE,
+	ValidateOrExitCallback__ctor_m15A9F4395B2AA9D75CD9AB845865A788419A2C55,
+	ValidateOrExitCallback_Invoke_m3D6BCE80B822C836A1F35E9861EB78D148062621,
+	ValidateOrExitCallback_BeginInvoke_mFAF478F9B3CDAD1E8C66E2694437BEFDAB51083C,
+	ValidateOrExitCallback_EndInvoke_m9ACC06A1C994B69825182FF0F41D5ACDFA102E6D,
+	ValidateOrExitMethod__ctor_mF3EB781E1EDCB934E267FBBCC7AA1E229B0AA74C,
+	ValidateOrExitMethod_Invoke_m40FCB5EB6A212D277DE6C38125B5C5D8E4BC3A1B,
+	ValidateOrExitMethod_BeginInvoke_m5D3F1F9063541771BC70EB352E6A973900499EEA,
+	ValidateOrExitMethod_EndInvoke_m920E0AFA735BDB1393954933F292665CD90E573C,
+	GetCurrentLocaleMethod__ctor_mFB27B011C6C1B7E7F5997D8483A6E6D35DBD4EF3,
+	GetCurrentLocaleMethod_Invoke_m08F73042A45A2421898D3AC9AE0B98B636C6D190,
+	GetCurrentLocaleMethod_BeginInvoke_mA64A80A1B0095506CC71E982C0D257DC5506421D,
+	GetCurrentLocaleMethod_EndInvoke_m655FD9B7571A5BB56FB71AA8D5FC38333C91EDD1,
+	GetCurrentBranchMethod__ctor_mAD414BDE76E41E0850A077FF19585995FBDED6FB,
+	GetCurrentBranchMethod_Invoke_mBD0D02B7170E4670F76F968AE0A70FAB2156DBEC,
+	GetCurrentBranchMethod_BeginInvoke_m4F4339029062AE7F89082FB2EAA766B4FB892ACC,
+	GetCurrentBranchMethod_EndInvoke_mDCCAB345A9046AAAB0B558B1FA13BF7711812A1F,
+	GetOAuth2TokenCallback__ctor_mFB189247D28053E7E0D673ABAFE108093A4D2551,
+	GetOAuth2TokenCallback_Invoke_mC8C9807A816B6CB4594F830EB1A2947BE503E7F9,
+	GetOAuth2TokenCallback_BeginInvoke_mCCFE976A743B27E1EAA82B604509573103D0144B,
+	GetOAuth2TokenCallback_EndInvoke_mD74757FD41B161A556CA5AE192A870C1F6E71F33,
+	GetOAuth2TokenMethod__ctor_m008EBDE716993B063437A9C97303BF4E7959CAA6,
+	GetOAuth2TokenMethod_Invoke_mA09E4B13CA87565452C4BD17950E251B2C1B4183,
+	GetOAuth2TokenMethod_BeginInvoke_m9318009CCD1FDB315D87392CCDBBD27582783449,
+	GetOAuth2TokenMethod_EndInvoke_m56E072C88FB51DB0FE161DA5E66CC9F10331FAE2,
+	GetTicketCallback__ctor_m7361BEFA0E672AB34BEAD9AA138F6E35E69BA1A1,
+	GetTicketCallback_Invoke_mAE30B481FED079EFA359B1F6527F14A2EF90130A,
+	GetTicketCallback_BeginInvoke_m0B28C1A5B8C717D86F1D83C6D091668E06F5215F,
+	GetTicketCallback_EndInvoke_m066AAE62463EB37BB1F4DD3C20C20823572E2CF3,
+	GetTicketMethod__ctor_mBFF1F3B416B3E9ECD66D1DF116086417D588961F,
+	GetTicketMethod_Invoke_m43D7AADA00479A650DE0C82DC71B0056245A9F68,
+	GetTicketMethod_BeginInvoke_m87100414BD92EFF3F67BAF4FFFAF9C7153A8AC48,
+	GetTicketMethod_EndInvoke_m719EA58298986EFCA88B3A94AB60F4CF27A533B4,
+	ValidateOrExitHandler__ctor_m3B8647BB0011C94AD4EB512FB06F6544309C3F31,
+	ValidateOrExitHandler_Invoke_mB427A61832D63C539868F5AC2C675CEB8EE12C7B,
+	ValidateOrExitHandler_BeginInvoke_mDD46C51A52283A3A244BFA5ABD425F5082F633A5,
+	ValidateOrExitHandler_EndInvoke_m21CEB2CCB9AD0CB460BCE3693C131181A8C057CA,
+	GetOAuth2TokenHandler__ctor_m4CBE1FA65A3C0BFA5CE368E628E56FD582716F88,
+	GetOAuth2TokenHandler_Invoke_m62B8B4B41C8454F4ED5844989F489DEEEBD39F2B,
+	GetOAuth2TokenHandler_BeginInvoke_mE5BD1B8FDB258FA411A1FE81E146178CBACB0DC3,
+	GetOAuth2TokenHandler_EndInvoke_mB956036309F5614E23FC92877B56937F1B3BF16F,
+	GetTicketHandler__ctor_mA5BAFED882487C004BCDECFC88D1CB06C3F80174,
+	GetTicketHandler_Invoke_m752BD528AC84624BFB39B0DC8A74977DDBA4FFC3,
+	GetTicketHandler_BeginInvoke_m57352567EEB08728FFE35A6721EA0C3E288E2940,
+	GetTicketHandler_EndInvoke_mCCB07012871097F6C13997EF6CDDC970DDFAFD54,
+	UserManager_get_Methods_m0A113574EB5DB7D3FF6B70C6123E301FAE812191,
+	UserManager_add_OnCurrentUserUpdate_m3429A2197AADC71B48691888D68C4ADC1CD2265B,
+	UserManager_remove_OnCurrentUserUpdate_m61587A50CD7418DE5BF6879C3C06E01C519FA6DF,
+	UserManager__ctor_m0F8C7D704E9E8492B063B29DD1FF58087F11F36D,
+	UserManager_InitEvents_mC31ADD49CF2D3D4365F55A3BF4DA7078F86F44F8,
+	UserManager_GetCurrentUser_m138022D152976D660D78C60C024480BA8CC10F28,
+	UserManager_GetUserCallbackImpl_m9D478A7D492D948CC8DCA8AF34E9E6C3E9EE3FB7,
+	UserManager_GetUser_mE10058905D251C5941E3E5AF7A8B9187AD580C7D,
+	UserManager_GetCurrentUserPremiumType_m60B13A984FC03C473AC8837C4D114FCDC674F26A,
+	UserManager_CurrentUserHasFlag_m6A0AD174E599A92D2CDF52AD227ECA03BCFE0C31,
+	UserManager_OnCurrentUserUpdateImpl_mFFDC0BF9F579135A09073EB28A536668BF332D04,
+	CurrentUserUpdateHandler__ctor_m42180DF306C7DEA399B66C2808BE8FABC8C80073,
+	CurrentUserUpdateHandler_Invoke_mAAA0C2DE9D21664E564209DAC7881885D1D4E8C9,
+	CurrentUserUpdateHandler_BeginInvoke_mB4F89D58E87956840C689F85FF1696756488C66A,
+	CurrentUserUpdateHandler_EndInvoke_m73C521FFD2517453F0BE1444CC100C03047D86C3,
+	GetCurrentUserMethod__ctor_mDF1172F7887236C7055C618C3386EA9BC149F2D7,
+	GetCurrentUserMethod_Invoke_m072CB70E5B403A55CC89CB106614F2C0977845CC,
+	GetCurrentUserMethod_BeginInvoke_m1050ECBCDC3ECE1D50D0D1C823CE3DBFF377D78E,
+	GetCurrentUserMethod_EndInvoke_mAA7144FC1D6C05DE5E66C02CC71EBE7F752C41FE,
+	GetUserCallback__ctor_m3C3E50391D21C97F9AEFF58E98F42B24B0BFF9E3,
+	GetUserCallback_Invoke_mC6101853E12DBBDAB9509190EFB4F98784F8551A,
+	GetUserCallback_BeginInvoke_m429ED828CD2B84683F0C48E481DA1BD1A920572B,
+	GetUserCallback_EndInvoke_m5D4E530458F30E258728EB91D1656C3A8D14C24F,
+	GetUserMethod__ctor_m07A1ABB875D438CAFB2EFE13F0FF7E746F1929D1,
+	GetUserMethod_Invoke_m06162F6B02A0227DEEB0382EAF9014447AF22F82,
+	GetUserMethod_BeginInvoke_m7AC34F1C66CB4FD5D2344DC852F91D78200928D3,
+	GetUserMethod_EndInvoke_m5A1D03E1C1C85E36DD08CECB688F0D6F31F92BA7,
+	GetCurrentUserPremiumTypeMethod__ctor_m3710BEC2E840AE6C2D28AF465FF70B5F1B966C87,
+	GetCurrentUserPremiumTypeMethod_Invoke_m6DDF9B7B278D9A12CBE8E699BBA7A11F85747AE3,
+	GetCurrentUserPremiumTypeMethod_BeginInvoke_m198F8874F6298CB5BAE11E249811CE169503AB92,
+	GetCurrentUserPremiumTypeMethod_EndInvoke_m64E1D53F00E2FDD1CC0BE37689404E1E4AE50DE0,
+	CurrentUserHasFlagMethod__ctor_m7EDC43057D24C9869140C21FDA23B61EBFA343AB,
+	CurrentUserHasFlagMethod_Invoke_mBA276B88F14FB68518347D1AF9983417E334B53A,
+	CurrentUserHasFlagMethod_BeginInvoke_mA5C306982ED64B909B207AB3DD3D0DB59E21E352,
+	CurrentUserHasFlagMethod_EndInvoke_m2038EB5E9994E1E981DD22DBB99952B211148779,
+	GetUserHandler__ctor_m01D787EAAF8AC1A840F1B0C08ED7C7E6C0EBCE0A,
+	GetUserHandler_Invoke_m68631DD972E9B8F86A6B43066B591DF59AFB4F85,
+	GetUserHandler_BeginInvoke_mC257E361E9283AF5DE718ED7C159207FB2124546,
+	GetUserHandler_EndInvoke_mF437B1F5889A41FF1C4B73BA234B29C95F157945,
+	CurrentUserUpdateHandler__ctor_m63FB2E9B88C2FF666B767658A31D06A3506BE958,
+	CurrentUserUpdateHandler_Invoke_mF69C9267C69860A9A4FB69166E179A973D06C2CB,
+	CurrentUserUpdateHandler_BeginInvoke_m5E0C92B894718D2028AFC1A942C4327C613B41C4,
+	CurrentUserUpdateHandler_EndInvoke_mB8AB7D151D2BC0B1E499877B398D0D6B9709AE46,
+	ImageManager_get_Methods_m00C061AA0F72405690D068AF97982D2B1C997486,
+	ImageManager__ctor_mB47DA4642E58EE8CDE66590EBB43BD9F302BF0FA,
+	ImageManager_InitEvents_m88CB3BB4DE180B0E9093166626F645EFB83A4AE8,
+	ImageManager_FetchCallbackImpl_m11A0579976A9FE8C9443E12870107DC546F94133,
+	ImageManager_Fetch_mC622045200A635290D2F47F510F2A950B02C7FAE,
+	ImageManager_GetDimensions_m42CEAD127A0DC94915F26B8F1832E71816355337,
+	ImageManager_GetData_mC7834DB8DB35D67055360A4E8EA353EFA286495A,
+	ImageManager_Fetch_m1A7510E203F08A429FDA5D3797B9037EB5A96D46,
+	ImageManager_GetData_m47A909BFD6A1C8AE3280990DFF7E6857A6B4B71D,
+	ImageManager_GetTexture_m00D879D139A541B0713E3920A0A17C9AF0C76CB5,
+	FetchCallback__ctor_m81DFEC17DC842D0FE45F59C9699EFA9AC9EB2CF0,
+	FetchCallback_Invoke_m9B8A335203C8002E3A2125A69B858CAF8D2C74AD,
+	FetchCallback_BeginInvoke_mF8F1C55714A95D8EC0E881221D78F1BBE2363BF5,
+	FetchCallback_EndInvoke_m41C6513DF3451D4F40D48859A00D04C438BC9BF0,
+	FetchMethod__ctor_mECC60758A2D14B7A8AC76CAB5A81970EAB40E3EE,
+	FetchMethod_Invoke_mBB68BF6049B9058B7A98D44D9B49D8B28EBD08CE,
+	FetchMethod_BeginInvoke_m1ADE8C13ABDB23A63B54C938E136E09C14124626,
+	FetchMethod_EndInvoke_m2C57EC013687BE2E8BA17CA7E78533042F2996D5,
+	GetDimensionsMethod__ctor_mDB93C01070389E59304362943571A692E594F37C,
+	GetDimensionsMethod_Invoke_m66F7407F4F32D0481CEB9A8D6179E486CE80FABA,
+	GetDimensionsMethod_BeginInvoke_mBF22F78294FF76A48F892796492A239D103E3EEC,
+	GetDimensionsMethod_EndInvoke_mF616744D8B65BB52036FCB9FE8BB5CA7D4FA742A,
+	GetDataMethod__ctor_m0FC7E75AFC11A1A3B8FE1DD1503D816D428929C9,
+	GetDataMethod_Invoke_m5DDEDA0FB7D03B36451FD0AA9A5FB25B839C324E,
+	GetDataMethod_BeginInvoke_m5E76E464BF2D33C8D55EF10B5ABE638D250F6950,
+	GetDataMethod_EndInvoke_m9E80FD41DF2A8B383F8044C04D88E2D3A183665B,
+	FetchHandler__ctor_mD4D2DDC2D1FB2B0A9102C6431F400F27547FE817,
+	FetchHandler_Invoke_mA2DA761AF1BCA72AE5885D99FB9C0C743FFC33F1,
+	FetchHandler_BeginInvoke_m433E6AC11BAA824800848A5019D9B91C9244DEE9,
+	FetchHandler_EndInvoke_m04B68750BC953711F96472173E3FA2AF9BCF0BB2,
+	RelationshipManager_get_Methods_m37140A1CD1DCFEA9850B9CC0F752127D6A68A5FE,
+	RelationshipManager_add_OnRefresh_mD51F9F3FD135DF009435AA847FCFC7A7924B079C,
+	RelationshipManager_remove_OnRefresh_mEF7355F417CAB5E02FCB7FC7351C9CC53EB4314E,
+	RelationshipManager_add_OnRelationshipUpdate_m1DFBA6C80F359B443CF00A70E1B04A4B5E55DC57,
+	RelationshipManager_remove_OnRelationshipUpdate_mE7C8A7E3FFE9C206E9CA13E178A964471440967C,
+	RelationshipManager__ctor_m05DE9A84629902453308795D4E6600869BD7461F,
+	RelationshipManager_InitEvents_m81DFC52CA9EA3109C45F32F4342B6AB3F2F7C1B2,
+	RelationshipManager_FilterCallbackImpl_m321EE31368ABF48E97B1712C13D76395766B0150,
+	RelationshipManager_Filter_mBAF2D160453970F628FC2F407282C89C45FD9E37,
+	RelationshipManager_Count_m2DBEE32268B645AD0BC5DE83ADC9EABB76E53B99,
+	RelationshipManager_Get_m7AFCFDD28D24FF2B138F8B1F655213FB07732C8F,
+	RelationshipManager_GetAt_m0AFEB0E91F3244FADA6D4EE1B595980BFB01248B,
+	RelationshipManager_OnRefreshImpl_mD28DECACA910F141BDEF373CC8BEC5782578B464,
+	RelationshipManager_OnRelationshipUpdateImpl_m5D0DD09B6723DAC9FDF96F5CECD8F571476A8C99,
+	RefreshHandler__ctor_m9AD31516D2E291AD759B30B52CE029DC6EC51A26,
+	RefreshHandler_Invoke_m3822622D7230122A35325AAD1B4A320EA19E85FA,
+	RefreshHandler_BeginInvoke_m31B3EEBB5A4C8AF84CC276C0AA451ABA8F012C7D,
+	RefreshHandler_EndInvoke_mC8EA20376F87A20AF3C0D3913DCD43A3D225D55A,
+	RelationshipUpdateHandler__ctor_m0FBE44A8B1A5E8BDD79BAC910C829DB066A471C4,
+	RelationshipUpdateHandler_Invoke_m58FEBF1777CC7627124F2CC8320BC9C6149FD551,
+	RelationshipUpdateHandler_BeginInvoke_m157DF73C27B4AE78CB2EE5BF2D8E8A8416B398C4,
+	RelationshipUpdateHandler_EndInvoke_m0AFE83FCD232CAFB004F5F953592DA19B44370BC,
+	FilterCallback__ctor_m8D5544E81F76DAA6EF1BEB57746DCA209B3A59EA,
+	FilterCallback_Invoke_m121C52FF75C9497C64536C5BB8C6691D6B1230E3,
+	FilterCallback_BeginInvoke_m61072F09987FEA7D133D23CD760D6C617CD0E3A7,
+	FilterCallback_EndInvoke_m54D19F4C8FD0E32AF8F7AAE11991EA8C0661A9EF,
+	FilterMethod__ctor_m958D25BC1D6D64DFB1F9C7D6C69E0240C9815677,
+	FilterMethod_Invoke_mE25976300871AF17876F3008C561E8D9866DCA56,
+	FilterMethod_BeginInvoke_m007BC5378B062882CD22010FB254297734E4B847,
+	FilterMethod_EndInvoke_m0705D5F5F24ABEE983592F5B68D7F66C802BA62E,
+	CountMethod__ctor_mCE7F40989C6976ADD5CE087ECFB822D58A31A9F3,
+	CountMethod_Invoke_mC4EB74E0B8ADC30B598AAA3CA43D5E4BBB0D3551,
+	CountMethod_BeginInvoke_mDDF9802FA64823D3570247888B9E4DECC604B20C,
+	CountMethod_EndInvoke_m438FA196E6DD477ED4571D7F9F323B3C69E20EA5,
+	GetMethod__ctor_m875E418CCAB39CB4CA7732231D5609965CE02BCA,
+	GetMethod_Invoke_mA64F8260F56B0CFA80F83DF5044484DF97B4F35A,
+	GetMethod_BeginInvoke_mA8256BD7B08E5CC509FE29E64BB79F5DDD63EE71,
+	GetMethod_EndInvoke_mCF8249A4D6C1BD17C2FE98C355BA1BD116E7C058,
+	GetAtMethod__ctor_mA388D10C3FEAF2E6BD826C403C64ADE6A4AB81EA,
+	GetAtMethod_Invoke_mD05DEF693975FD39174039A2BA4642E609AFEC15,
+	GetAtMethod_BeginInvoke_m5610DB69E5D33F82597ACBF6174F5881404EE0FE,
+	GetAtMethod_EndInvoke_mB178E0B9AC2308F1F360CEC574D7D1154DB02D62,
+	FilterHandler__ctor_m495F7F14C8D80167315315DFBA970CC1B7723D68,
+	FilterHandler_Invoke_m077142399ADED3190485B4FAF9033C22E158FDCE,
+	FilterHandler_BeginInvoke_m756553C2358B9C2AD9381189CCC7E06437E0CE57,
+	FilterHandler_EndInvoke_m9B1DD93050D0AEF07126B0A5A7C827EE57D8DEE9,
+	RefreshHandler__ctor_m6A76D322C6E3DA8C444C4A0CD31A9B1FCAFD431C,
+	RefreshHandler_Invoke_m799655AD26967A6B353BFF2F55C041404CB77E6C,
+	RefreshHandler_BeginInvoke_m6077194E9F04D31FF9BF6A900CA31A2CF65BD707,
+	RefreshHandler_EndInvoke_m6AB0DC4A22C9DB28AF2A70248966DE68CCCFA505,
+	RelationshipUpdateHandler__ctor_mAC6B6C381B27EDD8B8B9978E024539066F30C26A,
+	RelationshipUpdateHandler_Invoke_mB0030315775C10473018812FD349C87DB2C19055,
+	RelationshipUpdateHandler_BeginInvoke_m6E3462F8181ACF79C9AEC2798544253AE4E52784,
+	RelationshipUpdateHandler_EndInvoke_m407E4DD7673257398375D5DFBFBDF6D562E83451,
+	LobbyManager_get_Methods_mAB4671B56F1454762295870CA1C8E9808D6EE911,
+	LobbyManager_add_OnLobbyUpdate_m3943E321AF4F7CCD29E154A38868D9CCA4F54FBF,
+	LobbyManager_remove_OnLobbyUpdate_m6FCE33524C682C235AB9CF7517F00CF5DB92D5C1,
+	LobbyManager_add_OnLobbyDelete_mBA4C38B2B1C438E20E21600B527D21FF04E1AFEB,
+	LobbyManager_remove_OnLobbyDelete_m7A693FB765594FD6475BDF5E7CBAC3B5B0BC5574,
+	LobbyManager_add_OnMemberConnect_mDA4D19640BE268D9C48B2DF68F8F171CAA5B50F0,
+	LobbyManager_remove_OnMemberConnect_mC4EAEB22CFA1FB3E0950F115072F6C6F678A4222,
+	LobbyManager_add_OnMemberUpdate_m6F972B3D2F52147FF0301A20BE0A27CC73111D88,
+	LobbyManager_remove_OnMemberUpdate_mCA99536C3C8E4C9176F5CC6D327EBF81617E13B7,
+	LobbyManager_add_OnMemberDisconnect_mB0E380B620D52372128149B60FA0BE3A350C1F12,
+	LobbyManager_remove_OnMemberDisconnect_mE7C4CD0B52DEA211A9406F884C472DC516C0B2DB,
+	LobbyManager_add_OnLobbyMessage_m7A4E1D9244421B6307BDB81E8A05DD4696B43437,
+	LobbyManager_remove_OnLobbyMessage_m256A5A91A5B1CE9C678E8B408918032F91143F24,
+	LobbyManager_add_OnSpeaking_m7376A510F8F9F14C70643A80642B887CFBDD3046,
+	LobbyManager_remove_OnSpeaking_m4AE9B484993E3544445F82360770FEC5E91039DC,
+	LobbyManager_add_OnNetworkMessage_m97C00B16CEC065F170A8CC1C782048E866529AF0,
+	LobbyManager_remove_OnNetworkMessage_mA9D1AF95AD230DD038E8A532B518995D28C77108,
+	LobbyManager__ctor_m708156974FE2F1CC377739B4658AF06BDAAE6517,
+	LobbyManager_InitEvents_mE79234483483F55D84FB6C1998EF361682F7B7C3,
+	LobbyManager_GetLobbyCreateTransaction_mE7F8528D8475716DF18BDEF13F2D9045A2FD508C,
+	LobbyManager_GetLobbyUpdateTransaction_m50291BAC8E91995D99BBDF7C960B65890EE2D6FA,
+	LobbyManager_GetMemberUpdateTransaction_m33C85E4E0753F5F4E0940B76D69E99A8CAD69E87,
+	LobbyManager_CreateLobbyCallbackImpl_mAEC695E946BF3C40173C82788DBDA66CF33E0545,
+	LobbyManager_CreateLobby_mEA195F5958AD6558A08E8F2F6B04313849D95230,
+	LobbyManager_UpdateLobbyCallbackImpl_m872BB837E05FB625708FD84A2FFF10203000FB48,
+	LobbyManager_UpdateLobby_mBFB2C351D72DFAAA8FEAD3270BB5BD233E5D2584,
+	LobbyManager_DeleteLobbyCallbackImpl_m1EF2A8CD6ECED00010924FCD79A5DDA74321CDA4,
+	LobbyManager_DeleteLobby_m8D74C8B82D703C1A71B251250181902BB5C5F664,
+	LobbyManager_ConnectLobbyCallbackImpl_mC6F224135CB0F2DD39916FADA215914D813F76C3,
+	LobbyManager_ConnectLobby_mA5020E8CD8D08DCD7EF6EC96094BEB74228A1274,
+	LobbyManager_ConnectLobbyWithActivitySecretCallbackImpl_mF0672B35B8B893A97CCDFA6BB76049782424D662,
+	LobbyManager_ConnectLobbyWithActivitySecret_m17CD7EF5A09049BA281528E84B598787D9C1BAF5,
+	LobbyManager_DisconnectLobbyCallbackImpl_m0C82CC19DC9831ABE6D399AFA8C27B3223AA07BC,
+	LobbyManager_DisconnectLobby_m4B12BEB08E974011A161221D4A1B07EBBC320D44,
+	LobbyManager_GetLobby_m45DDC16D1D9DDF252F1D3B0697B525AA4F386E2F,
+	LobbyManager_GetLobbyActivitySecret_m4A46AB47234CA2084D53E418A34F3B46EC7A40DD,
+	LobbyManager_GetLobbyMetadataValue_m6DF470379764671F0D59AB9F02E7AAEED324B2A2,
+	LobbyManager_GetLobbyMetadataKey_m193FB116B7BBD64C87FC55C648B5E2FAA6732243,
+	LobbyManager_LobbyMetadataCount_m2FDBDBC33D35B57A3631052BE00FB661E585B919,
+	LobbyManager_MemberCount_m072C6C31C891D1BF48DEE53301EF15904F23A148,
+	LobbyManager_GetMemberUserId_m8F20BD5EC19A79A45EAA2C4D4ED5B8F75DA1E95D,
+	LobbyManager_GetMemberUser_m421F60EF55004D704CE90027363CD6E82B1F8A55,
+	LobbyManager_GetMemberMetadataValue_m087028C8DDB75D180B44E7E7876C37B07984199F,
+	LobbyManager_GetMemberMetadataKey_m2457FCC99A4F226297AC991800FFFBE549BD2B47,
+	LobbyManager_MemberMetadataCount_m43FC6E8E4933B29E5CCEB07D5F8299D2E1DD62F8,
+	LobbyManager_UpdateMemberCallbackImpl_mD3A20BFB5B62AF19ED7B7602771F398581D57D5E,
+	LobbyManager_UpdateMember_m67176BB07FB706AFCF7C6A2D8B30145A5C75C371,
+	LobbyManager_SendLobbyMessageCallbackImpl_m959A23A89207490DE4DFAF663F5FE28F9770AD60,
+	LobbyManager_SendLobbyMessage_mA0AD19660BD38435E9DB95C219B6906C92757D03,
+	LobbyManager_GetSearchQuery_mF8C10FC9CF699D96142B17BA44377CD6D58DC935,
+	LobbyManager_SearchCallbackImpl_mED88264E1F99571C56A6BCE7033296640C4364AE,
+	LobbyManager_Search_m61F72C124CB7810E821A17F05FA82E6380FE191B,
+	LobbyManager_LobbyCount_mC9459B8A11282CA62E2526EC51E9A0025BB57DF5,
+	LobbyManager_GetLobbyId_m1086CA9660BA35E655B7F0F63C77FAB83023ECFA,
+	LobbyManager_ConnectVoiceCallbackImpl_mD540710CDFBB59D63315731DCF839713FFA7CF61,
+	LobbyManager_ConnectVoice_m8D8E9AD933BE1A37BED49CCC87E1B719E03CD69F,
+	LobbyManager_DisconnectVoiceCallbackImpl_m2120A7C9C6B19BA9F8E647F6C0F3D09120E86BE6,
+	LobbyManager_DisconnectVoice_m1E2BD53C2BEFB2E94869CF4AA30138DC42858CCE,
+	LobbyManager_ConnectNetwork_mDFF60DD4CB1625D8E8615E592928A061AFBECD86,
+	LobbyManager_DisconnectNetwork_mC0027BEC165916194049CCBD0B1DF4A589F6C253,
+	LobbyManager_FlushNetwork_m36941BDC49A666F233048E471329AFE405D0237F,
+	LobbyManager_OpenNetworkChannel_m4A81D808FDB7395EBB9879F7ACB37FE02038C0E1,
+	LobbyManager_SendNetworkMessage_m02F3F276B19266DAB19AC5A16D44C62194DC9DF4,
+	LobbyManager_OnLobbyUpdateImpl_m44AD90AF0ED29FF182C4742C4929634D5317B731,
+	LobbyManager_OnLobbyDeleteImpl_m37D4C69CBA595571A546AA1B95531BE36CFACBD8,
+	LobbyManager_OnMemberConnectImpl_m65F4BFCEDB9DE6B163B5307E44F38785B380846E,
+	LobbyManager_OnMemberUpdateImpl_mB4FF5EC811FED31616E2F0CFF40351CFFC2D64DD,
+	LobbyManager_OnMemberDisconnectImpl_m9E9D0AB3B26776234EA3D57609CE627C14448B39,
+	LobbyManager_OnLobbyMessageImpl_m1DA5EC8E401742A7B240BE6167F23A8D414CFBC9,
+	LobbyManager_OnSpeakingImpl_m9C171D737C50D9C79C84DE59B2C57CE37CE2D64F,
+	LobbyManager_OnNetworkMessageImpl_mF5ED77A9685583B4B4B2AD7D9AE87446E33D7B6F,
+	LobbyManager_GetMemberUsers_m86B091A0039609744313618122A1E61DA1C2970F,
+	LobbyManager_SendLobbyMessage_m1B5D1631CF8D38C40FBD9EE5A63A807F307A85C4,
+	LobbyUpdateHandler__ctor_m1372C703137A7B6F954EE1B17E8542C46A3DBDD8,
+	LobbyUpdateHandler_Invoke_mAFB677CD4DD8957A7F8DA3FA7DD8B57B91389923,
+	LobbyUpdateHandler_BeginInvoke_m59E9398D0A2563052BEFF642CD1A17E011378493,
+	LobbyUpdateHandler_EndInvoke_m03F80CB1164C39DEFF17C3F1444B9AB74BB7EBCE,
+	LobbyDeleteHandler__ctor_mBD37458772630B29EC45DA55256186F23F5FF8DD,
+	LobbyDeleteHandler_Invoke_m3E2B0DF919CDC552A56BD36559208A79C164BF1D,
+	LobbyDeleteHandler_BeginInvoke_m7C1D2497CB06E5E38A14E3924E6F69F93269A687,
+	LobbyDeleteHandler_EndInvoke_m1E31876213A18AA3F888844A501FC19A9989C684,
+	MemberConnectHandler__ctor_mA8F80572C0336DA7A3C207BA1C6112729A262B61,
+	MemberConnectHandler_Invoke_m3245B6A630A4385972B621D3A120E5038C3A1621,
+	MemberConnectHandler_BeginInvoke_mCABAF156F4B74AAB13FF2C567002D7182C6C5339,
+	MemberConnectHandler_EndInvoke_m196ACD442832169A8710408A07966454F4FE48D3,
+	MemberUpdateHandler__ctor_m65508DBF41F396EF04BDCAD7DD5FA9CCE6822F03,
+	MemberUpdateHandler_Invoke_m5794DA2BC4B1D13CE05D39FC439EFBD0111CC337,
+	MemberUpdateHandler_BeginInvoke_m849FEFF17504D5F6FBC32F575E89CC975680BF6C,
+	MemberUpdateHandler_EndInvoke_mC8B42CEC5529C0CF6D97480AFDFD3416A1932312,
+	MemberDisconnectHandler__ctor_m7FE118FD66BC43F9E040DCB667D5E2A87F235227,
+	MemberDisconnectHandler_Invoke_mEEE8AEFE5B3736D2EE78A59E5C74A21C0E154099,
+	MemberDisconnectHandler_BeginInvoke_m4AD5657DED608A5DACE332CA0BD232AF14C1DA14,
+	MemberDisconnectHandler_EndInvoke_m5A412B8089040BF53056517BD3A5F2F2BEA6DABE,
+	LobbyMessageHandler__ctor_m3A27C15974AEF6D832A12AD68A87E387EAC47B2F,
+	LobbyMessageHandler_Invoke_mE182492D5FCADD9E4BC1F1CDADE98ABF2D4642DD,
+	LobbyMessageHandler_BeginInvoke_m84306E4884A75DC703F7B2F9C5A6809967A23214,
+	LobbyMessageHandler_EndInvoke_m701564211103456154466691B1F13CE26B68DD1D,
+	SpeakingHandler__ctor_mE844BCAC971CD7B3BD54D416AFA611FB549B9865,
+	SpeakingHandler_Invoke_m69B9B8E5B659EC387603B0874371D7257C475596,
+	SpeakingHandler_BeginInvoke_mC1AD16D0602879CD90F0F87A1276134DE3F8BE18,
+	SpeakingHandler_EndInvoke_m699C78120F1903E499078B0A9612157E9980CFC8,
+	NetworkMessageHandler__ctor_mEEEFBCA7689954C3631DCE664BA48F40AF9880A7,
+	NetworkMessageHandler_Invoke_m2D1A66A5B6919455813F9EDEEB039686EB8A51E8,
+	NetworkMessageHandler_BeginInvoke_m9C444C0C26CECA0DCA93749F8C592F685AF0B929,
+	NetworkMessageHandler_EndInvoke_mEF8873E6C701B48309663CE1077F1AFEE1BC1655,
+	GetLobbyCreateTransactionMethod__ctor_m0ED90914F11D13FE59819D8906F6E0C74E3734AC,
+	GetLobbyCreateTransactionMethod_Invoke_mD9062AA76E4D9B892BA2542846966E32E329C344,
+	GetLobbyCreateTransactionMethod_BeginInvoke_mC2389D15D197DAFAF0A2BF9B4DA7CE796FD0AE9B,
+	GetLobbyCreateTransactionMethod_EndInvoke_mE8955850CC93AC345A05263C85EFC3AD39769C1F,
+	GetLobbyUpdateTransactionMethod__ctor_m038300BD08C69BD79D2C6182E6C4F900B35390E0,
+	GetLobbyUpdateTransactionMethod_Invoke_m4244DC7142CFB1874B020AF352C3B34063A8751A,
+	GetLobbyUpdateTransactionMethod_BeginInvoke_m918C51CBD73942A106CCF8BA6F541C9AEB79B13A,
+	GetLobbyUpdateTransactionMethod_EndInvoke_m74751FD8D432FA2227639D5A42743912F6BEE0F7,
+	GetMemberUpdateTransactionMethod__ctor_m39BC4D7D586D41602FBA00682FDBBC50DEFC957A,
+	GetMemberUpdateTransactionMethod_Invoke_m29EAEC9FCBAC5C4F9A0B04FBD28BFAE23CA1CC5B,
+	GetMemberUpdateTransactionMethod_BeginInvoke_m8B39E47DCE57186802DA55E1312172D3F45FE20D,
+	GetMemberUpdateTransactionMethod_EndInvoke_m33D110C73E27B4265F447A67AC18FC6F52983D47,
+	CreateLobbyCallback__ctor_mC850859DDB18C4D5FAC9C9B612CB036BB9D7AD32,
+	CreateLobbyCallback_Invoke_m1861EF3B487FF43F47861253177285BA2D07462D,
+	CreateLobbyCallback_BeginInvoke_m12BFE02D626C7D337FFD8B56551781CF677D95C1,
+	CreateLobbyCallback_EndInvoke_mD8B6891D7BB75E88729C302E41428D51FC7F70C0,
+	CreateLobbyMethod__ctor_m6045AC2A01AE5D514489028A69654FBEBAAAD1DA,
+	CreateLobbyMethod_Invoke_mAC9C24CA504B30366260B818866B3DA7D90D67F4,
+	CreateLobbyMethod_BeginInvoke_m207CF791D2DED519F621FE7529B72595045EBEF8,
+	CreateLobbyMethod_EndInvoke_m52EE145AF7F35DBE8F5E3B32D781253713C2FEFA,
+	UpdateLobbyCallback__ctor_m45066206BBEBD6345D8DB2F19CA2C6F9AFCCE75C,
+	UpdateLobbyCallback_Invoke_m643B9CCD2C5436D9CA19FF58311A5BF7347D048E,
+	UpdateLobbyCallback_BeginInvoke_m22A0AF56012B262AED7F2270DF349A31D497B2E3,
+	UpdateLobbyCallback_EndInvoke_m18A813D47A5E44A060D771B181A216287D5D684F,
+	UpdateLobbyMethod__ctor_m0A49E3CF69C6727FD6B10A172DB26FDE6AA1098F,
+	UpdateLobbyMethod_Invoke_m328AB7DA92A95B997C1248339A32EAC36AF35102,
+	UpdateLobbyMethod_BeginInvoke_m85E4227ABBBC61EF4DB3F2CE498A81BAC7C2FC8A,
+	UpdateLobbyMethod_EndInvoke_mCAA6C4FA5A76403CBA93B4C48E776B3C302A1C2E,
+	DeleteLobbyCallback__ctor_m3A618C93419608D4E1AB9A799974B78E54745F1C,
+	DeleteLobbyCallback_Invoke_m2A613F0CCD88946E7C04413E086ECE11D070DB5D,
+	DeleteLobbyCallback_BeginInvoke_m069D222D88A79AC0E1532AFB78E4A7C0E3DC953E,
+	DeleteLobbyCallback_EndInvoke_mDBE83787B9399CD8C77D779A80657CFEE0FEC89A,
+	DeleteLobbyMethod__ctor_mD1CFBB82437F2C12883DA360A040C888EC775DB3,
+	DeleteLobbyMethod_Invoke_m8F2CA2F0F9AC5EAE62A56C3179851B770E02B734,
+	DeleteLobbyMethod_BeginInvoke_m90E83F20A9A14684DB510BB51AF016960694823C,
+	DeleteLobbyMethod_EndInvoke_m83061B4541A8B8A0CF366B01491DFAA8C254D7BB,
+	ConnectLobbyCallback__ctor_m4335CD54AFB7DA46E5CBC11F856DE39113EF85FE,
+	ConnectLobbyCallback_Invoke_m15F1B1C4F4C0950AA0ADFF6F0E6D02E4381532E7,
+	ConnectLobbyCallback_BeginInvoke_m563CEA79E3F0BF31FA89AB6ED057D217B0D5D94B,
+	ConnectLobbyCallback_EndInvoke_m4347FF163C8E220D7DAE1CDADD638EB923F18694,
+	ConnectLobbyMethod__ctor_mCC8DCF4B5FC80345F3E9D6EC626703E4BA887705,
+	ConnectLobbyMethod_Invoke_m5E25B7C1A035DDBD720B9F9E1C955CBF6808D584,
+	ConnectLobbyMethod_BeginInvoke_m4EE8D5E45A7F87A98D9BA94C967E7527BAB1966F,
+	ConnectLobbyMethod_EndInvoke_mBC259C4D4E6788A37C0281A71CBCE1E2AEB25540,
+	ConnectLobbyWithActivitySecretCallback__ctor_m4A886732B3CDC5994446AF27A2402C41127434A8,
+	ConnectLobbyWithActivitySecretCallback_Invoke_m84D345B0F1465FAA13ECE88B8903521FC24C37E9,
+	ConnectLobbyWithActivitySecretCallback_BeginInvoke_m6332392E4D181EAC7ADC91E472152178845CBAC6,
+	ConnectLobbyWithActivitySecretCallback_EndInvoke_mD19506E1BBE5AA0C498BA7445A34152273006135,
+	ConnectLobbyWithActivitySecretMethod__ctor_mC741C205B500A5453FC7B39D80C71ABBA5491E86,
+	ConnectLobbyWithActivitySecretMethod_Invoke_mCA10B53B301B2EECC54960B76363726FBB8C76ED,
+	ConnectLobbyWithActivitySecretMethod_BeginInvoke_mE1320B5A87D31A5683697CD794D1536E3F3C3B89,
+	ConnectLobbyWithActivitySecretMethod_EndInvoke_mB37ED5639A8A737B60AAD05AE74A55C8DD816ED3,
+	DisconnectLobbyCallback__ctor_m176BF1FC5432E427442163D61B849941EB1AAF23,
+	DisconnectLobbyCallback_Invoke_mEBF3B64DB27EF06883AE8A9BDF0132D1026ABA33,
+	DisconnectLobbyCallback_BeginInvoke_m63A3C90F0E404B8B580D3597104E69C65F9230DF,
+	DisconnectLobbyCallback_EndInvoke_m713888550749F008C13A25145C6A65EE607237A6,
+	DisconnectLobbyMethod__ctor_m63DD541E649493653697F5A7D68FB41F36A29DF0,
+	DisconnectLobbyMethod_Invoke_m8933BE64CF1926FF814FD44AD378F591520BE403,
+	DisconnectLobbyMethod_BeginInvoke_m69B056C26602A49FA731D965F1A86E20E1A6A04A,
+	DisconnectLobbyMethod_EndInvoke_m928A941D843F70B2A27D1670ABCD741314163DBA,
+	GetLobbyMethod__ctor_mF9DE8A0A2157AE72C295C2D1113BF0BA1E264B2F,
+	GetLobbyMethod_Invoke_m811E0A762F650D014BDD1AA4C25A652596B6EEEF,
+	GetLobbyMethod_BeginInvoke_m846FBF3F05E99B4C82E82BA65AA7744731470095,
+	GetLobbyMethod_EndInvoke_m9080F7DE2571D19ACDF93B7440749A2B1E9B2B70,
+	GetLobbyActivitySecretMethod__ctor_m0D01FD534601D15B28FE6BF88C33EB025DE97EE1,
+	GetLobbyActivitySecretMethod_Invoke_mF50EE8CBFF0D22CD3AAC087F2FB0E93C51896770,
+	GetLobbyActivitySecretMethod_BeginInvoke_m778CAA70DE4F5EA74101438BD7374F19719E7153,
+	GetLobbyActivitySecretMethod_EndInvoke_mCAE10884FF14C7090329DA66566588860E1DCB7D,
+	GetLobbyMetadataValueMethod__ctor_m35141C686D83F54A851A0F35947613473FA95D33,
+	GetLobbyMetadataValueMethod_Invoke_mC064B10E1AAC0C3522CD79D6A004DAD703377121,
+	GetLobbyMetadataValueMethod_BeginInvoke_m1ED2992EC854B5F82245F01FDEACD6A865E495D3,
+	GetLobbyMetadataValueMethod_EndInvoke_m245343647564CB73813A6384D7C433AFC00D60CB,
+	GetLobbyMetadataKeyMethod__ctor_mC454BFD69B9968E10A1B76A002D9DC962A5BE3F6,
+	GetLobbyMetadataKeyMethod_Invoke_mDE41809E4FD0A3F89084DF5C2BDE98D67743B0EF,
+	GetLobbyMetadataKeyMethod_BeginInvoke_m98A94795DF558022F1AF9057F311EB7110E61254,
+	GetLobbyMetadataKeyMethod_EndInvoke_mA474DC2C3FDFFEA52B9C9C1291202D92FFC134DB,
+	LobbyMetadataCountMethod__ctor_m36FE7161AD73D029BFB6AB60B09C64AA4739A957,
+	LobbyMetadataCountMethod_Invoke_mA876E6884BD9C77397BBFD3389ACFFC5C37E3019,
+	LobbyMetadataCountMethod_BeginInvoke_mDA96784CCDECE40A000F5D073AF7CE4A20EC42EB,
+	LobbyMetadataCountMethod_EndInvoke_m1D0B5CFCCCB98C3E9E9FCDF490129AA530224411,
+	MemberCountMethod__ctor_mC82D5A9AEBD522073BFF3592038969E09EFA7F40,
+	MemberCountMethod_Invoke_m9446EF3D14BC4934C6F78B00DFC8AD244B3E1BFC,
+	MemberCountMethod_BeginInvoke_m41824888A7EB994EEC5313FE5C65E376F335703E,
+	MemberCountMethod_EndInvoke_mB26480DD8B27E5C067009413AA3B5DCF80FB5546,
+	GetMemberUserIdMethod__ctor_m25E0210DF7E2C6C2CDD6CE6B747FD6D7B42C9BB9,
+	GetMemberUserIdMethod_Invoke_m2258007AADBF6E81213CFB22C867F0477F51783B,
+	GetMemberUserIdMethod_BeginInvoke_m97BC68A3F5CECE0DB613B196680D9FFC25C99860,
+	GetMemberUserIdMethod_EndInvoke_m4C01D7BB5348086D918B680208CEF407415AB060,
+	GetMemberUserMethod__ctor_mA43732DA734980F125939D6036D9D49D87913A10,
+	GetMemberUserMethod_Invoke_m4A536359FF74FAD62A0A5F0AC08FE2CFF7C98F69,
+	GetMemberUserMethod_BeginInvoke_m2B3C113DB9270BCC673F7A89B388740B582A48DA,
+	GetMemberUserMethod_EndInvoke_mA86394808307861001800B2E38A911CA4AB79841,
+	GetMemberMetadataValueMethod__ctor_mA51203FEA771397FF866350538C3566B4710D371,
+	GetMemberMetadataValueMethod_Invoke_m7733B564C5D4EF7FBE7DA6F755336053AEB3BD0D,
+	GetMemberMetadataValueMethod_BeginInvoke_m47D9C0A8677645D54A31793B53F166EB4EEC6EED,
+	GetMemberMetadataValueMethod_EndInvoke_m520EB14524C6B5B1FE054F32D4D205D1014C3AE3,
+	GetMemberMetadataKeyMethod__ctor_mFE3ED7372F8E4E7EDF36CD2D980F6904D9055585,
+	GetMemberMetadataKeyMethod_Invoke_mCFFDF6EFE4D6EB910BA1EA4305BE28E8366E7287,
+	GetMemberMetadataKeyMethod_BeginInvoke_m5D171FC570133C8248BD19B5FE0D2C2B2E533211,
+	GetMemberMetadataKeyMethod_EndInvoke_mA83DEB7DE5E56C0C24AF48F324945A114BB10A25,
+	MemberMetadataCountMethod__ctor_mFB2E04BA01E3614E6B186C76A316DB7D334C23CD,
+	MemberMetadataCountMethod_Invoke_m64E8173CA67BD3806E38AE7F658FD880543837AA,
+	MemberMetadataCountMethod_BeginInvoke_m3BCE9697C53F3170DE6493675B18FE2FEEF7E902,
+	MemberMetadataCountMethod_EndInvoke_m2EBA22CF94B29D6EE2E8F7B59A922A40796B538C,
+	UpdateMemberCallback__ctor_mA14E7656222A3929886D07A03CD31B1295302E90,
+	UpdateMemberCallback_Invoke_mE6554FFE582D72BCCCC5A9B8855A2F185E043AC4,
+	UpdateMemberCallback_BeginInvoke_mE34820C8A802A9C41CFF65E7F003143C6147874D,
+	UpdateMemberCallback_EndInvoke_mDF9C6E899AD25D25CC96C008EEAE54677A82C8F0,
+	UpdateMemberMethod__ctor_mF6FE78D56C5450407231A6E2BD3507FBEE0B9EEA,
+	UpdateMemberMethod_Invoke_mD45957A637169B2E7BD9F7E6C002E6E7A323641D,
+	UpdateMemberMethod_BeginInvoke_m60338F8834DD82B9C28458A16A90C06503D54759,
+	UpdateMemberMethod_EndInvoke_m3B081C4E083068DE5FAD011DE4A94CFC270A5F2B,
+	SendLobbyMessageCallback__ctor_mC9650728209F323A13FA3989556D3710A5BA3444,
+	SendLobbyMessageCallback_Invoke_m2BBDE80DF4E97B2371A7F6F15599A69CB749ACF7,
+	SendLobbyMessageCallback_BeginInvoke_m0AD8FAB997F833CFCCB516E2CE28356FB5CF8E13,
+	SendLobbyMessageCallback_EndInvoke_m45B8EA259A2DD55EDE3B697E925233FE3105C126,
+	SendLobbyMessageMethod__ctor_m1CEE1DB3041FDE4BB24D6830C8BBF8EF00E8011C,
+	SendLobbyMessageMethod_Invoke_mD0F22AD95DF3E3BFB0991CD66B424D515CEA6D2C,
+	SendLobbyMessageMethod_BeginInvoke_m9AE496EF2321B0902314DDB60760EAF9B952AE7E,
+	SendLobbyMessageMethod_EndInvoke_mB187D478039C07AC5017582D0162BCA1D34334A1,
+	GetSearchQueryMethod__ctor_mA93CF4B0D12E7DF806DC59106EED7D2ACC2609B3,
+	GetSearchQueryMethod_Invoke_m9DB4C24FECB91DC50D710E6CF5920F64F2ADD2C7,
+	GetSearchQueryMethod_BeginInvoke_mFEA587709C7525A08F122F62522F21EE2563EF1B,
+	GetSearchQueryMethod_EndInvoke_m94D8D6721AD68DC32E45D5BB76F0EC4F20A6CFE3,
+	SearchCallback__ctor_m6D055A9DDF4CFE1DBBAEFB77848ECA923EE5F64F,
+	SearchCallback_Invoke_mB636BBB1DDF99DA16E8F06542BB670F38F1979CC,
+	SearchCallback_BeginInvoke_mF2CB87B82466521DD7321900A8BC6CE7307E2165,
+	SearchCallback_EndInvoke_m6C74282C22E535F154D3328C96309FD7CC0A3B54,
+	SearchMethod__ctor_m50D7A4AD62D4B73EA9E5D6BD10B65453FFD1FE46,
+	SearchMethod_Invoke_m3FDF0F83DA9BE4FF037BA8900288C56639EFE5CC,
+	SearchMethod_BeginInvoke_mADDC9A0DB28008BF051F64CAC1BF187F31FC0168,
+	SearchMethod_EndInvoke_m97AD530C514368E1BAD2AA1D5C6D0D6ECE0C3027,
+	LobbyCountMethod__ctor_mEEE01DA807BAE85B6FFFB0C4055EBCADA075B84B,
+	LobbyCountMethod_Invoke_mDB281E5D6095826823249FDA943676014E919EF2,
+	LobbyCountMethod_BeginInvoke_mF38BC68E4D2AE333B33E45FD16FB48E149C30188,
+	LobbyCountMethod_EndInvoke_mCED7824B76EDC33D6FED7D97E2AAACED2C254323,
+	GetLobbyIdMethod__ctor_m44B1C4C4DA1A6EC35128EFE8C7D6B761E44475C0,
+	GetLobbyIdMethod_Invoke_m2B4850EFD63B69BA16B567369AC13ED0A70FBE38,
+	GetLobbyIdMethod_BeginInvoke_m4DDB3FFC0B20D8D61D3DDF6FE72642FA63555447,
+	GetLobbyIdMethod_EndInvoke_m99A528FCDE58FD40AF78D8DB75C3760EDD45054E,
+	ConnectVoiceCallback__ctor_mA6575C3AD1114DDE7F9E7F646D81E6335AAAA40D,
+	ConnectVoiceCallback_Invoke_m720E238B616F2D54D2078047C978907543052D0B,
+	ConnectVoiceCallback_BeginInvoke_m66CC16B1B2B4F82433F1351C68DFE6100539B7EC,
+	ConnectVoiceCallback_EndInvoke_m8BDC90B24159394C488CBE533A9CFF8D38967D19,
+	ConnectVoiceMethod__ctor_mC1F00A8A0803E163138780C32E3BF03B2056D966,
+	ConnectVoiceMethod_Invoke_m6A162E4DC45A81D435A290DE797C73F51EC05BDC,
+	ConnectVoiceMethod_BeginInvoke_m2BE8F16F1FFE0BA218D5D2712AF96416AE018648,
+	ConnectVoiceMethod_EndInvoke_m39D65C215D8B8B58E5DE3A729B2ECDC904F8B140,
+	DisconnectVoiceCallback__ctor_m4E85909A46CCAB672858A43CB01E01546300811D,
+	DisconnectVoiceCallback_Invoke_m47D74D7FF6D83D36F34CC3435FAF754ECD34BD3C,
+	DisconnectVoiceCallback_BeginInvoke_mF387C51159B5644D66A9F6C886549AFEE4CB0825,
+	DisconnectVoiceCallback_EndInvoke_mCC22E88CCBCE8ACCDFC6E60E707F842E59C6E580,
+	DisconnectVoiceMethod__ctor_m53B95891F8D3C4D494BFBED91A353CF20BB22EF9,
+	DisconnectVoiceMethod_Invoke_m088842A53816EC8D68870210AB7C800D03493C08,
+	DisconnectVoiceMethod_BeginInvoke_mDE9871FB01BCC039E8B88D6319AFB9966CE05DE6,
+	DisconnectVoiceMethod_EndInvoke_mF224F381A780848B7D98A7EAED1DC355804B8381,
+	ConnectNetworkMethod__ctor_m9981B2C443FD82FBE952B6B89F7DF7F64C5C461E,
+	ConnectNetworkMethod_Invoke_m5B4ABAFB4A845E8761C17FA176F735F9966BA024,
+	ConnectNetworkMethod_BeginInvoke_m5E2262C4D702DE8C7E7A1A95EEB8AB640BC32446,
+	ConnectNetworkMethod_EndInvoke_m10CB5A82B9CF3E20DA930C096F07EB33BF75A844,
+	DisconnectNetworkMethod__ctor_m387D2E2226A4C3761CA1FABC7FB05F0621952F44,
+	DisconnectNetworkMethod_Invoke_m5C70BAC2C88809A4687D6493895F335C49D10DA6,
+	DisconnectNetworkMethod_BeginInvoke_m771C77C91E6173F51466BAC9BBEF1DB015E1F08B,
+	DisconnectNetworkMethod_EndInvoke_m653B677F2CF2E7B22075114B90957E722DFE6F17,
+	FlushNetworkMethod__ctor_m4E4AC274CB24C48ECBCC69E20FEE5E1FF7A0B263,
+	FlushNetworkMethod_Invoke_mB7076343433BAFE6ADCC7A67C39CD619C8E98932,
+	FlushNetworkMethod_BeginInvoke_mFFB29CEC1B35DA9F88832CF342B9544B18E2A641,
+	FlushNetworkMethod_EndInvoke_m59AAFE0ADDC2179C94C2988D52391F5D7889AAF9,
+	OpenNetworkChannelMethod__ctor_mE41023881A556C9996D8B023E6F4AFB3FE4B29EE,
+	OpenNetworkChannelMethod_Invoke_m614F5559673F4F828FBAA74DB7ED41DAD5067F7F,
+	OpenNetworkChannelMethod_BeginInvoke_mB224F97D762723EEC7703EC05343A42957CBA372,
+	OpenNetworkChannelMethod_EndInvoke_m52EDF02DC986FECC7C0F8B0752573341BF49C2BF,
+	SendNetworkMessageMethod__ctor_m864AB2043A96225D74A017455ADA46DC2469A82C,
+	SendNetworkMessageMethod_Invoke_mEFD22C0BFFE5C9BC0C8DA612281DEA6E96DB6E2A,
+	SendNetworkMessageMethod_BeginInvoke_m146287D2FC81ECBD492593FA968A6C507EF9CE1B,
+	SendNetworkMessageMethod_EndInvoke_m2B3FE5556A0A417F957FA8D23ED5123A316F9D34,
+	CreateLobbyHandler__ctor_m7F0874C2FC545B2A69646E47A09585AE8428A425,
+	CreateLobbyHandler_Invoke_mF75AE6089D9F9CEDCA5B144B60AA08F4337E246E,
+	CreateLobbyHandler_BeginInvoke_mAFF833FDD35D893A77B9B6BC3CB8D34BE84EE600,
+	CreateLobbyHandler_EndInvoke_m756EF2755253F889FA15FC3BAB47309C352DBFB1,
+	UpdateLobbyHandler__ctor_m86559C31B16FEEF1AF3822E48EDFBBF7E9D7F26E,
+	UpdateLobbyHandler_Invoke_m56EE2B776CD00F6675C5A48611349840EAA3E045,
+	UpdateLobbyHandler_BeginInvoke_mD8D1FEB6AF1B427170F3999D11029EB18E1E38C6,
+	UpdateLobbyHandler_EndInvoke_m8DE8A8878F966275B6A7FE1EBD1F6BA69CD37241,
+	DeleteLobbyHandler__ctor_m57892818C29B49544FDEC761F501696270FA464E,
+	DeleteLobbyHandler_Invoke_mB8F935B166526E02B0ACB313880B372B89E5BDE5,
+	DeleteLobbyHandler_BeginInvoke_m44DB61C1A19C47537D6A4A88BA8D9A1FA49EAEB6,
+	DeleteLobbyHandler_EndInvoke_mC569FAC4ED74EC49883C68A68927FE9A004BAE3D,
+	ConnectLobbyHandler__ctor_m3EB701C8B0CDAB220D0AD9FE8258B7B37E28825E,
+	ConnectLobbyHandler_Invoke_m6C6BDFBD23D20147056C9A8DC9DCA75523BEA6A2,
+	ConnectLobbyHandler_BeginInvoke_mFA5C9D5A8287A91D5A6E800256C762979DB3C5A6,
+	ConnectLobbyHandler_EndInvoke_m61A38B07E4760CF4D9CD6B27159C2FA713D66946,
+	ConnectLobbyWithActivitySecretHandler__ctor_mD0F5672351F53D91ABB5A2E65BB5684A649FB5F2,
+	ConnectLobbyWithActivitySecretHandler_Invoke_mBF8CEC9CE2ADC70964AF708C80D278F9C4685424,
+	ConnectLobbyWithActivitySecretHandler_BeginInvoke_mC3C54A013FBA7A5070ED02D2EA2386832F996423,
+	ConnectLobbyWithActivitySecretHandler_EndInvoke_m0F7CF86FD16F51F6D767288F3BBE437A0764D4F4,
+	DisconnectLobbyHandler__ctor_mC2A39B06102FA91BBEFADA7C766A043535579E9A,
+	DisconnectLobbyHandler_Invoke_m73224755979AC71F71DD175357A021566C8EE20D,
+	DisconnectLobbyHandler_BeginInvoke_mD85180EBF43CD3F54BA42A7B478C7B81A4D518A2,
+	DisconnectLobbyHandler_EndInvoke_m6AFC680059FC549562FA7262C44E9E75EA0AD58B,
+	UpdateMemberHandler__ctor_mFC1AA1AF494398609B8B233104681222863D6E73,
+	UpdateMemberHandler_Invoke_mABE0248D16C0167BBDD282A158FD23B6AA642EAF,
+	UpdateMemberHandler_BeginInvoke_m3C9027ADCAB488532E2755B332BEF52735B76C56,
+	UpdateMemberHandler_EndInvoke_mB50822D4DB8E7313397BEA3DB8A616F59B3C0659,
+	SendLobbyMessageHandler__ctor_mFDB9C5ADAA158466FA621EE1A74357C765819358,
+	SendLobbyMessageHandler_Invoke_m446EF63004176B2621BB3F7162A811D06A341244,
+	SendLobbyMessageHandler_BeginInvoke_m13F0B83320A6CC7DC4413EFBCA4CD46C31C8DB07,
+	SendLobbyMessageHandler_EndInvoke_m0F03488021AF5FCA38E168BDC831CFD36E735772,
+	SearchHandler__ctor_mD1354C5C9494DBB13C93B75D823E345F8A1D4410,
+	SearchHandler_Invoke_m0DB66129BE451792670D8ADDC84FD9BF4B94AA3A,
+	SearchHandler_BeginInvoke_m0A07CD39C1675F34EAD83B2FE12248956EB93EC0,
+	SearchHandler_EndInvoke_mEE4A061B2D29EA00BBC9829239BAD966621807F8,
+	ConnectVoiceHandler__ctor_m7368349AA69DA7897A50EB459106D653C338DB92,
+	ConnectVoiceHandler_Invoke_mF9804BAE45F00C6A86C0AF97389F2B978B404A4B,
+	ConnectVoiceHandler_BeginInvoke_m02CC5ED7975C5D793D8A133E7FED98C015C2D723,
+	ConnectVoiceHandler_EndInvoke_m1BF8CA7A25D8E27CCFC78B5E51BDCB7F023F2E23,
+	DisconnectVoiceHandler__ctor_m98B9EFC1B86B04B4F7C0B3883F99FA134285B1EB,
+	DisconnectVoiceHandler_Invoke_m045D320072853635A8F6E50C4895B18827E1CF58,
+	DisconnectVoiceHandler_BeginInvoke_mBE708F3C7E179D2DF762C7F39BFA21F598B215B5,
+	DisconnectVoiceHandler_EndInvoke_m1F1EF9661014CB823C772997A348FD6A8A7827A9,
+	LobbyUpdateHandler__ctor_m6D5B534146A1822D9CA1D719EA729DD84B0A31F4,
+	LobbyUpdateHandler_Invoke_mFE1914EEE35019339B536B3281ED945A91D0D2A4,
+	LobbyUpdateHandler_BeginInvoke_mD1E58AB36C2E09CBB5AA3C21AFD153DD0DE3A466,
+	LobbyUpdateHandler_EndInvoke_mD96CB214BA9CC971D19710174CCA0E973029F2E6,
+	LobbyDeleteHandler__ctor_mFEFF844E34F477F54C4798787E33799EABCC448A,
+	LobbyDeleteHandler_Invoke_m9EFA92AF8156D63BC50BEEDF3E6E12FC9E8CBBA3,
+	LobbyDeleteHandler_BeginInvoke_mF43F788C457A0B6BF2D9ECE91C08B1C394405FBB,
+	LobbyDeleteHandler_EndInvoke_m4E6F9D807000B2889A9384DC373179E97F1600FA,
+	MemberConnectHandler__ctor_m7334EC2E0CD460B5C81B8A6E5A2CF0FB0B915642,
+	MemberConnectHandler_Invoke_m595CB0AB822D04CB15E861FE547BABBFF3D89FE0,
+	MemberConnectHandler_BeginInvoke_mC8D1DDECFC6A6F041D122C9BEB1F459D9948521F,
+	MemberConnectHandler_EndInvoke_mABE1CEA7F5B5C2BD0014B7996974123010AE37ED,
+	MemberUpdateHandler__ctor_m7ECB5B179F51FDA7A0A31E7F89E0CA736CDB52F1,
+	MemberUpdateHandler_Invoke_m09C3A4ED5BA88FA9EA285B0A699F78B40DCA185E,
+	MemberUpdateHandler_BeginInvoke_m2B127CFBC26BC44CA6B7084B351AC09B3F566489,
+	MemberUpdateHandler_EndInvoke_mFDF3304D5CB5C03BF7FD67BF1234FE83F41F9981,
+	MemberDisconnectHandler__ctor_mC41152E6B9DDD1A9ED150637FCBDD57E243978F3,
+	MemberDisconnectHandler_Invoke_mD7DB5DCD9B7E09B61880769CDD0AC3960B65FF98,
+	MemberDisconnectHandler_BeginInvoke_m69A4527516C104020D3FE6DBCE7F8A666F2BD59D,
+	MemberDisconnectHandler_EndInvoke_mE4E835DFF91DC390D9522D762A0A9A7CF2ED80F2,
+	LobbyMessageHandler__ctor_m7B96A61BAE8BF813EFB847F7C924C0580772B307,
+	LobbyMessageHandler_Invoke_mF4276BAA606BCBFD10AFAA7FDD70022619BE0FFE,
+	LobbyMessageHandler_BeginInvoke_m064FFEEE0B589A4F56642F8019B6CD71C6A66E3B,
+	LobbyMessageHandler_EndInvoke_mE71A22C9DAD593E4429110B998E612D7B9330CFE,
+	SpeakingHandler__ctor_mEC3F24C80D1289B6E082B30D6D81AF2BF146FD65,
+	SpeakingHandler_Invoke_mF22B27DBCB5655B10F863AC0A2C2F5FDBAA82A10,
+	SpeakingHandler_BeginInvoke_mE42E017267197687900FE25EEE4FB9DB026BE93D,
+	SpeakingHandler_EndInvoke_mB246462F8C4DB6BBC7A4AEE3E189DBE83D7BA924,
+	NetworkMessageHandler__ctor_m886BBCBD4B85C5DF1C8FA7A24FE14475D85DBC53,
+	NetworkMessageHandler_Invoke_mD332CA3CE6F50822EE5AF861267DC53D51959592,
+	NetworkMessageHandler_BeginInvoke_mB0689B85957FAB99FA87093E1CD2B7AAE51D7704,
+	NetworkMessageHandler_EndInvoke_mA6C622B37DC4EF7DF52F590505908029C41ECED0,
+	NetworkManager_get_Methods_mE672DD7C224824CA7620DF1773987CBC7749B2B3,
+	NetworkManager_add_OnMessage_m27B90B62CB69407FCB73AFA8F784AD8CBD3778E3,
+	NetworkManager_remove_OnMessage_mA3B03450F73962A8056AD34C26113CD81A2E6FFA,
+	NetworkManager_add_OnRouteUpdate_m4EB3747003DCE90A4635DE9622F9B568C306AC38,
+	NetworkManager_remove_OnRouteUpdate_mF526CFB384580BAC1B29870B4F980877D306D802,
+	NetworkManager__ctor_m2E1CFD543038F6FA6A4C2F359394D2503F2144FE,
+	NetworkManager_InitEvents_m2F0639A8468236C5242A4DFBF10D66D99D6B936A,
+	NetworkManager_GetPeerId_mB67FE310290987BCA676E99FCFC62B4CE01E818A,
+	NetworkManager_Flush_mAB427036C166241359E857E47FF861C06DDF942D,
+	NetworkManager_OpenPeer_m760482F0668DBA14F5D15E83D986DCB0B763D3ED,
+	NetworkManager_UpdatePeer_m52090F0A7C0FC907ACBCEEDF26A5174E4B2E1AA1,
+	NetworkManager_ClosePeer_m19835044BF6490E13B93575B978018A9DACDA9AF,
+	NetworkManager_OpenChannel_m33D9E8AD86B02DCC46F2D7594834B548642C786B,
+	NetworkManager_CloseChannel_mAF21ECADAAE10733012A2931C89C6015628F4DD9,
+	NetworkManager_SendMessage_mDBB2C81805379A34D799B0D2E4144079A3D14E65,
+	NetworkManager_OnMessageImpl_m18583CA74C8A43C34C1981A77DD2960DCBE11225,
+	NetworkManager_OnRouteUpdateImpl_m7D7147123A6A374E1CAF05A420C59FBCCF96B450,
+	MessageHandler__ctor_m92FDEAD126DBF6BD98035725AFE110FA18AF96CE,
+	MessageHandler_Invoke_m25F265D15550D3617CC6356DB3F0051C8EE316ED,
+	MessageHandler_BeginInvoke_m723E39D3F5E919C3CFAA2CEE70E93D38BEECD1F2,
+	MessageHandler_EndInvoke_m6896E05811F3B70F0D12D09DF3D658E6CFA82307,
+	RouteUpdateHandler__ctor_mD26FBEBE91D03F21BF6D1DF61E4D762EA9AA8EA1,
+	RouteUpdateHandler_Invoke_m67366B32AA8D95FFF120109BAFD23B80134C4ED5,
+	RouteUpdateHandler_BeginInvoke_m60DE86BF89E1F80C0E9967BD05E1812924E72CFA,
+	RouteUpdateHandler_EndInvoke_m7FB8B4DCEB5AFA4E0BB2459D0F9634417EECB477,
+	GetPeerIdMethod__ctor_mA045FFAE0158474EFC09A45BF2DA77843EF46036,
+	GetPeerIdMethod_Invoke_mA2A5B6E9C7CD1AFB4C0CEE691DD0D1BAC6A1D339,
+	GetPeerIdMethod_BeginInvoke_m90569C48349CCC52392D61A0E61ACEE5068C322D,
+	GetPeerIdMethod_EndInvoke_mE712C5CA93F02A75D4E47B6445CC8F4BE461CC87,
+	FlushMethod__ctor_m6D75D4AF5242C3E5DCEF06BD34B24BDE2D4BD3C6,
+	FlushMethod_Invoke_m7197C3D1F74124505D00B2FCC5D68E239B0720E0,
+	FlushMethod_BeginInvoke_m247A498A07A00D0C9B7400A61E96D5F9A03B281F,
+	FlushMethod_EndInvoke_m2BCF2A453B9BAC0B743E9A4FF649CF6FEADDE8EB,
+	OpenPeerMethod__ctor_mDC850D2561E8C1A9672B508260F76513434B7DB2,
+	OpenPeerMethod_Invoke_mE6A76E8D7C178F746E654BC6A84BEFC4CDB61B52,
+	OpenPeerMethod_BeginInvoke_mAF4F633458D48004A4F4D1AA3BA729CFD66D3AC5,
+	OpenPeerMethod_EndInvoke_m723F354D8B97FCB12F75AB4DD4B22C47E92ACBE7,
+	UpdatePeerMethod__ctor_mD3E2B66E3A8F3BFABE5B81771220E7749D7AF19A,
+	UpdatePeerMethod_Invoke_m4943E0F7475101BFF54F2C1F56ACEA0A9A4DABB7,
+	UpdatePeerMethod_BeginInvoke_m1EF7B8F2EE424CDB96CA224D5F6EB2567CA025F3,
+	UpdatePeerMethod_EndInvoke_m303D1AE45C8D937B14E6A3ECDB6D339751923C60,
+	ClosePeerMethod__ctor_mA2F1A5727756A006F4FA973A9A9D901AC609F774,
+	ClosePeerMethod_Invoke_mE7351C312C1CA8B0900F5C844283F29B6E17178E,
+	ClosePeerMethod_BeginInvoke_m8091BFC5ECE7E7156918465FE3B5D16AA3DED9DB,
+	ClosePeerMethod_EndInvoke_m91A9CF352D8505BD8E3DEB5A84FF3B9EDE4964E3,
+	OpenChannelMethod__ctor_m0DAEDBC0FBA1F687BD98C9483BFB4A08332300AF,
+	OpenChannelMethod_Invoke_m4500A00911659BC923957A8E8F8B9ABCE91C527E,
+	OpenChannelMethod_BeginInvoke_m56ECC7D7D711EBE58F993F024FD2634CB5DB74F0,
+	OpenChannelMethod_EndInvoke_mA6A001A62D660E2BC7696138667A2AFEAFF461AE,
+	CloseChannelMethod__ctor_m5F04C14EAF1E8E9C8B18F24D34A96E2176FAB1DD,
+	CloseChannelMethod_Invoke_m76DD6674FD53A6784FF1A909F7B2B5680A76EC1B,
+	CloseChannelMethod_BeginInvoke_mE66F75387185E74A7773BF0BD2B3EC76328494BA,
+	CloseChannelMethod_EndInvoke_m5155BE7067EF0BAB8290E292786A2F56DC96F726,
+	SendMessageMethod__ctor_mC581BAF5B777DC01278D460305B73B5FC888F053,
+	SendMessageMethod_Invoke_m015F3FDFB9D750E68E5D675A40EFD9F6CEFADCB2,
+	SendMessageMethod_BeginInvoke_m4B39CE0B38CDE96303FD42103CA13BB4457AC61F,
+	SendMessageMethod_EndInvoke_m0143ED186B80FE629DFC70D8C2A98591AC83B10C,
+	MessageHandler__ctor_m8D58B78074EDAAD9714E79D19287C3D391E8FEC9,
+	MessageHandler_Invoke_mDEC09F577D5E38D1CD15EABD482A99685761B6C5,
+	MessageHandler_BeginInvoke_mB8E7A48BE4F107BDF79EF2361E4B3B324E5C9E93,
+	MessageHandler_EndInvoke_m99AB53595A759DBC3498A66DB4FF209C81159DE4,
+	RouteUpdateHandler__ctor_m5D6111608000231DF4D800BF0B9590B45A3A201D,
+	RouteUpdateHandler_Invoke_m48D2340822A112FEC63102A3D65E02D340A72CEE,
+	RouteUpdateHandler_BeginInvoke_m85A5F2EC8134943A0D85C6921C03D9E02EDCD9B2,
+	RouteUpdateHandler_EndInvoke_m6BE793FB261A27C445E57CFF5ABD6FA71859179C,
+	OverlayManager_get_Methods_m83679EA7F647AD79C0C5046245C92FDFB9250EBF,
+	OverlayManager_add_OnToggle_m398D2C8759D90D305DF2E35E8B2FC231462FF7C8,
+	OverlayManager_remove_OnToggle_mB27FCC3951030EC1F44493808FDC2ACD521ECEDF,
+	OverlayManager__ctor_m3AD1837FA07CBBF4FAADE5C5F79ED4E60EB422A6,
+	OverlayManager_InitEvents_mBD5D8078CECD373F848820CF920BD7478AA5A105,
+	OverlayManager_IsEnabled_m620EA232C8AB0155611D40A7BC5257E8838BF0CB,
+	OverlayManager_IsLocked_m987110296954C8D48647909B9EEB108F68CAF6FD,
+	OverlayManager_SetLockedCallbackImpl_mA2DD371D00A962466969FCDC012BA993848D9502,
+	OverlayManager_SetLocked_mA888777D0FCBA5A59D36E627829F8BB024CC55E8,
+	OverlayManager_OpenActivityInviteCallbackImpl_mA882AEFD6082EE89D518DB806EDC636DA4C94C96,
+	OverlayManager_OpenActivityInvite_m962A73AD5106F5227CC58670A43580FD469034EB,
+	OverlayManager_OpenGuildInviteCallbackImpl_mB6F529BEA85A3E7AAF89770548AA2CDCBB68380A,
+	OverlayManager_OpenGuildInvite_m1F1AD00F0A5626FDB5CEFE9EED5A9D7B2F75E560,
+	OverlayManager_OpenVoiceSettingsCallbackImpl_m6E3EA3CDF9900198E267646A9E8D73083794B6D9,
+	OverlayManager_OpenVoiceSettings_m856676B8FD2FCBE89AA05A125509730FE5C3A005,
+	OverlayManager_OnToggleImpl_mE6E91D51D97432DC7914FAEAFB52A438B4E0FB95,
+	ToggleHandler__ctor_mBD78B3A175BA7F44B83BB3649AA771B63E963C89,
+	ToggleHandler_Invoke_mF6900F215EB51CAC8A4D0410C3D8D37F52538729,
+	ToggleHandler_BeginInvoke_m6844F23A8EFE11446B65CAEF268E7E6698675A95,
+	ToggleHandler_EndInvoke_mDC56DA0FC331814E5A5467CAEF162C16031D08AB,
+	IsEnabledMethod__ctor_m75B708FF5DBAF39EF43D949282B5F40E9C77CB7C,
+	IsEnabledMethod_Invoke_m212E633A16DE3720D33278FEBB9CEF44456F1140,
+	IsEnabledMethod_BeginInvoke_m6D7CF373F90DAD685439D4F6C88793CE1021AE86,
+	IsEnabledMethod_EndInvoke_m46669CB7EE76CF6E211304777F234E0A0D6D3F1C,
+	IsLockedMethod__ctor_m0A4AC52FEB0F630F6F6671F8A8461B7B78A32960,
+	IsLockedMethod_Invoke_mB2DEC3B0686576516C59D9FF0550C3615FC7364C,
+	IsLockedMethod_BeginInvoke_m8994F6936CD72897271C609CB4D511E549CE3727,
+	IsLockedMethod_EndInvoke_mCB2983152B1A50C48689D0795B19C5B58B7EB1D5,
+	SetLockedCallback__ctor_m24A4669F212ECF6BB24663DA9EFC7FDD22586ADD,
+	SetLockedCallback_Invoke_m6DBCE4CE2BBA2AEDA5C709BA9865D74F34FE4764,
+	SetLockedCallback_BeginInvoke_m66CF993E49904A9A51DA06305D3DE51AE2429761,
+	SetLockedCallback_EndInvoke_m5BB3F2FE209C23AF84B0A6C158DD9FF5F9771B43,
+	SetLockedMethod__ctor_mC1A45999FFDC95E2EE0FC89F3B644E952D605D51,
+	SetLockedMethod_Invoke_mAD45B3C6520B017DEA736690FE12F61F5F4E4335,
+	SetLockedMethod_BeginInvoke_m4AB1F5CFFC501EEF579EAD3AFC68EB1169AFAF81,
+	SetLockedMethod_EndInvoke_m038CD2A89D65033309ECF0E1A61FBFF43F81A249,
+	OpenActivityInviteCallback__ctor_m99658540C566AD7A87BC8D2605341DD17D67210F,
+	OpenActivityInviteCallback_Invoke_m2B2037B948503FDDC521BF52EEFA546A1F7201E5,
+	OpenActivityInviteCallback_BeginInvoke_m850D29B108DF6E980AA96D35CD9B1C68247C6A21,
+	OpenActivityInviteCallback_EndInvoke_mB89F2D6AA77941C5A7D1589A7EC8739C3334CF24,
+	OpenActivityInviteMethod__ctor_m526E85A53A26F3B77863DC3D6BE7EFF9C04701BE,
+	OpenActivityInviteMethod_Invoke_m68CDB2160CDFB82217617A28F7BBB7307583A854,
+	OpenActivityInviteMethod_BeginInvoke_m3218120328BA77221A0E3928F27849F8ED71BEC7,
+	OpenActivityInviteMethod_EndInvoke_mCD2E7F005B4DDA10B45C6891B1CF2EE95707D70B,
+	OpenGuildInviteCallback__ctor_m929504316444344657783C438945B8555E4D4859,
+	OpenGuildInviteCallback_Invoke_m1FE4896B43C748FF440807C93A74E5022006D152,
+	OpenGuildInviteCallback_BeginInvoke_m17E56EE239EBD10D22B560684876088B94EE8451,
+	OpenGuildInviteCallback_EndInvoke_m392438DD9CC47DD3E73B6EF3AAA5887E89204A46,
+	OpenGuildInviteMethod__ctor_m077BC3357313DD00A09C68A3D148A6CFBC4B86BC,
+	OpenGuildInviteMethod_Invoke_m87849AC6C8390985ACFEA96553AB520B9E737165,
+	OpenGuildInviteMethod_BeginInvoke_m2DD8552D189ED5941BD15D9E21587A527BC2A43F,
+	OpenGuildInviteMethod_EndInvoke_m0902CCA80ECD4AFCEB28FCB31219BD6656549041,
+	OpenVoiceSettingsCallback__ctor_m5F259528E46EBD42121BA2CA1BADF6367B2CD9FF,
+	OpenVoiceSettingsCallback_Invoke_mB4927F53B627ED57C2A06D27836D1128512A1AC7,
+	OpenVoiceSettingsCallback_BeginInvoke_m6A468ABBD6F38E8705247E5BA5BFA24637EC6588,
+	OpenVoiceSettingsCallback_EndInvoke_m149999805413D9A5ECC551914D5D71C595322056,
+	OpenVoiceSettingsMethod__ctor_mBA95F9501B9285B1A1EEFD48013FDF32E92CEC84,
+	OpenVoiceSettingsMethod_Invoke_mACCA451FF17AEBF9EE64F86F7F0C89A903F54670,
+	OpenVoiceSettingsMethod_BeginInvoke_mC5700A3FEF7CF39402DF0C27700C9754F9062087,
+	OpenVoiceSettingsMethod_EndInvoke_m2B95E08064BC729FF81F6B77800613317750CC1F,
+	SetLockedHandler__ctor_m44999790D7F5ABD1E136E6EF0A081F74BFBBE0A4,
+	SetLockedHandler_Invoke_m3EAEF878CFE536C481C9DB17E68078663E470D39,
+	SetLockedHandler_BeginInvoke_m5E92F368B153017A5D7A01F6E5FF6826AFA80CB7,
+	SetLockedHandler_EndInvoke_m22FA8889993C558767B45A7BAB8CEDE92A4B7A48,
+	OpenActivityInviteHandler__ctor_m02A9737F77884ED2C5AEA948BFD5FDA1C6AC3FD4,
+	OpenActivityInviteHandler_Invoke_m39295F4B6E58E9095CF89C579656B4C03A5F3AF6,
+	OpenActivityInviteHandler_BeginInvoke_m484A4A4FA65F8E99B0C9073125E99D05AD917FCB,
+	OpenActivityInviteHandler_EndInvoke_m25BEF1C1189942DB8A72326A520763BDAC893FAE,
+	OpenGuildInviteHandler__ctor_m63276F54C4C0FA75E9724D4B4799ABAEA83EFB5F,
+	OpenGuildInviteHandler_Invoke_m048F32BD2826B9E31543F3745C724FC2867E7C19,
+	OpenGuildInviteHandler_BeginInvoke_m7B9380E2250B499155BAC7FBA77CFA93601CF5A3,
+	OpenGuildInviteHandler_EndInvoke_m0FA9F85B27CBEE1FE9C2580F823B0BA963878748,
+	OpenVoiceSettingsHandler__ctor_m6B0EC1A7D407CDC64DBA67566D8AAD5E51C7F9CB,
+	OpenVoiceSettingsHandler_Invoke_mDCA14238B15DD726D6741BA9570A620BA8AA0590,
+	OpenVoiceSettingsHandler_BeginInvoke_mE4ED3399A0FD6E5B30108026FF42EB901C5C2C48,
+	OpenVoiceSettingsHandler_EndInvoke_mFFF909DCAF109F6A7B8EDC38F695C592DA22D18A,
+	ToggleHandler__ctor_mB6FA7547F01E5BE13CA09A05385630254980FA6A,
+	ToggleHandler_Invoke_mC9A8C503561E5B4715E3576AE79AF34AE1C873C8,
+	ToggleHandler_BeginInvoke_mC574B7A8D6BABB4A0EB8804DB84DEAE16A0DDE0F,
+	ToggleHandler_EndInvoke_m161DF42F8CA57E0A1A87974D591DFEC963530C93,
+	StorageManager_get_Methods_mB2E78355C89B91CAD5BBC6A8876C716C7CC1529E,
+	StorageManager__ctor_mBE5FA9841F7667455F708883C3FB36F5EF37921D,
+	StorageManager_InitEvents_m0E71F073D72A2267FA675E1F8283B2B4384A46CC,
+	StorageManager_Read_mA22915AC8A75923E2DEA50E523F44E62F1090990,
+	StorageManager_ReadAsyncCallbackImpl_m379D8FE2836A4CEFEB640C4E2D2687566DC3607B,
+	StorageManager_ReadAsync_m578DDE85B3D95636928D61A34307DC161909F2EC,
+	StorageManager_ReadAsyncPartialCallbackImpl_mB5ECDC560EA4DF77FCB6F9723A011F28A9FDDF6B,
+	StorageManager_ReadAsyncPartial_m3FC1B4D49007E77F464E7753E0D23616EAC70BFB,
+	StorageManager_Write_mC5F61B95AFF9DE9E2A4AA82FA03F349D6A4472ED,
+	StorageManager_WriteAsyncCallbackImpl_m01D87702F478BF71E272AA0A2BC14A7D73976E9D,
+	StorageManager_WriteAsync_m38E02815C01A3FD2D06CCC055E0EA7E6FA4AEA87,
+	StorageManager_Delete_mB4374DAA299C743420E7C4BCADDDFB3895C08E10,
+	StorageManager_Exists_m5E3E67133C075C7F69F431FEB2A9DD0924FE999F,
+	StorageManager_Count_m7C739EC10A10B6E38E46563F8D9C717808D7D595,
+	StorageManager_Stat_m95AD4A207F27E35117A656FB830890ECF39EA0B6,
+	StorageManager_StatAt_mABFCDBB1B9FF0A2D186E0E9C4EFE075C0C2DFC20,
+	StorageManager_GetPath_m2B20A7ED351A029AB4C93A91A064635F39945341,
+	StorageManager_Files_m59EE8BA5F869ACA9BC329A965050DB235C5E5DE4,
+	ReadMethod__ctor_mC790646741DA2FB9E7456DD6D063002D21678E9F,
+	ReadMethod_Invoke_mDC3DD8AC7FCAA9BCF8762C2FCDC5BBE0C62F16F3,
+	ReadMethod_BeginInvoke_m81ABAF6C1A236EA404AD0D2C6D2570E74BE665DE,
+	ReadMethod_EndInvoke_m517BC16E99DB5F465D1DE0AF3BDB2C585ADF39F5,
+	ReadAsyncCallback__ctor_mB29172272899E44E8EE438F06137270C3C18AF3B,
+	ReadAsyncCallback_Invoke_mD7584D5705BEF6B0CA5F1C0D589C3892BE832FFF,
+	ReadAsyncCallback_BeginInvoke_mB245A0346B82FE38622E6114DF5B4E02C1FFA888,
+	ReadAsyncCallback_EndInvoke_m7278385BB4467E658BBE1027FD9F57CC0EA2DDE8,
+	ReadAsyncMethod__ctor_mD6807079FD3A781339C9E5CAA7E83ACF8523850E,
+	ReadAsyncMethod_Invoke_m12BBD704D58906A358D203690776FACE087E98E2,
+	ReadAsyncMethod_BeginInvoke_m7733677A22B2EBE9E7F18585D620111F2B716DCF,
+	ReadAsyncMethod_EndInvoke_m90B74033FF7EEE1F1FE36BC4399CB56FD8D7B875,
+	ReadAsyncPartialCallback__ctor_m78E6EAC1EA9D5064D526597FBC5D1F460196F015,
+	ReadAsyncPartialCallback_Invoke_mF1E63EADED5EF7D6FAAD928EDEBB24D820E0C96C,
+	ReadAsyncPartialCallback_BeginInvoke_mAAF81D49756228AA6571BC16505F0A64F126B763,
+	ReadAsyncPartialCallback_EndInvoke_mBAA833D665E0647429CA95C8D3AE1D51CB013C27,
+	ReadAsyncPartialMethod__ctor_mF064B9ABB13BA8A679D3608E496F78004891C6D4,
+	ReadAsyncPartialMethod_Invoke_mE373B3B0785233B24ECE94351EA120DDD9AFDA79,
+	ReadAsyncPartialMethod_BeginInvoke_m706985844DF472C57CB626B25251E99A4D2F27E6,
+	ReadAsyncPartialMethod_EndInvoke_m24D24DAF437C943BBA1C6783A8A438E342FD2F15,
+	WriteMethod__ctor_mBC3D8FBFA133072BEFFF71C16CA2F35E648ECAF0,
+	WriteMethod_Invoke_mEE1FF5DE7439E3F6F92D599723677DFF398D2FAA,
+	WriteMethod_BeginInvoke_m06CF16A9A42E07B5E171B56E3698E1A06E2FE54E,
+	WriteMethod_EndInvoke_m8802BF012A25DD7F220FA0BB07C49D46F7DBD4DE,
+	WriteAsyncCallback__ctor_m0EBA2EC08D32AEC7B3F669ACBDC52246CE157CD4,
+	WriteAsyncCallback_Invoke_mE972D1B8054CF7328278426FEE0BA85A4C4CE754,
+	WriteAsyncCallback_BeginInvoke_mCF52C4156DEE6A481FCBB89C119DA8950F22851D,
+	WriteAsyncCallback_EndInvoke_m3EBF5128508607DA39A102633B46B9E141225F26,
+	WriteAsyncMethod__ctor_mA915B4E21361B873E98B40E394F1397F5C96AA7C,
+	WriteAsyncMethod_Invoke_mA325170E014FDF154B50A35268385602E5E6EF6F,
+	WriteAsyncMethod_BeginInvoke_m10179DFB3D08ECD3B6554718A269B0925EE5C5F4,
+	WriteAsyncMethod_EndInvoke_m0CE8C2A19B0B21B3068D9557A4E7F9A18DF179B4,
+	DeleteMethod__ctor_m20A1798B79E063ADA577E65D0786040F41CD192C,
+	DeleteMethod_Invoke_mA691E0A46CCFB4123FF692B37E86FC54E1D25F36,
+	DeleteMethod_BeginInvoke_mE876219DE47D7722D43074FBF88133CF79DAC4F4,
+	DeleteMethod_EndInvoke_mD1F0516CC677ECC3B7A03B4EF0196537250421A1,
+	ExistsMethod__ctor_mF641782C9B478378BC1F4C6F0D1006F525437290,
+	ExistsMethod_Invoke_mBD766DF50039C19D4098AB0B4DFA275C14FF82F6,
+	ExistsMethod_BeginInvoke_m74DC5928C6FDC4B69A869E43A1FAB6B615B728F2,
+	ExistsMethod_EndInvoke_mB2BB9428A6358BAD1F8409685E2C3099DF9B1706,
+	CountMethod__ctor_mD42283CBB2912BDC5B833168C262FA4F6CA7E22D,
+	CountMethod_Invoke_mBFC21E7D8DC4BDD66B3776069EA8F30FC5BAE025,
+	CountMethod_BeginInvoke_m8A10E4E6ED74B85B6B367C958EAC490E94CC5ACA,
+	CountMethod_EndInvoke_mE345758B2DA352171A4CDBE0485649BDD021EA01,
+	StatMethod__ctor_m48344023D2DB847879AAC575E9D15E2B47B3AD45,
+	StatMethod_Invoke_m8EFF96086122787F2B9A7603356C8B9CC0B96F4B,
+	StatMethod_BeginInvoke_mC2C59C1D20F28AFC79A28BBA9CA06C9930143DBE,
+	StatMethod_EndInvoke_mC55D7CB135C1A93A9CA5BEF7B3E40EBF6DA38985,
+	StatAtMethod__ctor_mFC40A48D6F6988A3D40C005ACFD95E9D47C9AE4B,
+	StatAtMethod_Invoke_m0FD7F0A5DAA980D9090744B9276C5AF2E091931A,
+	StatAtMethod_BeginInvoke_mE84D2B582762F95265BE4FF13709A5FA4A3805EF,
+	StatAtMethod_EndInvoke_m846ED6E955DBA1F671C26E20BD8AB3656FCDD03E,
+	GetPathMethod__ctor_mFE908E2ED185DF9AF50EB35025DCB8A00D851A3D,
+	GetPathMethod_Invoke_m130C199D80089A19F4C0233CEEDD4791B99736B5,
+	GetPathMethod_BeginInvoke_mCB6E9C4F6B89C55EB97C416900F3444A4C7A8DB8,
+	GetPathMethod_EndInvoke_m1E5BAE52BF744E657847A7830B4B943A77E90E47,
+	ReadAsyncHandler__ctor_m6D51DB11E56DE5656A1A3FB69AAD89D7D2E7F975,
+	ReadAsyncHandler_Invoke_m6C09EE32DAE2836318EA3ACAFA26D8882F321A9E,
+	ReadAsyncHandler_BeginInvoke_m6A998DDED3F0DA6E3B6EE255B900F1380FC5E992,
+	ReadAsyncHandler_EndInvoke_m1F5D49B9D0B02F2ABF77C006EDEF1CDDF482A933,
+	ReadAsyncPartialHandler__ctor_m0A2DFF70E26D92327BA49A6773E69AFC30DC044A,
+	ReadAsyncPartialHandler_Invoke_mF3FCF5E07E3EE8F5E052B7AB15DC34EBBC84EF04,
+	ReadAsyncPartialHandler_BeginInvoke_m096C2B4C59D7211FAC36323E2D045E4059E69DE0,
+	ReadAsyncPartialHandler_EndInvoke_m57DEDE1610AB7FBC50EA4EB98E9F16B1BA9FD778,
+	WriteAsyncHandler__ctor_mC3B307834D6E1C4801C7D052387E4A557023674A,
+	WriteAsyncHandler_Invoke_m4CCC2437F90EA4F3775F7DCF0347EC9D51952C13,
+	WriteAsyncHandler_BeginInvoke_mE19D156062D7E0A9656F7FE01686E504FE2073AD,
+	WriteAsyncHandler_EndInvoke_m53E24A2894950F3E7C1774FC7A455DB0B069C42F,
+	StoreManager_get_Methods_m15D5F90A475663782846CE1ED3570B17E93C4E2C,
+	StoreManager_add_OnEntitlementCreate_m0E56702FC62B7A227CF10C96F549709634652BB6,
+	StoreManager_remove_OnEntitlementCreate_mB895657430342A2C4F6868DE59618AD0BB6D0866,
+	StoreManager_add_OnEntitlementDelete_mFEBBF642CF6CA18419E78B422FD94E7F5B1062B0,
+	StoreManager_remove_OnEntitlementDelete_m75C9B53A0733220BC27DA8961746A7656C894C30,
+	StoreManager__ctor_m13882E3F5BC7DA308B6FDB214DEF241CBA4BC798,
+	StoreManager_InitEvents_m20BC26F192D3D885E37F687CBBF603C8028EA051,
+	StoreManager_FetchSkusCallbackImpl_m2116A7447264449345A320A94ABC482275F8EB3D,
+	StoreManager_FetchSkus_mADDF16A8EE7870A4C13942B0C238AB70FFBF10E3,
+	StoreManager_CountSkus_mAB227115113D4C11A4B46943D5F1484ED78C8F34,
+	StoreManager_GetSku_m632398A7618A0BC4004E6DDC6F4D467A1DC23F31,
+	StoreManager_GetSkuAt_mAE7C7DE305BC30FC3784D1A1BF0A87E3731D1EDA,
+	StoreManager_FetchEntitlementsCallbackImpl_m9DD2D717D429B6F8F9C4CDFEFEBD9D3C054940F9,
+	StoreManager_FetchEntitlements_m4843E18301CF5F5F6CDA3A58A52A1CBB149F5A9B,
+	StoreManager_CountEntitlements_m1F43E92C492A73B610CDB3C10CE1E35B41F75646,
+	StoreManager_GetEntitlement_mA6160EF125E9C51E93A1B0E4645BA50590521BC1,
+	StoreManager_GetEntitlementAt_m3BD1F13AE7D6EE9937AD07BF1087C1FE4EC6BE50,
+	StoreManager_HasSkuEntitlement_mF5DE964A79FEFE7803EA2B8C0FB418F29B230172,
+	StoreManager_StartPurchaseCallbackImpl_mD7AFAEB1DBCB4299B3B3B005A84273E7B4D986C1,
+	StoreManager_StartPurchase_m0805FD5D38E2D247ED47BCB145EF627342A50F46,
+	StoreManager_OnEntitlementCreateImpl_m61F1778914C0C5793995510328C6351D450D1E57,
+	StoreManager_OnEntitlementDeleteImpl_m140EA562EC6DC924037B0F982C946D9702B34802,
+	StoreManager_GetEntitlements_mCAA2B3F78E369CE00CC8FD946E111BE1E46AC9BB,
+	StoreManager_GetSkus_m8A6299B53A4957BFF3CD5328A94AB86DA0937EFC,
+	EntitlementCreateHandler__ctor_m0562AD0F1594EF1D10297A36EBB758F0DDB99DBB,
+	EntitlementCreateHandler_Invoke_mC5BA5C7FD7B9CC0C1B8F39E342F89317B6B99019,
+	EntitlementCreateHandler_BeginInvoke_mD73F6298C4D79D546C95D28A1981801D5B19B776,
+	EntitlementCreateHandler_EndInvoke_m9C529C863A1BB59A862B364E138AC8F2C741E7E5,
+	EntitlementDeleteHandler__ctor_mCA0BCB70EED54549BEC6338AE7A1C0EE5D2E5C3E,
+	EntitlementDeleteHandler_Invoke_m0CB90AEA38E88C291749B2D2877B2610A0D58F67,
+	EntitlementDeleteHandler_BeginInvoke_m6D3C54B716E5B64B01C06B120E78555E6769E582,
+	EntitlementDeleteHandler_EndInvoke_m470204A2603C2CF9F82D8007429BCF76430CD72A,
+	FetchSkusCallback__ctor_mA9A0DC447AD16267B5E8C59407DF77CF6D3A24F2,
+	FetchSkusCallback_Invoke_mB6E024AC65A4CEDBABE900C4D28A26568537C72D,
+	FetchSkusCallback_BeginInvoke_m40FD365CC8641840A5A77A6DD0A54531283112D9,
+	FetchSkusCallback_EndInvoke_m4569A4B2CC96FA399C1333CFC696B7BDDC3ADB28,
+	FetchSkusMethod__ctor_mAEC0C445691D65029CE515D8B1B09E40C5174CCA,
+	FetchSkusMethod_Invoke_m85AC3B370A10749A573A63842824460ACBAC189E,
+	FetchSkusMethod_BeginInvoke_m4A5BC94B6EB270549F0EE03E6791D0B0C32B483D,
+	FetchSkusMethod_EndInvoke_m90BA0B7920F1E3206B9110D49A3BC33F6E595BE9,
+	CountSkusMethod__ctor_m8568EC128BAC7667EC801B7194EC269FD7470A79,
+	CountSkusMethod_Invoke_m42BB6D49C7B5D7EC91C07D1768DA4148028F88B5,
+	CountSkusMethod_BeginInvoke_m65175D0E8A511A2C3FA5DFF6FB4AE9D80FE02CD6,
+	CountSkusMethod_EndInvoke_mA8B64B28E37ED5CF8F5852C6532237C3321F96EC,
+	GetSkuMethod__ctor_m7AF9218692A97AE4C6F7D8CC4478BEC5E3A5B375,
+	GetSkuMethod_Invoke_m9BC645A98CC5E1A5E7D5D955F770E0BFB425FC18,
+	GetSkuMethod_BeginInvoke_mA605F017EC4A43584E8FF05B4F8C07F93412AE14,
+	GetSkuMethod_EndInvoke_m23C345D321AD9D9C935533DA289116F391D4DFE9,
+	GetSkuAtMethod__ctor_m357AA49033D85DAFEB586DF186D9B4FF14F3A12D,
+	GetSkuAtMethod_Invoke_m306F62FC9B5070A8984B7E907189BFCD8F497405,
+	GetSkuAtMethod_BeginInvoke_m066E053B9DA7CC8A791081B9CD8C4081517D6104,
+	GetSkuAtMethod_EndInvoke_mA4BD4F173D268BA0D08DE06630DFFF8284E1FE1E,
+	FetchEntitlementsCallback__ctor_mE7FAF0E06AD89E85872A77D0B6335F548EB99B0E,
+	FetchEntitlementsCallback_Invoke_m6B6368CD15F0DDF80990B5B7E3427464E59BE854,
+	FetchEntitlementsCallback_BeginInvoke_m1F991F31322F308F36320364641CFFEB09FBC3E4,
+	FetchEntitlementsCallback_EndInvoke_m186889E064AAF3AE9E1B2B6B844E9DE3474E03DA,
+	FetchEntitlementsMethod__ctor_m61C56B74A6555AF3FDAC1E0E5A5CEFAECB2C7FB8,
+	FetchEntitlementsMethod_Invoke_m913416284DB33133364D71CF7544E2F30678D6A8,
+	FetchEntitlementsMethod_BeginInvoke_mBB0A419AD1BEB832B44CBE8D011A2B38115E5FF4,
+	FetchEntitlementsMethod_EndInvoke_m6B74C1501241D6B741C035FBF65993E486A0CFB1,
+	CountEntitlementsMethod__ctor_m6794DA1A94F69F59DBA4451C361821201379DAE4,
+	CountEntitlementsMethod_Invoke_m346A3BAD4AE7210047F0DBED4F2A2FD701AFB1D1,
+	CountEntitlementsMethod_BeginInvoke_mDDEC610701E12723BD372D5834FB70B6F753EC95,
+	CountEntitlementsMethod_EndInvoke_m46F559D25217E79788A11182DDD9BC7EDBC3F6A4,
+	GetEntitlementMethod__ctor_m212753E6E11D71F1951E9F7A935A38749309784B,
+	GetEntitlementMethod_Invoke_mF1357E3C6068085B9C1A89A8A25871639654FD96,
+	GetEntitlementMethod_BeginInvoke_m5553ABD6FF573B5464871B3F2E51DA4E85D33E78,
+	GetEntitlementMethod_EndInvoke_m6F66CFA89EA644D4F66EF385C72A272AA03580EC,
+	GetEntitlementAtMethod__ctor_mC23B57A7C6C263BAD178FE41B9B6E64E5A1C5D52,
+	GetEntitlementAtMethod_Invoke_m08C83A080BF8DC4E1D05E9CA2CD2DF7F169CE59B,
+	GetEntitlementAtMethod_BeginInvoke_mE8595BB5ACDF0EC796C2BFCB46E637A2A8B56D5B,
+	GetEntitlementAtMethod_EndInvoke_m3EE99590CE5D83DE1275436A290046C96BE89AF0,
+	HasSkuEntitlementMethod__ctor_m8ED483003EFC94B30CA023A36DBFFBBA4E0FBFDF,
+	HasSkuEntitlementMethod_Invoke_mAA4EA6CC48203AE021A8C0051BFC428DFC7310E9,
+	HasSkuEntitlementMethod_BeginInvoke_m02ABE5825BF456FFBE57DA8B599F6A1BB4E03972,
+	HasSkuEntitlementMethod_EndInvoke_mA3FA07252E13BA187F21C80A0782B226F8A7728D,
+	StartPurchaseCallback__ctor_m947078929B83CEA966A096A1CDC846CE090E3B8B,
+	StartPurchaseCallback_Invoke_mC5323EB33A21C0D20E6943DD5F1F7428B2D8B580,
+	StartPurchaseCallback_BeginInvoke_m830AABD76C79974C2BFC69AD26CD0ED953B7937C,
+	StartPurchaseCallback_EndInvoke_mE2939689782860F7B093F362B2519E4B3E331306,
+	StartPurchaseMethod__ctor_mC45AE047FC0458A103C6627A315396EEBE62730D,
+	StartPurchaseMethod_Invoke_m731755215043FB6E275E19667D6E10242B4BD05B,
+	StartPurchaseMethod_BeginInvoke_m5AAFBF9C2FC72E5158D7953FFB1C53A54B7C62CF,
+	StartPurchaseMethod_EndInvoke_m617FAFE6A6F01A2DE4697A31D2912D961AE2AB1F,
+	FetchSkusHandler__ctor_mD23A4FC4A09E0C7C976A4CEEE1E81BB59AAF6E39,
+	FetchSkusHandler_Invoke_m70743184B29C332208A7EAAD8C0C828303E8AD85,
+	FetchSkusHandler_BeginInvoke_m250298676F6F7FE45212AB2AFF57DE5E7FC6B8A5,
+	FetchSkusHandler_EndInvoke_mCC572C079D484EA905AD7A60B24D06C2FE84BA81,
+	FetchEntitlementsHandler__ctor_m4A4D2B672B1A388F322EE92BAC2F4222D5F434E6,
+	FetchEntitlementsHandler_Invoke_mCEFE19FD333D5CD0F2FD4EADA9869B18630125DC,
+	FetchEntitlementsHandler_BeginInvoke_m981CAF6B5C0A29DD0EA1EDEEDF29DE401B365EB4,
+	FetchEntitlementsHandler_EndInvoke_m1E2344F058E5AF6DB28A34D0E5392A602FC561E8,
+	StartPurchaseHandler__ctor_mDC926A83FA7DEC7139389B29715CDF6FCA94E156,
+	StartPurchaseHandler_Invoke_m308224490F207945C71F66ADB3C091B2896174C9,
+	StartPurchaseHandler_BeginInvoke_m3620251038497C9D94411132128E7F8E4DC5B49F,
+	StartPurchaseHandler_EndInvoke_m3934F0A480021016F9A11786D0AF27FE50565586,
+	EntitlementCreateHandler__ctor_mED48A816BB905DBCDD2747AB6E42CED4266CEEAD,
+	EntitlementCreateHandler_Invoke_mD6916CE162E152763A5366B9E4B5F60C66BC6A8B,
+	EntitlementCreateHandler_BeginInvoke_mD7AED6790BED711A3DD3234D8993656C7C67D6B4,
+	EntitlementCreateHandler_EndInvoke_mCA618B81A410BF57473C46D1712E6103599EFC3D,
+	EntitlementDeleteHandler__ctor_m46F23BF03E6F51D25173112BFCA88ECB59BDCF2C,
+	EntitlementDeleteHandler_Invoke_m14A4B6089953D3C7EFC09F6B4C164B8448791A45,
+	EntitlementDeleteHandler_BeginInvoke_m50863C620149E0858AFADF36BAD895872DCCF663,
+	EntitlementDeleteHandler_EndInvoke_m532A69AF15461A65F17434962E8B7344A41FF56D,
+	VoiceManager_get_Methods_m80A2C4CA01F2579D7B7F3C4BD76C0A3C8EF7CF4E,
+	VoiceManager_add_OnSettingsUpdate_m46AE66570DE22C53F795F4C1AF6007CCDD67423F,
+	VoiceManager_remove_OnSettingsUpdate_mA8396018D65AF604A251A71A100531F516BDFFEB,
+	VoiceManager__ctor_mBB769C6951BE1C8F13C5B030ECED1377577DD57D,
+	VoiceManager_InitEvents_m07193AFE3C315F6FFECDD398FD5A678B514F59F9,
+	VoiceManager_GetInputMode_m5FBB30E854B89D36BA41A5E7DA54747108AB3367,
+	VoiceManager_SetInputModeCallbackImpl_mAD12021EC7B3FF6B0E84186F81FC2FBFADFECF27,
+	VoiceManager_SetInputMode_m055417C7FF73686C311AF61EF1B8EB30B8091A84,
+	VoiceManager_IsSelfMute_m8C94E998743812295F69309EB0C2239DC951575D,
+	VoiceManager_SetSelfMute_mF3C9CD9245DA17DB331E29831238B69A4BA79EAC,
+	VoiceManager_IsSelfDeaf_m1AC1BCFF8D0D93BC37D5BB20B6651D9B779699D3,
+	VoiceManager_SetSelfDeaf_m03BA5ABD1B4DB56710C7A606C162C8B8F161280B,
+	VoiceManager_IsLocalMute_mA1A01E65FEE430F8FB3F6A31E6EF1FB852579B9D,
+	VoiceManager_SetLocalMute_mD8C0ABF183EEB0F9A850B8622169DCF069A3E221,
+	VoiceManager_GetLocalVolume_m51E7D3137067B491E6229CA2A688106DB3A6EF6F,
+	VoiceManager_SetLocalVolume_m3A158E24E24E6049D79FE6076CB2D22DC252539E,
+	VoiceManager_OnSettingsUpdateImpl_m5E67420E73068E57125D8D1DB95776B37EFD5E1D,
+	SettingsUpdateHandler__ctor_mCF245ED2B0E16CE4FAAE8D7CA4707A26FEF3575A,
+	SettingsUpdateHandler_Invoke_m3C64F67A43012BA3304982E1A1A5D5D573838CFF,
+	SettingsUpdateHandler_BeginInvoke_m32A058042A9A38475DA97C7D5BF5E1B24C54C032,
+	SettingsUpdateHandler_EndInvoke_m6F947175FAE8BFAB407EE59FC216EB342194EDB8,
+	GetInputModeMethod__ctor_mCBC0F51D5668EE07EB251758D80B18A44B0616D3,
+	GetInputModeMethod_Invoke_m5C735CF7B8B1EE44B221D59D4C98F1656D208DFF,
+	GetInputModeMethod_BeginInvoke_m5AC4C55693FA8442618925D2F9D2B7775AF6C2AF,
+	GetInputModeMethod_EndInvoke_m7F81A6AB363F0829D9B192F3C952521E5AD9680D,
+	SetInputModeCallback__ctor_mA2F1A2AAEC10053F8F2170226CFB5FCCBE7F1334,
+	SetInputModeCallback_Invoke_m53178E35E5892B308516291E08CAAA527943AC9B,
+	SetInputModeCallback_BeginInvoke_m3F5A601E01F121F6913775C1E2854CA9C80F94ED,
+	SetInputModeCallback_EndInvoke_m31535EB742D9706CDAAF2ED01579DDC78CDC2D68,
+	SetInputModeMethod__ctor_m8F89A6E3E940B40CC658B72B432004273C54989F,
+	SetInputModeMethod_Invoke_mC95ED5478BFED0B00DFE1F7F8934A3D6A303F649,
+	SetInputModeMethod_BeginInvoke_m12056F5970B4EC2FC724FE320E1FEAF00CBC8A00,
+	SetInputModeMethod_EndInvoke_m349CBA64193F318DB8A186A3FC5F8CF397F13EF2,
+	IsSelfMuteMethod__ctor_m8C18359E239FF718B7AC9419DBD52CA69BECFBA9,
+	IsSelfMuteMethod_Invoke_mA7BADA24B1DB4B1CC127CE86CAB01E02258A1315,
+	IsSelfMuteMethod_BeginInvoke_m501A1AC4921840F2B74071230C448BBBCEE27813,
+	IsSelfMuteMethod_EndInvoke_m615B5BEE6B4B5748486A12C3F1D7FEB4093CEAC8,
+	SetSelfMuteMethod__ctor_mE401F8B29E14110DF549806A65A0807298F7FF86,
+	SetSelfMuteMethod_Invoke_mFB5916058FB57361D885722E26C6027BC255B57E,
+	SetSelfMuteMethod_BeginInvoke_m0111C3D9B9A1310CC54D1C529AFCCE68BEB28779,
+	SetSelfMuteMethod_EndInvoke_mE6486623E042128AFB1D2ED4323A9DD685F52B16,
+	IsSelfDeafMethod__ctor_m1FF9C36BDE439BAEC753F438AE534E4C6E9AC4DF,
+	IsSelfDeafMethod_Invoke_mA92EF37C93CA4C848DD338C6FB9C59F68CFFBA8E,
+	IsSelfDeafMethod_BeginInvoke_m8E63465207199B288BD7667458AD410A86CA553A,
+	IsSelfDeafMethod_EndInvoke_m566F2D9D0468090CDD8E6BADE87E5D17045F826D,
+	SetSelfDeafMethod__ctor_mB15B023B2A88DAB0C0A20D22B7050BCC0EBA9BF1,
+	SetSelfDeafMethod_Invoke_mA014696D3D47904901670E31DAA62EEB74CEE163,
+	SetSelfDeafMethod_BeginInvoke_mBE7305515451A2FE0BAC55C86BFEA0EB404591A1,
+	SetSelfDeafMethod_EndInvoke_mAB81137EEB16842B192072B7D47E6A64489A381D,
+	IsLocalMuteMethod__ctor_m6D6A0D2C41F80C9AEC49E0BA8145490F5FE0051C,
+	IsLocalMuteMethod_Invoke_m1E2DB4DE1F89D78B89774A0B3D18DFE10133DBDD,
+	IsLocalMuteMethod_BeginInvoke_mDDF0E8E68A2E6604B745976434BA791F16510DA3,
+	IsLocalMuteMethod_EndInvoke_m40E86D999296937BCB005F280DA9732551FD2F14,
+	SetLocalMuteMethod__ctor_mBD09913861C063B20328D101A4D6DE9E1261FECA,
+	SetLocalMuteMethod_Invoke_m70CF0B73F72D33174833035C3219069FABB1A713,
+	SetLocalMuteMethod_BeginInvoke_m15057B310EB05543E4CABD8E76FC166CB5FB3083,
+	SetLocalMuteMethod_EndInvoke_m08B51EF5046DAC2FC6B62FCBB53D1C58124067E5,
+	GetLocalVolumeMethod__ctor_mA4114E6E19518D31758D8425183F3CCA9D3D4177,
+	GetLocalVolumeMethod_Invoke_mF2172AA2ABD4D0BED9E20B0E73C6F9F343A03714,
+	GetLocalVolumeMethod_BeginInvoke_m7F00C803EA4D01C4227B5D763F3ACF8EE7070D7E,
+	GetLocalVolumeMethod_EndInvoke_m9BE579015448400F63028FB854530F759ADEBF67,
+	SetLocalVolumeMethod__ctor_m4072E7BE351242DA509F7F0C5A8A136687D19B26,
+	SetLocalVolumeMethod_Invoke_mE07FEC5603720777CC3B04145C2B6ACEC6FE288B,
+	SetLocalVolumeMethod_BeginInvoke_m466EB060B7B771F536168120FA7E9E07AE55B3EA,
+	SetLocalVolumeMethod_EndInvoke_m00D641A53465E14E08BF7E366384BB50FC33588D,
+	SetInputModeHandler__ctor_m35FA6B3F40D0E39312E3F90677B5C594106BFF86,
+	SetInputModeHandler_Invoke_mF9BC3E8E3592A9A3CD86201F02FB6E1066FB19DC,
+	SetInputModeHandler_BeginInvoke_m3918F03F21474ACAE21838FF7F87A6FC7F3466B1,
+	SetInputModeHandler_EndInvoke_m4B61A24895CA872D2D887EA5D88056A6CF4CA0B8,
+	SettingsUpdateHandler__ctor_mFA6DCBEBC8F366A2653E1851484466B8E5D0F398,
+	SettingsUpdateHandler_Invoke_mC38D75F73CF086B655E6D6545E869420D9EBC877,
+	SettingsUpdateHandler_BeginInvoke_mE03AFF685F76E252DCEF0A480E31D38F356C86EC,
+	SettingsUpdateHandler_EndInvoke_mB73CFAA4D2CEABD03BE64F1D7F383B7D6A1E0732,
+	AchievementManager_get_Methods_m7238CB64083D60BCA2092E1FCF129553DCDAF7BA,
+	AchievementManager_add_OnUserAchievementUpdate_m26E3ECFB045F10F15EB1774F46EF330972E1EC17,
+	AchievementManager_remove_OnUserAchievementUpdate_m81E7009DD6F3FB854B33C2BE3A3DEBEAEF5A54FF,
+	AchievementManager__ctor_m0298A8037106F93F6A3466B6A5A772FC407A738E,
+	AchievementManager_InitEvents_mD27B2CDAC443B2BBA6D2336B220C63600AE7581C,
+	AchievementManager_SetUserAchievementCallbackImpl_mA215295D45E8C3828A670A5EEF4EA14B227B4D48,
+	AchievementManager_SetUserAchievement_mAC84DC8B856A38CEF943367864E212677AE8AAEE,
+	AchievementManager_FetchUserAchievementsCallbackImpl_m874E128FB096BC63CE1DE950EAAF8A9A97736DDE,
+	AchievementManager_FetchUserAchievements_m093229C904DB7B05281CF58F54F0AAB9DF85FF93,
+	AchievementManager_CountUserAchievements_m611BE8D5B7E349541062F9E545A7D94B28EEF6F2,
+	AchievementManager_GetUserAchievement_mFEFFCD355F0469EE850380FD1026A677F2B39D8A,
+	AchievementManager_GetUserAchievementAt_m0DCFE89C6DDFE26B624CB298CCAF6580088B24DC,
+	AchievementManager_OnUserAchievementUpdateImpl_m0DD9CA2C245D7F2685AE78723BE87998428E6F73,
+	UserAchievementUpdateHandler__ctor_m1923BB8B4C532E28F29EF5AADDA9890C1CA83C89,
+	UserAchievementUpdateHandler_Invoke_mEC8878DD2EEE8C78B6EB855F2E7BE94454EDFA8E,
+	UserAchievementUpdateHandler_BeginInvoke_m76FE33811DE22F950D71FB4D8D3ACF5331ED6BE9,
+	UserAchievementUpdateHandler_EndInvoke_m4CD51F7D2C23D489B4100EF0C03C585B38203AF7,
+	SetUserAchievementCallback__ctor_m76CCE5DD74E3C3671329735A28F21D8E70BD5BED,
+	SetUserAchievementCallback_Invoke_mABD434E33CACE5282E878BCB9767F84C90FA2512,
+	SetUserAchievementCallback_BeginInvoke_m9C7718C62A10128964E7B7E04923A49D88E429C7,
+	SetUserAchievementCallback_EndInvoke_m228EBF27B8B7398FEA9421712C3957D0C8DAFB23,
+	SetUserAchievementMethod__ctor_m848ED6758A478F6F1DD18581CF38D99FC3326BA0,
+	SetUserAchievementMethod_Invoke_m21435B6EC0EB1EC94D5BE6DC9DDCF78F5D903838,
+	SetUserAchievementMethod_BeginInvoke_mF68A84FCA461879F13187407DE161866DFE87902,
+	SetUserAchievementMethod_EndInvoke_m4F011158189F4BFDAB7265587ECBBBCC3B023B0A,
+	FetchUserAchievementsCallback__ctor_m63F84BD0E8D052966A24F0EF6C7B1B26D3F6F138,
+	FetchUserAchievementsCallback_Invoke_m69610F6603F52972949D3D5EC8F244B8AF969ABE,
+	FetchUserAchievementsCallback_BeginInvoke_m7A39746C7DD5ACCC4DAF5B07249C58BF11B955CE,
+	FetchUserAchievementsCallback_EndInvoke_m45D54458BF1A40A1B621FFD8F51E5FCAAF5424D8,
+	FetchUserAchievementsMethod__ctor_mD871D78F4A550B4529DB9505377B70456A81D9E2,
+	FetchUserAchievementsMethod_Invoke_mC533DA1C5DC65BE79C3DAF8A762C33768543E2E9,
+	FetchUserAchievementsMethod_BeginInvoke_mEC3E506214CF871BF241A32AC9C020B278133C67,
+	FetchUserAchievementsMethod_EndInvoke_mA3EF5FE6C73531F00A909873E09C07A139F07FEE,
+	CountUserAchievementsMethod__ctor_m0CC368F8B720A851D848A31D2FB76B58A0D671E5,
+	CountUserAchievementsMethod_Invoke_m86594D71326105CDB8914830DDE29D32E8CC908D,
+	CountUserAchievementsMethod_BeginInvoke_m3298A44B6215ABC9104F150727F868F086AABD11,
+	CountUserAchievementsMethod_EndInvoke_mE7E62384844909031C25715D5DF9AF5C1D905D4E,
+	GetUserAchievementMethod__ctor_m95817B3546873C0404CA2D7178B35730CA3964CE,
+	GetUserAchievementMethod_Invoke_mC05AA161BA2B94BFC2ACA332A55F74B8375EB921,
+	GetUserAchievementMethod_BeginInvoke_mC66093E3E4AA2C3F49D5FD249DB35F6451508974,
+	GetUserAchievementMethod_EndInvoke_mFCC4492B89DEDC2D1889BF8D1C92F9F4FE57582E,
+	GetUserAchievementAtMethod__ctor_mE6F097DE37EACE328859FA416B8CA5A00FEDC095,
+	GetUserAchievementAtMethod_Invoke_mA72C945DB94AFCDCB25C72223A324AB624595430,
+	GetUserAchievementAtMethod_BeginInvoke_m7A0C193231091050E78FF7BA9EC762D902DC0454,
+	GetUserAchievementAtMethod_EndInvoke_mACFC5687144D4962E5E0A82798575D009F1BF20D,
+	SetUserAchievementHandler__ctor_mF149C6FFACBDF3E30673094966A329514DA26ED4,
+	SetUserAchievementHandler_Invoke_mBCDA2C8061540E037972E811B2D9E0599904EB7A,
+	SetUserAchievementHandler_BeginInvoke_m6E8BC8DA25E5BFE6A655047E644D69CDC2394473,
+	SetUserAchievementHandler_EndInvoke_m70206C17B02E0B6CA29CC1CECB4FCA4B63C0A291,
+	FetchUserAchievementsHandler__ctor_m07BA4E7E51FFD05AED88932FF0E24E134DE8C00B,
+	FetchUserAchievementsHandler_Invoke_m4EC28EC629003E649DE3613D689881F0F785FA4D,
+	FetchUserAchievementsHandler_BeginInvoke_m3DB59C957D02AED39361A4181EE3095380F1A567,
+	FetchUserAchievementsHandler_EndInvoke_m89F8DB1DB438FDDB767B14EB240CD8A2AD25E0B5,
+	UserAchievementUpdateHandler__ctor_m3B490DAC4275F46E83D8A210AB33050CB681784C,
+	UserAchievementUpdateHandler_Invoke_mB7236992A2396755DE207D35F81343E407486630,
+	UserAchievementUpdateHandler_BeginInvoke_m9D6D33CE001E16C039397D5BBEE2D507CADB1348,
+	UserAchievementUpdateHandler_EndInvoke_m56941B9689742A2DCDD7B17E0CBFC6214AC4C547,
+};
+extern void LobbyTransaction_get_Methods_m2F781F0CFAE74A7DAF3AE2B729F3D30279DF8EE9_AdjustorThunk (void);
+extern void LobbyTransaction_SetType_m5D230700FFBF3AF54E92A7B47B43023D4A4719DA_AdjustorThunk (void);
+extern void LobbyTransaction_SetOwner_m8FFF44D0FFFB04266651FFECB3B8625D5CEABD50_AdjustorThunk (void);
+extern void LobbyTransaction_SetCapacity_m6BE6875331BA369599C7FB7731C63E3D872A3BA8_AdjustorThunk (void);
+extern void LobbyTransaction_SetMetadata_mBAC7C7984CFB4E2337ED9DF1427C6D6112B0F7EA_AdjustorThunk (void);
+extern void LobbyTransaction_DeleteMetadata_mE26075EAC91E4A3CD5577D2852AEC2EA5472772F_AdjustorThunk (void);
+extern void LobbyTransaction_SetLocked_m790AFC92AD9FA4EF17B7C01298531ED259D84E69_AdjustorThunk (void);
+extern void LobbyMemberTransaction_get_Methods_m9569D2952B81674F554A8E5FA3E9A2714D57D3C9_AdjustorThunk (void);
+extern void LobbyMemberTransaction_SetMetadata_mAD66861706D7886C0E2DFCD4829F1CF966DAB1ED_AdjustorThunk (void);
+extern void LobbyMemberTransaction_DeleteMetadata_m50E273AFEE95D21BCEB1C6E678B3C00DE9F503C6_AdjustorThunk (void);
+extern void LobbySearchQuery_get_Methods_mD8E169C5F756975506EE6A1085DB650C1A59717E_AdjustorThunk (void);
+extern void LobbySearchQuery_Filter_mA61176224736F8C07864BC9304FB01EEB5661ED7_AdjustorThunk (void);
+extern void LobbySearchQuery_Sort_mDD17E27E199456CCA7965BE75A5CA1FD88F3EEBC_AdjustorThunk (void);
+extern void LobbySearchQuery_Limit_m1402E2FFB97B9E397C88F54DFF59C8599E12889F_AdjustorThunk (void);
+extern void LobbySearchQuery_Distance_m4C0D5EE78262E01A5D9ADD8F8CF2CB69727EF034_AdjustorThunk (void);
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[15] = 
+{
+	{ 0x06000083, LobbyTransaction_get_Methods_m2F781F0CFAE74A7DAF3AE2B729F3D30279DF8EE9_AdjustorThunk },
+	{ 0x06000084, LobbyTransaction_SetType_m5D230700FFBF3AF54E92A7B47B43023D4A4719DA_AdjustorThunk },
+	{ 0x06000085, LobbyTransaction_SetOwner_m8FFF44D0FFFB04266651FFECB3B8625D5CEABD50_AdjustorThunk },
+	{ 0x06000086, LobbyTransaction_SetCapacity_m6BE6875331BA369599C7FB7731C63E3D872A3BA8_AdjustorThunk },
+	{ 0x06000087, LobbyTransaction_SetMetadata_mBAC7C7984CFB4E2337ED9DF1427C6D6112B0F7EA_AdjustorThunk },
+	{ 0x06000088, LobbyTransaction_DeleteMetadata_mE26075EAC91E4A3CD5577D2852AEC2EA5472772F_AdjustorThunk },
+	{ 0x06000089, LobbyTransaction_SetLocked_m790AFC92AD9FA4EF17B7C01298531ED259D84E69_AdjustorThunk },
+	{ 0x060000A2, LobbyMemberTransaction_get_Methods_m9569D2952B81674F554A8E5FA3E9A2714D57D3C9_AdjustorThunk },
+	{ 0x060000A3, LobbyMemberTransaction_SetMetadata_mAD66861706D7886C0E2DFCD4829F1CF966DAB1ED_AdjustorThunk },
+	{ 0x060000A4, LobbyMemberTransaction_DeleteMetadata_m50E273AFEE95D21BCEB1C6E678B3C00DE9F503C6_AdjustorThunk },
+	{ 0x060000AD, LobbySearchQuery_get_Methods_mD8E169C5F756975506EE6A1085DB650C1A59717E_AdjustorThunk },
+	{ 0x060000AE, LobbySearchQuery_Filter_mA61176224736F8C07864BC9304FB01EEB5661ED7_AdjustorThunk },
+	{ 0x060000AF, LobbySearchQuery_Sort_mDD17E27E199456CCA7965BE75A5CA1FD88F3EEBC_AdjustorThunk },
+	{ 0x060000B0, LobbySearchQuery_Limit_m1402E2FFB97B9E397C88F54DFF59C8599E12889F_AdjustorThunk },
+	{ 0x060000B1, LobbySearchQuery_Distance_m4C0D5EE78262E01A5D9ADD8F8CF2CB69727EF034_AdjustorThunk },
+};
+static const int32_t s_InvokerIndices[1287] = 
+{
+	2160,
+	2164,
+	1850,
+	1850,
+	1850,
+	1850,
+	1850,
+	1850,
+	1850,
+	1850,
+	795,
+	1215,
+	1850,
+	1835,
+	3110,
+	1082,
+	3110,
+	1850,
+	3110,
+	780,
+	3110,
+	509,
+	3110,
+	1212,
+	3112,
+	3112,
+	3109,
+	2622,
+	1235,
+	1218,
+	381,
+	1850,
+	1235,
+	1218,
+	381,
+	1850,
+	1235,
+	1215,
+	378,
+	1078,
+	1235,
+	514,
+	101,
+	750,
+	1235,
+	891,
+	381,
+	1424,
+	1235,
+	889,
+	379,
+	1424,
+	1235,
+	1216,
+	379,
+	1850,
+	1235,
+	512,
+	98,
+	1078,
+	1235,
+	1216,
+	379,
+	1850,
+	1235,
+	796,
+	208,
+	1850,
+	1235,
+	1216,
+	379,
+	1850,
+	1235,
+	253,
+	54,
+	1850,
+	1235,
+	1216,
+	379,
+	1850,
+	1235,
+	144,
+	24,
+	1850,
+	1235,
+	1216,
+	379,
+	1850,
+	1235,
+	518,
+	108,
+	1850,
+	1235,
+	1835,
+	633,
+	1850,
+	1235,
+	1835,
+	633,
+	1850,
+	1235,
+	1835,
+	633,
+	1850,
+	1235,
+	1835,
+	633,
+	1850,
+	1235,
+	1835,
+	633,
+	1850,
+	1235,
+	1850,
+	651,
+	1850,
+	1235,
+	1850,
+	651,
+	1850,
+	1235,
+	1801,
+	612,
+	1078,
+	1235,
+	762,
+	193,
+	750,
+	3192,
+	2916,
+	2192,
+	1835,
+	1836,
+	1835,
+	1236,
+	1850,
+	1868,
+	1235,
+	889,
+	379,
+	1424,
+	1235,
+	890,
+	380,
+	1424,
+	1235,
+	889,
+	379,
+	1424,
+	1235,
+	597,
+	210,
+	1424,
+	1235,
+	891,
+	381,
+	1424,
+	1235,
+	892,
+	382,
+	1424,
+	2190,
+	1236,
+	1850,
+	1235,
+	597,
+	210,
+	1424,
+	1235,
+	891,
+	381,
+	1424,
+	2191,
+	530,
+	808,
+	1835,
+	1835,
+	1235,
+	184,
+	63,
+	1424,
+	1235,
+	305,
+	112,
+	1424,
+	1235,
+	889,
+	379,
+	1424,
+	1235,
+	889,
+	379,
+	1424,
+	1835,
+	2679,
+	2182,
+	1211,
+	1215,
+	2160,
+	2160,
+	2834,
+	1154,
+	2120,
+	2120,
+	2120,
+	2120,
+	2120,
+	2120,
+	2120,
+	2120,
+	2120,
+	2120,
+	2120,
+	2120,
+	1235,
+	1837,
+	638,
+	1850,
+	1235,
+	1415,
+	638,
+	1424,
+	1235,
+	792,
+	202,
+	1850,
+	1235,
+	516,
+	103,
+	1850,
+	1235,
+	1496,
+	638,
+	1497,
+	1235,
+	1496,
+	638,
+	1497,
+	1235,
+	1496,
+	638,
+	1497,
+	1235,
+	1496,
+	638,
+	1497,
+	1235,
+	1496,
+	638,
+	1497,
+	1235,
+	1496,
+	638,
+	1497,
+	1235,
+	1496,
+	638,
+	1497,
+	1235,
+	1496,
+	638,
+	1497,
+	1235,
+	1496,
+	638,
+	1497,
+	1235,
+	1496,
+	638,
+	1497,
+	1235,
+	1496,
+	638,
+	1497,
+	1235,
+	1496,
+	638,
+	1497,
+	1235,
+	1154,
+	375,
+	1850,
+	2160,
+	2166,
+	795,
+	1215,
+	3110,
+	1850,
+	2120,
+	2120,
+	2831,
+	1850,
+	2831,
+	1850,
+	1235,
+	1216,
+	379,
+	1850,
+	1235,
+	796,
+	208,
+	1850,
+	1235,
+	1218,
+	381,
+	1850,
+	1235,
+	1218,
+	381,
+	1850,
+	1235,
+	790,
+	200,
+	1078,
+	1235,
+	796,
+	208,
+	1850,
+	1235,
+	790,
+	200,
+	1078,
+	1235,
+	796,
+	208,
+	1850,
+	1235,
+	1835,
+	633,
+	1850,
+	1235,
+	1119,
+	370,
+	1078,
+	1235,
+	1119,
+	370,
+	1078,
+	2206,
+	1850,
+	1850,
+	795,
+	1215,
+	2155,
+	2831,
+	1212,
+	2101,
+	1641,
+	3377,
+	1235,
+	1837,
+	638,
+	1850,
+	1235,
+	888,
+	378,
+	875,
+	1235,
+	790,
+	200,
+	1078,
+	1235,
+	518,
+	108,
+	1850,
+	1235,
+	888,
+	378,
+	875,
+	1235,
+	592,
+	200,
+	875,
+	1235,
+	1119,
+	370,
+	1078,
+	1235,
+	2160,
+	953,
+	1850,
+	2188,
+	795,
+	1215,
+	2832,
+	760,
+	1349,
+	1091,
+	1091,
+	1521,
+	1521,
+	1235,
+	791,
+	201,
+	1850,
+	1235,
+	252,
+	53,
+	1850,
+	1235,
+	591,
+	199,
+	875,
+	1235,
+	299,
+	99,
+	1424,
+	1235,
+	1140,
+	371,
+	1850,
+	2199,
+	1850,
+	1850,
+	1850,
+	1850,
+	795,
+	1215,
+	3030,
+	1850,
+	2101,
+	1556,
+	1555,
+	3377,
+	3109,
+	1235,
+	1837,
+	638,
+	1850,
+	1235,
+	1215,
+	378,
+	1078,
+	1235,
+	1001,
+	378,
+	973,
+	1235,
+	796,
+	208,
+	1850,
+	1235,
+	888,
+	378,
+	875,
+	1235,
+	593,
+	203,
+	875,
+	1235,
+	592,
+	200,
+	875,
+	1235,
+	1594,
+	612,
+	973,
+	1235,
+	2160,
+	953,
+	1850,
+	1235,
+	1801,
+	612,
+	1078,
+	2189,
+	1850,
+	1850,
+	1850,
+	1850,
+	1850,
+	1850,
+	1850,
+	1850,
+	1850,
+	1850,
+	1850,
+	1850,
+	1850,
+	1850,
+	1850,
+	1850,
+	795,
+	1215,
+	2113,
+	1506,
+	932,
+	2831,
+	1221,
+	3110,
+	784,
+	3110,
+	1212,
+	2831,
+	787,
+	2831,
+	1236,
+	3110,
+	1212,
+	1505,
+	1524,
+	948,
+	946,
+	1414,
+	1414,
+	927,
+	1065,
+	636,
+	634,
+	887,
+	3110,
+	510,
+	3110,
+	787,
+	2112,
+	3110,
+	1220,
+	2101,
+	1488,
+	3110,
+	1212,
+	3110,
+	1212,
+	1836,
+	1836,
+	2160,
+	789,
+	511,
+	3111,
+	2835,
+	2836,
+	2836,
+	2836,
+	2427,
+	2626,
+	2314,
+	1524,
+	787,
+	1235,
+	1217,
+	380,
+	1850,
+	1235,
+	793,
+	204,
+	1850,
+	1235,
+	794,
+	205,
+	1850,
+	1235,
+	794,
+	205,
+	1850,
+	1235,
+	794,
+	205,
+	1850,
+	1235,
+	254,
+	56,
+	1850,
+	1235,
+	517,
+	107,
+	1850,
+	1235,
+	146,
+	26,
+	1850,
+	1235,
+	888,
+	378,
+	875,
+	1235,
+	593,
+	203,
+	875,
+	1235,
+	302,
+	106,
+	875,
+	1235,
+	790,
+	200,
+	1078,
+	1235,
+	519,
+	111,
+	1850,
+	1235,
+	1216,
+	379,
+	1850,
+	1235,
+	255,
+	58,
+	1850,
+	1235,
+	1216,
+	379,
+	1850,
+	1235,
+	518,
+	108,
+	1850,
+	1235,
+	790,
+	200,
+	1078,
+	1235,
+	256,
+	59,
+	1850,
+	1235,
+	790,
+	200,
+	1078,
+	1235,
+	520,
+	113,
+	1850,
+	1235,
+	1216,
+	379,
+	1850,
+	1235,
+	518,
+	108,
+	1850,
+	1235,
+	593,
+	203,
+	875,
+	1235,
+	594,
+	206,
+	1424,
+	1235,
+	303,
+	109,
+	1424,
+	1235,
+	301,
+	105,
+	1424,
+	1235,
+	593,
+	203,
+	875,
+	1235,
+	593,
+	203,
+	875,
+	1235,
+	300,
+	104,
+	875,
+	1235,
+	302,
+	106,
+	875,
+	1235,
+	182,
+	57,
+	1424,
+	1235,
+	181,
+	55,
+	1424,
+	1235,
+	302,
+	106,
+	875,
+	1235,
+	1216,
+	379,
+	1850,
+	1235,
+	145,
+	25,
+	1850,
+	1235,
+	1216,
+	379,
+	1850,
+	1235,
+	147,
+	28,
+	1850,
+	1235,
+	888,
+	378,
+	875,
+	1235,
+	1216,
+	379,
+	1850,
+	1235,
+	519,
+	111,
+	1850,
+	1235,
+	1215,
+	378,
+	1078,
+	1235,
+	592,
+	200,
+	875,
+	1235,
+	1216,
+	379,
+	1850,
+	1235,
+	518,
+	108,
+	1850,
+	1235,
+	1216,
+	379,
+	1850,
+	1235,
+	518,
+	108,
+	1850,
+	1235,
+	890,
+	380,
+	1424,
+	1235,
+	890,
+	380,
+	1424,
+	1235,
+	1415,
+	638,
+	1424,
+	1235,
+	304,
+	110,
+	1424,
+	1235,
+	91,
+	27,
+	1424,
+	1235,
+	1119,
+	370,
+	1078,
+	1235,
+	1835,
+	633,
+	1850,
+	1235,
+	1835,
+	633,
+	1850,
+	1235,
+	1119,
+	370,
+	1078,
+	1235,
+	1119,
+	370,
+	1078,
+	1235,
+	1835,
+	633,
+	1850,
+	1235,
+	1835,
+	633,
+	1850,
+	1235,
+	1835,
+	633,
+	1850,
+	1235,
+	1835,
+	633,
+	1850,
+	1235,
+	1835,
+	633,
+	1850,
+	1235,
+	1835,
+	633,
+	1850,
+	1235,
+	1836,
+	637,
+	1850,
+	1235,
+	1210,
+	376,
+	1850,
+	1235,
+	1211,
+	377,
+	1850,
+	1235,
+	1211,
+	377,
+	1850,
+	1235,
+	1211,
+	377,
+	1850,
+	1235,
+	782,
+	196,
+	1850,
+	1235,
+	783,
+	197,
+	1850,
+	1235,
+	511,
+	97,
+	1850,
+	2194,
+	1850,
+	1850,
+	1850,
+	1850,
+	795,
+	1215,
+	2102,
+	2160,
+	1212,
+	1212,
+	1836,
+	789,
+	1213,
+	788,
+	2428,
+	3112,
+	1235,
+	257,
+	60,
+	1850,
+	1235,
+	1218,
+	381,
+	1850,
+	1235,
+	1215,
+	378,
+	1078,
+	1235,
+	1415,
+	638,
+	1424,
+	1235,
+	594,
+	206,
+	1424,
+	1235,
+	594,
+	206,
+	1424,
+	1235,
+	890,
+	380,
+	1424,
+	1235,
+	304,
+	110,
+	1424,
+	1235,
+	595,
+	207,
+	1424,
+	1235,
+	183,
+	62,
+	1424,
+	1235,
+	788,
+	198,
+	1850,
+	1235,
+	1850,
+	651,
+	1850,
+	2196,
+	1850,
+	1850,
+	795,
+	1215,
+	2143,
+	2143,
+	3110,
+	1250,
+	3110,
+	1154,
+	3110,
+	1236,
+	3110,
+	1850,
+	3113,
+	1235,
+	1219,
+	382,
+	1850,
+	1235,
+	1215,
+	378,
+	1078,
+	1235,
+	1215,
+	378,
+	1078,
+	1235,
+	1216,
+	379,
+	1850,
+	1235,
+	521,
+	115,
+	1850,
+	1235,
+	1216,
+	379,
+	1850,
+	1235,
+	516,
+	103,
+	1850,
+	1235,
+	1216,
+	379,
+	1850,
+	1235,
+	520,
+	113,
+	1850,
+	1235,
+	1216,
+	379,
+	1850,
+	1235,
+	796,
+	208,
+	1850,
+	1235,
+	1835,
+	633,
+	1850,
+	1235,
+	1835,
+	633,
+	1850,
+	1235,
+	1835,
+	633,
+	1850,
+	1235,
+	1835,
+	633,
+	1850,
+	1235,
+	1868,
+	666,
+	1850,
+	2201,
+	795,
+	1215,
+	898,
+	2623,
+	1236,
+	2623,
+	536,
+	1236,
+	3110,
+	816,
+	1850,
+	1657,
+	2101,
+	1345,
+	1344,
+	2120,
+	2120,
+	1235,
+	185,
+	64,
+	875,
+	1235,
+	515,
+	102,
+	1850,
+	1235,
+	520,
+	113,
+	1850,
+	1235,
+	515,
+	102,
+	1850,
+	1235,
+	148,
+	29,
+	1850,
+	1235,
+	306,
+	114,
+	1424,
+	1235,
+	1216,
+	379,
+	1850,
+	1235,
+	149,
+	30,
+	1850,
+	1235,
+	891,
+	381,
+	1424,
+	1235,
+	596,
+	209,
+	875,
+	1235,
+	1215,
+	378,
+	1078,
+	1235,
+	596,
+	209,
+	875,
+	1235,
+	592,
+	200,
+	875,
+	1235,
+	891,
+	381,
+	1424,
+	1235,
+	1154,
+	375,
+	1850,
+	1235,
+	1154,
+	375,
+	1850,
+	1235,
+	1835,
+	633,
+	1850,
+	2202,
+	1850,
+	1850,
+	1850,
+	1850,
+	795,
+	1215,
+	3110,
+	1850,
+	2101,
+	1742,
+	1741,
+	3110,
+	1850,
+	2101,
+	1341,
+	1340,
+	1642,
+	3110,
+	1212,
+	3109,
+	3109,
+	2120,
+	2120,
+	1235,
+	1215,
+	378,
+	1078,
+	1235,
+	1215,
+	378,
+	1078,
+	1235,
+	1216,
+	379,
+	1850,
+	1235,
+	796,
+	208,
+	1850,
+	1235,
+	1215,
+	378,
+	1078,
+	1235,
+	593,
+	203,
+	875,
+	1235,
+	592,
+	200,
+	875,
+	1235,
+	1216,
+	379,
+	1850,
+	1235,
+	796,
+	208,
+	1850,
+	1235,
+	1215,
+	378,
+	1078,
+	1235,
+	593,
+	203,
+	875,
+	1235,
+	592,
+	200,
+	875,
+	1235,
+	593,
+	203,
+	875,
+	1235,
+	1216,
+	379,
+	1850,
+	1235,
+	518,
+	108,
+	1850,
+	1235,
+	1835,
+	633,
+	1850,
+	1235,
+	1835,
+	633,
+	1850,
+	1235,
+	1835,
+	633,
+	1850,
+	1235,
+	1801,
+	612,
+	1078,
+	1235,
+	1801,
+	612,
+	1078,
+	2207,
+	1850,
+	1850,
+	795,
+	1215,
+	2099,
+	3110,
+	1092,
+	2143,
+	1868,
+	2143,
+	1868,
+	1642,
+	1213,
+	1642,
+	1213,
+	3377,
+	1235,
+	1837,
+	638,
+	1850,
+	1235,
+	888,
+	378,
+	875,
+	1235,
+	1216,
+	379,
+	1850,
+	1235,
+	513,
+	100,
+	1850,
+	1235,
+	888,
+	378,
+	875,
+	1235,
+	892,
+	382,
+	1424,
+	1235,
+	888,
+	378,
+	875,
+	1235,
+	892,
+	382,
+	1424,
+	1235,
+	593,
+	203,
+	875,
+	1235,
+	595,
+	207,
+	1424,
+	1235,
+	593,
+	203,
+	875,
+	1235,
+	595,
+	207,
+	1424,
+	1235,
+	1835,
+	633,
+	1850,
+	1235,
+	2160,
+	953,
+	1850,
+	2163,
+	1850,
+	1850,
+	795,
+	1215,
+	3110,
+	788,
+	3110,
+	1850,
+	2101,
+	1761,
+	1760,
+	3109,
+	1235,
+	1215,
+	378,
+	1078,
+	1235,
+	1216,
+	379,
+	1850,
+	1235,
+	258,
+	61,
+	1850,
+	1235,
+	1216,
+	379,
+	1850,
+	1235,
+	796,
+	208,
+	1850,
+	1235,
+	1215,
+	378,
+	1078,
+	1235,
+	593,
+	203,
+	875,
+	1235,
+	592,
+	200,
+	875,
+	1235,
+	1835,
+	633,
+	1850,
+	1235,
+	1835,
+	633,
+	1850,
+	1235,
+	1801,
+	612,
+	1078,
+};
+static const Il2CppTokenIndexMethodTuple s_reversePInvokeIndices[58] = 
+{
+	{ 0x0600000F, 11,  (void**)&ActivityManager_UpdateActivityCallbackImpl_m5B7EFCBA23BB8417B1F85CAA64BC6C82B488761E_RuntimeMethod_var, 0 },
+	{ 0x06000011, 4,  (void**)&ActivityManager_ClearActivityCallbackImpl_m812BC54DA3304551A134DB290E6941279A30B3A2_RuntimeMethod_var, 0 },
+	{ 0x06000013, 10,  (void**)&ActivityManager_SendRequestReplyCallbackImpl_m7DBA16165BE25B83293A53B9E96D71A864998623_RuntimeMethod_var, 0 },
+	{ 0x06000015, 9,  (void**)&ActivityManager_SendInviteCallbackImpl_mB99BA3C65FDF9EDDD464CFBE5D2FF074B361B22C_RuntimeMethod_var, 0 },
+	{ 0x06000017, 3,  (void**)&ActivityManager_AcceptInviteCallbackImpl_m0698FD39A5AF57FA9ADF67306472C48D50BD10B7_RuntimeMethod_var, 0 },
+	{ 0x06000019, 6,  (void**)&ActivityManager_OnActivityJoinImpl_m013267BDA2F4B077B64BD2BB2F50152AEB3C329C_RuntimeMethod_var, 0 },
+	{ 0x0600001A, 8,  (void**)&ActivityManager_OnActivitySpectateImpl_m2EBD0B1759E799443479A8751C8AE6946D84BF33_RuntimeMethod_var, 0 },
+	{ 0x0600001B, 7,  (void**)&ActivityManager_OnActivityJoinRequestImpl_mBFFEDA7C51FB53ACFD3C319C25948D6C2CE65684_RuntimeMethod_var, 0 },
+	{ 0x0600001C, 5,  (void**)&ActivityManager_OnActivityInviteImpl_m77E77CA1A10E96587B28C06902E895D0BA07EC44_RuntimeMethod_var, 0 },
+	{ 0x060000C9, 15,  (void**)&Discord_SetLogHookCallbackImpl_mCC52A5E4BA9BA1EF2401FD2D7507992418ED6BA3_RuntimeMethod_var, 0 },
+	{ 0x0600011F, 14,  (void**)&ApplicationManager_ValidateOrExitCallbackImpl_mFFC043E1E96C34147A2BB4E2F2CD55328FB3AD14_RuntimeMethod_var, 0 },
+	{ 0x06000123, 12,  (void**)&ApplicationManager_GetOAuth2TokenCallbackImpl_m00F3F694AD26A843089812754035D9E834A1FAB7_RuntimeMethod_var, 0 },
+	{ 0x06000125, 13,  (void**)&ApplicationManager_GetTicketCallbackImpl_m5EAADE8988DE32AFB22D2B97326A340F1581BAC7_RuntimeMethod_var, 0 },
+	{ 0x06000159, 56,  (void**)&UserManager_GetUserCallbackImpl_m9D478A7D492D948CC8DCA8AF34E9E6C3E9EE3FB7_RuntimeMethod_var, 0 },
+	{ 0x0600015D, 57,  (void**)&UserManager_OnCurrentUserUpdateImpl_mFFDC0BF9F579135A09073EB28A536668BF332D04_RuntimeMethod_var, 0 },
+	{ 0x06000181, 17,  (void**)&ImageManager_FetchCallbackImpl_m11A0579976A9FE8C9443E12870107DC546F94133_RuntimeMethod_var, 0 },
+	{ 0x060001A3, 45,  (void**)&RelationshipManager_FilterCallbackImpl_m321EE31368ABF48E97B1712C13D76395766B0150_RuntimeMethod_var, 0 },
+	{ 0x060001A8, 46,  (void**)&RelationshipManager_OnRefreshImpl_mD28DECACA910F141BDEF373CC8BEC5782578B464_RuntimeMethod_var, 0 },
+	{ 0x060001A9, 47,  (void**)&RelationshipManager_OnRelationshipUpdateImpl_m5D0DD09B6723DAC9FDF96F5CECD8F571476A8C99_RuntimeMethod_var, 0 },
+	{ 0x060001E8, 21,  (void**)&LobbyManager_CreateLobbyCallbackImpl_mAEC695E946BF3C40173C82788DBDA66CF33E0545_RuntimeMethod_var, 0 },
+	{ 0x060001EA, 35,  (void**)&LobbyManager_UpdateLobbyCallbackImpl_m872BB837E05FB625708FD84A2FFF10203000FB48_RuntimeMethod_var, 0 },
+	{ 0x060001EC, 22,  (void**)&LobbyManager_DeleteLobbyCallbackImpl_m1EF2A8CD6ECED00010924FCD79A5DDA74321CDA4_RuntimeMethod_var, 0 },
+	{ 0x060001EE, 18,  (void**)&LobbyManager_ConnectLobbyCallbackImpl_mC6F224135CB0F2DD39916FADA215914D813F76C3_RuntimeMethod_var, 0 },
+	{ 0x060001F0, 19,  (void**)&LobbyManager_ConnectLobbyWithActivitySecretCallbackImpl_mF0672B35B8B893A97CCDFA6BB76049782424D662_RuntimeMethod_var, 0 },
+	{ 0x060001F2, 23,  (void**)&LobbyManager_DisconnectLobbyCallbackImpl_m0C82CC19DC9831ABE6D399AFA8C27B3223AA07BC_RuntimeMethod_var, 0 },
+	{ 0x060001FF, 36,  (void**)&LobbyManager_UpdateMemberCallbackImpl_mD3A20BFB5B62AF19ED7B7602771F398581D57D5E_RuntimeMethod_var, 0 },
+	{ 0x06000201, 34,  (void**)&LobbyManager_SendLobbyMessageCallbackImpl_m959A23A89207490DE4DFAF663F5FE28F9770AD60_RuntimeMethod_var, 0 },
+	{ 0x06000204, 33,  (void**)&LobbyManager_SearchCallbackImpl_mED88264E1F99571C56A6BCE7033296640C4364AE_RuntimeMethod_var, 0 },
+	{ 0x06000208, 20,  (void**)&LobbyManager_ConnectVoiceCallbackImpl_mD540710CDFBB59D63315731DCF839713FFA7CF61_RuntimeMethod_var, 0 },
+	{ 0x0600020A, 24,  (void**)&LobbyManager_DisconnectVoiceCallbackImpl_m2120A7C9C6B19BA9F8E647F6C0F3D09120E86BE6_RuntimeMethod_var, 0 },
+	{ 0x06000211, 27,  (void**)&LobbyManager_OnLobbyUpdateImpl_m44AD90AF0ED29FF182C4742C4929634D5317B731_RuntimeMethod_var, 0 },
+	{ 0x06000212, 25,  (void**)&LobbyManager_OnLobbyDeleteImpl_m37D4C69CBA595571A546AA1B95531BE36CFACBD8_RuntimeMethod_var, 0 },
+	{ 0x06000213, 28,  (void**)&LobbyManager_OnMemberConnectImpl_m65F4BFCEDB9DE6B163B5307E44F38785B380846E_RuntimeMethod_var, 0 },
+	{ 0x06000214, 30,  (void**)&LobbyManager_OnMemberUpdateImpl_mB4FF5EC811FED31616E2F0CFF40351CFFC2D64DD_RuntimeMethod_var, 0 },
+	{ 0x06000215, 29,  (void**)&LobbyManager_OnMemberDisconnectImpl_m9E9D0AB3B26776234EA3D57609CE627C14448B39_RuntimeMethod_var, 0 },
+	{ 0x06000216, 26,  (void**)&LobbyManager_OnLobbyMessageImpl_m1DA5EC8E401742A7B240BE6167F23A8D414CFBC9_RuntimeMethod_var, 0 },
+	{ 0x06000217, 32,  (void**)&LobbyManager_OnSpeakingImpl_m9C171D737C50D9C79C84DE59B2C57CE37CE2D64F_RuntimeMethod_var, 0 },
+	{ 0x06000218, 31,  (void**)&LobbyManager_OnNetworkMessageImpl_mF5ED77A9685583B4B4B2AD7D9AE87446E33D7B6F_RuntimeMethod_var, 0 },
+	{ 0x06000346, 37,  (void**)&NetworkManager_OnMessageImpl_m18583CA74C8A43C34C1981A77DD2960DCBE11225_RuntimeMethod_var, 0 },
+	{ 0x06000347, 38,  (void**)&NetworkManager_OnRouteUpdateImpl_m7D7147123A6A374E1CAF05A420C59FBCCF96B450_RuntimeMethod_var, 0 },
+	{ 0x0600037F, 44,  (void**)&OverlayManager_SetLockedCallbackImpl_mA2DD371D00A962466969FCDC012BA993848D9502_RuntimeMethod_var, 0 },
+	{ 0x06000381, 41,  (void**)&OverlayManager_OpenActivityInviteCallbackImpl_mA882AEFD6082EE89D518DB806EDC636DA4C94C96_RuntimeMethod_var, 0 },
+	{ 0x06000383, 42,  (void**)&OverlayManager_OpenGuildInviteCallbackImpl_mB6F529BEA85A3E7AAF89770548AA2CDCBB68380A_RuntimeMethod_var, 0 },
+	{ 0x06000385, 43,  (void**)&OverlayManager_OpenVoiceSettingsCallbackImpl_m6E3EA3CDF9900198E267646A9E8D73083794B6D9_RuntimeMethod_var, 0 },
+	{ 0x06000387, 40,  (void**)&OverlayManager_OnToggleImpl_mE6E91D51D97432DC7914FAEAFB52A438B4E0FB95_RuntimeMethod_var, 0 },
+	{ 0x060003CC, 48,  (void**)&StorageManager_ReadAsyncCallbackImpl_m379D8FE2836A4CEFEB640C4E2D2687566DC3607B_RuntimeMethod_var, 0 },
+	{ 0x060003CE, 49,  (void**)&StorageManager_ReadAsyncPartialCallbackImpl_mB5ECDC560EA4DF77FCB6F9723A011F28A9FDDF6B_RuntimeMethod_var, 0 },
+	{ 0x060003D1, 50,  (void**)&StorageManager_WriteAsyncCallbackImpl_m01D87702F478BF71E272AA0A2BC14A7D73976E9D_RuntimeMethod_var, 0 },
+	{ 0x06000425, 52,  (void**)&StoreManager_FetchSkusCallbackImpl_m2116A7447264449345A320A94ABC482275F8EB3D_RuntimeMethod_var, 0 },
+	{ 0x0600042A, 51,  (void**)&StoreManager_FetchEntitlementsCallbackImpl_m9DD2D717D429B6F8F9C4CDFEFEBD9D3C054940F9_RuntimeMethod_var, 0 },
+	{ 0x06000430, 55,  (void**)&StoreManager_StartPurchaseCallbackImpl_mD7AFAEB1DBCB4299B3B3B005A84273E7B4D986C1_RuntimeMethod_var, 0 },
+	{ 0x06000432, 53,  (void**)&StoreManager_OnEntitlementCreateImpl_m61F1778914C0C5793995510328C6351D450D1E57_RuntimeMethod_var, 0 },
+	{ 0x06000433, 54,  (void**)&StoreManager_OnEntitlementDeleteImpl_m140EA562EC6DC924037B0F982C946D9702B34802_RuntimeMethod_var, 0 },
+	{ 0x0600048C, 59,  (void**)&VoiceManager_SetInputModeCallbackImpl_mAD12021EC7B3FF6B0E84186F81FC2FBFADFECF27_RuntimeMethod_var, 0 },
+	{ 0x06000496, 58,  (void**)&VoiceManager_OnSettingsUpdateImpl_m5E67420E73068E57125D8D1DB95776B37EFD5E1D_RuntimeMethod_var, 0 },
+	{ 0x060004D4, 2,  (void**)&AchievementManager_SetUserAchievementCallbackImpl_mA215295D45E8C3828A670A5EEF4EA14B227B4D48_RuntimeMethod_var, 0 },
+	{ 0x060004D6, 0,  (void**)&AchievementManager_FetchUserAchievementsCallbackImpl_m874E128FB096BC63CE1DE950EAAF8A9A97736DDE_RuntimeMethod_var, 0 },
+	{ 0x060004DB, 1,  (void**)&AchievementManager_OnUserAchievementUpdateImpl_m0DD9CA2C245D7F2685AE78723BE87998428E6F73_RuntimeMethod_var, 0 },
+};
+extern const CustomAttributesCacheGenerator g_AssemblyU2DCSharpU2Dfirstpass_AttributeGenerators[];
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharpU2Dfirstpass_CodeGenModule;
+const Il2CppCodeGenModule g_AssemblyU2DCSharpU2Dfirstpass_CodeGenModule = 
+{
+	"Assembly-CSharp-firstpass.dll",
+	1287,
+	s_methodPointers,
+	15,
+	s_adjustorThunks,
+	s_InvokerIndices,
+	58,
+	s_reversePInvokeIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	g_AssemblyU2DCSharpU2Dfirstpass_AttributeGenerators,
+	NULL, // module initializer,
+	NULL,
+	NULL,
+	NULL,
+};

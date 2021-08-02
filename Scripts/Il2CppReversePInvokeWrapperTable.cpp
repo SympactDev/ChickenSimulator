@@ -1,0 +1,384 @@
+﻿#include "pch-cpp.hpp"
+
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include <stdint.h>
+#include <limits>
+
+
+
+// System.Char[]
+struct CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34;
+// System.String
+struct String_t;
+// System.Void
+struct Void_t700C6383A2A510C2CF4DD86DABD5CA9FF70ADAC5;
+
+struct Activity_t345237C044BC73FA284F4F50F6C8586204A529DD_marshaled_pinvoke;
+struct EVENT_FILTER_DESCRIPTOR_t59379AB6F16CCEA5C0BDF328FF5AC64040CED05B ;
+struct Entitlement_t67CC3A0E1A610DD67D7AAC84BEC98AA544E68044 ;
+struct Guid_t ;
+struct Lobby_tB03CA98BD9B6B5943FC097DA526665EF0E5EAC46_marshaled_pinvoke;
+struct OAuth2Token_t3D95A0AA5A2FC0991208B9844B10D4ABCC26E088_marshaled_pinvoke;
+struct Relationship_t02234F383C025BDE4FFB410D9755B29B43DB8C02_marshaled_pinvoke;
+struct UserAchievement_t3B2C55F4B765D3D6F2C965060DF88E8BA62CDC98_marshaled_pinvoke;
+struct User_tD76E2890283C7AD12DF169EF8F2EE181CA40D41E_marshaled_pinvoke;
+
+
+IL2CPP_EXTERN_C_BEGIN
+IL2CPP_EXTERN_C_END
+
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Object
+
+
+// System.ValueType
+struct ValueType_tDBF999C1B75C48C68621878250DBF6CDBCF51E52  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+// Native definition for P/Invoke marshalling of System.ValueType
+struct ValueType_tDBF999C1B75C48C68621878250DBF6CDBCF51E52_marshaled_pinvoke
+{
+};
+// Native definition for COM marshalling of System.ValueType
+struct ValueType_tDBF999C1B75C48C68621878250DBF6CDBCF51E52_marshaled_com
+{
+};
+
+// System.Enum
+struct Enum_t23B90B40F60E677A8025267341651C94AE079CDA  : public ValueType_tDBF999C1B75C48C68621878250DBF6CDBCF51E52
+{
+public:
+
+public:
+};
+
+struct Enum_t23B90B40F60E677A8025267341651C94AE079CDA_StaticFields
+{
+public:
+	// System.Char[] System.Enum::enumSeperatorCharArray
+	CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34* ___enumSeperatorCharArray_0;
+
+public:
+	inline static int32_t get_offset_of_enumSeperatorCharArray_0() { return static_cast<int32_t>(offsetof(Enum_t23B90B40F60E677A8025267341651C94AE079CDA_StaticFields, ___enumSeperatorCharArray_0)); }
+	inline CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34* get_enumSeperatorCharArray_0() const { return ___enumSeperatorCharArray_0; }
+	inline CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34** get_address_of_enumSeperatorCharArray_0() { return &___enumSeperatorCharArray_0; }
+	inline void set_enumSeperatorCharArray_0(CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34* value)
+	{
+		___enumSeperatorCharArray_0 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___enumSeperatorCharArray_0), (void*)value);
+	}
+};
+
+// Native definition for P/Invoke marshalling of System.Enum
+struct Enum_t23B90B40F60E677A8025267341651C94AE079CDA_marshaled_pinvoke
+{
+};
+// Native definition for COM marshalling of System.Enum
+struct Enum_t23B90B40F60E677A8025267341651C94AE079CDA_marshaled_com
+{
+};
+
+// System.IntPtr
+struct IntPtr_t 
+{
+public:
+	// System.Void* System.IntPtr::m_value
+	void* ___m_value_0;
+
+public:
+	inline static int32_t get_offset_of_m_value_0() { return static_cast<int32_t>(offsetof(IntPtr_t, ___m_value_0)); }
+	inline void* get_m_value_0() const { return ___m_value_0; }
+	inline void** get_address_of_m_value_0() { return &___m_value_0; }
+	inline void set_m_value_0(void* value)
+	{
+		___m_value_0 = value;
+	}
+};
+
+struct IntPtr_t_StaticFields
+{
+public:
+	// System.IntPtr System.IntPtr::Zero
+	intptr_t ___Zero_1;
+
+public:
+	inline static int32_t get_offset_of_Zero_1() { return static_cast<int32_t>(offsetof(IntPtr_t_StaticFields, ___Zero_1)); }
+	inline intptr_t get_Zero_1() const { return ___Zero_1; }
+	inline intptr_t* get_address_of_Zero_1() { return &___Zero_1; }
+	inline void set_Zero_1(intptr_t value)
+	{
+		___Zero_1 = value;
+	}
+};
+
+
+// System.Void
+struct Void_t700C6383A2A510C2CF4DD86DABD5CA9FF70ADAC5 
+{
+public:
+	union
+	{
+		struct
+		{
+		};
+		uint8_t Void_t700C6383A2A510C2CF4DD86DABD5CA9FF70ADAC5__padding[1];
+	};
+
+public:
+};
+
+
+// Discord.ActivityActionType
+struct ActivityActionType_t5C0FE7F46D2716B0371D50AE9135BB53ED05DF89 
+{
+public:
+	// System.Int32 Discord.ActivityActionType::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(ActivityActionType_t5C0FE7F46D2716B0371D50AE9135BB53ED05DF89, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+
+// Discord.ImageType
+struct ImageType_t1487984D0D2B3730190B05F3FB9FDB958430E3C4 
+{
+public:
+	// System.Int32 Discord.ImageType::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(ImageType_t1487984D0D2B3730190B05F3FB9FDB958430E3C4, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+
+// Discord.LogLevel
+struct LogLevel_t74337C575601E4A67BE2D8A4E1774A3F16095C7E 
+{
+public:
+	// System.Int32 Discord.LogLevel::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(LogLevel_t74337C575601E4A67BE2D8A4E1774A3F16095C7E, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+
+// Discord.Result
+struct Result_t92959B5A326C666D27C5156481446A1D9803C7D2 
+{
+public:
+	// System.Int32 Discord.Result::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(Result_t92959B5A326C666D27C5156481446A1D9803C7D2, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+
+// Discord.ImageHandle
+struct ImageHandle_t18C71CEA08677027F61D849509A96A678BD915D8 
+{
+public:
+	// Discord.ImageType Discord.ImageHandle::Type
+	int32_t ___Type_0;
+	// System.Int64 Discord.ImageHandle::Id
+	int64_t ___Id_1;
+	// System.UInt32 Discord.ImageHandle::Size
+	uint32_t ___Size_2;
+
+public:
+	inline static int32_t get_offset_of_Type_0() { return static_cast<int32_t>(offsetof(ImageHandle_t18C71CEA08677027F61D849509A96A678BD915D8, ___Type_0)); }
+	inline int32_t get_Type_0() const { return ___Type_0; }
+	inline int32_t* get_address_of_Type_0() { return &___Type_0; }
+	inline void set_Type_0(int32_t value)
+	{
+		___Type_0 = value;
+	}
+
+	inline static int32_t get_offset_of_Id_1() { return static_cast<int32_t>(offsetof(ImageHandle_t18C71CEA08677027F61D849509A96A678BD915D8, ___Id_1)); }
+	inline int64_t get_Id_1() const { return ___Id_1; }
+	inline int64_t* get_address_of_Id_1() { return &___Id_1; }
+	inline void set_Id_1(int64_t value)
+	{
+		___Id_1 = value;
+	}
+
+	inline static int32_t get_offset_of_Size_2() { return static_cast<int32_t>(offsetof(ImageHandle_t18C71CEA08677027F61D849509A96A678BD915D8, ___Size_2)); }
+	inline uint32_t get_Size_2() const { return ___Size_2; }
+	inline uint32_t* get_address_of_Size_2() { return &___Size_2; }
+	inline void set_Size_2(uint32_t value)
+	{
+		___Size_2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_AchievementManager_FetchUserAchievementsCallbackImpl_m874E128FB096BC63CE1DE950EAAF8A9A97736DDE(intptr_t ___ptr0, int32_t ___result1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_AchievementManager_OnUserAchievementUpdateImpl_m0DD9CA2C245D7F2685AE78723BE87998428E6F73(intptr_t ___ptr0, UserAchievement_t3B2C55F4B765D3D6F2C965060DF88E8BA62CDC98_marshaled_pinvoke* ___userAchievement1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_AchievementManager_SetUserAchievementCallbackImpl_mA215295D45E8C3828A670A5EEF4EA14B227B4D48(intptr_t ___ptr0, int32_t ___result1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_ActivityManager_AcceptInviteCallbackImpl_m0698FD39A5AF57FA9ADF67306472C48D50BD10B7(intptr_t ___ptr0, int32_t ___result1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_ActivityManager_ClearActivityCallbackImpl_m812BC54DA3304551A134DB290E6941279A30B3A2(intptr_t ___ptr0, int32_t ___result1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_ActivityManager_OnActivityInviteImpl_m77E77CA1A10E96587B28C06902E895D0BA07EC44(intptr_t ___ptr0, int32_t ___type1, User_tD76E2890283C7AD12DF169EF8F2EE181CA40D41E_marshaled_pinvoke* ___user2, Activity_t345237C044BC73FA284F4F50F6C8586204A529DD_marshaled_pinvoke* ___activity3);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_ActivityManager_OnActivityJoinImpl_m013267BDA2F4B077B64BD2BB2F50152AEB3C329C(intptr_t ___ptr0, char* ___secret1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_ActivityManager_OnActivityJoinRequestImpl_mBFFEDA7C51FB53ACFD3C319C25948D6C2CE65684(intptr_t ___ptr0, User_tD76E2890283C7AD12DF169EF8F2EE181CA40D41E_marshaled_pinvoke* ___user1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_ActivityManager_OnActivitySpectateImpl_m2EBD0B1759E799443479A8751C8AE6946D84BF33(intptr_t ___ptr0, char* ___secret1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_ActivityManager_SendInviteCallbackImpl_mB99BA3C65FDF9EDDD464CFBE5D2FF074B361B22C(intptr_t ___ptr0, int32_t ___result1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_ActivityManager_SendRequestReplyCallbackImpl_m7DBA16165BE25B83293A53B9E96D71A864998623(intptr_t ___ptr0, int32_t ___result1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_ActivityManager_UpdateActivityCallbackImpl_m5B7EFCBA23BB8417B1F85CAA64BC6C82B488761E(intptr_t ___ptr0, int32_t ___result1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_ApplicationManager_GetOAuth2TokenCallbackImpl_m00F3F694AD26A843089812754035D9E834A1FAB7(intptr_t ___ptr0, int32_t ___result1, OAuth2Token_t3D95A0AA5A2FC0991208B9844B10D4ABCC26E088_marshaled_pinvoke* ___oauth2Token2);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_ApplicationManager_GetTicketCallbackImpl_m5EAADE8988DE32AFB22D2B97326A340F1581BAC7(intptr_t ___ptr0, int32_t ___result1, char** ___data2);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_ApplicationManager_ValidateOrExitCallbackImpl_mFFC043E1E96C34147A2BB4E2F2CD55328FB3AD14(intptr_t ___ptr0, int32_t ___result1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_Discord_SetLogHookCallbackImpl_mCC52A5E4BA9BA1EF2401FD2D7507992418ED6BA3(intptr_t ___ptr0, int32_t ___level1, char* ___message2);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_EventProvider_EtwEnableCallBack_m21ADE6DC652B28DDB916AC68B9FC908B18006FFD(Guid_t * ___sourceId0, int32_t ___controlCode1, uint8_t ___setLevel2, int64_t ___anyKeyword3, int64_t ___allKeyword4, EVENT_FILTER_DESCRIPTOR_t59379AB6F16CCEA5C0BDF328FF5AC64040CED05B * ___filterData5, void* ___callbackContext6);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_ImageManager_FetchCallbackImpl_m11A0579976A9FE8C9443E12870107DC546F94133(intptr_t ___ptr0, int32_t ___result1, ImageHandle_t18C71CEA08677027F61D849509A96A678BD915D8  ___handleResult2);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_LobbyManager_ConnectLobbyCallbackImpl_mC6F224135CB0F2DD39916FADA215914D813F76C3(intptr_t ___ptr0, int32_t ___result1, Lobby_tB03CA98BD9B6B5943FC097DA526665EF0E5EAC46_marshaled_pinvoke* ___lobby2);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_LobbyManager_ConnectLobbyWithActivitySecretCallbackImpl_mF0672B35B8B893A97CCDFA6BB76049782424D662(intptr_t ___ptr0, int32_t ___result1, Lobby_tB03CA98BD9B6B5943FC097DA526665EF0E5EAC46_marshaled_pinvoke* ___lobby2);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_LobbyManager_ConnectVoiceCallbackImpl_mD540710CDFBB59D63315731DCF839713FFA7CF61(intptr_t ___ptr0, int32_t ___result1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_LobbyManager_CreateLobbyCallbackImpl_mAEC695E946BF3C40173C82788DBDA66CF33E0545(intptr_t ___ptr0, int32_t ___result1, Lobby_tB03CA98BD9B6B5943FC097DA526665EF0E5EAC46_marshaled_pinvoke* ___lobby2);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_LobbyManager_DeleteLobbyCallbackImpl_m1EF2A8CD6ECED00010924FCD79A5DDA74321CDA4(intptr_t ___ptr0, int32_t ___result1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_LobbyManager_DisconnectLobbyCallbackImpl_m0C82CC19DC9831ABE6D399AFA8C27B3223AA07BC(intptr_t ___ptr0, int32_t ___result1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_LobbyManager_DisconnectVoiceCallbackImpl_m2120A7C9C6B19BA9F8E647F6C0F3D09120E86BE6(intptr_t ___ptr0, int32_t ___result1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_LobbyManager_OnLobbyDeleteImpl_m37D4C69CBA595571A546AA1B95531BE36CFACBD8(intptr_t ___ptr0, int64_t ___lobbyId1, uint32_t ___reason2);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_LobbyManager_OnLobbyMessageImpl_m1DA5EC8E401742A7B240BE6167F23A8D414CFBC9(intptr_t ___ptr0, int64_t ___lobbyId1, int64_t ___userId2, intptr_t ___dataPtr3, int32_t ___dataLen4);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_LobbyManager_OnLobbyUpdateImpl_m44AD90AF0ED29FF182C4742C4929634D5317B731(intptr_t ___ptr0, int64_t ___lobbyId1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_LobbyManager_OnMemberConnectImpl_m65F4BFCEDB9DE6B163B5307E44F38785B380846E(intptr_t ___ptr0, int64_t ___lobbyId1, int64_t ___userId2);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_LobbyManager_OnMemberDisconnectImpl_m9E9D0AB3B26776234EA3D57609CE627C14448B39(intptr_t ___ptr0, int64_t ___lobbyId1, int64_t ___userId2);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_LobbyManager_OnMemberUpdateImpl_mB4FF5EC811FED31616E2F0CFF40351CFFC2D64DD(intptr_t ___ptr0, int64_t ___lobbyId1, int64_t ___userId2);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_LobbyManager_OnNetworkMessageImpl_mF5ED77A9685583B4B4B2AD7D9AE87446E33D7B6F(intptr_t ___ptr0, int64_t ___lobbyId1, int64_t ___userId2, uint8_t ___channelId3, intptr_t ___dataPtr4, int32_t ___dataLen5);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_LobbyManager_OnSpeakingImpl_m9C171D737C50D9C79C84DE59B2C57CE37CE2D64F(intptr_t ___ptr0, int64_t ___lobbyId1, int64_t ___userId2, int32_t ___speaking3);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_LobbyManager_SearchCallbackImpl_mED88264E1F99571C56A6BCE7033296640C4364AE(intptr_t ___ptr0, int32_t ___result1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_LobbyManager_SendLobbyMessageCallbackImpl_m959A23A89207490DE4DFAF663F5FE28F9770AD60(intptr_t ___ptr0, int32_t ___result1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_LobbyManager_UpdateLobbyCallbackImpl_m872BB837E05FB625708FD84A2FFF10203000FB48(intptr_t ___ptr0, int32_t ___result1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_LobbyManager_UpdateMemberCallbackImpl_mD3A20BFB5B62AF19ED7B7602771F398581D57D5E(intptr_t ___ptr0, int32_t ___result1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_NetworkManager_OnMessageImpl_m18583CA74C8A43C34C1981A77DD2960DCBE11225(intptr_t ___ptr0, uint64_t ___peerId1, uint8_t ___channelId2, intptr_t ___dataPtr3, int32_t ___dataLen4);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_NetworkManager_OnRouteUpdateImpl_m7D7147123A6A374E1CAF05A420C59FBCCF96B450(intptr_t ___ptr0, char* ___routeData1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_OSSpecificSynchronizationContext_InvocationEntry_m0045E44F7E960D6B4A864D5206D4116249C09BB0(intptr_t ___arg0);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_OverlayManager_OnToggleImpl_mE6E91D51D97432DC7914FAEAFB52A438B4E0FB95(intptr_t ___ptr0, int32_t ___locked1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_OverlayManager_OpenActivityInviteCallbackImpl_mA882AEFD6082EE89D518DB806EDC636DA4C94C96(intptr_t ___ptr0, int32_t ___result1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_OverlayManager_OpenGuildInviteCallbackImpl_mB6F529BEA85A3E7AAF89770548AA2CDCBB68380A(intptr_t ___ptr0, int32_t ___result1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_OverlayManager_OpenVoiceSettingsCallbackImpl_m6E3EA3CDF9900198E267646A9E8D73083794B6D9(intptr_t ___ptr0, int32_t ___result1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_OverlayManager_SetLockedCallbackImpl_mA2DD371D00A962466969FCDC012BA993848D9502(intptr_t ___ptr0, int32_t ___result1);
+extern "C" int32_t DEFAULT_CALL ReversePInvokeWrapper_RelationshipManager_FilterCallbackImpl_m321EE31368ABF48E97B1712C13D76395766B0150(intptr_t ___ptr0, Relationship_t02234F383C025BDE4FFB410D9755B29B43DB8C02_marshaled_pinvoke* ___relationship1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_RelationshipManager_OnRefreshImpl_mD28DECACA910F141BDEF373CC8BEC5782578B464(intptr_t ___ptr0);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_RelationshipManager_OnRelationshipUpdateImpl_m5D0DD09B6723DAC9FDF96F5CECD8F571476A8C99(intptr_t ___ptr0, Relationship_t02234F383C025BDE4FFB410D9755B29B43DB8C02_marshaled_pinvoke* ___relationship1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_StorageManager_ReadAsyncCallbackImpl_m379D8FE2836A4CEFEB640C4E2D2687566DC3607B(intptr_t ___ptr0, int32_t ___result1, intptr_t ___dataPtr2, int32_t ___dataLen3);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_StorageManager_ReadAsyncPartialCallbackImpl_mB5ECDC560EA4DF77FCB6F9723A011F28A9FDDF6B(intptr_t ___ptr0, int32_t ___result1, intptr_t ___dataPtr2, int32_t ___dataLen3);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_StorageManager_WriteAsyncCallbackImpl_m01D87702F478BF71E272AA0A2BC14A7D73976E9D(intptr_t ___ptr0, int32_t ___result1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_StoreManager_FetchEntitlementsCallbackImpl_m9DD2D717D429B6F8F9C4CDFEFEBD9D3C054940F9(intptr_t ___ptr0, int32_t ___result1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_StoreManager_FetchSkusCallbackImpl_m2116A7447264449345A320A94ABC482275F8EB3D(intptr_t ___ptr0, int32_t ___result1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_StoreManager_OnEntitlementCreateImpl_m61F1778914C0C5793995510328C6351D450D1E57(intptr_t ___ptr0, Entitlement_t67CC3A0E1A610DD67D7AAC84BEC98AA544E68044 * ___entitlement1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_StoreManager_OnEntitlementDeleteImpl_m140EA562EC6DC924037B0F982C946D9702B34802(intptr_t ___ptr0, Entitlement_t67CC3A0E1A610DD67D7AAC84BEC98AA544E68044 * ___entitlement1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_StoreManager_StartPurchaseCallbackImpl_mD7AFAEB1DBCB4299B3B3B005A84273E7B4D986C1(intptr_t ___ptr0, int32_t ___result1);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_UserManager_GetUserCallbackImpl_m9D478A7D492D948CC8DCA8AF34E9E6C3E9EE3FB7(intptr_t ___ptr0, int32_t ___result1, User_tD76E2890283C7AD12DF169EF8F2EE181CA40D41E_marshaled_pinvoke* ___user2);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_UserManager_OnCurrentUserUpdateImpl_mFFDC0BF9F579135A09073EB28A536668BF332D04(intptr_t ___ptr0);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_VoiceManager_OnSettingsUpdateImpl_m5E67420E73068E57125D8D1DB95776B37EFD5E1D(intptr_t ___ptr0);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_VoiceManager_SetInputModeCallbackImpl_mAD12021EC7B3FF6B0E84186F81FC2FBFADFECF27(intptr_t ___ptr0, int32_t ___result1);
+
+
+IL2CPP_EXTERN_C const Il2CppMethodPointer g_ReversePInvokeWrapperPointers[];
+const Il2CppMethodPointer g_ReversePInvokeWrapperPointers[60] = 
+{
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_AchievementManager_FetchUserAchievementsCallbackImpl_m874E128FB096BC63CE1DE950EAAF8A9A97736DDE),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_AchievementManager_OnUserAchievementUpdateImpl_m0DD9CA2C245D7F2685AE78723BE87998428E6F73),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_AchievementManager_SetUserAchievementCallbackImpl_mA215295D45E8C3828A670A5EEF4EA14B227B4D48),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ActivityManager_AcceptInviteCallbackImpl_m0698FD39A5AF57FA9ADF67306472C48D50BD10B7),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ActivityManager_ClearActivityCallbackImpl_m812BC54DA3304551A134DB290E6941279A30B3A2),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ActivityManager_OnActivityInviteImpl_m77E77CA1A10E96587B28C06902E895D0BA07EC44),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ActivityManager_OnActivityJoinImpl_m013267BDA2F4B077B64BD2BB2F50152AEB3C329C),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ActivityManager_OnActivityJoinRequestImpl_mBFFEDA7C51FB53ACFD3C319C25948D6C2CE65684),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ActivityManager_OnActivitySpectateImpl_m2EBD0B1759E799443479A8751C8AE6946D84BF33),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ActivityManager_SendInviteCallbackImpl_mB99BA3C65FDF9EDDD464CFBE5D2FF074B361B22C),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ActivityManager_SendRequestReplyCallbackImpl_m7DBA16165BE25B83293A53B9E96D71A864998623),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ActivityManager_UpdateActivityCallbackImpl_m5B7EFCBA23BB8417B1F85CAA64BC6C82B488761E),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ApplicationManager_GetOAuth2TokenCallbackImpl_m00F3F694AD26A843089812754035D9E834A1FAB7),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ApplicationManager_GetTicketCallbackImpl_m5EAADE8988DE32AFB22D2B97326A340F1581BAC7),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ApplicationManager_ValidateOrExitCallbackImpl_mFFC043E1E96C34147A2BB4E2F2CD55328FB3AD14),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_Discord_SetLogHookCallbackImpl_mCC52A5E4BA9BA1EF2401FD2D7507992418ED6BA3),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_EventProvider_EtwEnableCallBack_m21ADE6DC652B28DDB916AC68B9FC908B18006FFD),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ImageManager_FetchCallbackImpl_m11A0579976A9FE8C9443E12870107DC546F94133),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_LobbyManager_ConnectLobbyCallbackImpl_mC6F224135CB0F2DD39916FADA215914D813F76C3),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_LobbyManager_ConnectLobbyWithActivitySecretCallbackImpl_mF0672B35B8B893A97CCDFA6BB76049782424D662),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_LobbyManager_ConnectVoiceCallbackImpl_mD540710CDFBB59D63315731DCF839713FFA7CF61),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_LobbyManager_CreateLobbyCallbackImpl_mAEC695E946BF3C40173C82788DBDA66CF33E0545),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_LobbyManager_DeleteLobbyCallbackImpl_m1EF2A8CD6ECED00010924FCD79A5DDA74321CDA4),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_LobbyManager_DisconnectLobbyCallbackImpl_m0C82CC19DC9831ABE6D399AFA8C27B3223AA07BC),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_LobbyManager_DisconnectVoiceCallbackImpl_m2120A7C9C6B19BA9F8E647F6C0F3D09120E86BE6),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_LobbyManager_OnLobbyDeleteImpl_m37D4C69CBA595571A546AA1B95531BE36CFACBD8),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_LobbyManager_OnLobbyMessageImpl_m1DA5EC8E401742A7B240BE6167F23A8D414CFBC9),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_LobbyManager_OnLobbyUpdateImpl_m44AD90AF0ED29FF182C4742C4929634D5317B731),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_LobbyManager_OnMemberConnectImpl_m65F4BFCEDB9DE6B163B5307E44F38785B380846E),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_LobbyManager_OnMemberDisconnectImpl_m9E9D0AB3B26776234EA3D57609CE627C14448B39),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_LobbyManager_OnMemberUpdateImpl_mB4FF5EC811FED31616E2F0CFF40351CFFC2D64DD),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_LobbyManager_OnNetworkMessageImpl_mF5ED77A9685583B4B4B2AD7D9AE87446E33D7B6F),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_LobbyManager_OnSpeakingImpl_m9C171D737C50D9C79C84DE59B2C57CE37CE2D64F),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_LobbyManager_SearchCallbackImpl_mED88264E1F99571C56A6BCE7033296640C4364AE),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_LobbyManager_SendLobbyMessageCallbackImpl_m959A23A89207490DE4DFAF663F5FE28F9770AD60),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_LobbyManager_UpdateLobbyCallbackImpl_m872BB837E05FB625708FD84A2FFF10203000FB48),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_LobbyManager_UpdateMemberCallbackImpl_mD3A20BFB5B62AF19ED7B7602771F398581D57D5E),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_NetworkManager_OnMessageImpl_m18583CA74C8A43C34C1981A77DD2960DCBE11225),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_NetworkManager_OnRouteUpdateImpl_m7D7147123A6A374E1CAF05A420C59FBCCF96B450),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_OSSpecificSynchronizationContext_InvocationEntry_m0045E44F7E960D6B4A864D5206D4116249C09BB0),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_OverlayManager_OnToggleImpl_mE6E91D51D97432DC7914FAEAFB52A438B4E0FB95),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_OverlayManager_OpenActivityInviteCallbackImpl_mA882AEFD6082EE89D518DB806EDC636DA4C94C96),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_OverlayManager_OpenGuildInviteCallbackImpl_mB6F529BEA85A3E7AAF89770548AA2CDCBB68380A),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_OverlayManager_OpenVoiceSettingsCallbackImpl_m6E3EA3CDF9900198E267646A9E8D73083794B6D9),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_OverlayManager_SetLockedCallbackImpl_mA2DD371D00A962466969FCDC012BA993848D9502),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_RelationshipManager_FilterCallbackImpl_m321EE31368ABF48E97B1712C13D76395766B0150),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_RelationshipManager_OnRefreshImpl_mD28DECACA910F141BDEF373CC8BEC5782578B464),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_RelationshipManager_OnRelationshipUpdateImpl_m5D0DD09B6723DAC9FDF96F5CECD8F571476A8C99),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_StorageManager_ReadAsyncCallbackImpl_m379D8FE2836A4CEFEB640C4E2D2687566DC3607B),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_StorageManager_ReadAsyncPartialCallbackImpl_mB5ECDC560EA4DF77FCB6F9723A011F28A9FDDF6B),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_StorageManager_WriteAsyncCallbackImpl_m01D87702F478BF71E272AA0A2BC14A7D73976E9D),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_StoreManager_FetchEntitlementsCallbackImpl_m9DD2D717D429B6F8F9C4CDFEFEBD9D3C054940F9),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_StoreManager_FetchSkusCallbackImpl_m2116A7447264449345A320A94ABC482275F8EB3D),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_StoreManager_OnEntitlementCreateImpl_m61F1778914C0C5793995510328C6351D450D1E57),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_StoreManager_OnEntitlementDeleteImpl_m140EA562EC6DC924037B0F982C946D9702B34802),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_StoreManager_StartPurchaseCallbackImpl_mD7AFAEB1DBCB4299B3B3B005A84273E7B4D986C1),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_UserManager_GetUserCallbackImpl_m9D478A7D492D948CC8DCA8AF34E9E6C3E9EE3FB7),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_UserManager_OnCurrentUserUpdateImpl_mFFDC0BF9F579135A09073EB28A536668BF332D04),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_VoiceManager_OnSettingsUpdateImpl_m5E67420E73068E57125D8D1DB95776B37EFD5E1D),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_VoiceManager_SetInputModeCallbackImpl_mAD12021EC7B3FF6B0E84186F81FC2FBFADFECF27),
+};
